@@ -21,21 +21,26 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/user/activation/{token}','Auth\RegisterController@userActivation');
 
-Route::get('/about', 'HomeController@about');
+// Route Yang menangani smua tentang  Abouts Tentang
+Route::get('/about', 'AboutsController@index');
+
+// Rout yang menangani sumua Videos
+Route::get('/movie', 'VideosController@index');
+
+// Route yang menangani smua Berita
+Route::get('/berita', 'BeritaController@index');
+
+// Route yang menangani contact
+Route::get('/contact', 'ContactsController@index');
 
 Route::get('/home', 'HomeController@index');
 
 Route::get('/welcome', 'HomeController@welcome');
 
-Route::get('/movie', 'HomeController@movie');
-
-Route::get('/berita', 'HomeController@berita');
-
 Route::get('/forum', 'HomeController@forum');
 
 Route::get('/lupapassword', 'HomeController@lupapassword');
 
-Route::get('/contact', 'HomeController@contact');
 
 Route::get('/caramendaftar', 'HomeController@caramendaftar');
 
