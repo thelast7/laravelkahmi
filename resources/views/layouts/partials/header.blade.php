@@ -34,23 +34,23 @@
                 <ul class="nav navbar-nav navbar-right">
 
                   <li class="dropdown active">
-                    <a href="welcome">HOME</a>
+                    <a href="{{ url('/') }}">HOME</a>
                   </li>
 
                   <li class="dropdown">
-                    <a href="about">KAHMIPRENEUR</a>
+                    <a href="{{ url('about') }}">KAHMIPRENEUR</a>
                   </li>
 
                   <li class="dropdown">
-                    <a href="movie">VIDEO</a>
+                    <a href="{{ url('movie') }}">VIDEO</a>
                   </li>
 
                   <li class="dropdown">
-                    <a href="berita">BERITA</a>
+                    <a href="{{ url('berita') }}">BERITA</a>
                   </li>
 
                   <li class="dropdown">
-                    <a href="forum">FORUM</a>
+                    <a href="{{ url('forum') }}">FORUM</a>
                   </li>
 
                   <li class="dropdown">
@@ -84,4 +84,3 @@
       </div> <!-- end navigation -->
     </nav> <!-- end navbar -->
   </header>
-
