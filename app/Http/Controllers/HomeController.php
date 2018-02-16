@@ -13,9 +13,8 @@ class HomeController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth');
+		
     }
-
     /**
      * Show the application dashboard.
      *
@@ -26,33 +25,18 @@ class HomeController extends Controller
         return view('home');
     }
 
-    public function welcome()
+    public function caramendaftar()
     {
-        return view('welcome');
+        return view('daftar.index');
     }
 
-    public function forum()
+    public function termsandcondition()
     {
-        return view('layouts/forum');
+        return view('terms.index');
     }
 
     public function lupapassword()
     {
         return view('layouts/lupapassword');
-    }
-
-    public function termsandcondition()
-    {
-        return view('layouts/termsandcondition');
-    }
-
-    public function contact()
-    {
-        return view('layouts/contact');
-    }
-
-    public function caramendaftar()
-    {
-        return view('layouts/caramendaftar');
     }
 }

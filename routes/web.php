@@ -12,12 +12,15 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('blogs.index');
 });
 
 Auth::routes();
 
+// Route yang menangani Pendaftaran
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/caramendaftar', 'HomeController@caramendaftar');
+Route::get('/termsandcondition', 'HomeController@termsandcondition');
 
 Route::get('/user/activation/{token}','Auth\RegisterController@userActivation');
 
@@ -33,15 +36,8 @@ Route::get('/berita', 'BeritaController@index');
 // Route yang menangani contact
 Route::get('/contact', 'ContactsController@index');
 
-Route::get('/home', 'HomeController@index');
-
-Route::get('/welcome', 'HomeController@welcome');
-
-Route::get('/forum', 'HomeController@forum');
+// Route yang menangani Forum
+Route::get('/forum', 'ForumsController@index');
 
 Route::get('/lupapassword', 'HomeController@lupapassword');
 
-
-Route::get('/caramendaftar', 'HomeController@caramendaftar');
-
-Route::get('/termsandcondition', 'HomeController@termsandcondition');
