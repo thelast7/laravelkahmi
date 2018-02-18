@@ -49,14 +49,14 @@ class RegisterController extends Controller
      * @param  array  $data
      * @return \Illuminate\Contracts\Validation\Validator
      */
-    protected function validator(array $data)
-    {
-        return Validator::make($data, [
-            'name' => 'required|string|max:255',
-            'email' => 'required|string|email|max:255|unique:users',
-            'password' => 'required|string|min:6|confirmed',
+	protected function validator(array $data)
+	{
+		return Validator::make($data, [
+            'name' => 'required|max:255',
+            'email' => 'required|email|max:255|unique:users',
+            'password' => 'required|min:6|confirmed',
         ]);
-    }
+	}
 
     /**
      * Create a new user instance after a valid registration.
@@ -66,10 +66,20 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
-        return User::create([
+		return User::create([
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => bcrypt($data['password']),
+            'jenis_kelamin' => $data['jenis_kelamin'],
+            'nik' => $data['nik'],
+            'no_hp' => $data['no_hp'],
+            'tanggal_lahir' => date("Y-m-d",strtotime($data['tanggal_lahir'])),
+            'alamat' => $data['alamat'],
+            'kota' => $data['kota'],
+            'pekerjaan' => $data['pekerjaan'],
+            'photo_diri' => $data['photo_diri'],
+            'photo_ktp' => $data['photo_ktp'],
+            'harapan' => $data['harapan']
         ]);
     }
 

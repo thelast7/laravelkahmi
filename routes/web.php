@@ -15,6 +15,10 @@ Route::get('/', function () {
     return view('blogs.index');
 });
 
+Route::get('/coba', function() {
+	return view('auth.coba');
+});
+
 Auth::routes();
 
 // Route yang menangani Pendaftaran
@@ -39,5 +43,4 @@ Route::get('/contact', 'ContactsController@index');
 // Route yang menangani Forum
 Route::get('/forum', 'ForumsController@index');
 
-Route::get('/lupapassword', 'HomeController@lupapassword');
 
