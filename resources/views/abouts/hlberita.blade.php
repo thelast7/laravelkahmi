@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Enigma | Blog Standard</title>
+  <title>KAHMIPRENEUR | BERITA</title>
 
   <meta charset="utf-8">
   <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
@@ -9,7 +9,7 @@
   <meta name="description" content="">
 
   <!-- Google Fonts -->
-  <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700%7CPT+Serif:400,700,400italic' rel='stylesheet'>
+  <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700%7CPT+Serif:400,700,400italic%7COpen+Sans:400,600,700,400italic' rel='stylesheet'>
 
   <!-- Css -->
   <link rel="stylesheet" href="css/bootstrap.min.css" />
@@ -32,7 +32,7 @@
 
 </head>
 
-<body data-spy="scroll" data-offset="60" data-target=".navbar-fixed-top">
+<body style="font-family: 'Open Sans', sans-serif;">
 
   <!-- Preloader -->
   <div class="loader-mask">
@@ -41,100 +41,109 @@
     </div>
   </div>
 
-  <!-- Navigation -->
-  <header class="nav-type-1" id="home">
+  <header class="nav-type-2">
 
-    <nav class="navbar navbar-fixed-top">
-      <div class="navigation-overlay">
-        <div class="container-fluid relative">
+    <nav class="navbar navbar-static-top">
+      <div class="navigation">
+        <div class="container relative">
+
+          <form method="get" class="search-wrap">
+            <input type="search" class="form-control" placeholder="Type &amp; Hit Enter">
+          </form>
+
           <div class="row">
 
             <div class="navbar-header">
+              <!-- Logo -->
+              <div class="logo-container">
+                <div class="logo-wrap">
+                  <a href="index-mp.html">
+                    <img class="logo" src="img/logo_dark.png" alt="logo">
+                  </a>
+                </div>
+              </div>
               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-
-              <!-- Logo -->
-              <div class="logo-container">
-                <div class="logo-wrap local-scroll">
-                  <a href="#home">
-                    <img class="logo" src="img/logo_light.png" alt="logo">
-                  </a>
-                </div>
-              </div>
             </div> <!-- end navbar-header -->
 
+            <div class="col-md-9 nav-wrap right">
+              <div class="collapse navbar-collapse" id="navbar-collapse">
 
-            <div class="col-md-8 col-xs-12 nav-wrap">
-              <div class="collapse navbar-collapse text-center" id="navbar-collapse">
-                
-                <ul class="nav navbar-nav local-scroll text-center">
+                <ul class="nav navbar-nav navbar-right">
+
+                  <li class="dropdown">
+                    <a href="index-mp.html">HOME</a>
+                  </li>
+
+                  <li class="dropdown">
+                    <a href="blog-single.html">KAHMIPRENEUR</a>
+                  </li>
+
+                  <li class="dropdown">
+                    <a href="index-video-bg.html">VIDEO</a>
+                  </li>
+
+                  <li class="dropdown active">
+                    <a href="Portfolio-4.html">BERITA</a>
+                  </li>
+
+                  <li class="dropdown">
+                    <a href="404.html">FORUM</a>
+                  </li>
+
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">PENDAFTARAN</a>
+                    <ul class="dropdown-menu menu-right">
+                      <li><a href="shortcodes.html">LOG IN</a></li>
+                      <li><a href="typography.html">SIGN UP</a></li>
+                    </ul>
+                  </li>
+
+              <li id="mobile-search">
+                    <form method="get" class="mobile-search">
+                      <input type="search" class="form-control" placeholder="Search...">
+                      <button type="submit" class="search-button">
+                        <i class="fa fa-search"></i>
+                      </button>
+                    </form>
+                  </li>
 
                   <li>
-                    <a href="index.html">Home</a>
-                  </li>
-                  <li>
-                    <a href="index.html#services">Services</a>
-                  </li>
-                  <li>
-                    <a href="index.html#portfolio">Works</a>
-                  </li>
-                  <li>
-                    <a href="index.html#about-us">About</a>
-                  </li>                         
-                  <li class="active">
-                    <a href="index.html#blog">Blog</a>
-                  </li>
-                  <li>
-                    <a href="index.html#contact">Contact</a>
-                  </li>
-                  
-                </ul>
-              </div>
+                    <a href="#" class="nav-search">
+                      <i class="fa fa-search search-trigger"></i>
+                      <i class="fa fa-times search-close"></i>
+                    </a>
+                  </li> 
+
+                </ul> <!-- end menu -->
+              </div> <!-- end collapse -->
             </div> <!-- end col -->
 
-            <div class="menu-socials hidden-sm hidden-xs">
-              <ul>
-                <li>
-                  <a href="#"><i class="fa fa-behance"></i></a>
-                </li>
-                <li>
-                  <a href="#"><i class="fa fa-linkedin"></i></a>
-                </li>
-                <li>
-                  <a href="#"><i class="fa fa-twitter"></i></a>
-                </li>
-              </ul>
-            </div>
-            
           </div> <!-- end row -->
         </div> <!-- end container -->
       </div> <!-- end navigation -->
     </nav> <!-- end navbar -->
+  </header>
 
-  </header> <!-- end navigation -->
 
-
-  <div class="main-wrapper-onepage main oh">
+  <div class="main-wrapper-mp oh">
 
     <!-- Page Title -->
-    <section class="page-title text-center" style="background-image: url(img/blog/blog_title_bg.jpg);">
+    <section class="page-title style-2">
       <div class="container relative clearfix">
         <div class="title-holder">
           <div class="title-text">
-            <h1 class="color-white heading-frame">Blog Standard</h1>
+            <h1>KAHMIPRENEUR NEWS</h1>
             <ol class="breadcrumb">
               <li>
                 <a href="index.html">Home</a>
               </li>
-              <li>
-                <a href="index.html">Blog</a>
-              </li>
               <li class="active">
-                Blog Standard
+                Berita
               </li>
             </ol>
           </div>
@@ -142,6 +151,9 @@
       </div>
     </section> <!-- end page title -->
 
+
+    <!-- Portfolio Single -->
+    
 
     <!-- Blog Standard -->
     <section class="section-wrap blog-standard">
@@ -160,34 +172,34 @@
               </div>
 
               <div class="entry-date hidden-sm hidden-xs">
-                <span>20</span>
-                <span>JUL</span>                    
+                <span>11</span>
+                <span>MAR</span>                    
               </div>
 
               <div class="entry-title">
                 <h2>
-                  <a href="blog-single.html">This is Standard blog post title.</a>
+                  <a href="blog-single.html">Sandiaga Uno Ajak Mahasiswa Setelah Lulus Menjadi Wirausaha.</a>
                 </h2>
               </div>
               <ul class="entry-meta">
                 <li class="entry-date">
-                  <a href="#">20 July, 2015</a>
+                  <a href="#">11 March, 2018</a>
                 </li>
                 <li class="entry-author">
-                  by <a href="#">John Doe</a>
+                  by <a href="#">Iqbal Buchori</a>
                 </li>
                 <li class="entry-category">
-                  in <a href="#">Photography</a>
+                  in <a href="#">Programmer</a>
                 </li>
                 <li>
-                  <a href="blog-single.html" class="entry-comments">10 Comments</a>
+                  <a href="services.html" class="entry-comments">99 Comments</a>
                 </li>               
               </ul>
 
               <div class="entry">
                 <div class="entry-content">
-                  <p>We continuosly seek between design and technology. For over a decade, we've helped businesses to craft honest, emotional experiences through strategy, brand development, graphic design, web design. Our team hand picked to provide the right balance of skills to work laboris nisi ut aliquip ex ea commodo consequat.</p>
-                  <a href="blog-single.html" class="read-more">Read More</a>
+                  <p>Wakil Gubernur DKI Jakarta Sandiaga Salahuddin Uno mengisi kuliah umum atau studium generale bertema "Being A Winning Young Entrepreneur" di Fakultas Agama Islam, Universitas Muhammadiyah Prof. Dr. Hamka (Uhamka), Jakarta Selata. Dalam kesempatan ini, Sandi menyampaikan mahasiswa pasca-lulus meraih gelar sarjana dapat membuka lapangan pekerjaan melalui wirausaha daripada mencari lapangan pekerjaan..</p>
+                  <a href="services.html" class="read-more">Selengkapnya</a>
                   <i class="icon arrow_right"></i>
                 </div>
               </div>
@@ -218,79 +230,79 @@
               </div> <!-- end slider -->
 
               <div class="entry-date hidden-sm hidden-xs">
-                <span>17</span>
-                <span>JUL</span>                    
+                <span>11</span>
+                <span>MAR</span>                    
               </div>
 
               <div class="entry-title">
                 <h2>
-                  <a href="blog-single.html">Gallery blog post. Italian fashion</a>
+                  <a href="services.html">Ini adalah Judul dari beritanya.</a>
                 </h2>
               </div>
               <ul class="entry-meta">
                 <li class="entry-date">
-                  <a href="#">20 July, 2015</a>
+                  <a href="#">11 March, 2018</a>
                 </li>
                 <li class="entry-author">
-                  by <a href="#">John Doe</a>
+                  by <a href="#">Iqbal Buchori</a>
                 </li>
                 <li class="entry-category">
-                  in <a href="#">Photography</a>
+                  in <a href="#">Programmer</a>
                 </li>
                 <li>
-                  <a href="blog-single.html" class="entry-comments">10 Comments</a>
+                  <a href="blog-single.html" class="entry-comments">69 Comments</a>
                 </li>               
               </ul>
 
               <div class="entry">         
 
                 <div class="entry-content">
-                  <p>We continuosly seek between design and technology. For over a decade, we've helped businesses to craft honest, emotional experiences through strategy, brand development, graphic design, web design. Our team hand picked to provide the right balance of skills to work laboris nisi ut aliquip ex ea commodo consequat.</p>
-                  <a href="blog-single.html" class="read-more">Read More</a>
+                  <p>Wakil Gubernur DKI Jakarta Sandiaga Salahuddin Uno mengisi kuliah umum atau studium generale bertema "Being A Winning Young Entrepreneur" di Fakultas Agama Islam, Universitas Muhammadiyah Prof. Dr. Hamka (Uhamka), Jakarta Selata. Dalam kesempatan ini, Sandi menyampaikan mahasiswa pasca-lulus meraih gelar sarjana dapat membuka lapangan pekerjaan melalui wirausaha daripada mencari lapangan pekerjaan..</p>
+                  <a href="services.html" class="read-more">Selengkapnya</a>
                   <i class="icon arrow_right"></i>
                 </div>
               </div>
             </div> <!-- end entry item -->
 
             <!-- blockquote post -->
-            <div class="entry-item">
+           <!--  <div class="entry-item">
               <div class="entry blockquote mt-0">             
                 <blockquote class="blockquote-style-1 text-center mb-0">
                   <i class="fa fa-quote-left"></i>
                   <p>
-                    <a href="blog-single.html">The optimist proclaims that we live in the best of all possible worlds, and the pessimist fears this is true</a>
+                    <a href="blog-single.html">Ini adalah Judul dari beritanya</a>
                   </p>
                   <span>– James Branch</span>
                 </blockquote>
-              </div>
-            </div> <!-- end entry item -->
+              </div> -->
+            <!-- </div> --> <!-- end entry item -->
 
             <!-- video post -->
             <div class="entry-item">
               <div class="entry-video video-wrap">
-                <iframe width="640" height="360" src="https://www.youtube.com/embed/9kYQDuOVTOI" allowfullscreen></iframe>
+                <iframe width="640" height="360" src="https://www.youtube.com/embed/1Yb6O79GKb4" allowfullscreen></iframe>
               </div>
 
               <div class="entry-date hidden-sm hidden-xs">
-                <span>14</span>
-                <span>JUL</span>                    
+                <span>11</span>
+                <span>MAR</span>                    
               </div>
 
               <div class="entry-title">
                 <h2>
-                  <a href="blog-single.html">This is awesome Youtube video post.</a>
+                  <a href="blog-single.html">VIDEO YOUTUBE : Nadiem Makarim, CEO & Founder Gojek Indonesia, Inspirasi sukses</a>
                 </h2>
               </div>
 
               <ul class="entry-meta">
                 <li class="entry-date">
-                  <a href="#">20 July, 2015</a>
+                  <a href="#">11 March, 2018</a>
                 </li>
                 <li class="entry-author">
-                  by <a href="#">John Doe</a>
+                  by <a href="#">Iqbal Buchori</a>
                 </li>
                 <li class="entry-category">
-                  in <a href="#">Photography</a>
+                  in <a href="#">Programmer</a>
                 </li>
                 <li>
                   <a href="blog-single.html" class="entry-comments">10 Comments</a>
@@ -299,45 +311,8 @@
 
               <div class="entry">             
                 <div class="entry-content">
-                  <p>We continuosly seek between design and technology. For over a decade, we've helped businesses to craft honest, emotional experiences through strategy, brand development, graphic design, web design. Our team hand picked to provide the right balance of skills to work laboris nisi ut aliquip ex ea commodo consequat.</p>
-                  <a href="blog-single.html" class="read-more">Read More</a>
-                  <i class="icon arrow_right"></i>
-                </div>
-              </div>
-            </div> <!-- end entry item -->
-
-            <!-- text post -->
-            <div class="entry-item">
-
-              <div class="entry-date hidden-sm hidden-xs">
-                <span>12</span>
-                <span>JUL</span>                    
-              </div>
-
-              <div class="entry-title">
-                <h2>
-                  <a href="blog-single.html">This is Text only blog post.</a>
-                </h2>
-              </div>
-              <ul class="entry-meta">
-                <li class="entry-date">
-                  <a href="#">12 July, 2015</a>
-                </li>
-                <li class="entry-author">
-                  by <a href="#">John Doe</a>
-                </li>
-                <li class="entry-category">
-                  in <a href="#">Photography</a>
-                </li>
-                <li>
-                  <a href="blog-single.html" class="entry-comments">10 Comments</a>
-                </li>               
-              </ul>
-
-              <div class="entry">
-                <div class="entry-content">
-                  <p>We continuosly seek between design and technology. For over a decade, we've helped businesses to craft honest, emotional experiences through strategy, brand development, graphic design, web design. Our team hand picked to provide the right balance of skills to work laboris nisi ut aliquip ex ea commodo consequat.</p>
-                  <a href="blog-single.html" class="read-more">Read More</a>
+                  <p>Nadiem Makarim lahir 4 juli 1984. Di ketahui bahwa Nadiem Makarim mulai bersekolah SD di Jakarta, kemudian ia lulus SMA di Singapura, dari Singapura ia kemudian melanjutkan pendidikannya di jurusan International Relations di Brown University, Amerika Serikat. dan selama setahun ia mengikuti program foreign exchange di London School of Economics. Ia juga melanjutkan studinya di Harvard Business School, Harvard University dan lulus dengan menyandang gelar MBA (Master Business Of Administration)..</p>
+                  <a href="services.html" class="read-more">Selengkapnya</a>
                   <i class="icon arrow_right"></i>
                 </div>
               </div>
@@ -367,26 +342,6 @@
               </form>
 
               <!-- Categories -->
-              <div class="widget categories">
-                <h3 class="widget-title">Categories</h3>
-                <ul>
-                  <li>
-                    <a href="#">Html Development</a>
-                  </li>
-                  <li class="active-cat">
-                    <a href="#">Photography &amp; Retouch</a>
-                  </li>
-                  <li>
-                    <a href="#">Best Templates</a>
-                  </li>
-                  <li>
-                    <a href="#">Multipurpose Themes</a>
-                  </li>
-                  <li>
-                    <a href="#">Branding &amp; Technology </a>
-                  </li>
-                </ul>
-              </div>
 
             <div class="widget latest-posts">
               <h3 class="widget-title">Recent Posts</h3>
@@ -394,27 +349,27 @@
                 <li class="clearfix">
                   <a href="blog-single-post.html">
                     <img src="img/blog/latest_posts_1.jpg" alt="">
-                    This is standard blog post title
+                    Ini adalah Judul dari beritanya.
                     <div class="entry-meta">
-                      <span class="entry-date">July 3, 2015</span>
+                      <span class="entry-date">12 March, 2018</span>
                     </div>
                   </a>
                 </li>
                 <li class="clearfix">
                   <a href="blog-single-post.html">
                     <img src="img/blog/latest_posts_2.jpg" alt="">
-                    Enigma perfect minimal onepage
+                    Ini adalah Judul dari beritanya.
                     <div class="entry-meta">
-                      <span class="entry-date">July 2, 2015</span>
+                      <span class="entry-date">12 March, 2018</span>
                     </div>
                   </a>
                 </li>
                 <li class="clearfix">
                   <a href="blog-single-post.html">
                     <img src="img/blog/latest_posts_3.jpg" alt="">
-                    Building your business with our themes
+                    Ini adalah Judul dari beritanya.
                     <div class="entry-meta">
-                      <span class="entry-date">July 1, 2015</span>
+                      <span class="entry-date">12 March, 2018</span>
                     </div>
                   </a>
                 </li>
@@ -423,16 +378,16 @@
 
             <!-- Tags -->
             <div class="widget tags">
-              <h3 class="widget-title">Popular Tags</h3>
-              <a href="#">Multi-purpose</a>
-              <a href="#">Creative</a>
-              <a href="#">Elegant</a>
-              <a href="#">Clean</a>
-              <a href="#">Modern</a>
-              <a href="#">Responsive</a>
-              <a href="#">Minimal</a>
-              <a href="#">WordPress</a>
-              <a href="#">Onepage</a>
+              <h3 class="widget-title">Tags</h3>
+              <a href="#">Lorem Ipsum</a>
+              <a href="#">Lorem Ipsum</a>
+              <a href="#">Lorem Ipsumt</a>
+              <a href="#">Lorem Ipsum</a>
+              <a href="#">Lorem Ipsum</a>
+              <a href="#">Lorem Ipsum</a>
+              <a href="#">Lorem Ipsum</a>
+              <a href="#">Lorem Ipsum</a>
+              <a href="#">Lorem Ipsum</a>
             </div>
 
           </div> <!-- end col -->
@@ -441,36 +396,30 @@
       </div> <!-- end container -->
     </section> <!-- end blog standard -->
 
+         
 
-    <!-- Footer -->
-    <footer class="footer minimal bg-dark">
-      <div class="container">
-        <div class="row">
+<!-- FOOTER -->
+    <footer>
+      <div class="bottom-footer">
+        <div class="container">
+          <div class="row">
 
-          <div class="col-md-4 col-md-offset-4">
-            
-            <div class="footer-logo local-scroll mb-30 wow zoomIn" data-wow-duration="1s" data-wow-delay="0.2s">
-              <h2>
-                <a href="#home" class="color-white">Enigma</a>
-              </h2>
+            <div class="col-sm-6 col-xs-12 copyright">
+              <span>
+               © 2018 KAHMIPRENEUR  |  Made by <a href="http://gjidigital.com">Global Jaring Indonesia</a>
+              </span>
+            </div>
+              
+            <div class="col-sm-4 col-sm-offset-2 col-xs-12 footer-socials">
+              <div class="social-icons clearfix right">
+                <a href="https://twitter.com/kahmiPreneur"><i class="fa fa-twitter"></i></a>
+                <a href="https://facebook.com/kahmipreneur"><i class="fa fa-facebook"></i></a>                  
+                <a href="https://instagram.com/kahmipreneur"><i class="fa fa-instagram"></i></a>
             </div>
 
-            <div class="socials footer-socials">
-              <a href="#"><i class="fa fa-facebook"></i></a>
-              <a href="#"><i class="fa fa-twitter"></i></a>
-              <a href="#"><i class="fa fa-google-plus"></i></a>
-              <a href="#"><i class="fa fa-linkedin"></i></a>
-              <a href="#"><i class="fa fa-behance"></i></a>
-            </div> <!-- end socials -->
-
-            <span class="copyright text-center">
-              ©2015 Enigma  |  Development by <a href="http://deothemes.com/">DeoThemes</a>
-            </span>
-
           </div>
-
         </div>
-      </div>
+      </div> <!-- end bottom footer -->
     </footer> <!-- end footer -->
 
     <div id="back-to-top">
@@ -484,7 +433,6 @@
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
   <script type="text/javascript" src="js/plugins.js"></script>
     <script type="text/javascript" src="js/scripts.js"></script>
-
 
 </body>
 </html>
