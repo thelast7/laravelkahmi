@@ -33,7 +33,7 @@
                 
                 <ul class="nav navbar-nav navbar-right">
 
-                  <li class="dropdown active">
+                  <li class="dropdown">
                     <a href="{{ url('/') }}">HOME</a>
                   </li>
 

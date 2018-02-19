@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>KAHMIPRENEUR | Cara Mendaftar</title>
+  <title>KAHMIPRENEUR | Sign Up</title>
 
   <meta charset="utf-8">
   <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
@@ -23,6 +23,7 @@
   <link rel="stylesheet" href="css/spacings.css" />
   <link rel="stylesheet" href="css/animate.css" />
   <link rel="stylesheet" href="css/color.css" />
+  <link rel="stylesheet" href="css/custome-login.css" />
 
   <!-- Favicons -->
   <link rel="shortcut icon" href="img/favicon.ico">
@@ -42,7 +43,7 @@
   </div>
 
   <header class="nav-type-2">
-
+    
     <nav class="navbar navbar-static-top">
       <div class="navigation">
         <div class="container relative">
@@ -72,10 +73,10 @@
 
             <div class="col-md-9 nav-wrap right">
               <div class="collapse navbar-collapse" id="navbar-collapse">
-
+                
                 <ul class="nav navbar-nav navbar-right">
 
-                  <li class="dropdown">
+                 <li class="dropdown">
                     <a href="index-mp.html">HOME</a>
                   </li>
 
@@ -95,14 +96,13 @@
                     <a href="404.html">FORUM</a>
                   </li>
 
-                  <li class="dropdown">
+                  <li class="dropdown active">
                     <a href="#" class="dropdown-toggle">MEMBERSHIP</a>
                     <ul class="dropdown-menu menu-right">
                       <li><a href="shortcodes.html">Log in</a></li>
                       <li><a href="typography.html">Sign Up</a></li>
                     </ul>
-                  </li>
-
+                  </li> 
                   <li id="mobile-search">
                     <form method="get" class="mobile-search">
                       <input type="search" class="form-control" placeholder="Search...">
@@ -118,11 +118,11 @@
                       <i class="fa fa-times search-close"></i>
                     </a>
                   </li> 
-
+                  
                 </ul> <!-- end menu -->
               </div> <!-- end collapse -->
             </div> <!-- end col -->
-
+            
           </div> <!-- end row -->
         </div> <!-- end container -->
       </div> <!-- end navigation -->
@@ -137,35 +137,133 @@
       <div class="container relative clearfix">
         <div class="title-holder">
           <div class="title-text">
-            <h1>TATACARA PENDAFTARAN KAHMIPRENEUR</h1>
+            <h1>Pendaftaran</h1>
             <ol class="breadcrumb">
               <li>
-                <a href="index.html">Home</a>
+                <a href="index-mp.html">Home</a>
               </li>
               <li>
-                <a href="index.html">Cara Mendaftar</a>
+                <a href="shortcodes.html">Membership</a>
+              </li>
+              <li class="active">
+                Pendaftaran
               </li>
             </ol>
           </div>
         </div>
       </div>
+    </div>
     </section> <!-- end page title -->
 
-      <section class="section-wrap-mp">
-      <div class="container">
-            <img class="imgcenter" src="cara.jpg"/>
-      </div>
-  </section>
+  
+
+<form action="/action_page.php" style="border:0px solid #ccc">
+  <div class="container">
+    <p>Silahkan Isi Form Dibawah Ini.</p>
+    <hr>
+
+    <label><b>Nama Lengkap</b></label>
+    <input type="text" placeholder="Masukan Nama Lengkap" name="Nama" required>
+
+    <label><b>Alamat E-Mail</b></label>
+    <input type="text" placeholder="Masukan Alamat E-Mail" name="alamat" required>
+
+    <label><b>Kata Sandi</b></label>
+    <input type="text" placeholder="Masukan Kata Sandi" name="Kata Sandi" required>
+
+    <label><b>Konfirmasi Kata Sandi</b></label>
+    <input type="text" placeholder="Masukan Informasi Kata Sandi" name="Konfirmasi" required>
+
+    <label><b>Gender</b></label>
+                <ul class="radio-buttons">
+                  <li>
+                    <input type="radio" class="input-radio" name="radio" id="radio1" value="radio1" checked="checked">
+                    <label for="radio1">Male</label>
+                  </li>
+                  <li>
+                    <input type="radio" class="input-radio" name="radio" id="radio2" value="radio2">
+                    <label for="radio2">Female</label>
+                  </li>
+
+    <label><b>NIK</b></label>
+    <input type="text" placeholder="Masukan NIK" name="NIK" required>
+
+    <label><b>No Handphone</b></label>
+    <input type="text" placeholder="Masukan No Handphone" name="No Handphone" required>
+
+    <label><b>Tanggal Lahir</b></label>
+    <input type="text" placeholder="Masukan Tanggal Lahir" name="Masukan Tanggal Lahir" required>
+    
+    <label><b>Alamat Lengkap</b></label>
+     <textarea placeholder="Masukan Alamat Lengkap" rows="3"></textarea>
+    
+    <label><b>Kecamatan</b></label>
+    <div class="select relative">
+              <i class="fa fa-angle-down"></i>
+              <select>
+                <option selected value="default">Select an option</option>
+                <option value="kota 1">Kec 1</option>
+                <option value="kota 2">Kec 2</option>
+                <option value="kota 3">Kec 3</option>
+                <option value="kota 4">Kec 4</option>
+                <option value="kota 5">Kec 5</option>
+                <option value="kota 6">Kec 6</option>
+                <option value="kota 3">Kec 7</option>
+                <option value="kota 4">Kec 8</option>
+                <option value="kota 5">Kec 9</option>
+                <option value="kota 6">Kec 10</option>
+              </select>
+            </div>
+
+    <label><b>Pekerjaan/Bidang Usaha</b></label>
+    <div class="select relative">
+              <i class="fa fa-angle-down"></i>
+              <select>
+                <option selected value="default">Select an option</option>
+                <option value="kota 1">Pegawai Negeri Sipil</option>
+                <option value="kota 2">Karyawan Swasta</option>
+                <option value="kota 3">Wirausaha</option>
+              </select>
+            </div>
+
+    <div class="Foto">
+    <label><b>Unggah Foto Diri</b></label>
+    <form action="/action_page.php">
+    <input type="file" name="pic" accept="image/*">
+    </div>
+    <br>
+    <div>
+    <label><b>Unggah Foto KTP</b></label>
+    <form action="/action_page.php">
+    <input type="file" name="pic" accept="image/*">
+    </div>
+    <br>
+
+    <label><b>Harapan Bergabung di KAHMIPRENEUR </b></label>
+     <textarea placeholder="Masukan Alamat Lengkap" rows="3"></textarea>
 
 
-    <!-- Footer Type-2 -->
+
+      <div>
+      <input type="checkbox" class="input-checkbox" name="checkbox" id="checkbox1" value="1" checked="checked">
+      <label for="checkbox1">Dengan ini saya telah mengerti dan menyetujui <a href="#" style="color:dodgerblue">syarat dan ketentuan</a> yang berlaku.</label>
+      </p>
+    </div>
+    <div class="clearfix">
+      <button type="button" class="cancelbtn">Batal</button>
+      <button type="submit" class="signupbtn">Daftar</button>
+    </div>
+  </div>
+</form>
+<footer>
       <div class="bottom-footer">
         <div class="container">
           <div class="row">
 
+
             <div class="col-sm-6 col-xs-12 copyright">
               <span>
-               © 2018 KAHMIPRENEUR  |  Made by <a href="http://gjidigital.com">Global Jaring Indonesia</a>
+                © 2018 KAHMIPRENEUR  |  Made by <a href="http://gjidigital.com">Global Jaring Indonesia</a>
               </span>
             </div>
               
