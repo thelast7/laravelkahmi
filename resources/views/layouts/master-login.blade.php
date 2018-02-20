@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>KAHMIPRENEUR | Sign Up</title>
+  <title>KAHMIPRENEUR | Login</title>
 
   <meta charset="utf-8">
   <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
@@ -57,7 +57,7 @@
               <!-- Logo -->
               <div class="logo-container">
                 <div class="logo-wrap">
-                  <a href="index-mp.html">
+                  <a href="{{ url('/') }}">
                     <img class="logo" src="img/logo_dark.png" alt="logo">
                   </a>
                 </div>
@@ -75,33 +75,34 @@
                 
                 <ul class="nav navbar-nav navbar-right">
 
-                 <li class="dropdown">
-                    <a href="index-mp.html">HOME</a>
+                  <li class="dropdown">
+                    <a href="{{ url('/') }}">HOME</a>
                   </li>
 
                   <li class="dropdown">
-                    <a href="blog-single.html">KAHMIPRENEUR</a>
+                    <a href="{{ url('about') }}">KAHMIPRENEUR</a>
                   </li>
 
                   <li class="dropdown">
-                    <a href="index-video-bg.html">VIDEO</a>
+                    <a href="{{ url('movie') }}">VIDEO</a>
                   </li>
 
                   <li class="dropdown">
-                    <a href="Portfolio-4.html">BERITA</a>
+                    <a href="{{ url('berita') }}">BERITA</a>
                   </li>
 
                   <li class="dropdown">
-                    <a href="404.html">FORUM</a>
+                    <a href="{{ url('forum') }}">FORUM</a>
                   </li>
 
                   <li class="dropdown active">
-                    <a href="#" class="dropdown-toggle">MEMBERSHIP</a>
+                    <a href="#" class="dropdown-toggle">PENDAFTARAN</a>
                     <ul class="dropdown-menu menu-right">
-                      <li><a href="shortcodes.html">Log in</a></li>
-                      <li><a href="typography.html">Sign Up</a></li>
+                      <li><a href="{{ route('login') }}">Log in</a></li>
+                      <li><a href="{{ route('register') }}">Sign Up</a></li>
                     </ul>
-                  </li> 
+                  </li>
+
                   <li id="mobile-search">
                     <form method="get" class="mobile-search">
                       <input type="search" class="form-control" placeholder="Search...">
@@ -128,141 +129,18 @@
     </nav> <!-- end navbar -->
   </header>
 
-
   <div class="main-wrapper-mp oh">
 
-    <!-- Page Title -->
-    <section class="page-title style-2">
-      <div class="container relative clearfix">
-        <div class="title-holder">
-          <div class="title-text">
-            <h1>Pendaftaran</h1>
-            <ol class="breadcrumb">
-              <li>
-                <a href="index-mp.html">Home</a>
-              </li>
-              <li>
-                <a href="shortcodes.html">Membership</a>
-              </li>
-              <li class="active">
-                Pendaftaran
-              </li>
-            </ol>
-          </div>
-        </div>
-      </div>
-    </div>
-    </section> <!-- end page title -->
+@yield('content')
 
-<form action="/action_page.php" style="border:0px solid #ccc">
-  <div class="container">
-    <p>Silahkan Isi Form Dibawah Ini.</p>
-    <hr>
-
-    <label><b>Nama Lengkap</b></label>
-    <input type="text" placeholder="Masukan Nama Lengkap" name="Nama" required>
-
-    <label><b>Alamat E-Mail</b></label>
-    <input type="text" placeholder="Masukan Alamat E-Mail" name="alamat" required>
-
-    <label><b>Kata Sandi</b></label>
-    <input type="text" placeholder="Masukan Kata Sandi" name="Kata Sandi" required>
-
-    <label><b>Konfirmasi Kata Sandi</b></label>
-    <input type="text" placeholder="Masukan Informasi Kata Sandi" name="Konfirmasi" required>
-
-    <label><b>Gender</b></label>
-                <ul class="radio-buttons">
-                  <li>
-                    <input type="radio" class="input-radio" name="radio" id="radio1" value="radio1" checked="checked">
-                    <label for="radio1">Male</label>
-                  </li>
-                  <li>
-                    <input type="radio" class="input-radio" name="radio" id="radio2" value="radio2">
-                    <label for="radio2">Female</label>
-                  </li>
-
-    <label><b>NIK</b></label>
-    <input type="text" placeholder="Masukan NIK" name="NIK" required>
-
-    <label><b>No Handphone</b></label>
-    <input type="text" placeholder="Masukan No Handphone" name="No Handphone" required>
-
-    <label><b>Tanggal Lahir</b></label>
-    <input type="text" placeholder="Masukan Tanggal Lahir" name="Masukan Tanggal Lahir" required>
-    
-    <label><b>Alamat Lengkap</b></label>
-     <textarea placeholder="Masukan Alamat Lengkap" rows="3"></textarea>
-    
-    <label><b>Kecamatan</b></label>
-    <div class="select relative">
-              <i class="fa fa-angle-down"></i>
-              <select>
-                <option selected value="default">Select an option</option>
-                <option value="kota 1">Kec 1</option>
-                <option value="kota 2">Kec 2</option>
-                <option value="kota 3">Kec 3</option>
-                <option value="kota 4">Kec 4</option>
-                <option value="kota 5">Kec 5</option>
-                <option value="kota 6">Kec 6</option>
-                <option value="kota 3">Kec 7</option>
-                <option value="kota 4">Kec 8</option>
-                <option value="kota 5">Kec 9</option>
-                <option value="kota 6">Kec 10</option>
-              </select>
-            </div>
-
-    <label><b>Pekerjaan/Bidang Usaha</b></label>
-    <div class="select relative">
-              <i class="fa fa-angle-down"></i>
-              <select>
-                <option selected value="default">Select an option</option>
-                <option value="kota 1">Pegawai Negeri Sipil</option>
-                <option value="kota 2">Karyawan Swasta</option>
-                <option value="kota 3">Wirausaha</option>
-              </select>
-            </div>
-
-    <div class="Foto">
-    <label><b>Unggah Foto Diri</b></label>
-    <form action="/action_page.php">
-    <input type="file" name="pic" accept="image/*">
-    </div>
-    <br>
-    <div>
-    <label><b>Unggah Foto KTP</b></label>
-    <form action="/action_page.php">
-    <input type="file" name="pic" accept="image/*">
-    </div>
-    <br>
-
-    <label><b>Harapan Bergabung di KAHMIPRENEUR </b></label>
-     <textarea placeholder="Masukan Alamat Lengkap" rows="3"></textarea>
-
-
-
-      <div>
-      <li>
-      <input type="checkbox" class="input-checkbox" name="checkbox" id="checkbox1" value="1" checked="checked">
-      <label for="checkbox1">Dengan ini saya telah mengerti dan menyetujui <a href="#" style="color:dodgerblue">syarat dan ketentuan</a> yang berlaku.</label>
-      </p>
-      </li>
-    </div>
-    <div class="clearfix">
-      <button type="button" class="cancelbtn">Batal</button>
-      <button type="submit" class="signupbtn">Daftar</button>
-    </div>
-  </div>
-</form>
-<footer>
+    <footer>
       <div class="bottom-footer">
         <div class="container">
           <div class="row">
 
-
             <div class="col-sm-6 col-xs-12 copyright">
               <span>
-                © 2018 KAHMIPRENEUR  |  Made by <a href="http://gjidigital.com">Global Jaring Indonesia</a>
+               © 2018 KAHMIPRENEUR  |  Made by <a href="http://gjidigital.com">Global Jaring Indonesia</a>
               </span>
             </div>
               
@@ -286,10 +164,24 @@
   </div> <!-- end main-wrapper -->
   
   <!-- jQuery Scripts -->
-  <script type="text/javascript" src="js/jquery.min.js"></script>
-  <script type="text/javascript" src="js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="js/plugins.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/plugins.js"></script>
+    <script type="text/javascript" src="revolution/js/jquery.themepunch.tools.min.js"></script>
+    <script type="text/javascript" src="revolution/js/jquery.themepunch.revolution.min.js"></script>
+    <script type="text/javascript" src="js/rev-slider.js"></script>
     <script type="text/javascript" src="js/scripts.js"></script>
 
+
+    <script type="text/javascript" src="revolution/js/extensions/revolution.extension.video.min.js"></script>
+    <script type="text/javascript" src="revolution/js/extensions/revolution.extension.carousel.min.js"></script>
+    <script type="text/javascript" src="revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+    <script type="text/javascript" src="revolution/js/extensions/revolution.extension.actions.min.js"></script>
+    <script type="text/javascript" src="revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+    <script type="text/javascript" src="revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+    <script type="text/javascript" src="revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+    <script type="text/javascript" src="revolution/js/extensions/revolution.extension.migration.min.js"></script>
+    <script type="text/javascript" src="revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+    
 </body>
 </html>

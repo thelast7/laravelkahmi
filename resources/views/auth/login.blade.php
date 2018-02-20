@@ -1,4 +1,4 @@
-@extends('layouts.master-register')
+@extends('layouts.master-login')
 @section('content')
    <!-- page title -->
     <section class="page-title style-2">
@@ -59,7 +59,7 @@
 		<br>
 		<br>
 		<p><a href="#" style="color:dodgerblue">lupa password?</a></label><p>
-		<p>belum memiliki akun? <a href="typography.html" style="color:dodgerblue">daftar sekarang!</a></label><p>
+		<p>belum memiliki akun? <a href="{{ route('register') }}" style="color:dodgerblue">daftar sekarang!</a></label><p>
     </form> 
 
     </div>
