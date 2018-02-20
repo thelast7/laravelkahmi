@@ -45,6 +45,7 @@ Route::get('/isiberita', 'BeritaController@isiberita');
 
 // Route yang menangani contact
 Route::get('/contact', 'ContactsController@index');
+Route::post('/contact', 'ContactsController@sendMail');
 
 // Route yang menangani Forum
 Route::get('/forum', 'ForumsController@index');

@@ -190,23 +190,32 @@
 
           </div>
 
+          @if(Session::has('status'))
+            <div class="alert alert-success">{{ Session::get('status') }}</div>
+          @endif
+
+
           <div class="col-md-8">
-            <form id="contact-form" action="#">
+            <form action="" method="post">
 
-              <div class="row contact-row">
-                <div class="col-md-6 contact-name">
-                  <input name="name" id="name" type="text" placeholder="Name*">
-                </div>
-                <div class="col-md-6 contact-email">
-                  <input name="mail" id="mail" type="email" placeholder="E-mail*">
-                </div>
-              </div>
+                    {{ csrf_field() }}
 
-              <input name="subject" id="subject" type="text" placeholder="Subject"> 
-              <textarea name="comment" id="comment" placeholder="Message"></textarea>
-              <input type="submit" class="btn btn-lg btn-color btn-submit" value="Send Message" id="submit-message">
-              <div id="msg" class="message"></div>
-            </form>
+                    <label for="name">Name</label>
+                    <input class="form-control" id="name" type="text" name="name" placeholder="you name" />
+<!--                     
+                    <label for="id">Subjects</label>
+                    <input class="form-control" id="subjects" type="text" name="subjects" placeholder="you subject" /> -->
+
+                    <label for="email">Email</label>
+                    <input class="form-control" id="email" type="email" name="email" placeholder="you email address" />
+                    
+                    <label for="message">Message</label>
+                    <textarea class="form-control" name="message" id="" placeholder="your message" cols="30" rows="10"></textarea>
+
+                    <br><br>
+
+                    <button class="btn btn-success btn-block">Send</button>
+                <form>
           </div> <!-- end col -->
 
         </div>
