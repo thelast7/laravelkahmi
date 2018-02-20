@@ -53,6 +53,7 @@ class RegisterController extends Controller
 	{
 		return Validator::make($data, [
             'name' => 'required|max:255',
+            'username' => 'required|max:255|unique:users',
             'email' => 'required|email|max:255|unique:users',
             'password' => 'required|min:6|confirmed',
         ]);
@@ -68,6 +69,7 @@ class RegisterController extends Controller
     {
 		return User::create([
             'name' => $data['name'],
+            'username' => $data['username'],
             'email' => $data['email'],
             'password' => bcrypt($data['password']),
             'jenis_kelamin' => $data['jenis_kelamin'],
@@ -96,7 +98,7 @@ class RegisterController extends Controller
                 $message->to($user['email']);
                 $message->subject('kahmipreneur.com - Activation Code');
             });
-            return redirect()->to('login')->with('Success', "Kode aktivasi telah dikirim, silahkan cek email anda");
+            return redirect()->to('login')->with('message', "Kode aktivasi telah dikirim, silahkan cek email anda");
 
         }
         return back()->with('Error', $validator->errors());
