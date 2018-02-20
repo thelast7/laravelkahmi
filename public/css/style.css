@@ -13,7 +13,10 @@
   *zoom: 1;
 }
 
-.clearfix:before, .clearfix:after {
+.clearfix:before {
+
+}
+.clearfix:after {
   display: table;
   line-height: 0;
   content: "";
@@ -164,6 +167,7 @@ h1 {
 
 h2 {
   font-size: 24px;
+  color: #FFFFFF;
 }
 
 h3 {
@@ -193,6 +197,7 @@ p {
   font-family: "Pt Serif", serif;
   font-size: 16px;
   font-style: italic;
+  color: #FFFF00;
 }
 
 .heading {
@@ -1491,7 +1496,7 @@ p {
   font-size: 16px;
   margin-bottom: 5px;
   position: left;
-  color: #fff;
+  color: #FFFFFF;
 }
 
 .work-description a {
@@ -1526,7 +1531,9 @@ p {
   transform: scale3d(1.1, 1.1, 1);
 }
 
-.work-item:hover .work-description h3,
+.work-item:hover .work-description h3 {
+  color: #FFFFFF;
+}
 .work-item:hover .work-description span {
   -webkit-transform: translateX(0);
   -moz-transform: translateX(0);
@@ -1859,11 +1866,11 @@ p {
   text-transform: uppercase;
   letter-spacing: 0.02em;
   font-weight: bold;
-  color: #111;
+  color: #FFA500;
 }
 
 .read-more:hover {
-  color: #111;
+  color: #FFFFFF;
 }
 
 .blog-col-3 .entry-img:hover img {
@@ -2264,7 +2271,7 @@ p {
 
 .blog-content .entry-title h2 > a {
   font-size: 21px;
-  color: #111;
+  color: #FFFFFF;
 }
 
 .blog-content .entry-meta li {
@@ -2309,10 +2316,12 @@ p {
 
 .blog-standard .blog-content .entry-date span {
   display: block;
+  color: #FFFFFF;
 }
 
 .blog-standard .blog-content .entry-date span:first-child {
   font-size: 21px;
+  color: #FFFFFF;
   line-height: 1;
 }
 
@@ -2373,7 +2382,7 @@ p {
 
 .pagination a,
 .pagination span {
-  background-color: #fff;
+  background-color: #4b4545;
   font-size: 12px;
   display: inline-block;
   height: 25px;
@@ -2407,12 +2416,13 @@ p {
 }
 
 .pagination a:hover {
-  color: #111;
+  color: #FFA500;
 }
 
 .pagination a > i {
   font-size: 10px;
   margin: 0 3px;
+   color: #3b3b3b;
 }
 
 .pagination .current {
@@ -2422,6 +2432,7 @@ p {
 .pagination > i {
   font-size: 14px;
   vertical-align: middle;
+  color: #3b3b3b;
 }
 
 /*-------------------------------------------------------*/
@@ -2461,6 +2472,7 @@ p {
 .widget-title {
   font-size: 15px;
   margin-bottom: 28px;
+  color: #FFFFFF;
 }
 
 .blog-sidebar .searchbox {
@@ -2518,7 +2530,7 @@ input.searchbox:focus {
   font-size: 11px;
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
-  color: #111;
+  color: #FFFFFF;
   vertical-align: top;
   line-height: 1;
 }
@@ -2533,13 +2545,13 @@ input.searchbox:focus {
 }
 
 .widget.latest-posts ul li a:hover {
-  color: #111;
+  color: ##FFA500;
 }
 
 /* Popular Tags
 -------------------------------------------------------*/
 .tags a {
-  background-color:   #FFA500;
+  background-color: #FFA500;
   border: 3px solid #e5e5e5;
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
@@ -2610,7 +2622,7 @@ input.searchbox:focus {
   font-size: 14px;
   line-height: 37px;
   font-family: "Pt Serif", serif;
-  color: #7a7a7a;
+  color: #FFFFFF;
 }
 
 .entry-content .entry-tags a:hover {
@@ -2621,8 +2633,11 @@ input.searchbox:focus {
   float: right;
 }
 
-.entry-share .socials i,
+.entry-share .socials i {
+  color: #FFFFFF;
+}
 .entry-share .socials a {
+  color: #FFA500;
   width: 32px;
   height: 32px;
   line-height: 32px;
@@ -2633,11 +2648,14 @@ input.searchbox:focus {
   display: inline-block;
 }
 
-.entry-tags h6,
+.entry-tags h6 {
+  color: #FFFFFF;
+}
 .entry-share h6 {
   font-size: 15px;
   text-transform: none;
   letter-spacing: normal;
+  color: #FFFFFF;
 }
 
 .entry-comments .comment-avatar {
@@ -2655,7 +2673,7 @@ input.searchbox:focus {
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
   font-size: 15px;
-  color: #111;
+  color: #FFFFFF;
 }
 
 .entry-comments h6 {
@@ -2969,8 +2987,12 @@ input.searchbox:focus {
   top: 50%;
 }
 
-.works-grid.titles .work-description h3,
-.works-grid.titles .work-description span,
+.works-grid.titles .work-description h3 {
+  color: #FFFFFF;
+}
+.works-grid.titles .work-description span {
+  color: #FFFFFF;
+}
 #owl-related-works .work-description h3,
 #owl-related-works .work-description span {
   -webkit-transform: none;
@@ -2980,7 +3002,9 @@ input.searchbox:focus {
   transform: none;
 }
 
-.works-grid.titles .work-description,
+.works-grid.titles .work-description {
+  color: #FFFFFF;
+}
 #owl-related-works .work-description {
   position: relative;
   top: 0;
@@ -2990,7 +3014,9 @@ input.searchbox:focus {
   text-align: center;
 }
 
-.works-grid.titles .work-description a,
+.works-grid.titles .work-description a {
+  color: #FFFFFF;
+}
 #owl-related-works .work-description a {
   color: #111;
 }
@@ -3227,15 +3253,16 @@ input.searchbox:focus {
 .portfolio-description h2 {
   font-size: 22px;
   margin-bottom: 15px;
+  color:  #FFFF00;
 }
 
 .portfolio-description ul > li {
   line-height: 30px;
-  color: #111;
+  color: #FFFFFF;
 }
 
 .portfolio-description ul > li a {
-  color: #7a7a7a;
+  color: #FFFFFF;
 }
 
 .portfolio-description ul > li a:hover {
@@ -3246,7 +3273,9 @@ input.searchbox:focus {
   margin-bottom: 0;
 }
 
-.related-projects .heading-inline,
+.related-projects .heading-inline {
+  color:  #FFFF00;
+}
 .related-projects .customNavigation {
   display: inline-block;
 }
@@ -3483,7 +3512,10 @@ blockquote > span {
   margin-right: 5px;
 }
 
-.arrows i,
+.arrows i {
+  color: #FFFFFF;
+}
+
 .arrows-2 i {
   color: #333333;
 }
@@ -3660,7 +3692,7 @@ ol.numbers {
 }
 
 .btn.btn-dark {
-  background-color: #333;
+  background-color: ##FFA500;
 }
 
 .btn.btn-white {
@@ -3679,8 +3711,8 @@ ol.numbers {
   -ms-transition: all 0.2 ease-in-out;
   -o-transition: all 0.2 ease-in-out;
   transition: all 0.2 ease-in-out;
-  color: #fff;
-  background-color: #bfa67a;
+  color: #000000;
+  background-color: #FFFFFF;
   border-color: transparent;
 }
 
@@ -3710,6 +3742,7 @@ ol.numbers {
 .btn-sm {
   font-size: 10px;
   padding: 8px 22px;
+  color: ##FFA500;
 }
 
 /* Pie Charts

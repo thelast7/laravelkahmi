@@ -180,8 +180,8 @@
           <div class="col-md-4">
             <div class="portfolio-description">
               <h2>title video</h2>
-              <p>Lorem Ipsum.
-                dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..</p>
+              Lorem Ipsum.
+                dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..
               <ul>
                 <li><span>Date:</span> 15 May, 2018</li>
                 <li><span>Category:</span><a href="#"> Video</a></li>

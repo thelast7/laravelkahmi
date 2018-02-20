@@ -198,7 +198,8 @@
 
               <div class="entry">
                 <div class="entry-content">
-                  <p>Wakil Gubernur DKI Jakarta Sandiaga Salahuddin Uno mengisi kuliah umum atau studium generale bertema "Being A Winning Young Entrepreneur" di Fakultas Agama Islam, Universitas Muhammadiyah Prof. Dr. Hamka (Uhamka), Jakarta Selata. Dalam kesempatan ini, Sandi menyampaikan mahasiswa pasca-lulus meraih gelar sarjana dapat membuka lapangan pekerjaan melalui wirausaha daripada mencari lapangan pekerjaan..</p>
+                  Wakil Gubernur DKI Jakarta Sandiaga Salahuddin Uno mengisi kuliah umum atau studium generale bertema "Being A Winning Young Entrepreneur" di Fakultas Agama Islam, Universitas Muhammadiyah Prof. Dr. Hamka (Uhamka), Jakarta Selata. Dalam kesempatan ini, Sandi menyampaikan mahasiswa pasca-lulus meraih gelar sarjana dapat membuka lapangan pekerjaan melalui wirausaha daripada mencari lapangan pekerjaan..
+                  <br>
                   <a href="{{ url('isiberita') }}" class="read-more">Selengkapnya</a>
                   <i class="icon arrow_right"></i>
                 </div>
@@ -257,7 +258,8 @@
               <div class="entry">         
 
                 <div class="entry-content">
-                  <p>Wakil Gubernur DKI Jakarta Sandiaga Salahuddin Uno mengisi kuliah umum atau studium generale bertema "Being A Winning Young Entrepreneur" di Fakultas Agama Islam, Universitas Muhammadiyah Prof. Dr. Hamka (Uhamka), Jakarta Selata. Dalam kesempatan ini, Sandi menyampaikan mahasiswa pasca-lulus meraih gelar sarjana dapat membuka lapangan pekerjaan melalui wirausaha daripada mencari lapangan pekerjaan..</p>
+                  Wakil Gubernur DKI Jakarta Sandiaga Salahuddin Uno mengisi kuliah umum atau studium generale bertema "Being A Winning Young Entrepreneur" di Fakultas Agama Islam, Universitas Muhammadiyah Prof. Dr. Hamka (Uhamka), Jakarta Selata. Dalam kesempatan ini, Sandi menyampaikan mahasiswa pasca-lulus meraih gelar sarjana dapat membuka lapangan pekerjaan melalui wirausaha daripada mencari lapangan pekerjaan..
+                  <br>
                   <a href="{{ url('isiberita') }}" class="read-more">Selengkapnya</a>
                   <i class="icon arrow_right"></i>
                 </div>
@@ -311,7 +313,8 @@
 
               <div class="entry">             
                 <div class="entry-content">
-                  <p>Nadiem Makarim lahir 4 juli 1984. Di ketahui bahwa Nadiem Makarim mulai bersekolah SD di Jakarta, kemudian ia lulus SMA di Singapura, dari Singapura ia kemudian melanjutkan pendidikannya di jurusan International Relations di Brown University, Amerika Serikat. dan selama setahun ia mengikuti program foreign exchange di London School of Economics. Ia juga melanjutkan studinya di Harvard Business School, Harvard University dan lulus dengan menyandang gelar MBA (Master Business Of Administration)..</p>
+                  Nadiem Makarim lahir 4 juli 1984. Di ketahui bahwa Nadiem Makarim mulai bersekolah SD di Jakarta, kemudian ia lulus SMA di Singapura, dari Singapura ia kemudian melanjutkan pendidikannya di jurusan International Relations di Brown University, Amerika Serikat. dan selama setahun ia mengikuti program foreign exchange di London School of Economics. Ia juga melanjutkan studinya di Harvard Business School, Harvard University dan lulus dengan menyandang gelar MBA (Master Business Of Administration)..
+                  <br>
                   <a href="{{ url('isiberita') }}" class="read-more">Selengkapnya</a>
                   <i class="icon arrow_right"></i>
                 </div>

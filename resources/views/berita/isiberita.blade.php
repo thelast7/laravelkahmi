@@ -182,10 +182,11 @@
 
                   <div class="entry">
                     <div class="entry-content">
-                      <span class="dropcap style-1">S</span>
-                      <p>Lorem Ipsum. For over a decade, we've helped businesses to craft honest, emotional experiences through strategy, brand development, graphic design, web design. Our team hand picked to provide the right balance of skills to work dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud officia deserunt mollit exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                      <span class="dropcap style-2">L</span>
+                      orem Ipsum. For over a decade, we've helped businesses to craft honest, emotional experiences through strategy, brand development, graphic design, web design. Our team hand picked to provide the right balance of skills to work dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud officia deserunt mollit exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 
-                      <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                      <br>
                       <br>
                         <div class="blog-col">
                 <div class="entry-img">
@@ -194,14 +195,14 @@
                   </a>
                 </div>
                         <br>
-                        <br>
+                      
                       
 
-                      <p>Duis aute irure dolor in reprehenderit incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                      Duis aute irure dolor in reprehenderit incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
-                      <p>Lorem Ipsum. For over a decade, we've helped businesses to craft honest, emotional experiences through strategy, brand development, graphic design, web design. Our team hand picked to provide the right balance of skills to work. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                      Lorem Ipsum. For over a decade, we've helped businesses to craft honest, emotional experiences through strategy, brand development, graphic design, web design. Our team hand picked to provide the right balance of skills to work. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error e vitae dicta sunt explicabo numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error e vitae dicta sunt explicabo numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
 
                       <div class="row mt-30">
                         <div class="col-md-8">
@@ -252,7 +253,7 @@
               <div class="comment-content">
                 <span class="comment-author">Dhea G</span>
                 <span><a href="#">July 25, 2015 at 06:15 pm</a></span>    
-                <p>Lorem Ipsum For over a decade, we've helped businesses to craft honest, emotional experiences through strategy, brand development, graphic design, our team hand picked to provide the right balance of skills to work</p>
+                Lorem Ipsum For over a decade, we've helped businesses to craft honest, emotional experiences through strategy, brand development, graphic design, our team hand picked to provide the right balance of skills to work.
                 <a href="#">Reply</a>
               </div>
             </div>
@@ -264,7 +265,7 @@
                   <div class="comment-content">
                     <span class="comment-author">Mustaqim</span>
                     <span><a href="#">July 23, 2015 at 14:48 pm</a></span>    
-                    <p>Lorem Ipsum. For over a decade, we've helped businesses to craft honest, emotional experiences through strategy, brand development, graphic design, our team hand picked to provide the right balance of skills to work</p>
+                    Lorem Ipsum. For over a decade, we've helped businesses to craft honest, emotional experiences through strategy, brand development, graphic design, our team hand picked to provide the right balance of skills to work
                     <a href="#">Reply</a>
                   </div>
                 </div>
@@ -279,7 +280,7 @@
               <div class="comment-content">
                 <span class="comment-author">Kusuma Putri</span>
                 <span><a href="#">July 21, 2015 at 09:57 am</a></span>    
-                <p>Lorem Ipsum For over a decade, we've helped businesses to craft honest, emotional experiences through strategy, brand development, graphic design, our team hand picked to provide the right balance of skills to work</p>
+                Lorem Ipsum For over a decade, we've helped businesses to craft honest, emotional experiences through strategy, brand development, graphic design, our team hand picked to provide the right balance of skills to work
                 <a href="#">Reply</a>
               </div>
             </div>
@@ -291,7 +292,7 @@
               <div class="comment-content">
                 <span class="comment-author">Arif</span>
                 <span><a href="#">July 20, 2015 at 14:03 pm</a></span>
-                <p>Lorem Ipsum. For over a decade, we've helped businesses to craft honest, emotional experiences through strategy, brand development, graphic design, our team hand picked to provide the right balance of skills to work</p>
+                Lorem Ipsum. For over a decade, we've helped businesses to craft honest, emotional experiences through strategy, brand development, graphic design, our team hand picked to provide the right balance of skills to work
                 <a href="#">Reply</a>
               </div>
             </div>
