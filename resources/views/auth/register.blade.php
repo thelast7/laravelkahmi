@@ -92,9 +92,9 @@
     <input id="no_hp" type="text" name="no_hp" value="{{ old('no_hp') }}" placeholder="Masukan No Handphone">
     <br>
     <label><b>Tanggal Lahir</b></label>
-    <br>
-    <input type="text" placeholder="Masukan Tanggal Lahir" name="tanggal_lahir" required>
-    <br>
+    <form action="/action_page.php">
+    <input type="date" name="bday">
+    </form>
     <label><b>Alamat Lengkap</b></label>
     <br>
     <textarea id="alamat" name="alamat" placeholder="Masukan Alamat Lengkap" rows="3"></textarea>
