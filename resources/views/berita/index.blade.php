@@ -41,9 +41,8 @@
     </div>
   </div>
 
-  <!-- Partial Header -->
-    <header class="nav-type-2">
-    
+  <header class="nav-type-2">
+
     <nav class="navbar navbar-static-top">
       <div class="navigation">
         <div class="container relative">
@@ -58,7 +57,7 @@
               <!-- Logo -->
               <div class="logo-container">
                 <div class="logo-wrap">
-                  <a href="welcome">
+                  <a href="{{ url('/') }}">
                     <img class="logo" src="img/logo_dark.png" alt="logo">
                   </a>
                 </div>
@@ -72,9 +71,8 @@
             </div> <!-- end navbar-header -->
 
             <div class="col-md-9 nav-wrap right">
-              
               <div class="collapse navbar-collapse" id="navbar-collapse">
-                
+
                 <ul class="nav navbar-nav navbar-right">
 
                   <li class="dropdown">
@@ -98,7 +96,7 @@
                   </li>
 
                   <li class="dropdown">
-                    <a href="#" class="dropdown-toggle">PENDAFTARAN</a>
+                    <a href="#" class="dropdown-toggle">MEMBERSHIP</a>
                     <ul class="dropdown-menu menu-right">
                       <li><a href="{{ route('login') }}">Log in</a></li>
                       <li><a href="{{ route('register') }}">Sign Up</a></li>
@@ -120,9 +118,11 @@
                       <i class="fa fa-times search-close"></i>
                     </a>
                   </li> 
+
+                </ul> <!-- end menu -->
               </div> <!-- end collapse -->
             </div> <!-- end col -->
-            
+
           </div> <!-- end row -->
         </div> <!-- end container -->
       </div> <!-- end navigation -->
@@ -132,6 +132,7 @@
 
   <div class="main-wrapper-mp oh">
 
+    <!-- Page Title -->
     <section class="page-title style-2">
       <div class="container relative clearfix">
         <div class="title-holder">
@@ -139,7 +140,7 @@
             <h1>KAHMIPRENEUR NEWS</h1>
             <ol class="breadcrumb">
               <li>
-                <a href="welcome">Home</a>
+                <a href="{{ url('/') }}">Home</a>
               </li>
               <li class="active">
                 Berita
@@ -150,205 +151,252 @@
       </div>
     </section> <!-- end page title -->
 
-   <!-- Blog Single -->
-   <section class="section-wrap-mp">
+
+    <!-- Portfolio Single -->
+    
+
+    <!-- Blog Standard -->
+    <section class="section-wrap blog-standard">
       <div class="container relative">
         <div class="row">
           
           <!-- content -->
-          <div class="col-sm-12 blog-content">
+          <div class="col-sm-8 blog-content">
 
             <!-- standard post -->
-              <div class="row">
-                <div class="col-sm-10 col-sm-offset-1">
-                  
-                  <div class="entry-title">
-                    <h2>Sandiaga Uno Ajak Mahasiswa Setelah Lulus Menjadi Wirausaha</h2>
-                  </div>
-                  <ul class="entry-meta bottom-line">
-                    <li class="entry-date">
-                      <a href="#">20 July, 2018</a>
-                    </li>
-                    <li class="entry-author">
-                      by <a href="#">Rian Ubay</a>
-                    </li>
-                    <li class="entry-category">
-                      in <a href="#">Vice President</a>
+            <div class="entry-item">
+              <div class="entry-img">
+                <a href="{{ url('/') }}">
+                  <img src="img/blog/post_img_1.jpg" alt="">
+                </a>
+              </div>
+
+              <div class="entry-date hidden-sm hidden-xs">
+                <span>11</span>
+                <span>MAR</span>                    
+              </div>
+
+              <div class="entry-title">
+                <h2>
+                  <a href="{{ url('isiberita') }}">Sandiaga Uno Ajak Mahasiswa Setelah Lulus Menjadi Wirausaha.</a>
+                </h2>
+              </div>
+              <ul class="entry-meta">
+                <li class="entry-date">
+                  <a href="#">11 March, 2018</a>
+                </li>
+                <li class="entry-author">
+                  by <a href="#">Iqbal Buchori</a>
+                </li>
+                <li class="entry-category">
+                  in <a href="#">Programmer</a>
+                </li>
+                <li>
+                  <a href="{{ url('isiberita') }}" class="entry-comments">99 Comments</a>
+                </li>               
+              </ul>
+
+              <div class="entry">
+                <div class="entry-content">
+                  <p>Wakil Gubernur DKI Jakarta Sandiaga Salahuddin Uno mengisi kuliah umum atau studium generale bertema "Being A Winning Young Entrepreneur" di Fakultas Agama Islam, Universitas Muhammadiyah Prof. Dr. Hamka (Uhamka), Jakarta Selata. Dalam kesempatan ini, Sandi menyampaikan mahasiswa pasca-lulus meraih gelar sarjana dapat membuka lapangan pekerjaan melalui wirausaha daripada mencari lapangan pekerjaan..</p>
+                  <a href="{{ url('isiberita') }}" class="read-more">Selengkapnya</a>
+                  <i class="icon arrow_right"></i>
+                </div>
+              </div>
+            </div> <!-- end entry item -->
+
+            <!-- gallery post -->
+            <div class="entry-item">
+              <div class="entry-slider">
+                <div class="flexslider" id="one-img-slide">
+                  <ul class="slides">
+                    <li>
+                      <a href="#">
+                        <img src="img/blog/gallery_post_img_1.jpg" alt="">
+                      </a>
                     </li>
                     <li>
-                      <a href="about" class="entry-comments">10 Comments</a>
-                    </li>               
+                      <a href="#">
+                        <img src="img/blog/gallery_post_img_2.jpg" alt="">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <img src="img/blog/gallery_post_img_3.jpg" alt="">
+                      </a>
+                    </li>
                   </ul>
-
-                  <div class="entry">
-                    <div class="entry-content">
-                      <span class="dropcap style-1">S</span>
-                      <p>Lorem Ipsum. For over a decade, we've helped businesses to craft honest, emotional experiences through strategy, brand development, graphic design, web design. Our team hand picked to provide the right balance of skills to work dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud officia deserunt mollit exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-
-                      <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                      <br>
-                        <div class="blog-col">
-                <div class="entry-img">
-                  <a href="about">
-                    <img src="img/blog_1.jpg" alt="">
-                  </a>
                 </div>
-                        <br>
-                        <br>
-                      
+              </div> <!-- end slider -->
 
-                      <p>Duis aute irure dolor in reprehenderit incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <div class="entry-date hidden-sm hidden-xs">
+                <span>11</span>
+                <span>MAR</span>                    
+              </div>
 
-                      <p>Lorem Ipsum. For over a decade, we've helped businesses to craft honest, emotional experiences through strategy, brand development, graphic design, web design. Our team hand picked to provide the right balance of skills to work. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <div class="entry-title">
+                <h2>
+                  <a href="{{ url('isiberita') }}">Ini adalah Judul dari beritanya.</a>
+                </h2>
+              </div>
+              <ul class="entry-meta">
+                <li class="entry-date">
+                  <a href="#">11 March, 2018</a>
+                </li>
+                <li class="entry-author">
+                  by <a href="#">Iqbal Buchori</a>
+                </li>
+                <li class="entry-category">
+                  in <a href="#">Programmer</a>
+                </li>
+                <li>
+                  <a href="{{ url('isiberita') }}" class="entry-comments">69 Comments</a>
+                </li>               
+              </ul>
 
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error e vitae dicta sunt explicabo numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+              <div class="entry">         
 
-                      <div class="row mt-30">
-                        <div class="col-md-8">
-                          <div class="entry-tags">
-                            <h6>Tags:</h6>
-                            <a href="#">Entrepreneur</a>,
-                            <a href="#">Mahasiswa</a>,
-                            <a href="#">Lorem</a>,
-                            <a href="#">Ipsum</a>
-                          </div>
-                        </div> <!-- end tags -->
-
-                        <div class="col-md-4 clearfix">
-                          <div class="entry-share">
-                            <h6>Share:</h6>
-                            <div class="socials">
-                              <a href="#"><i class="fa fa-facebook"></i></a>
-                              <a href="#"><i class="fa fa-twitter"></i></a>
-                              <a href="#"><i class="fa fa-instagram"></i></a>
-                            </div>
-                          </div>
-                        </div>
-                      </div> <!-- end share -->
-
-                    </div>
-                  </div> <!-- end entry -->
-
+                <div class="entry-content">
+                  <p>Wakil Gubernur DKI Jakarta Sandiaga Salahuddin Uno mengisi kuliah umum atau studium generale bertema "Being A Winning Young Entrepreneur" di Fakultas Agama Islam, Universitas Muhammadiyah Prof. Dr. Hamka (Uhamka), Jakarta Selata. Dalam kesempatan ini, Sandi menyampaikan mahasiswa pasca-lulus meraih gelar sarjana dapat membuka lapangan pekerjaan melalui wirausaha daripada mencari lapangan pekerjaan..</p>
+                  <a href="{{ url('isiberita') }}" class="read-more">Selengkapnya</a>
+                  <i class="icon arrow_right"></i>
                 </div>
-              </div> <!-- end row -->
-
+              </div>
             </div> <!-- end entry item -->
+
+            <!-- blockquote post -->
+           <!--  <div class="entry-item">
+              <div class="entry blockquote mt-0">             
+                <blockquote class="blockquote-style-1 text-center mb-0">
+                  <i class="fa fa-quote-left"></i>
+                  <p>
+                    <a href="{{ url('isiberita') }}">Ini adalah Judul dari beritanya</a>
+                  </p>
+                  <span>– James Branch</span>
+                </blockquote>
+              </div> -->
+            <!-- </div> --> <!-- end entry item -->
+
+            <!-- video post -->
+            <div class="entry-item">
+              <div class="entry-video video-wrap">
+                <iframe width="640" height="360" src="https://www.youtube.com/embed/1Yb6O79GKb4" allowfullscreen></iframe>
+              </div>
+
+              <div class="entry-date hidden-sm hidden-xs">
+                <span>11</span>
+                <span>MAR</span>                    
+              </div>
+
+              <div class="entry-title">
+                <h2>
+                  <a href="{{ url('berita') }}">VIDEO YOUTUBE : Nadiem Makarim, CEO & Founder Gojek Indonesia, Inspirasi sukses</a>
+                </h2>
+              </div>
+
+              <ul class="entry-meta">
+                <li class="entry-date">
+                  <a href="#">11 March, 2018</a>
+                </li>
+                <li class="entry-author">
+                  by <a href="#">Iqbal Buchori</a>
+                </li>
+                <li class="entry-category">
+                  in <a href="#">Programmer</a>
+                </li>
+                <li>
+                  <a href="{{ url('isiberita') }}" class="entry-comments">10 Comments</a>
+                </li>               
+              </ul>
+
+              <div class="entry">             
+                <div class="entry-content">
+                  <p>Nadiem Makarim lahir 4 juli 1984. Di ketahui bahwa Nadiem Makarim mulai bersekolah SD di Jakarta, kemudian ia lulus SMA di Singapura, dari Singapura ia kemudian melanjutkan pendidikannya di jurusan International Relations di Brown University, Amerika Serikat. dan selama setahun ia mengikuti program foreign exchange di London School of Economics. Ia juga melanjutkan studinya di Harvard Business School, Harvard University dan lulus dengan menyandang gelar MBA (Master Business Of Administration)..</p>
+                  <a href="{{ url('isiberita') }}" class="read-more">Selengkapnya</a>
+                  <i class="icon arrow_right"></i>
+                </div>
+              </div>
+            </div> <!-- end entry item -->
+
+            <!-- Pagination -->
+            <nav class="pagination clear text-center">
+              <i class="icon arrow_left"></i>
+                <a href="#">Prev</a>
+              <span class="page-numbers current">1</span>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <span class="pagination-dots">...</span>
+                <a href="#">10</a>
+                <a href="#">Next</a>
+                <i class="icon arrow_right"></i>
+            </nav>
+
+          </div> <!-- end col -->
+          
+          <!-- sidebar -->
+          <div class="col-sm-4 sidebar blog-sidebar">
+
+            <form role="form" class="relative">
+              <input type="search" class="searchbox" placeholder="Search">
+                <button type="submit" class="search-button"><i class="icon icon_search"></i></button>
+              </form>
+
+              <!-- Categories -->
+
+            <div class="widget latest-posts">
+              <h3 class="widget-title">Recent Posts</h3>
+              <ul>
+                <li class="clearfix">
+                  <a href="{{ url('berita') }}">
+                    <img src="img/blog/latest_posts_1.jpg" alt="">
+                    Ini adalah Judul dari beritanya.
+                    <div class="entry-meta">
+                      <span class="entry-date">12 March, 2018</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="clearfix">
+                  <a href="{{ url('berita') }}">
+                    <img src="img/blog/latest_posts_2.jpg" alt="">
+                    Ini adalah Judul dari beritanya.
+                    <div class="entry-meta">
+                      <span class="entry-date">12 March, 2018</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="clearfix">
+                  <a href="{{ url('berita') }}">
+                    <img src="img/blog/latest_posts_3.jpg" alt="">
+                    Ini adalah Judul dari beritanya.
+                    <div class="entry-meta">
+                      <span class="entry-date">12 March, 2018</span>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Tags -->
+            <div class="widget tags">
+              <h3 class="widget-title">Tags</h3>
+              <a href="#">Lorem Ipsum</a>
+              <a href="#">Lorem Ipsum</a>
+              <a href="#">Lorem Ipsumt</a>
+              <a href="#">Lorem Ipsum</a>
+              <a href="#">Lorem Ipsum</a>
+              <a href="#">Lorem Ipsum</a>
+              <a href="#">Lorem Ipsum</a>
+              <a href="#">Lorem Ipsum</a>
+              <a href="#">Lorem Ipsum</a>
+            </div>
+
           </div> <!-- end col -->
   
         </div> <!-- end row -->
-
       </div> <!-- end container -->
-    <!-- end blog single -->
+    </section> <!-- end blog standard -->
 
-    <!-- Comments -->
-    <section class="entry-comments section-wrap pt-100 pb-100">
-      <div class="container">
-        <h4 class="text-center mb-50">3 Comments</h4>
-
-        <ul class="comment-list">
-          <li>
-            <div class="comment-body">
-              <img src="img/blog/comment_1.jpg" class="comment-avatar" alt="">
-              <div class="comment-content">
-                <span class="comment-author">Dhea G</span>
-                <span><a href="#">July 25, 2015 at 06:15 pm</a></span>    
-                <p>Lorem Ipsum For over a decade, we've helped businesses to craft honest, emotional experiences through strategy, brand development, graphic design, our team hand picked to provide the right balance of skills to work</p>
-                <a href="#">Reply</a>
-              </div>
-            </div>
-
-            <ul class="comment-reply">
-              <li>
-                <div class="comment-body">
-                  <img src="img/blog/comment_2.jpg" class="comment-avatar" alt="">
-                  <div class="comment-content">
-                    <span class="comment-author">Mustaqim</span>
-                    <span><a href="#">July 23, 2015 at 14:48 pm</a></span>    
-                    <p>Lorem Ipsum. For over a decade, we've helped businesses to craft honest, emotional experiences through strategy, brand development, graphic design, our team hand picked to provide the right balance of skills to work</p>
-                    <a href="#">Reply</a>
-                  </div>
-                </div>
-              </li> <!-- end reply comment -->
-            </ul>
-
-          </li> <!-- end 1-2 comment -->
-
-          <li>
-            <div class="comment-body">
-              <img src="img/blog/comment_3.jpg" class="comment-avatar" alt="">
-              <div class="comment-content">
-                <span class="comment-author">Kusuma Putri</span>
-                <span><a href="#">July 21, 2015 at 09:57 am</a></span>    
-                <p>Lorem Ipsum For over a decade, we've helped businesses to craft honest, emotional experiences through strategy, brand development, graphic design, our team hand picked to provide the right balance of skills to work</p>
-                <a href="#">Reply</a>
-              </div>
-            </div>
-          </li> <!-- end 3 comment -->
-
-          <li>
-            <div class="comment-body">
-              <img src="img/blog/comment_4.jpg" class="comment-avatar" alt="">
-              <div class="comment-content">
-                <span class="comment-author">Arif</span>
-                <span><a href="#">July 20, 2015 at 14:03 pm</a></span>
-                <p>Lorem Ipsum. For over a decade, we've helped businesses to craft honest, emotional experiences through strategy, brand development, graphic design, our team hand picked to provide the right balance of skills to work</p>
-                <a href="#">Reply</a>
-              </div>
-            </div>
-          </li> <!-- end 4 comment -->
-
-        </ul>
-      </div>
-    </section> <!--  end comments -->
-
-    <!-- Comment form -->
-    <section class="section-wrap contact-form pt-100 pb-100">
-      <div class="container">
-
-        <h5 class="text-center mb-50">Leave a Comment</h5>
-
-        <div class="row">
-
-          <div class="col-md-6 col-md-offset-3">
-            <form id="contact-form" action="#">
-              <input name="name" id="name" type="text" placeholder="Name*">
-              <input name="mail" id="mail" type="email" placeholder="E-mail*">
-              <input name="website" id="website" type="text" placeholder="Website">
-              <textarea name="comment" id="comment" placeholder="Comment"></textarea>
-              <input type="submit" class="btn btn-lg btn-color btn-submit" value="Submit" id="submit-message">      
-              <div id="msg" class="message"></div>
-              </form>
-          </div> <!-- end col -->
-
-        </div>
-      </div>
-    </section> <!-- end comment form -->
-    <div id="back-to-top">
-      <a href="#top"><i class="fa fa-angle-up"></i></a>
-    </div>
-
-  </div> <!-- end main-wrapper -->
-  
-  <!-- jQuery Scripts -->
-    <script type="text/javascript" src="js/jquery.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/plugins.js"></script>
-    <script type="text/javascript" src="revolution/js/jquery.themepunch.tools.min.js"></script>
-    <script type="text/javascript" src="revolution/js/jquery.themepunch.revolution.min.js"></script>
-    <script type="text/javascript" src="js/rev-slider.js"></script>
-    <script type="text/javascript" src="js/scripts.js"></script>
-
-
-    <script type="text/javascript" src="revolution/js/extensions/revolution.extension.video.min.js"></script>
-    <script type="text/javascript" src="revolution/js/extensions/revolution.extension.carousel.min.js"></script>
-    <script type="text/javascript" src="revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
-    <script type="text/javascript" src="revolution/js/extensions/revolution.extension.actions.min.js"></script>
-    <script type="text/javascript" src="revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
-    <script type="text/javascript" src="revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
-    <script type="text/javascript" src="revolution/js/extensions/revolution.extension.navigation.min.js"></script>
-    <script type="text/javascript" src="revolution/js/extensions/revolution.extension.migration.min.js"></script>
-    <script type="text/javascript" src="revolution/js/extensions/revolution.extension.parallax.min.js"></script>
-    
+<!-- FOOTER -->
     <footer>
       <div class="bottom-footer">
         <div class="container">
@@ -365,12 +413,24 @@
                 <a href="https://twitter.com/kahmiPreneur"><i class="fa fa-twitter"></i></a>
                 <a href="https://facebook.com/kahmipreneur"><i class="fa fa-facebook"></i></a>                  
                 <a href="https://instagram.com/kahmipreneur"><i class="fa fa-instagram"></i></a>
-              </div>
             </div>
 
           </div>
         </div>
       </div> <!-- end bottom footer -->
     </footer> <!-- end footer -->
+
+    <div id="back-to-top">
+      <a href="#top"><i class="fa fa-angle-up"></i></a>
+    </div>
+
+  </div> <!-- end main-wrapper -->
+  
+  <!-- jQuery Scripts -->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/plugins.js"></script>
+  <script type="text/javascript" src="js/scripts.js"></script>
+
 </body>
 </html>

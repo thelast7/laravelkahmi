@@ -10,7 +10,7 @@
                   kerja sendiri. Terlebih untuk para generasi muda yang memiliki kualitas diri yang baik, sangat 
                   disayangkan jika kualitas tersebut tidak dikembangkan. Program KAHMIPreneur diharapkan 
                   dapat melahirkan dan mencetak generasi wirausaha yang kompeten dan mampu bersaing di 
-                  era perdagangan bebas saat ini, <a href="about" style="color:darkred">SELENGKAPNYA</a>
+                  era perdagangan bebas saat ini, <a href="{{ url('about') }}" style="color:darkred">SELENGKAPNYA</a>
                    <i class="icon arrow_right"></i></p>
               </div>
             </div> <!-- end about us -->
@@ -30,10 +30,10 @@
               <div class="widget footer-links">
                 <h5>Pelayanan</h5>
                 <ul>
-                  <li><a href="contact">Kontak Kami</a></li>
-                  <li><a href="caramendaftar">Cara Mendaftar</a></li>
-                  <li><a href="forum">Forum</a></li>
-                  <li><a href="about">Berita</a></li>
+                  <li><a href="{{ url('contact') }}">Kontak Kami</a></li>
+                  <li><a href="{{ url('daftar') }}">Cara Mendaftar</a></li>
+                  <li><a href="{{ url('forum') }}">Forum</a></li>
+                  <li><a href="{{ url('berita') }}">Berita</a></li>
                 </ul>
               </div>
             </div> <!-- end useful links -->
@@ -44,21 +44,21 @@
                 <div class="footer-entry-list">
                   <div class="footer-entry">
                     <p>
-                      <a href="about">Sandiaga Uno Ajak Mahasiswa Setelah Lulus Menjadi Wirausaha.</a>
+                      <a href="{{ url('berita') }}">Sandiaga Uno Ajak Mahasiswa Setelah Lulus Menjadi Wirausaha.</a>
                     </p>
                     <span>5 Februari, 2018</span>
                   </div> <!-- end entry -->
 
                   <div class="footer-entry">
                     <p>
-                      <a href="about">CEO HijUp : Follow your heart, Follow Your Dream.</a>
+                      <a href="{{ url('berita') }}">CEO HijUp : Follow your heart, Follow Your Dream.</a>
                     </p>
                     <span>05 Februari, 2018</span>
                   </div> <!-- end entry -->
 
                   <div class="footer-entry">
                     <p>
-                      <a href="about">lorem ipsum lorem ipsum lorem ipsum</a>
+                      <a href="{{ url('berita') }}">lorem ipsum lorem ipsum lorem ipsum</a>
                     </p>
                     <span>05 Februari, 2018</span>
                   </div> <!-- end entry -->
