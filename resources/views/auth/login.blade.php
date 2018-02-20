@@ -8,19 +8,22 @@
             <h1>log in</h1>
             <ol class="breadcrumb">
               <li>
-                <a href="index-mp.html">home</a>
+                <a href="{{ url('/') }}">home</a>
               </li>
               <li>
                 <a href="#">register</a>
               </li>
               <li class="active">
-                log in
+                Log In
               </li>
             </ol>
           </div>
         </div>
       </div>
+  </section>
 
+<section>
+	
 @if(session('message'))
 	<div class="alert alert-success" id="add-new-alert"> <button type="button" data-dismiss="alert" aria-hidden="true" class="close">&times;</button>
         <i class="fa fa-info-circle"></i> {{ session('message') }}

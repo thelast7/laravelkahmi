@@ -129,6 +129,7 @@
     </nav> <!-- end navbar -->
   </header>
 
+
   <div class="main-wrapper-mp oh">
 
     <section class="page-title style-2">
@@ -150,6 +151,7 @@
     </section> <!-- end page title -->
 
    <!-- Blog Single -->
+   <section class="section-wrap-mp">
       <div class="container relative">
         <div class="row">
           
