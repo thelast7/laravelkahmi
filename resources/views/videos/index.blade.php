@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>KAHMIPRENEUR | VIDEO</title>
+  <title>KAHMIPRENEUR | GALERI</title>
 
   <meta charset="utf-8">
   <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
@@ -86,7 +86,7 @@
                   </li>
 
                   <li class="dropdown active">
-                    <a href="{{ url('movie') }}">VIDEO</a>
+                    <a href="{{ url('movie') }}">GALERI</a>
                   </li>
 
                   <li class="dropdown">
@@ -134,7 +134,7 @@
       <div class="container relative clearfix">
         <div class="title-holder">
           <div class="title-text">
-            <h1>VIDEO</h1>
+            <h1>GALERI</h1>
             <ol class="breadcrumb">
               <li>
                 <a href="{{ url('/') }}">Home</a>
@@ -174,29 +174,80 @@
                 </a>
               </div>
 
+               <div class="item">
+                <a href="#">
+                  <img src="img/project_4.jpg" alt="">
+                </a>
+              </div>
+
+              <div class="item">
+                <a href="#">
+                  <img src="img/project_5.jpg" alt="">
+                </a>
+              </div>
+
+              <div class="item">
+                <a href="#">
+                  <img src="img/project_6.jpg" alt="">
+                </a>
+              </div> 
+
+              <div class="item">
+                <a href="#">
+                  <img src="img/project_7.jpg" alt="">
+                </a>
+              </div>
+
+               <div class="item">
+                <a href="#">
+                  <img src="img/project_8.jpg" alt="">
+                </a>
+              </div>
+
+              <div class="item">
+                <a href="#">
+                  <img src="img/project_9.jpg" alt="">
+                </a>
+              </div>
+
+              <div class="item">
+                <a href="#">
+                  <img src="img/project_10.jpg" alt="">
+                </a>
+              </div> 
+
+              <div class="item">
+                <a href="#">
+                  <img src="img/project_11.jpg" alt="">
+                </a>
+              </div>
+
+               <div class="item">
+                <a href="#">
+                  <img src="img/project_12.jpg" alt="">
+                </a>
+              </div>
             </div> <!-- end owl carousel -->
           </div> <!-- end slider -->
 
           <div class="col-md-4">
             <div class="portfolio-description">
-              <h2>title video</h2>
-              Lorem Ipsum.
-                dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..
+              <h2>FOTO: Ketika Presidium KAHMI Sambangi Pasar Jatinegara </h2>
+               Presidium Korps Alumni HMI (KAHMI) Kamrussamad mengunjungi Pasar Jatinegara untuk melihat situasi terkini keadaan para pedagang di daerah yang terletak di Jakarta Timur. 
+               <br>
+               <br>
               <ul>
-                <li><span>Date:</span> 15 May, 2018</li>
-                <li><span>Category:</span><a href="#"> Video</a></li>
-                <li><span>Client:</span><a href="#"> Lorem Ipsum </a></li>
+                <li><span>Date:</span> 18 Februari 2018</li>
+                <li><span>Category:</span><a href="#"> Photo</a></li>
               </ul>
-              <a href="#" class="btn btn-sm btn-dark">View Project</a>
-                    <div class="entry-share clearfix">
+            <div class="entry-share clearfix">
                 <h6>Share:</h6>
                 <div class="socials">
-                  <a href="#"><i class="fa fa-facebook"></i></a>
-                  <a href="#"><i class="fa fa-twitter"></i></a>
-                  <a href="#"><i class="fa fa-google-plus"></i></a>
-                  <a href="#"><i class="fa fa-pinterest-p"></i></a>
+                  <a href="https://facebook.com"><i class="fa fa-facebook"></i></a>
+                  <a href="https://twitter.com"><i class="fa fa-twitter"></i></a>
+                  <a href="https://instagram.com"><i class="fa fa-instagram"></i></a>
                 </div>
-                    </div>
+                </div>
             </div>    
           </div> <!-- end description -->
           
@@ -208,29 +259,28 @@
     <!-- Related Projects -->
     <section class="related-projects pb-90">
       <div class="container">
-        <h4 class="heading-inline">Another Video</h4>
+        <h4 class="heading-inline">LAINNYA</h4>
         <div class="customNavigation right">
           <a class="btn prev"><i class="fa fa-angle-left"></i></a>
           <a class="btn next"><i class="fa fa-angle-right"></i></a>
         </div>
+
         <div class="row mt-20">         
-
           <div id="owl-related-works" class="owl-carousel owl-theme">
-
-            <div class="work-item mockups branding">
+           <div class="work-item mockups branding">
               <div class="work-container">
                 <div class="work-img">
-                  <img src="img/project_5.jpg" alt="">
+                  <img src="img/IrWahid_MajelisWilayahJawatengah.jpg" alt="">
                   <div class="portfolio-overlay">
                     <div class="project-icons">
-                      <a href="img/project_5_big.jpg" class="lightbox-gallery" title="Cup Mockup"><i class="fa fa-search"></i></a>
-                      <a href="portfolio-single.html" class="project-icon"><i class="fa fa-link"></i></a>
+                      <a href="img/IrWahid_MajelisWilayahJawatengah.jpg" class="lightbox-gallery" title="Ir. Wahid"><i class="fa fa-search"></i></a>
+                      <a href="#" class="project-icon"><i class="fa fa-link"></i></a>
                     </div>
                   </div>
                 </div>
                 <div class="work-description">
-                  <h3><a href="#">Cup Mockup</a></h3>
-                  <span><a href="#">Branding</a></span>
+                  <h3 style="color: #ffffff;">Ir. Wahid</a></h3>
+                  <span><a href="#">Majelis Wiayah Jawa Tengah</a></span>
                 </div>
               </div> 
             </div> <!-- end work-item -->
@@ -238,58 +288,114 @@
             <div class="work-item branding print">
               <div class="work-container">
                 <div class="work-img">
-                  <img src="img/project_2.jpg" alt="">
+                  <img src="img/MTaufiq.jpg" alt="">
                   <div class="portfolio-overlay">
                     <div class="project-icons">
-                      <a href="http://vimeo.com/19270640" class="lightbox-gallery mfp-iframe"><i class="fa fa-search"></i></a>
-                      <a href="portfolio-single.html" class="project-icon"><i class="fa fa-link"></i></a>
+                      <a href="img/MTaufiq.jpg" class="lightbox-gallery" title="M. Taufiq"><i class="fa fa-search"></i></a>
+                      <a href="#" class="project-icon"><i class="fa fa-link"></i></a>
                     </div>
                   </div>
                 </div>
                 <div class="work-description">
-                  <h3><a href="#">Vimeo Lightbox</a></h3>
-                  <span><a href="#">Branding</a></span>
+                  <h3 style="color: #ffffff;">M. Taufiq</h3>                 
+                  <span><a href="#">Majelis Wilayah DKI Jakarta</a></span>
                 </div>
               </div> 
-            </div> <!-- end work-item -->
-
-            <div class="work-item branding">
+            </div>
+            
+            <div class="work-item branding print">
               <div class="work-container">
                 <div class="work-img">
-                  <img src="img/project_3.jpg" alt="">
+                  <img src="img/drAhmadHusainiSpogMajelis_WilayahBangkaBelitung1.jpg" alt="">
                   <div class="portfolio-overlay">
                     <div class="project-icons">
-                      <a href="https://www.youtube.com/watch?v=Scxs7L0vhZ4?autoplay=1" class="lightbox-gallery mfp-iframe"><i class="fa fa-search"></i></a>
-                      <a href="portfolio-single.html" class="project-icon"><i class="fa fa-link"></i></a>
+                      <a href="img/drAhmadHusainiSpogMajelis_WilayahBangkaBelitung1.jpg" class="lightbox-gallery" title="dr. Ahmad Husaini"><i class="fa fa-search"></i></a>
+                      <a href="#" class="project-icon"><i class="fa fa-link"></i></a>
                     </div>
                   </div>
                 </div>
                 <div class="work-description">
-                  <h3><a href="#">Youtube Lightbox</a></h3>
-                  <span><a href="#">Branding</a></span>
+                  <h3 style="color: #ffffff;">dr. Ahmad Husaini</a></h3>
+                  <span><a href="#">Majelis Wilayah Bangka Belitung</a></span>
                 </div>
               </div> 
             </div> <!-- end work-item -->
 
-            <div class="work-item print mockups">
+            <div class="work-item branding print">
               <div class="work-container">
                 <div class="work-img">
-                  <img src="img/project_4.jpg" alt="">
+                  <img src="img/MuhamadYusus_MajelisWilayahKalimantanBarat.jpg" alt="">
                   <div class="portfolio-overlay">
                     <div class="project-icons">
-                      <a href="img/project_4_big.jpg" class="lightbox-gallery" title="Brod Identity"><i class="fa fa-search"></i></a>
+                      <a href="img/MuhamadYusus_MajelisWilayahKalimantanBarat.jpg" class="lightbox-gallery" title="Muhammad Yusus"><i class="fa fa-search"></i></a>
                       <a href="portfolio-single.html" class="project-icon"><i class="fa fa-link"></i></a>
                     </div>
                   </div>
                 </div>
                 <div class="work-description">
-                  <h3><a href="#">Brod Identity</a></h3>
-                  <span><a href="#">Branding</a></span>
+                  <h3 style="color: #ffffff;">Muhammad Yusus</a> </h3>
+                  <span><a href="#">Majelis Wilayah Kalimantan Barat</a></span>
                 </div>
               </div> 
             </div> <!-- end work-item -->
 
-          </div> <!-- end owl carousel-->
+            
+            <div class="work-item branding print">
+              <div class="work-container">
+                <div class="work-img">
+                  <img src="img/IrMurlanTamba.jpg" alt="">
+                  <div class="portfolio-overlay">
+                    <div class="project-icons">
+                      <a href="img/IrMurlanTamba.jpg" class="lightbox-gallery" title="Ir. Murlan Tamba"><i class="fa fa-search"></i></a>
+                      <a href="#" class="project-icon"><i class="fa fa-link"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="work-description">
+                  <h3 style="color: #ffffff;">Ir. Murlan Tamba</h3>                 
+                  <span><a href="#">-</a></span>
+                </div>
+              </div> 
+            </div>
+         
+        <div class="work-item branding print">
+              <div class="work-container">
+                <div class="work-img">
+                  <img src="img/AnwarEsva_KahmiDKI.jpg" alt="">
+                  <div class="portfolio-overlay">
+                    <div class="project-icons">
+                      <a href="img/AnwarEsva_KahmiDKI.jpg" class="lightbox-gallery" title="Anwar Esva"><i class="fa fa-search"></i></a>
+                      <a href="#" class="project-icon"><i class="fa fa-link"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="work-description">
+                  <h3 style="color: #ffffff;">Anwar Esva</h3>                 
+                  <span><a href="#">-</a></span>
+                </div>
+              </div> 
+            </div> <!-- end work-item -->
+          
+
+          <div class="work-item branding print">
+              <div class="work-container">
+                <div class="work-img">
+                  <img src="img/Komarudin.jpg" alt="">
+                  <div class="portfolio-overlay">
+                    <div class="project-icons">
+                      <a href="img/Komarudin.jpg" class="lightbox-gallery" title="Komarudin"><i class="fa fa-search"></i></a>
+                      <a href="#" class="project-icon"><i class="fa fa-link"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="work-description">
+                  <h3 style="color: #ffffff;">Komarudin</h3>                 
+                  <span><a href="#">-</a></span>
+                </div>
+              </div> 
+            </div>
+          
+
         </div>
       </div>
     </section> <!-- end related projects-->

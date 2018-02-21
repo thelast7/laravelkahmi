@@ -30,7 +30,7 @@
                   </ul>
                   <div class="entry-content">
                     <p>Wakil Gubernur DKI Jakarta Sandiaga Salahuddin Uno mengisi kuliah umum atau studium generale bertema "Being A Winning Young Entrepreneur" di Fakultas Agama Islam, Universitas Muhammadiyah Prof. Dr. Hamka (Uhamka), Jakarta Selata. Dalam kesempatan ini, Sandi menyampaikan mahasiswa pasca-lulus meraih gelar sarjana dapat membuka lapangan pekerjaan melalui wirausaha daripada mencari lapangan pekerjaan.</p>
-                    <a href="fullberita" class="read-more">Selengkapnya</a>
+                    <a href="{{ url('isiberita') }}" class="read-more">Selengkapnya</a>
                      <i class="icon arrow_right"></i>
                   </div>
                 </div>
@@ -54,7 +54,7 @@
                   </ul>
                   <div class="entry-content">
                     <p>Terisnpirasi oleh mata kuliah Management Of Change yang ia dapat ketika ia mengenyam pendidikan S1, Diajeng Lestari bertekad untuk menjadi agen perubahan. Setelah memutuskan untuk berhenti bekerja sebagai Marketing Researcher di sebuah perusahaan, alumni FISIP UI ini meneguhkan niatnya tersebut khususnya di ranah Islamic Fashion, alumni FISIP UI ini meneguhkan niatnya tersebut khususnya di ranah Islamic Fashion</p>
-                    <a href="fullberita" class="read-more">Selengkapnya</a>
+                    <a href="{{ url('isiberita') }}" class="read-more">Selengkapnya</a>
                      <i class="icon arrow_right"></i>
                   </div>
                 </div>
@@ -78,7 +78,6 @@
                   </ul>
                   <div class="entry-content">
                     <p>Terisnpirasi oleh mata kuliah Management Of Change yang ia dapat ketika ia mengenyam pendidikan S1, Diajeng Lestari bertekad untuk menjadi agen perubahan. Setelah memutuskan untuk berhenti bekerja sebagai Marketing Researcher di sebuah perusahaan, alumni FISIP UI ini meneguhkan niatnya tersebut khususnya di ranah Islamic Fashion, alumni FISIP UI ini meneguhkan niatnya tersebut khususnya di ranah Islamic Fashion, alumni FISIP UI ini meneguhkan niatnya tersebut khususnya di ranah Islamic Fashion</p>
-                    <a href="fullberita" class="read-more">Selengkapnya</a>
                      <i class="icon arrow_right"></i>
                   </div>
                 </div>

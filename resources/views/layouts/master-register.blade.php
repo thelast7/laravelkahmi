@@ -88,7 +88,7 @@
                   </li>
 
                   <li class="dropdown">
-                    <a href="{{ url('movie') }}">VIDEO</a>
+                    <a href="{{ url('movie') }}">GALERI</a>
                   </li>
 
                   <li class="dropdown">
