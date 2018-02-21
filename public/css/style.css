@@ -30,6 +30,23 @@
   clear: both;
 }
 
+.help-block {
+  *zoom: 1;
+}
+
+.help-block:before {
+
+}
+.help-block:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+
+.help-block:after {
+  clear: both;
+}
+
 .clear {
   clear: both;
 }

@@ -23,7 +23,7 @@
   <link rel="stylesheet" href="css/spacings.css" />
   <link rel="stylesheet" href="css/animate.css" />
   <link rel="stylesheet" href="css/color.css" />
-  <link rel="stylesheet" href="css/custome-login.css" />
+<!--   <link rel="stylesheet" href="css/custome-login.css" /> -->
   <link rel="stylesheet" href="css/custome-masuk.css" />
 
   <!-- Favicons -->

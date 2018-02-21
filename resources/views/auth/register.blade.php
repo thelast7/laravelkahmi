@@ -24,7 +24,7 @@
 <form role="form" method="POST" action="{{ url('/register') }}" style="border:0px solid #ccc" enctype="multipart/form-data">
    {{ csrf_field() }}
   <div class="container">
-    <p>Silahkan Isi Form Dibawah Ini.</p>
+    Silahkan Isi Form Dibawah Ini.
     <hr>
 
     <label><b>Nama Lengkap</b></label>
@@ -49,7 +49,7 @@
     <br>
     <label><b>Alamat E-Mail</b></label>
     <br>
-    <input id="email" type="email" name="email" value="{{ old('email') }}" placeholder="Masukan E-mail" required>
+    <input id="email" type="text" name="email" value="{{ old('email') }}" placeholder="Masukan E-mail" required>
 	@if ($errors->has('name'))
 		<span class="help-block">
 			<strong>{{ $errors->first('name') }}</strong>
@@ -59,7 +59,7 @@
     <br>
     <label><b>Kata Sandi</b></label>
     <br>
-	<input id="password" type="password" name="password" placeholder="Masukan Kata Sandi" required>
+	<input id="password" type="text" name="password" placeholder="Masukan Kata Sandi" required>
 	@if ($errors->has('password'))
 		<span class="help-block">
 			<strong>{{ $errors->first('password') }}</strong>
@@ -69,7 +69,7 @@
     <br>
     <label><b>Konfirmasi Kata Sandi</b></label>
     <br>
-    <input id="password-confirm" type="password" name="password_confirmation" placeholder="Masukan konfirmasi kata sandi" required>
+    <input id="password-confirm" type="text" name="password_confirmation" placeholder="Masukan konfirmasi kata sandi" required>
     <br>
     <label><b>Gender</b></label>
 	<ul class="radio-buttons">
@@ -97,7 +97,7 @@
     </form>
     <label><b>Alamat Lengkap</b></label>
     <br>
-    <textarea id="alamat" name="alamat" placeholder="Masukan Alamat Lengkap" rows="3"></textarea>
+    <textarea input id=alamat type="text" name="alamat" placeholder="Masukan Alamat Lengkap" rows="3"></textarea>
     <br>
     <label><b>Kecamatan</b></label>
     <div class="select relative">
@@ -149,7 +149,6 @@
     </div>
     <br>
     <div class="clearfix">
-      <button type="button" class="cancelbtn">Batal</button>
       <button type="submit" class="signupbtn">Daftar</button>
     </div>
   </div>

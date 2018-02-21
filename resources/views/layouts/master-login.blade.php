@@ -24,7 +24,7 @@
   <link rel="stylesheet" href="css/animate.css" />
   <link rel="stylesheet" href="css/color.css" />
   <link rel="stylesheet" href="css/custome-login.css" />
-  <link rel="stylesheet" href="css/custome-masuk.css" />
+<!--   <link rel="stylesheet" href="css/custome-masuk.css" /> -->
 
   <!-- Favicons -->
   <link rel="shortcut icon" href="img/favicon.ico">
