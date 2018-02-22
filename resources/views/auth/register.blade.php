@@ -93,7 +93,7 @@
     <br>
     <label><b>Tanggal Lahir</b></label>
     <form action="/action_page.php">
-    <input type="date" name="bday">
+    <input type="date" name="tanggal_lahir">
     </form>
     <label><b>Alamat Lengkap</b></label>
     <br>

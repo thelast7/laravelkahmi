@@ -139,7 +139,7 @@
                 <br>
                 control over what you don't.
               </p>
-              <span>- Steve Maraboli</span>
+              - Steve Maraboli
             </blockquote>         
           </div>
               </div>

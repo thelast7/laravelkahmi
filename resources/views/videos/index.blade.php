@@ -333,7 +333,7 @@
                   </div>
                 </div>
                 <div class="work-description">
-                  <h3 style="color: #ffffff;">Muhammad Yusus</a> </h3>
+                  <h3 style="color: #ffffff;">Muhammad Yusuf</a> </h3>
                   <span><a href="#">Majelis Wilayah Kalimantan Barat</a></span>
                 </div>
               </div> 
@@ -371,7 +371,7 @@
                 </div>
                 <div class="work-description">
                   <h3 style="color: #ffffff;">Anwar Esva</h3>                 
-                  <span><a href="#">-</a></span>
+                  <span><a href="#">Pengurus KAHMI DKI</a></span>
                 </div>
               </div> 
             </div> <!-- end work-item -->

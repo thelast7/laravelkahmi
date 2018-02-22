@@ -3927,6 +3927,7 @@ select {
   -moz-appearance: none;
   appearance: none;
   cursor: pointer;
+  background-color: #ffffff;
 }
 
 select::-ms-expand {

@@ -88,7 +88,7 @@
                   </li>
 
                   <li class="dropdown active">
-                    <a href="{{ url('berita') }}">VIDEO</a>
+                    <a href="{{ url('berita') }}">BERITA</a>
                   </li>
 
                   <li class="dropdown">
@@ -267,7 +267,7 @@
             </div> <!-- end entry item -->
 
             <!-- blockquote post -->
-           <!--  <div class="entry-item">
+            <div class="entry-item">
               <div class="entry blockquote mt-0">             
                 <blockquote class="blockquote-style-1 text-center mb-0">
                   <i class="fa fa-quote-left"></i>
@@ -276,7 +276,7 @@
                   </p>
                   <span>– James Branch</span>
                 </blockquote>
-              </div> -->
+              </div>
             <!-- </div> --> <!-- end entry item -->
 
             <!-- video post -->

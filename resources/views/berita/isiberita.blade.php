@@ -163,17 +163,17 @@
                 <div class="col-sm-10 col-sm-offset-1">
                   
                   <div class="entry-title">
-                    <h2>Sandiaga Uno Ajak Mahasiswa Setelah Lulus Menjadi Wirausaha</h2>
+                    <h2>Entrepreneurship di Zaman Rasulullah Shallallahu ‘Alaihi Wa Sallam</h2>
                   </div>
                   <ul class="entry-meta bottom-line">
                     <li class="entry-date">
                       <a href="#">20 July, 2018</a>
                     </li>
                     <li class="entry-author">
-                      by <a href="#">Rian Ubay</a>
+                      by <a href="#">Iqbal Buchori</a>
                     </li>
                     <li class="entry-category">
-                      in <a href="#">Vice President</a>
+                      in <a href="#">Programmer</a>
                     </li>
                     <li>
                       <a href="about" class="entry-comments">10 Comments</a>
@@ -182,27 +182,49 @@
 
                   <div class="entry">
                     <div class="entry-content">
-                      <span class="dropcap style-2">L</span>
-                          orem Ipsum. For over a decade, we've helped businesses to craft honest, emotional experiences through strategy, brand development, graphic design, web design. Our team hand picked to provide the right balance of skills to work dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud officia deserunt mollit exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      <span class="dropcap style-2">P</span>
+                          ernah Rasulullah Shallallahu ‘Alaihi Wa Sallam ditanya oleh para Sahabat, “Pekerjaan apakah yang paling baik ya
+                          Rasulullah?” Rasulullah menjawab, “Seseorang yang bekerja dengan tangannya sendiri dan jual
+                          beli yang bersih.” (HR. Al-Baihaqi).Kesuksesan Nabi Muhammad Saw telah banyak dibahas para ahli sejarah, baik sejarawan Islam maupun sejarawan Barat. 
+                          <br>
+                          <br>
+                          <!-- blockquote post -->
+                  <div class="entry-item">
+                    <div class="entry blockquote mt-0">             
+                      <blockquote class="blockquote-style-1 text-center mb-0">
+                        <i class="fa fa-quote-left"></i>
+                        
+                          Dari Al-Miqdam bin Ma’di karib RA.: Nabi Shallallahu ‘Alaihi Wa Sallam bersabda, “tidak ada
+                          makanan yang lebih baik dari seseorang kecuali makanan yang ia peroleh dari uang hasil keringatnya sendiri. Nabi Allah, Daud AS. makan dari hasil keringatnya sendiri.”
+                          <br> 
+                        <span>(H.R. Al-Bukhori)</span>
+                        <i class="fa fa-quote-left"></i>
+                      </blockquote>
+                    </div>
+                  </div> <!-- end entry item -->
 
-                      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+                          Salah satu sisi kesuksesan Nabi Muhammad adalah kiprahnya sebagai
+                          seorang pedagang (wirausahawan), karena pada saat itu pekerjaan yang paling utama adalah
+                          berdagang. Nabi Muhammad SAW mulai belajar berbisnis sejak usia yang begitu muda bahkan
+                          masih terbilang anak-anak, maka pantaslah kalau beliau menjadi seorang wirausahawan yang
+                          sukses. Karena, menurut seorang pakar bisnis, seorang pebisnis sejati yang sukses adalah
+                          apabla ia memiliki pengalaman entrepreneurship (kewirausahaan) sejak dini.
                       <br>
                       <br>
-                        <div class="blog-col">
+                      <div class="entry-share">
+                      <h6>Wilayah Perdagangan yang dikunjungi Rasulullah Shallallahu ‘Alaihi Wa Sallam</h6>
                 <div class="entry-img">
-                  <a href="about">
-                    <img src="img/blog_1.jpg" alt="">
-                  </a>
+                    <img src="img/screenshot_3.jpg" alt="M.Taufiq-Majelis Wilayah DKI Jakarta">
                 </div>
                         <br>
-                      
-                      
-
-                      Duis aute irure dolor in reprehenderit incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-
-                      Lorem Ipsum. For over a decade, we've helped businesses to craft honest, emotional experiences through strategy, brand development, graphic design, web design. Our team hand picked to provide the right balance of skills to work. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error e vitae dicta sunt explicabo numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+                        <br>
+                        Wilayah perdagangan yang dikunjungi Nabi Muhammad SAW meliputi Yaman, Syria, Busra, Iraq,
+                        Yordania, Bahrain, dan kota-kota perdagangan di Jazirah Arab lainnya. Menurut satu riwayat,
+                        sebelum menikah, beliau menjadi manajer perdagangan Khadijah RA ke pusat perdagangan
+                        di Yaman. Nabi Muhammad pun empat kali memimpin ekspedisi perdagangan ke Syria dan
+                        Jerash di Yordania. Pusat perdagangan dan turisme Jerash Festival (Mahrajan Jerash) saat ini
+                        Pusat perdagangan dan turisme Jerash Festival (Mahrajan Jerash) saat ini.
 
                       <div class="row mt-30">
                         <div class="col-md-8">
@@ -254,6 +276,7 @@
                 <span class="comment-author">Dhea G</span>
                 <span><a href="#">July 25, 2015 at 06:15 pm</a></span>    
                 Lorem Ipsum For over a decade, we've helped businesses to craft honest, emotional experiences through strategy, brand development, graphic design, our team hand picked to provide the right balance of skills to work.
+                <br>
                 <a href="#">Reply</a>
               </div>
             </div>
@@ -266,6 +289,7 @@
                     <span class="comment-author">Mustaqim</span>
                     <span><a href="#">July 23, 2015 at 14:48 pm</a></span>    
                     Lorem Ipsum. For over a decade, we've helped businesses to craft honest, emotional experiences through strategy, brand development, graphic design, our team hand picked to provide the right balance of skills to work
+                    <br>
                     <a href="#">Reply</a>
                   </div>
                 </div>
@@ -281,6 +305,7 @@
                 <span class="comment-author">Kusuma Putri</span>
                 <span><a href="#">July 21, 2015 at 09:57 am</a></span>    
                 Lorem Ipsum For over a decade, we've helped businesses to craft honest, emotional experiences through strategy, brand development, graphic design, our team hand picked to provide the right balance of skills to work
+                <br>
                 <a href="#">Reply</a>
               </div>
             </div>
@@ -293,6 +318,7 @@
                 <span class="comment-author">Arif</span>
                 <span><a href="#">July 20, 2015 at 14:03 pm</a></span>
                 Lorem Ipsum. For over a decade, we've helped businesses to craft honest, emotional experiences through strategy, brand development, graphic design, our team hand picked to provide the right balance of skills to work
+                <br>
                 <a href="#">Reply</a>
               </div>
             </div>
