@@ -97,7 +97,8 @@
     </form>
     <label><b>Alamat Lengkap</b></label>
     <br>
-    <textarea input id=alamat type="text" name="alamat" placeholder="Masukan Alamat Lengkap" rows="3"></textarea>
+    
+    <textarea class="form-control" id="alamat" name="alamat" placeholder="Masukan Alamat Lengkap" rows="8"></textarea>
     <br>
     <label><b>Kecamatan</b></label>
     <div class="select relative">
@@ -140,7 +141,8 @@
     <br>
 
     <label><b>Harapan Bergabung di KAHMIPRENEUR </b></label>
-    <textarea id="harapan" name="harapan" placeholder="Masukan Harapan anda" rows="3"></textarea>
+    
+    <textarea class="form-control" id="harapan" name="harapan" placeholder="Masukan Harapan anda" rows="3"></textarea>
     <br>
       <div>
       <input type="checkbox" class="input-checkbox" name="checkbox" id="checkbox1" value="1" checked="checked">

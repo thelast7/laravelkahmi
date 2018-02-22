@@ -23,6 +23,7 @@
   <link rel="stylesheet" href="css/spacings.css" />
   <link rel="stylesheet" href="css/animate.css" />
   <link rel="stylesheet" href="css/color.css" />
+  <link rel="stylesheet" href="css/custome-masuk.css" />
 
   <!-- Favicons -->
   <link rel="shortcut icon" href="img/favicon.ico">
@@ -161,15 +162,15 @@
 
           <div class="col-md-4">
             <h5>Get in Touch</h5>
-            <p>Mon-Fri: 8:00 – 20:00</p>
+            Mon-Fri: 8:00 – 20:00
 
             <div class="contact-item">
               <div class="contact-icon">
                 <i class="icon icon-Pointer"></i>
               </div>
               <h6>Address</h6>
-              <p>Mayapada Tower 1 Lt.20-01B<br>
-              Jl. Jend.Sudirman Kav.28, Setiabudi Jakarta Selatan, 12920</p>
+              Mayapada Tower 1 Lt.20-01B<br>
+              Jl. Jend.Sudirman Kav.28, Setiabudi Jakarta Selatan, 12920
             </div> <!-- end address -->
 
             <div class="contact-item">
@@ -201,16 +202,16 @@
                     {{ csrf_field() }}
 
                     <label for="name">Name</label>
-                    <input class="form-control" id="name" type="text" name="name" placeholder="you name" />
+                    <input class="form-control" id="name" type="text" name="name" placeholder="Masukan Nama" />
 <!--                     
                     <label for="id">Subjects</label>
                     <input class="form-control" id="subjects" type="text" name="subjects" placeholder="you subject" /> -->
 
                     <label for="email">Email</label>
-                    <input class="form-control" id="email" type="email" name="email" placeholder="you email address" />
+                    <input class="form-control" id="email" type="text" name="email" placeholder="Masukan Alamat e-mail" />
                     
                     <label for="message">Message</label>
-                    <textarea class="form-control" name="message" id="" placeholder="your message" cols="30" rows="10"></textarea>
+                    <textarea class="form-control" name="message" id="" placeholder="Masukan Pesan" cols="30" rows="10"></textarea>
 
                     <br><br>
 
