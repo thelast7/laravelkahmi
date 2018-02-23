@@ -24,7 +24,7 @@
 <form role="form" method="POST" action="{{ url('/register') }}" style="border:0px solid #ccc" enctype="multipart/form-data">
    {{ csrf_field() }}
   <div class="container">
-    <p>Silahkan Isi Form Dibawah Ini.</p>
+    Silahkan Isi Form Dibawah Ini.
     <hr>
 
     <label><b>Nama Lengkap</b></label>
@@ -49,7 +49,7 @@
     <br>
     <label><b>Alamat E-Mail</b></label>
     <br>
-    <input id="email" type="email" name="email" value="{{ old('email') }}" placeholder="Masukan E-mail" required>
+    <input id="email" type="text" name="email" value="{{ old('email') }}" placeholder="Masukan E-mail" required>
 	@if ($errors->has('name'))
 		<span class="help-block">
 			<strong>{{ $errors->first('name') }}</strong>
@@ -92,12 +92,13 @@
     <input id="no_hp" type="text" name="no_hp" value="{{ old('no_hp') }}" placeholder="Masukan No Handphone">
     <br>
     <label><b>Tanggal Lahir</b></label>
-    <br>
-    <input type="text" placeholder="Masukan Tanggal Lahir" name="tanggal_lahir" required>
-    <br>
+    <form action="/action_page.php">
+    <input type="date" name="tanggal_lahir">
+    </form>
     <label><b>Alamat Lengkap</b></label>
     <br>
-    <textarea id="alamat" name="alamat" placeholder="Masukan Alamat Lengkap" rows="3"></textarea>
+    
+    <textarea class="form-control" id="alamat" name="alamat" placeholder="Masukan Alamat Lengkap" rows="8"></textarea>
     <br>
     <label><b>Kecamatan</b></label>
     <div class="select relative">
@@ -140,7 +141,8 @@
     <br>
 
     <label><b>Harapan Bergabung di KAHMIPRENEUR </b></label>
-    <textarea id="harapan" name="harapan" placeholder="Masukan Harapan anda" rows="3"></textarea>
+    
+    <textarea class="form-control" id="harapan" name="harapan" placeholder="Masukan Harapan anda" rows="3"></textarea>
     <br>
       <div>
       <input type="checkbox" class="input-checkbox" name="checkbox" id="checkbox1" value="1" checked="checked">
@@ -149,7 +151,6 @@
     </div>
     <br>
     <div class="clearfix">
-      <button type="button" class="cancelbtn">Batal</button>
       <button type="submit" class="signupbtn">Daftar</button>
     </div>
   </div>

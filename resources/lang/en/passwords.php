@@ -13,10 +13,10 @@ return [
     |
     */
 
-    'password' => 'Passwords must be at least six characters and match the confirmation.',
-    'reset' => 'Your password has been reset!',
-    'sent' => 'We have e-mailed your password reset link!',
+    'password' => 'Password harus enam karakter atau lebih dan harus sama.',
+    'reset' => 'Password anda telah berhasil di rubah!',
+    'sent' => 'Kami sudah mengirimkan link reset password, silahkan cek email anda.',
     'token' => 'This password reset token is invalid.',
-    'user' => "We can't find a user with that e-mail address.",
+    'user' => "User tidak ditemukan dengan email tersebut, silahkan cek username email anda kembali.",
 
 ];

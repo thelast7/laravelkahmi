@@ -1,4 +1,4 @@
-@extends('layouts.master-register')
+@extends('layouts.master-login')
 @section('content')
    <!-- page title -->
     <section class="page-title style-2">
@@ -8,19 +8,22 @@
             <h1>log in</h1>
             <ol class="breadcrumb">
               <li>
-                <a href="index-mp.html">home</a>
+                <a href="{{ url('/') }}">home</a>
               </li>
               <li>
                 <a href="#">register</a>
               </li>
               <li class="active">
-                log in
+                Log In
               </li>
             </ol>
           </div>
         </div>
       </div>
+  </section>
 
+<section>
+	
 @if(session('message'))
 	<div class="alert alert-success" id="add-new-alert"> <button type="button" data-dismiss="alert" aria-hidden="true" class="close">&times;</button>
         <i class="fa fa-info-circle"></i> {{ session('message') }}
@@ -29,8 +32,10 @@
  	<div class="container">
 		<hr>
 		
-	<form role="form" method="POST" action="{{ url('login') }}" style="border:0px solid #ccc">
+	<form role="form" method="POST" action="{{ url('login') }}">
    		{{ csrf_field() }}
+
+   		<div class="container-login">
 		<label><b>user name</b></label>
 		<br>
 		<input type="text" placeholder="Masukan user name" name="username" required>
@@ -50,13 +55,16 @@
 			</span>
 		@endif   
 		<br>
-		<div class="clearfix">
+
+		<!-- <div class="clearfix"> -->
 		<button type="submit" class="signupbtn">login</button>
+
 		<br>
 		<br>
+		<a href="#" style="color:dodgerblue">lupa password?</a></label>
 		<br>
-		<p><a href="#" style="color:dodgerblue">lupa password?</a></label><p>
-		<p>belum memiliki akun? <a href="typography.html" style="color:dodgerblue">daftar sekarang!</a></label><p>
+		belum memiliki akun? <a href="{{ route('register') }}" style="color:dodgerblue">daftar sekarang!</a></label><p>
+		</div>
     </form> 
 
     </div>

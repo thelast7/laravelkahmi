@@ -20,7 +20,7 @@
                 </div>
                 <div class="entry-box">
                   <div class="entry-title">
-                    <h4><a href="about">Sandiaga Uno Ajak Mahasiswa Setelah Lulus Menjadi Wirausaha</a></h4>
+                    <h4><a href="about">Entrepreneurship di Zaman Rasulullah SAW</a></h4>
                   </div>
                   <ul class="entry-meta">
                     <li>by <a href="about">Rian Ubay</a></li>
@@ -29,8 +29,14 @@
                     </li>                   
                   </ul>
                   <div class="entry-content">
-                    <p>Wakil Gubernur DKI Jakarta Sandiaga Salahuddin Uno mengisi kuliah umum atau studium generale bertema "Being A Winning Young Entrepreneur" di Fakultas Agama Islam, Universitas Muhammadiyah Prof. Dr. Hamka (Uhamka), Jakarta Selata. Dalam kesempatan ini, Sandi menyampaikan mahasiswa pasca-lulus meraih gelar sarjana dapat membuka lapangan pekerjaan melalui wirausaha daripada mencari lapangan pekerjaan.</p>
-                    <a href="fullberita" class="read-more">Selengkapnya</a>
+                    <p>
+                    Pernah Rasulullah SAW ditanya oleh para Sahabat, “Pekerjaan apakah yang paling baik ya
+                    Rasulullah?” Rasulullah menjawab, “Seseorang yang bekerja dengan tangannya sendiri dan jual
+                    beli yang bersih.” (HR. Al-Baihaqi) Kesuksesan Nabi Muhammad Saw telah banyak dibahas para ahli sejarah, baik sejarawan Islam.
+                    Maupun sejarawan Barat. Salah satu sisi kesuksesan Nabi Muhammad adalah kiprahnya sebagai
+                    seorang pedagang (wirausahawan), karena pada saat itu pekerjaan yang paling utama adalah
+                    berdagang..</p>
+                    <a href="{{ url('isiberita') }}" class="read-more">Selengkapnya</a>
                      <i class="icon arrow_right"></i>
                   </div>
                 </div>
@@ -44,7 +50,7 @@
                 </div>
                 <div class="entry-box">
                   <div class="entry-title">
-                    <h4><a href="about">CEO HijUp : Follow your heart,<br> follow your dream.</a></h4>
+                    <h4><a href="about">Enterpreurship di Indonesia</a></h4>
                   </div>
                   <ul class="entry-meta">
                     <li>by <a href="about">Iqbal Buchori</a></li>
@@ -53,8 +59,19 @@
                     </li>                   
                   </ul>
                   <div class="entry-content">
-                    <p>Terisnpirasi oleh mata kuliah Management Of Change yang ia dapat ketika ia mengenyam pendidikan S1, Diajeng Lestari bertekad untuk menjadi agen perubahan. Setelah memutuskan untuk berhenti bekerja sebagai Marketing Researcher di sebuah perusahaan, alumni FISIP UI ini meneguhkan niatnya tersebut khususnya di ranah Islamic Fashion, alumni FISIP UI ini meneguhkan niatnya tersebut khususnya di ranah Islamic Fashion</p>
-                    <a href="fullberita" class="read-more">Selengkapnya</a>
+                    <p>Di Indonesia sendiri, secara historis sudah
+                    dikenal sejak diperkenalkan oleh Richard
+                    Castillon pada tahun 1755. Namun di Indonesia,
+                    istilah entrepreneurship baru dikenal
+                    pada akhir abad ke 20. Di abad ke 19 dan 20,
+                    wirausahawan didefinisikan sebagai seseorang
+                    yang mengorganisasikan dan mengatur
+                    perusahaan untuk meningkatkan pertambahan
+                    nilai personal. Di abad ke 19 dan 20 ini, seorang wirausaha
+                    juga dapat dipandang sebagai orang yang
+                    memperbaharui atau melakukan revolusi terhadap
+                    pola-pola produksi dengan..  </p>
+                    <a href="{{ url('isiberita') }}" class="read-more">Selengkapnya</a>
                      <i class="icon arrow_right"></i>
                   </div>
                 </div>
@@ -78,7 +95,6 @@
                   </ul>
                   <div class="entry-content">
                     <p>Terisnpirasi oleh mata kuliah Management Of Change yang ia dapat ketika ia mengenyam pendidikan S1, Diajeng Lestari bertekad untuk menjadi agen perubahan. Setelah memutuskan untuk berhenti bekerja sebagai Marketing Researcher di sebuah perusahaan, alumni FISIP UI ini meneguhkan niatnya tersebut khususnya di ranah Islamic Fashion, alumni FISIP UI ini meneguhkan niatnya tersebut khususnya di ranah Islamic Fashion, alumni FISIP UI ini meneguhkan niatnya tersebut khususnya di ranah Islamic Fashion</p>
-                    <a href="fullberita" class="read-more">Selengkapnya</a>
                      <i class="icon arrow_right"></i>
                   </div>
                 </div>

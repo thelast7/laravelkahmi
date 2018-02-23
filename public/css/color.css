@@ -10,8 +10,13 @@ a,
 .contact-icon i,
 .owl-prev:hover i,
 .owl-next:hover i,
-.works-grid.titles .work-description a:hover,
-#owl-related-works .work-description a:hover,
+.works-grid.titles a:hover,
+.work-description a {
+	color: #FFFFFF;
+}
+#owl-related-works .work-description a:hover {
+	color: #FFFFFF;
+}
 .portfolio-description ul > li a:hover {
 	color: #FFFF00;
 }
@@ -24,7 +29,7 @@ a,
 .highlight,
 .btn.btn-color,
 .socials.footer-socials a:hover i {
-	background-color: #8B0000;
+	background-color: ##1d4242;
 }
 
 
@@ -33,7 +38,7 @@ a,
 .navbar-nav > .active > a:focus,
 .navbar-nav > .active > a:hover,
 .menu-socials li > a:hover {
-	color: #FFFF00 !important;
+	color: #D7A873 !important;
 }
 
 

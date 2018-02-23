@@ -86,7 +86,7 @@
                   </li>
 
                   <li class="dropdown">
-                    <a href="{{ url('movie') }}">VIDEO</a>
+                    <a href="{{ url('movie') }}">GALERI</a>
                   </li>
 
                   <li class="dropdown">
@@ -98,7 +98,7 @@
                   </li>
 
                   <li class="dropdown">
-                    <a href="#" class="dropdown-toggle">PENDAFTARAN</a>
+                    <a href="#" class="dropdown-toggle">MEMBERSHIP</a>
                     <ul class="dropdown-menu menu-right">
                       <li><a href="{{ route('login') }}">Log in</a></li>
                       <li><a href="{{ route('register') }}">Sign Up</a></li>
@@ -159,17 +159,17 @@
             }
             </style>
             <h4>Latar Belakang</h4>
-            <p><span class="dropcap style-1">T</span>
+            <span class="dropcap style-2">T</span>
                   idak bisa dipungkiri, meskipun perkembangan ratio wirausaha yang ada di 
                   Indonesia mengalami peningkatan, yaitu mencapai 3,1 persen. Namun tetap 
                   saja, jika dibandingkan dengan negara tetangga ataupun negara maju, tetap 
                   saja angka tersebut terbilang cukup rendah.
-            <p>KAHMIPreneur ada untuk merangkul para pengangguran terbuka untuk menciptakan lapangan 
+            KAHMIPreneur ada untuk merangkul para pengangguran terbuka untuk menciptakan lapangan 
                   kerja sendiri. Terlebih untuk para generasi muda yang memiliki kualitas diri yang baik, sangat 
                   disayangkan jika kualitas tersebut tidak dikembangkan. Program KAHMIPreneur diharapkan 
                   dapat melahirkan dan mencetak generasi wirausaha yang kompeten dan mampu bersaing di 
                   era perdagangan bebas saat ini.</p>
-            <p> KAHMIPreneuradalah sebuah konsep, gagasan, dan ide untuk menjawab berbagai 
+            KAHMIPreneuradalah sebuah konsep, gagasan, dan ide untuk menjawab berbagai 
                   isu yang berkembang di Indonesia terkait dengan KAHMI, diantaranya: </p>
               <ul class="bullets">
 
@@ -185,25 +185,26 @@
               <li>Konsep ini sangat tepat untuk menjawab tingginya bonus demografi (angkatan 
                   kerja produktif) Indonesia 2020.</li>
               </ul>    
-              <p>Dalam perkembangan dinamika bisnis saat ini, insan wirausaha di Indonesia dituntut untuk selalu 
+              Dalam perkembangan dinamika bisnis saat ini, insan wirausaha di Indonesia dituntut untuk selalu 
                   membekali diri mereka dengan wawasan serta ilmu pengetahuan tentang kewirausahaan serta 
                   Usaha Mikro, Kecil, dan Menengah (UMKM). Pelaku wirausaha diharapkan harus selalu bisa 
-                  mengejar ketinggalan dalam pesatnya laju pertumbuhan tren business start-up sekarang ini.</p>
+                  mengejar ketinggalan dalam pesatnya laju pertumbuhan tren business start-up sekarang ini.
                   <br>
               </div> 
 
           <div class="col-sm-6">
                   <br>
-             <p>Dengan turut serta sebagai peserta Program KAHMIPreneur, dapat menjadi suatu keuntungan 
+             Dengan turut serta sebagai peserta Program KAHMIPreneur, dapat menjadi suatu keuntungan 
                 bagi masyarakat wirausaha maupun yang baru akan memulai wirausaha. Peserta akan 
                 mendapat kemudahan untuk memajukan usaha yang dirintisnya serta memperoleh ilmu serta 
-                wawasan yang secara eksklusif akan diberikan oleh Program KAHMIPreneur.</p>
+                wawasan yang secara eksklusif akan diberikan oleh Program KAHMIPreneur.
                 <br>  
-          <p>Dengan Menyasar beberapa desa dan kabupaten di Indonesia, Program KAHMIPreneur ini 
+          Dengan Menyasar beberapa desa dan kabupaten di Indonesia, Program KAHMIPreneur ini 
           diharapkan mampu untuk meningkatkan jumlah para wirausaha yang berkualitas, mewujudkan 
           kemampuan dan kemantapan para wirausaha untuk menghasilkan kemajuan dan kesejahteraan 
           masyarakat. Program ini juga diharapkan dapat membudayakan semangat sikap, perilaku, dan 
-          kemampuan kewirausahaan di kalangan masyarakat yang mampu, andal, dan unggul.</p>
+          kemampuan kewirausahaan di kalangan masyarakat yang mampu, andal, dan unggul.
+          <br>
           <br>
           <h4>Tujuan</h4>
           <ul class="bullets">
@@ -216,9 +217,11 @@
           </ul>
           <br>
           <h4>Sasaran dan Target</h4>
-          <p>Sasaran dan target dari KAHMIPreneuradalah mengusahakan anggota KAHMI menjadi seorang 
+          Sasaran dan target dari KAHMIPreneuradalah mengusahakan anggota KAHMI menjadi seorang 
           wirausahawan. Maupun yang belum menjadi anggota, kami berusaha untuk menarik perhatian 
-          mereka untuk mau memulai usahanya sendiri.</p>
+          mereka untuk mau memulai usahanya sendiri.
+          <br>
+          <br>
           <a href="{{ route('register') }}" class="btn btn-sm btn-dark">Tertarik ? Ingin tahu lebih lanjut? Klik Ini</a>
           
           </div>

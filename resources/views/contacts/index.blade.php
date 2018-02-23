@@ -23,6 +23,7 @@
   <link rel="stylesheet" href="css/spacings.css" />
   <link rel="stylesheet" href="css/animate.css" />
   <link rel="stylesheet" href="css/color.css" />
+  <link rel="stylesheet" href="css/custome-masuk.css" />
 
   <!-- Favicons -->
   <link rel="shortcut icon" href="img/favicon.ico">
@@ -86,7 +87,7 @@
                   </li>
 
                   <li class="dropdown">
-                    <a href="{{ url('movie') }}">VIDEO</a>
+                    <a href="{{ url('movie') }}">GALERI</a>
                   </li>
 
                   <li class="dropdown">
@@ -98,7 +99,7 @@
                   </li>
 
                   <li class="dropdown">
-                    <a href="#" class="dropdown-toggle">PENDAFTARAN</a>
+                    <a href="#" class="dropdown-toggle">MEMBERSHIP</a>
                     <ul class="dropdown-menu menu-right">
                       <li><a href="{{ route('login') }}">Log in</a></li>
                       <li><a href="{{ route('register') }}">Sign Up</a></li>
@@ -161,15 +162,15 @@
 
           <div class="col-md-4">
             <h5>Get in Touch</h5>
-            <p>Mon-Fri: 8:00 – 20:00</p>
+            Mon-Fri: 8:00 – 20:00
 
             <div class="contact-item">
               <div class="contact-icon">
                 <i class="icon icon-Pointer"></i>
               </div>
               <h6>Address</h6>
-              <p>Mayapada Tower 1 Lt.20-01B<br>
-              Jl. Jend.Sudirman Kav.28, Setiabudi Jakarta Selatan, 12920</p>
+              Mayapada Tower 1 Lt.20-01B<br>
+              Jl. Jend.Sudirman Kav.28, Setiabudi Jakarta Selatan, 12920
             </div> <!-- end address -->
 
             <div class="contact-item">
@@ -190,23 +191,32 @@
 
           </div>
 
+          @if(Session::has('status'))
+            <div class="alert alert-success">{{ Session::get('status') }}</div>
+          @endif
+
+
           <div class="col-md-8">
-            <form id="contact-form" action="#">
+            <form action="" method="post">
 
-              <div class="row contact-row">
-                <div class="col-md-6 contact-name">
-                  <input name="name" id="name" type="text" placeholder="Name*">
-                </div>
-                <div class="col-md-6 contact-email">
-                  <input name="mail" id="mail" type="email" placeholder="E-mail*">
-                </div>
-              </div>
+                    {{ csrf_field() }}
 
-              <input name="subject" id="subject" type="text" placeholder="Subject"> 
-              <textarea name="comment" id="comment" placeholder="Message"></textarea>
-              <input type="submit" class="btn btn-lg btn-color btn-submit" value="Send Message" id="submit-message">
-              <div id="msg" class="message"></div>
-            </form>
+                    <label for="name">Name</label>
+                    <input class="form-control" id="name" type="text" name="name" placeholder="Masukan Nama" />
+<!--                     
+                    <label for="id">Subjects</label>
+                    <input class="form-control" id="subjects" type="text" name="subjects" placeholder="you subject" /> -->
+
+                    <label for="email">Email</label>
+                    <input class="form-control" id="email" type="text" name="email" placeholder="Masukan Alamat e-mail" />
+                    
+                    <label for="message">Message</label>
+                    <textarea class="form-control" name="message" id="" placeholder="Masukan Pesan" cols="30" rows="10"></textarea>
+
+                    <br><br>
+
+                    <button class="btn btn-success btn-block">Send</button>
+                <form>
           </div> <!-- end col -->
 
         </div>

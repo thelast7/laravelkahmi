@@ -28,6 +28,9 @@ Route::get('/termsandcondition', 'HomeController@termsandcondition');
 
 Route::get('/user/activation/{token}','Auth\RegisterController@userActivation');
 
+//Route yang menangani tatacara mendaftar
+Route::get('/daftar', 'HomeController@index');
+
 // Route Yang menangani smua tentang  Abouts Tentang
 Route::get('/about', 'AboutsController@index');
 
@@ -37,10 +40,20 @@ Route::get('/movie', 'VideosController@index');
 // Route yang menangani smua Berita
 Route::get('/berita', 'BeritaController@index');
 
+// Route yang menangani semua isi berita(sementara)
+Route::get('/isiberita', 'BeritaController@isiberita');
+
 // Route yang menangani contact
 Route::get('/contact', 'ContactsController@index');
+Route::post('/contact', 'ContactsController@sendMail');
 
 // Route yang menangani Forum
 Route::get('/forum', 'ForumsController@index');
+
+//Route yang menangani tatacara mendaftar
+Route::get('/daftar', 'HomeController@index');
+
+//Route yang menangani profil
+Route::get('/profil', 'ProfilController@index');
 
 

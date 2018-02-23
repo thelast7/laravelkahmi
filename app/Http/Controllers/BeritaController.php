@@ -11,4 +11,9 @@ class BeritaController extends Controller
 	{
 		return view('berita.index');
 	}
+
+	public function isiberita()
+	{
+		return view('berita.isiberita');
+	}
 }
