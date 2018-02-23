@@ -59,7 +59,7 @@
     <br>
     <label><b>Kata Sandi</b></label>
     <br>
-	<input id="password" type="text" name="password" placeholder="Masukan Kata Sandi" required>
+	<input id="password" type="password" name="password" placeholder="Masukan Kata Sandi" required>
 	@if ($errors->has('password'))
 		<span class="help-block">
 			<strong>{{ $errors->first('password') }}</strong>
@@ -69,7 +69,7 @@
     <br>
     <label><b>Konfirmasi Kata Sandi</b></label>
     <br>
-    <input id="password-confirm" type="text" name="password_confirmation" placeholder="Masukan konfirmasi kata sandi" required>
+    <input id="password-confirm" type="password" name="password_confirmation" placeholder="Masukan konfirmasi kata sandi" required>
     <br>
     <label><b>Gender</b></label>
 	<ul class="radio-buttons">

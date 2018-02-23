@@ -266,8 +266,8 @@
               </div>
             </div> <!-- end entry item -->
 
-            <!-- blockquote post -->
-            <div class="entry-item">
+            <!-- <!-- blockquote post -->
+            <!-- <div class="entry-item">
               <div class="entry blockquote mt-0">             
                 <blockquote class="blockquote-style-1 text-center mb-0">
                   <i class="fa fa-quote-left"></i>
@@ -277,7 +277,7 @@
                   <span>– James Branch</span>
                 </blockquote>
               </div>
-            <!-- </div> --> <!-- end entry item -->
+            </div>  --><!-- end entry item --> -->
 
             <!-- video post -->
             <div class="entry-item">

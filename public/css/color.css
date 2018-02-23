@@ -29,7 +29,7 @@ a,
 .highlight,
 .btn.btn-color,
 .socials.footer-socials a:hover i {
-	background-color: #8B0000;
+	background-color: ##1d4242;
 }
 
 
@@ -38,7 +38,7 @@ a,
 .navbar-nav > .active > a:focus,
 .navbar-nav > .active > a:hover,
 .menu-socials li > a:hover {
-	color: #FFFF00 !important;
+	color: #D7A873 !important;
 }
 
 

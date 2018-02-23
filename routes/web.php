@@ -53,4 +53,7 @@ Route::get('/forum', 'ForumsController@index');
 //Route yang menangani tatacara mendaftar
 Route::get('/daftar', 'HomeController@index');
 
+//Route yang menangani profil
+Route::get('/profil', 'ProfilController@index');
+
 
