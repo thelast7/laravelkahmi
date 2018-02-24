@@ -279,7 +279,7 @@
                   </div>
                 </div>
                 <div class="work-description">
-                  <h3 style="color: #ffffff;">Ir. Wahid</a></h3>
+                  <h3 style="color: #FFA500;">Ir. Wahid</a></h3>
                   <span><a href="#">Majelis Wiayah Jawa Tengah</a></span>
                 </div>
               </div> 
@@ -297,7 +297,7 @@
                   </div>
                 </div>
                 <div class="work-description">
-                  <h3 style="color: #ffffff;">M. Taufiq</h3>                 
+                  <h3 style="color: #FFA500;">M. Taufiq</h3>                 
                   <span><a href="#">Majelis Wilayah DKI Jakarta</a></span>
                 </div>
               </div> 
@@ -315,7 +315,7 @@
                   </div>
                 </div>
                 <div class="work-description">
-                  <h3 style="color: #ffffff;">dr. Ahmad Husaini</a></h3>
+                  <h3 style="color: #FFA500;">dr. Ahmad Husaini</a></h3>
                   <span><a href="#">Majelis Wilayah Bangka Belitung</a></span>
                 </div>
               </div> 
@@ -333,7 +333,7 @@
                   </div>
                 </div>
                 <div class="work-description">
-                  <h3 style="color: #ffffff;">Muhammad Yusuf</a> </h3>
+                  <h3 style="color: #FFA500;">Muhammad Yusuf</a> </h3>
                   <span><a href="#">Majelis Wilayah Kalimantan Barat</a></span>
                 </div>
               </div> 
@@ -352,7 +352,7 @@
                   </div>
                 </div>
                 <div class="work-description">
-                  <h3 style="color: #ffffff;">Ir. Murlan Tamba</h3>                 
+                  <h3 style="color: #FFA500;">Ir. Murlan Tamba</h3>                 
                   <span><a href="#">-</a></span>
                 </div>
               </div> 
@@ -370,7 +370,7 @@
                   </div>
                 </div>
                 <div class="work-description">
-                  <h3 style="color: #ffffff;">Anwar Esva</h3>                 
+                  <h3 style="color: #FFA500;">Anwar Esva</h3>                 
                   <span><a href="#">Pengurus KAHMI DKI</a></span>
                 </div>
               </div> 
@@ -389,7 +389,7 @@
                   </div>
                 </div>
                 <div class="work-description">
-                  <h3 style="color: #ffffff;">Komarudin</h3>                 
+                  <h3 style="color: #FFA500;">Komarudin</h3>                 
                   <span><a href="#">-</a></span>
                 </div>
               </div> 
