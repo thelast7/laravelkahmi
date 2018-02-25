@@ -162,52 +162,52 @@
           
           <!-- content -->
           <div class="col-sm-8 blog-content">
-
+          @foreach($berita as $ber)
             <!-- standard post -->
             <div class="entry-item">
               <div class="entry-img">
                 <a href="{{ url('/') }}">
-                  <img src="img/blog/post_img_1.jpg" alt="">
+                  <img src="img/post/{{ $ber->image }}" alt="">
                 </a>
               </div>
 
               <div class="entry-date hidden-sm hidden-xs">
-                <span>11</span>
-                <span>MAR</span>                    
+                <span>{{ $ber->TanggalAt }}</span>
+                <span>{{ $ber->BulanAt }}</span>                    
               </div>
 
               <div class="entry-title">
                 <h2>
-                  <a href="{{ url('isiberita') }}">Sandiaga Uno Ajak Mahasiswa Setelah Lulus Menjadi Wirausaha.</a>
+                  <a href="{{ url('isiberita') }}">{{ $ber->title }}</a>
                 </h2>
               </div>
               <ul class="entry-meta">
                 <li class="entry-date">
-                  <a href="#">11 March, 2018</a>
+                  <a href="#">{{ $ber->created_at }}</a>
                 </li>
                 <li class="entry-author">
-                  by <a href="#">Iqbal Buchori</a>
+                  by <a href="#">{{ $ber->author->name }}</a>
                 </li>
                 <li class="entry-category">
-                  in <a href="#">Programmer</a>
+                  in <a href="#">{{ $ber->category_id }}</a>
                 </li>
                 <li>
-                  <a href="{{ url('isiberita') }}" class="entry-comments">99 Comments</a>
+                  <a href="{{ route('isiberita', $ber->slug) }}" class="entry-comments">99 Comments</a>
                 </li>               
               </ul>
 
               <div class="entry">
                 <div class="entry-content">
-                  Wakil Gubernur DKI Jakarta Sandiaga Salahuddin Uno mengisi kuliah umum atau studium generale bertema "Being A Winning Young Entrepreneur" di Fakultas Agama Islam, Universitas Muhammadiyah Prof. Dr. Hamka (Uhamka), Jakarta Selata. Dalam kesempatan ini, Sandi menyampaikan mahasiswa pasca-lulus meraih gelar sarjana dapat membuka lapangan pekerjaan melalui wirausaha daripada mencari lapangan pekerjaan..
+                  {{ $ber->body }}
                   <br>
-                  <a href="{{ url('isiberita') }}" class="read-more">Selengkapnya</a>
+                  <a href="{{ route('isiberita', $ber->slug) }}" class="read-more">Selengkapnya</a>
                   <i class="icon arrow_right"></i>
                 </div>
               </div>
             </div> <!-- end entry item -->
-
+            @endforeach
             <!-- gallery post -->
-            <div class="entry-item">
+            <!-- <div class="entry-item">
               <div class="entry-slider">
                 <div class="flexslider" id="one-img-slide">
                   <ul class="slides">
@@ -228,9 +228,9 @@
                     </li>
                   </ul>
                 </div>
-              </div> <!-- end slider -->
+              </div> --> <!-- end slider -->
 
-              <div class="entry-date hidden-sm hidden-xs">
+              <!-- <div class="entry-date hidden-sm hidden-xs">
                 <span>11</span>
                 <span>MAR</span>                    
               </div>
@@ -264,7 +264,7 @@
                   <i class="icon arrow_right"></i>
                 </div>
               </div>
-            </div> <!-- end entry item -->
+            </div> --> <!-- end entry item -->
 
             <!-- <!-- blockquote post -->
             <!-- <div class="entry-item">

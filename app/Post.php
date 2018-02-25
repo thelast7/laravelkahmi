@@ -48,4 +48,19 @@ class Post extends Model
 
 		return $imageUrl;
     }
+
+    public function getCreatedAtAttribute()
+    {
+        return \Carbon\Carbon::parse($this->attributes['created_at'])->format('d-M-Y');
+    }
+
+    public function getTanggalAtAttribute()
+    {
+        return \Carbon\Carbon::parse($this->attributes['created_at'])->format('d');
+    }
+
+    public function getBulanAtAttribute()
+    {
+        return \Carbon\Carbon::parse($this->attributes['created_at'])->format('M');
+    }
 }
