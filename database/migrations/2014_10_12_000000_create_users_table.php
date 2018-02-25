@@ -30,6 +30,7 @@ class CreateUsersTable extends Migration
 			$table->string('photo_diri')->nullable();
 			$table->string('photo_ktp')->nullable();
 			$table->string('harapan');
+			$table->string('role');
             $table->rememberToken();
             $table->timestamps();
         });

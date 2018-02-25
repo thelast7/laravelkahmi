@@ -56,4 +56,8 @@ Route::get('/daftar', 'HomeController@index');
 //Route yang menangani profil
 Route::get('/profil', 'ProfilController@index');
 
-
+Route::group(['prefix' => 'admin', 'middleware' => 'role:admin'], function() {
+	Route::get('/dashboard', 'Backend\HomeController@index')->name('dashboard.home');
+	Route::resource('/categories', 'Backend\CategoriesController');
+	Route::resource('/posts', 'Backend\PostsController');
+});

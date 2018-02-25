@@ -44,6 +44,14 @@ class LoginController extends Controller
 		return 'username';
 	}
 
+	protected function authenticated(Request $request, $user)
+	{
+		if ($user->role === 'admin') {
+			return redirect()->intended('admin/dashboard');
+		}
+		return redirect()->intended('/');
+	}
+
 	
     public function credentials (Request $request) {
         $request['is_activated'] = 1;
