@@ -4,11 +4,15 @@ namespace App\Http\Controllers\Backend;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Http\Requests\PostRequest;
 use Session;
 use DB;
 use App\Post;
-use File;
+use App\User;
+
 use Intervention\Image\Facades\Image;
+use File;
+// use Symfony\Component\HttpFoundation\File\UploadedFile;
 
 class PostsController extends BackendController
 {
@@ -27,8 +31,8 @@ class PostsController extends BackendController
      */
     public function index()
     {
-        //
-		return view('backend.posts.index');
+		$posts = Post::latest()->paginate($this->limit);
+        return view('backend.posts.index', compact('posts'));
     }
 
     /**
@@ -48,51 +52,19 @@ class PostsController extends BackendController
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(PostRequest $request)
     {
-        //
-		$data = $this->handleRequest($request);
-		$newPost = $request->user()->posts()->create($data);
+        $data = $this->handleRequest($request);
+        $newPost = $request->user()->posts()->create($data);
 
-		Session::flash('flash_notification', [
-			'level'   => 'success',
-			'message' => '<h4><i class="icon fa fa-check"></i> Berhasil !</h4> Post '.$newPost->title.' telah di Tambah.'
-		]);
+        Session::flash('flash_notification', [
+            'level'   => 'success',
+            'message' => '<h4><i class="icon fa fa-check"></i> Berhasil !</h4> Post '.$newPost->title.' telah di Tambah.'
+        ]);
 
-    	return redirect(route('blog.index'));
+        return redirect(route('posts.index'));
 		
     }
-
-    protected function handleRequest($request)
-    {
-      	$data = $request->all();
-
-		if ($request->hasFile('image')) {
-
-			$width     = config('cms.image.thumbnail.width');
-			$height    = config('cms.image.thumbnail.height');
-			$image     = $request->file('image');
-			$extension = $image->guessClientExtension();
-			$fileName  = str_random(40) . '.' . $extension;
-			$destination = $this->uploadPath;
-
-			$successUpload = Image::make($image->getRealPath())
-				->resize(1920, 920)->save($destination . "/" . $fileName);
-
-			if ($successUpload)
-			{
-				$thumbnail = "thumb_". $fileName;
-				Image::make($image->getRealPath())
-					->resize($width,$height)
-					->save($destination . "/" . $thumbnail);
-			}
-
-			$data['image'] = $fileName;
-		}
-
-		return $data;
-    }
-
 
     /**
      * Display the specified resource.
@@ -113,7 +85,9 @@ class PostsController extends BackendController
      */
     public function edit($id)
     {
-        //
+        $post = Post::find($id);
+
+       return view('backend.posts.edit', compact('post'));
     }
 
     /**
@@ -125,7 +99,21 @@ class PostsController extends BackendController
      */
     public function update(Request $request, $id)
     {
-        //
+      $post = Post::find($id);
+      $oldImage = $post->image;
+      $data = $this->handleRequest($request);
+
+      $post->update($data);
+      if ($oldImage !== $post->image) {
+            $this->deleteImage($oldImage);
+      }
+
+      Session::flash('flash_notification', [
+          'level'=>'info',
+          'message'=>'<h4><i class="icon fa fa-check"></i> Berhasil !</h4> Post '.$post->title.' telah di Update.'
+      ]);
+
+      return redirect(route ('posts.index'));
     }
 
     /**
@@ -136,6 +124,53 @@ class PostsController extends BackendController
      */
     public function destroy($id)
     {
-        //
+        $post = Post::find($id);
+        $data['image'] = $this->deleteImage($post->image);
+        $post->delete();
+
+         Session::flash('flash_notification', [
+            'level'=>'danger',
+            'message'=>'<h4><i class="icon fa fa-trash-o"></i>  !</h4> Post '.$post->title.' telah di hapus.'
+        ]);
+        return redirect('route'('posts.index'));
+    }
+
+    public function handleRequest($request)
+    {
+        $data = $request->all();
+
+        if ($request->hasFile('image')) {
+
+            $width     = config('cms.image.thumbnail.width');
+            $height    = config('cms.image.thumbnail.height');
+            $image     = $request->file('image');
+            $extension = $image->guessClientExtension();
+            $fileName  = str_random(40) . '.' . $extension;
+            $destination = base_path() . '/public/img/post/';
+
+            $successUpload = Image::make($image->getRealPath())
+                ->resize(1920, 920)->save($destination . "/" . $fileName);
+
+            if ($successUpload)
+            {
+                $thumbnail = "thumb_". $fileName;
+                Image::make($image->getRealPath())
+                    ->resize($width,$height)
+                    ->save($destination . "/" . $thumbnail);
+            }
+
+            $data['image'] = $fileName;
+        }
+
+        return $data;
+    }
+
+    public function deleteImage($filename)
+    {
+        $path = public_path() . DIRECTORY_SEPARATOR . 'img/post/'
+            . DIRECTORY_SEPARATOR . $filename;
+        $thumbnail = base_path() . '/public/img/post/tumb_'.$filename;
+
+        return File::delete($path, $thumbnail);
     }
 }

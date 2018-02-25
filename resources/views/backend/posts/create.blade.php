@@ -14,7 +14,7 @@
                         </div>
                     @endif
 
-					{!! Form::open(['route'=>'posts.store', 'class'=> 'form-horizontal form-label-left']) !!}
+					{!! Form::open(['route'=>'posts.store', 'method' => 'POST', 'class'=> 'form-horizontal form-label-left', 'files' => true]) !!}
 
 						@include('backend.posts._form')
 

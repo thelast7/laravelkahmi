@@ -61,6 +61,7 @@
         </nav>
 
         <main class="py-4">
+            @include('layouts._flash')
             @yield('content')
         </main>
     </div>
@@ -68,6 +69,13 @@
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}"></script>
     <script src="{{ asset('js/jquery.min.js') }}"></script>
+    <script src="{{ asset('js/tinymce/jquery.tinymce.min.js') }}"></script>
+    <script src="{{ asset('js/tinymce/tinymce.min.js') }}"></script>
+     <script type="text/javascript">
+    tinymce.init({
+        selector: "textarea#body"
+    });
+  </script>
 	@stack('scripts')
 </body>
 </html>

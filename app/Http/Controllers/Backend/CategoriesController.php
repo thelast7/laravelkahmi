@@ -3,9 +3,11 @@
 namespace App\Http\Controllers\Backend;
 
 use Illuminate\Http\Request;
+use App\Http\Requests\CategoryRequest;
 use App\Http\Controllers\Controller;
 use App\Category;
 use DB;
+use Session;
 
 class CategoriesController extends BackendController
 {
@@ -17,8 +19,8 @@ class CategoriesController extends BackendController
     public function index()
     {
         //
-		$categories = DB::table('categories')->paginate($this->limit);
-		return view('backend.categories.index', compact('categories'));
+	   $categories = Category::all();
+       return view('backend.categories.index', compact('categories'));
     }
 
     /**
@@ -29,7 +31,7 @@ class CategoriesController extends BackendController
     public function create()
     {
 		//
-		return view('backend.categories.create');
+	   return view('backend.categories.create');
     }
 
     /**
@@ -41,7 +43,13 @@ class CategoriesController extends BackendController
     public function store(Request $request)
     {
         //
-		Category::create($request->all());
+      $data       = $request->only(['name', 'slug']);
+      $categories = Category::create($data);
+
+     Session::flash('flash_notification', [
+                    'level'=>'success',
+                    'message'=>'<h4><i class="icon fa fa-check"></i> Berhasil !</h4>Category '.$categories->title.' telah di Tambah.'
+                               ]);
 		
 		return redirect()->route('categories.index')->with('message', 'Kategori berhasil di buat!.');		
     }
@@ -65,7 +73,8 @@ class CategoriesController extends BackendController
      */
     public function edit($id)
     {
-        //
+      $categories = Category::find($id);
+      return view('backend.categories.edit', compact('categories'));
     }
 
     /**
@@ -77,7 +86,15 @@ class CategoriesController extends BackendController
      */
     public function update(Request $request, $id)
     {
-        //
+        $categories = Category::find($id);
+        $data       = $request->only(['name', 'slug']);
+        $categories -> update($data);
+
+        Session::flash('flash_notification', [
+                       'level'=>'info',
+                       'message'=>'<h4><i class="icon fa fa-check"></i> Berhasil !</h4>Category '.$categories->title.' telah di Update.'
+                      ]);
+         return redirect(route('categories.index'));
     }
 
     /**
@@ -88,6 +105,13 @@ class CategoriesController extends BackendController
      */
     public function destroy($id)
     {
-        //
+      $categories = Category::find($id);
+      $categories->delete();
+
+      Session::flash('flash_notification', [
+                     'level'=>'danger',
+                     'message'=>'<h4><i class="icon fa fa-trash-o"></i> Berhasil !</h4>Category '.$categories->title.' telah di Hapus.'
+                                ]);
+      return redirect(route('categories.index'));
     }
 }
