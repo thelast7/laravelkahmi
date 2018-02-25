@@ -46,7 +46,7 @@
 </div>
 	</div>
 
-{!! Form::hidden('user_id', Auth::user()->id) !!}
+{!! Form::hidden('author_id', Auth::user()->id) !!}
 
 <div class="form-group">
 	<div class="col-md-2 col-sm-2 col-xs-12 col-md-offset-3">
