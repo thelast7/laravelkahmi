@@ -100,21 +100,21 @@
     
     <textarea class="form-control" id="alamat" name="alamat" placeholder="Masukan Alamat Lengkap" rows="8"></textarea>
     <br>
-    <label><b>Kecamatan</b></label>
+    <label><b>Kota Asal</b></label>
     <div class="select relative">
               <i class="fa fa-angle-down"></i>
               <select name="kota">
                 <option selected value="default">Select an option</option>
-                <option value="kota 1">Kec 1</option>
-                <option value="kota 2">Kec 2</option>
-                <option value="kota 3">Kec 3</option>
-                <option value="kota 4">Kec 4</option>
-                <option value="kota 5">Kec 5</option>
-                <option value="kota 6">Kec 6</option>
-                <option value="kota 3">Kec 7</option>
-                <option value="kota 4">Kec 8</option>
-                <option value="kota 5">Kec 9</option>
-                <option value="kota 6">Kec 10</option>
+                <option value="kota 1">Kota 1</option>
+                <option value="kota 2">Kota 2</option>
+                <option value="kota 3">Kota 3</option>
+                <option value="kota 4">Kota 4</option>
+                <option value="kota 5">Kota 5</option>
+                <option value="kota 6">Kota 6</option>
+                <option value="kota 7">Kota 7</option>
+                <option value="kota 8">Kota 8</option>
+                <option value="kota 9">Kota 9</option>
+                <option value="kota 10">Kota 10</option>
               </select>
             </div>
     <br>
@@ -137,6 +137,11 @@
     <div>
     <label><b>Unggah Foto KTP</b></label>
     	<input type="file" name="photo_ktp">
+    </div>
+    <br>
+    <div>
+    <label><b>Unggah Foto Usaha</b></label>
+      <input type="file" name="photo_ktp">
     </div>
     <br>
 

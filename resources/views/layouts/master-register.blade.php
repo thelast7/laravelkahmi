@@ -107,7 +107,7 @@
                     </ul>
                   </li>
 
-              <li id="mobile-search">
+              <!-- <li id="mobile-search">
                     <form method="get" class="mobile-search">
                       <input type="search" class="form-control" placeholder="Search...">
                       <button type="submit" class="search-button">
@@ -121,7 +121,7 @@
                       <i class="fa fa-search search-trigger"></i>
                       <i class="fa fa-times search-close"></i>
                     </a>
-                  </li> 
+                  </li>  -->
               </div> <!-- end collapse -->
             </div> <!-- end col -->
             
