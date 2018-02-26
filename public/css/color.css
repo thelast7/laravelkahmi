@@ -32,7 +32,7 @@ a,
 	background-color: ##1d4242;
 }
 
-
+/*navbar-menu-hover*/
 .navbar-nav > li > a:hover,
 .navbar-nav > .active > a,
 .navbar-nav > .active > a:focus,
@@ -64,5 +64,5 @@ textarea:focus {
 }
 
 .dropdown-menu {
-	border-top-color: #bfa67a;
+	border-top-color: #e8cfbd;
 }
