@@ -3,17 +3,20 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\Post;
 class BeritaController extends Controller
 {
     //
+	protected $limit = 5;
 	public function index()
 	{
-		return view('berita.index');
+		$berita = Post::paginate($this->limit);
+		return view('berita.index', compact('berita'));
 	}
 
-	public function isiberita()
+	public function isiberita($slug)
 	{
-		return view('berita.isiberita');
+		$isiberita = Post::where('slug', $slug)->first();
+		return view('berita.isiberita', compact('isiberita'));
 	}
 }

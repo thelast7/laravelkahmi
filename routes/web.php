@@ -11,9 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('blogs.index');
-});
+Route::get('/', 'BlogsController@index')->name('blogs.index');
 
 Route::get('/coba', function() {
 	return view('auth.coba');
@@ -41,8 +39,11 @@ Route::get('/movie', 'VideosController@index');
 Route::get('/berita', 'BeritaController@index');
 
 // Route yang menangani semua isi berita(sementara)
-Route::get('/isiberita', 'BeritaController@isiberita');
-
+// Route::get('/isiberita/{slug}', 'BeritaController@isiberita');
+Route::get('/isiberita/{slug}', [
+	'uses' => 'BeritaController@isiberita',
+	'as'   => 'isiberita'
+]);
 // Route yang menangani contact
 Route::get('/contact', 'ContactsController@index');
 Route::post('/contact', 'ContactsController@sendMail');

@@ -12,17 +12,17 @@
   <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700%7CPT+Serif:400,700,400italic%7COpen+Sans:400,600,700,400italic' rel='stylesheet'>
 
   <!-- Css -->
-  <link rel="stylesheet" href="css/bootstrap.min.css" />
-  <link rel="stylesheet" href="css/magnific-popup.css" />
-  <link rel="stylesheet" href="css/font-icons.css" />
-  <link rel="stylesheet" href="revolution/css/settings.css" />
-  <link rel="stylesheet" href="css/rev-slider.css" />
-  <link rel="stylesheet" href="css/sliders.css">
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="css/responsive.css" />
-  <link rel="stylesheet" href="css/spacings.css" />
-  <link rel="stylesheet" href="css/animate.css" />
-  <link rel="stylesheet" href="css/color.css" />
+  <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css')}}" />
+  <link rel="stylesheet" href="{{ asset('css/magnific-popup.css')}}" />
+  <link rel="stylesheet" href="{{ asset('css/font-icons.css')}}" />
+  <link rel="stylesheet" href="{{ asset('revolution/css/settings.css')}}" />
+  <link rel="stylesheet" href="{{ asset('css/rev-slider.css')}}" />
+  <link rel="stylesheet" href="{{ asset('css/sliders.css')}}">
+  <link rel="stylesheet" href="{{ asset('css/style.css')}}" />
+  <link rel="stylesheet" href="{{ asset('css/responsive.css')}}" />
+  <link rel="stylesheet" href="{{ asset('css/spacings.css')}}" />
+  <link rel="stylesheet" href="{{ asset('css/animate.css')}}" />
+  <link rel="stylesheet" href="{{ asset('css/color.css')}}" />
 
   <!-- Favicons -->
   <link rel="shortcut icon" href="img/favicon.ico">
@@ -59,7 +59,7 @@
               <div class="logo-container">
                 <div class="logo-wrap">
                   <a href="welcome">
-                    <img class="logo" src="img/logo_dark.png" alt="logo">
+                    <img class="logo" src="{{ asset('img/logo_dark.png')}}" alt="logo">
                   </a>
                 </div>
               </div>
@@ -163,17 +163,17 @@
                 <div class="col-sm-10 col-sm-offset-1">
                   
                   <div class="entry-title">
-                    <h2>Entrepreneurship di Zaman Rasulullah Shallallahu ‘Alaihi Wa Sallam</h2>
+                    <h2>{{ $isiberita->title }}</h2>
                   </div>
                   <ul class="entry-meta bottom-line">
                     <li class="entry-date">
-                      <a href="#">20 July, 2018</a>
+                      <a href="#">{{ $isiberita->created_at }}</a>
                     </li>
                     <li class="entry-author">
-                      by <a href="#">Iqbal Buchori</a>
+                      by <a href="#">{{ $isiberita->author->name }}</a>
                     </li>
                     <li class="entry-category">
-                      in <a href="#">Programmer</a>
+                      in <a href="#">{{ $isiberita->categery_id }}</a>
                     </li>
                     <li>
                       <a href="about" class="entry-comments">10 Comments</a>
@@ -182,10 +182,8 @@
 
                   <div class="entry">
                     <div class="entry-content">
-                      <span class="dropcap style-2">P</span>
-                          ernah Rasulullah Shallallahu ‘Alaihi Wa Sallam ditanya oleh para Sahabat, “Pekerjaan apakah yang paling baik ya
-                          Rasulullah?” Rasulullah menjawab, “Seseorang yang bekerja dengan tangannya sendiri dan jual
-                          beli yang bersih.” (HR. Al-Baihaqi).Kesuksesan Nabi Muhammad Saw telah banyak dibahas para ahli sejarah, baik sejarawan Islam maupun sejarawan Barat. 
+                      <span class="dropcap style-2">{{ substr ($isiberita->title,0,1) }}</span>
+                          {{ $isiberita->title }}
                           <br>
                           <br>
                           <!-- blockquote post -->
@@ -204,18 +202,13 @@
                   </div> <!-- end entry item -->
 
 
-                          Salah satu sisi kesuksesan Nabi Muhammad adalah kiprahnya sebagai
-                          seorang pedagang (wirausahawan), karena pada saat itu pekerjaan yang paling utama adalah
-                          berdagang. Nabi Muhammad SAW mulai belajar berbisnis sejak usia yang begitu muda bahkan
-                          masih terbilang anak-anak, maka pantaslah kalau beliau menjadi seorang wirausahawan yang
-                          sukses. Karena, menurut seorang pakar bisnis, seorang pebisnis sejati yang sukses adalah
-                          apabla ia memiliki pengalaman entrepreneurship (kewirausahaan) sejak dini.
+                        {{ $isiberita->body }}
                       <br>
                       <br>
                       <div class="entry-share">
                       <h6>Wilayah Perdagangan yang dikunjungi Rasulullah Shallallahu ‘Alaihi Wa Sallam</h6>
                 <div class="entry-img">
-                    <img src="img/screenshot_3.jpg" alt="M.Taufiq-Majelis Wilayah DKI Jakarta">
+                    <img src="img/post/{{ $isiberita->image }}" alt="M.Taufiq-Majelis Wilayah DKI Jakarta">
                 </div>
                         <br>
                         <br>
@@ -273,15 +266,22 @@
             <div class="comment-body">
               <img src="img/blog/comment_1.jpg" class="comment-avatar" alt="">
               <div class="comment-content">
-                <span class="comment-author">Dhea G</span>
-                <span><a href="#">July 25, 2015 at 06:15 pm</a></span>    
-                Lorem Ipsum For over a decade, we've helped businesses to craft honest, emotional experiences through strategy, brand development, graphic design, our team hand picked to provide the right balance of skills to work.
-                <br>
-                <a href="#">Reply</a>
+               <!--  <span class="comment-author">Dhea G</span>
+                <span><a href="#">July 25, 2015 at 06:15 pm</a></span>    --> 
+                  <div id="fb-root"></div>
+                                                <script>(function(d, s, id) {
+                                                var js, fjs = d.getElementsByTagName(s)[0];
+                                                if (d.getElementById(id)) return;
+                                                js = d.createElement(s); js.id = id;
+                                                js.src = 'https://connect.facebook.net/id_ID/sdk.js#xfbml=1&version=v2.11';
+                                                fjs.parentNode.insertBefore(js, fjs);
+                                                }(document, 'script', 'facebook-jssdk'));</script>
+                                            <div class="fb-comments"></div>
+                <!-- <a href="#">Reply</a> -->
               </div>
             </div>
 
-            <ul class="comment-reply">
+           <!--  <ul class="comment-reply">
               <li>
                 <div class="comment-body">
                   <img src="img/blog/comment_2.jpg" class="comment-avatar" alt="">
@@ -293,12 +293,12 @@
                     <a href="#">Reply</a>
                   </div>
                 </div>
-              </li> <!-- end reply comment -->
-            </ul>
+              </li> --> <!-- end reply comment -->
+            <!-- </ul>
 
-          </li> <!-- end 1-2 comment -->
+          </li> --> <!-- end 1-2 comment -->
 
-          <li>
+          <!-- <li>
             <div class="comment-body">
               <img src="img/blog/comment_3.jpg" class="comment-avatar" alt="">
               <div class="comment-content">
@@ -309,9 +309,9 @@
                 <a href="#">Reply</a>
               </div>
             </div>
-          </li> <!-- end 3 comment -->
+          </li> --> <!-- end 3 comment -->
 
-          <li>
+          <!-- <li>
             <div class="comment-body">
               <img src="img/blog/comment_4.jpg" class="comment-avatar" alt="">
               <div class="comment-content">
@@ -322,7 +322,7 @@
                 <a href="#">Reply</a>
               </div>
             </div>
-          </li> <!-- end 4 comment -->
+          </li> --> <!-- end 4 comment -->
 
         </ul>
       </div>
@@ -357,24 +357,24 @@
   </div> <!-- end main-wrapper -->
   
   <!-- jQuery Scripts -->
-    <script type="text/javascript" src="js/jquery.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/plugins.js"></script>
-    <script type="text/javascript" src="revolution/js/jquery.themepunch.tools.min.js"></script>
-    <script type="text/javascript" src="revolution/js/jquery.themepunch.revolution.min.js"></script>
-    <script type="text/javascript" src="js/rev-slider.js"></script>
-    <script type="text/javascript" src="js/scripts.js"></script>
+    <script type="text/javascript" src="{{ asset('js/jquery.min.js')}}"></script>
+    <script type="text/javascript" src="{{ asset('js/bootstrap.min.js')}}"></script>
+    <script type="text/javascript" src="{{ asset('js/plugins.js')}}"></script>
+    <script type="text/javascript" src="{{ asset('revolution/js/jquery.themepunch.tools.min.js')}}"></script>
+    <script type="text/javascript" src="{{ asset('revolution/js/jquery.themepunch.revolution.min.js')}}"></script>
+    <script type="text/javascript" src="{{ asset('js/rev-slider.js')}}"></script>
+    <script type="text/javascript" src="{{ asset('js/scripts.js')}}"></script>
 
 
-    <script type="text/javascript" src="revolution/js/extensions/revolution.extension.video.min.js"></script>
-    <script type="text/javascript" src="revolution/js/extensions/revolution.extension.carousel.min.js"></script>
-    <script type="text/javascript" src="revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
-    <script type="text/javascript" src="revolution/js/extensions/revolution.extension.actions.min.js"></script>
-    <script type="text/javascript" src="revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
-    <script type="text/javascript" src="revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
-    <script type="text/javascript" src="revolution/js/extensions/revolution.extension.navigation.min.js"></script>
-    <script type="text/javascript" src="revolution/js/extensions/revolution.extension.migration.min.js"></script>
-    <script type="text/javascript" src="revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+    <script type="text/javascript" src="{{ asset('revolution/js/extensions/revolution.extension.video.min.js')}}"></script>
+    <script type="text/javascript" src="{{ asset('revolution/js/extensions/revolution.extension.carousel.min.js')}}"></script>
+    <script type="text/javascript" src="{{ asset('revolution/js/extensions/revolution.extension.slideanims.min.js')}}"></script>
+    <script type="text/javascript" src="{{ asset('revolution/js/extensions/revolution.extension.actions.min.js')}}"></script>
+    <script type="text/javascript" src="{{ asset('revolution/js/extensions/revolution.extension.layeranimation.min.js')}}"></script>
+    <script type="text/javascript" src="{{ asset('revolution/js/extensions/revolution.extension.kenburn.min.js')}}"></script>
+    <script type="text/javascript" src="{{ asset('revolution/js/extensions/revolution.extension.navigation.min.js')}}"></script>
+    <script type="text/javascript" src="{{ asset('revolution/js/extensions/revolution.extension.migration.min.js')}}"></script>
+    <script type="text/javascript" src="{{ asset('revolution/js/extensions/revolution.extension.parallax.min.js')}} "></script>
     
     <footer>
       <div class="bottom-footer">

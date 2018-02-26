@@ -11,6 +11,17 @@
 	<div class="col-md-6 col-sm-6 col-xs-12">
 		{!! Form::file('image') !!}
 		{!! $errors->first('image', '<p class="help-block">:message</p>') !!}
+
+		@if (isset($post) && $post->image !== '')
+			<div class="row">
+					<div class="col-md-6">
+						<br><br>
+						<div class="thumbnail">
+						<img src="{{ url($post->ImageUrl) }}" class="img-rounded">
+					</div>
+					</div>
+				</div>
+		@endif
 	</div>
 </div>
 
@@ -22,7 +33,20 @@
 	</div>
 </div>
 
-{!! Form::hidden('author_id', 1) !!}
+<div class="form-group {{ $errors->has('category_id') ? 'has-error' : '' }}">
+    {!! Form::label('category_id','Category',['class' => 'control-label col-md-3 col-sm-3 col-xs-12']) !!} 
+	<div class="col-md-6 col-sm-6 col-xs-12">
+      {!! Form::select('category_id', App\Category::pluck('name', 'id'), null, ['placeholder' => 'Pilih Category', 'class' => 'form-control col-md-7 col-xs-12']) !!}
+
+      @if ($errors->has('category_id'))
+             <span class="help-block">
+             {!! $errors->first('category_id', '<p class="help-block">:message</p>') !!}
+             </span>
+      @endif
+</div>
+	</div>
+
+{!! Form::hidden('author_id', Auth::user()->id) !!}
 
 <div class="form-group">
 	<div class="col-md-2 col-sm-2 col-xs-12 col-md-offset-3">
