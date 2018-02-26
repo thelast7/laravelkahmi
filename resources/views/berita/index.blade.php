@@ -1,10 +1,28 @@
 @extends('layouts.master-two')   
 @section('content')
     <!-- Blog Standard -->
+    <section class="page-title style-2">
+      <div class="container relative clearfix">
+        <div class="title-holder">
+          <div class="title-text">
+            <h1>KAHMIPRENEUR NEWS</h1>
+            <ol class="breadcrumb">
+              <li>
+                <a href="{{ url('/') }}">Home</a>
+              </li>
+              <li class="active">
+                Berita
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="section-wrap blog-standard">
       <div class="container relative">
         <div class="row">
-          
+
           <!-- content -->
           <div class="col-sm-8 blog-content">
           @foreach($berita as $ber)

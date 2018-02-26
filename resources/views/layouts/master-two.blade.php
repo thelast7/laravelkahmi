@@ -5,7 +5,7 @@
   <div class="main-wrapper-mp oh">
 
     <!-- Revolution Partial Slider -->
-	@include('layouts.partials.breadcumb')
+	<!-- layouts.partials.breadcumb sudah diapus -->
     <!-- Our Services -->
 
     <!-- From Blog Content -->

@@ -1,4 +1,4 @@
-    <section class="page-title style-2">
+<!--     <section class="page-title style-2">
       <div class="container relative clearfix">
         <div class="title-holder">
           <div class="title-text">
@@ -14,5 +14,5 @@
           </div>
         </div>
       </div>
-    </section> <!-- end page title -->
+    </section> --> <!-- end page title -->
 
