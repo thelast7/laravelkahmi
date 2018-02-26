@@ -13,8 +13,8 @@ class BlogsController extends Controller
 
 	public function index()
 	{
-		$posts = Post::latest()->paginate($this->limit);
-        return view('blogs.index', compact('posts'));
+		$blogs = Post::latest()->paginate($this->limit);
+        return view('blogs.index', compact('blogs'));
 	}
 		
 }

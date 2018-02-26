@@ -7,9 +7,10 @@ use App\Post;
 class BeritaController extends Controller
 {
     //
+	protected $limit = 5;
 	public function index()
 	{
-		$berita = Post::paginate(3);
+		$berita = Post::paginate($this->limit);
 		return view('berita.index', compact('berita'));
 	}
 

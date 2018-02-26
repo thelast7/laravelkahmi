@@ -11,9 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('blogs.index');
-});
+Route::get('/', 'BlogsController@index')->name('blogs.index');
 
 Route::get('/coba', function() {
 	return view('auth.coba');

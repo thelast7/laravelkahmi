@@ -5,7 +5,7 @@
   <div class="main-wrapper-mp oh">
 
     <!-- Revolution Partial Slider -->
-	@include('layouts.partials.slider')
+	@include('layouts.partials.breadcumb')
     <!-- Our Services -->
 
     <!-- From Blog Content -->
@@ -13,7 +13,7 @@
 	<!-- End Blog -->
 
     <!-- Footer Type-2 -->
-	@include('layouts.partials.footer')
+	@include('layouts.partials.footer-two')
 
     <div id="back-to-top">
       <a href="#top"><i class="fa fa-angle-up"></i></a>
