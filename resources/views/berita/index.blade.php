@@ -43,7 +43,7 @@
 
               <div class="entry">
                 <div class="entry-content">
-                  {{ $ber->body }}
+					{{ substr($ber->body,0, 200) }}{{ strlen($ber->body) > 200 ? "..." : "" }}
                   <br>
                   <a href="{{ route('isiberita', $ber->slug) }}" class="read-more">Selengkapnya</a>
                   <i class="icon arrow_right"></i>
