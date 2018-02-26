@@ -53,22 +53,21 @@
                 </div>
                 <div class="entry-box">
                   <div class="entry-title">
-                    <h4><a href="about">Entrepreneurship di Zaman Rasulullah SAW</a></h4>
+                    <h4><a href="about">Entrepreneurship di Zaman Rasulullah Shallallahu ‘Alaihi Wa Sallam</a></h4>
                   </div>
                   <ul class="entry-meta">
-                    <li>by <a href="about">Rian Ubay</a></li>
+                    <li>by <a href="about">Iqbal Buchori</a></li>
                     <li>
                       <a href="#">July 10, 2015</a>
                     </li>                   
                   </ul>
                   <div class="entry-content">
                     <p>
-                    Pernah Rasulullah SAW ditanya oleh para Sahabat, “Pekerjaan apakah yang paling baik ya
+                    Pernah Rasulullah Shallallahu ‘Alaihi Wa Sallam  ditanya oleh para Sahabat, “Pekerjaan apakah yang paling baik ya
                     Rasulullah?” Rasulullah menjawab, “Seseorang yang bekerja dengan tangannya sendiri dan jual
                     beli yang bersih.” (HR. Al-Baihaqi) Kesuksesan Nabi Muhammad Saw telah banyak dibahas para ahli sejarah, baik sejarawan Islam.
                     Maupun sejarawan Barat. Salah satu sisi kesuksesan Nabi Muhammad adalah kiprahnya sebagai
-                    seorang pedagang (wirausahawan), karena pada saat itu pekerjaan yang paling utama adalah
-                    berdagang..</p>
+                    seorang pedagang (wirausahawan)..</p>
                     <a href="{{ url('isiberita') }}" class="read-more">Selengkapnya</a>
                      <i class="icon arrow_right"></i>
                   </div>
@@ -83,7 +82,7 @@
                 </div>
                 <div class="entry-box">
                   <div class="entry-title">
-                    <h4><a href="about">Enterpreurship di Indonesia</a></h4>
+                    <h4><a href="about">Enterpreneurship di Indonesia</a></h4>
                   </div>
                   <ul class="entry-meta">
                     <li>by <a href="about">Iqbal Buchori</a></li>
@@ -118,7 +117,7 @@
                 </div>
                 <div class="entry-box">
                   <div class="entry-title">
-                    <h4><a href="blog-3.html">All Process Food Lab Studio</a></h4>
+                    <h4><a href="#">All Process Food Lab Studio</a></h4>
                   </div>
                   <ul class="entry-meta">
                     <li>by <a href="about">John Marshal</a></li>
@@ -127,7 +126,7 @@
                     </li>                   
                   </ul>
                   <div class="entry-content">
-                    <p>Terisnpirasi oleh mata kuliah Management Of Change yang ia dapat ketika ia mengenyam pendidikan S1, Diajeng Lestari bertekad untuk menjadi agen perubahan. Setelah memutuskan untuk berhenti bekerja sebagai Marketing Researcher di sebuah perusahaan, alumni FISIP UI ini meneguhkan niatnya tersebut khususnya di ranah Islamic Fashion, alumni FISIP UI ini meneguhkan niatnya tersebut khususnya di ranah Islamic Fashion, alumni FISIP UI ini meneguhkan niatnya tersebut khususnya di ranah Islamic Fashion</p>
+                    <p>Terisnpirasi oleh mata kuliah Management Of Change yang ia dapat ketika ia mengenyam pendidikan S1, Diajeng Lestari bertekad untuk menjadi agen perubahan. Setelah memutuskan untuk berhenti bekerja sebagai Marketing Researcher di sebuah perusahaan, alumni FISIP UI ini meneguhkan niatnya tersebut khususnya di ranah Islamic Fashion..</p>
                      <i class="icon arrow_right"></i>
                   </div>
                 </div>

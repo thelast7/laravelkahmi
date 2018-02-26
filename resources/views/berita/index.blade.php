@@ -103,7 +103,7 @@
                     </ul>
                   </li>
 
-              <li id="mobile-search">
+              <!-- <li id="mobile-search">
                     <form method="get" class="mobile-search">
                       <input type="search" class="form-control" placeholder="Search...">
                       <button type="submit" class="search-button">
@@ -117,7 +117,7 @@
                       <i class="fa fa-search search-trigger"></i>
                       <i class="fa fa-times search-close"></i>
                     </a>
-                  </li> 
+                  </li> --> 
 
                 </ul> <!-- end menu -->
               </div> <!-- end collapse -->
@@ -277,7 +277,7 @@
                   <span>– James Branch</span>
                 </blockquote>
               </div>
-            </div>  --><!-- end entry item --> -->
+            </div>  --><!-- end entry item --> 
 
             <!-- video post -->
             <div class="entry-item">
@@ -313,16 +313,15 @@
 
               <div class="entry">             
                 <div class="entry-content">
-                  Nadiem Makarim lahir 4 juli 1984. Di ketahui bahwa Nadiem Makarim mulai bersekolah SD di Jakarta, kemudian ia lulus SMA di Singapura, dari Singapura ia kemudian melanjutkan pendidikannya di jurusan International Relations di Brown University, Amerika Serikat. dan selama setahun ia mengikuti program foreign exchange di London School of Economics. Ia juga melanjutkan studinya di Harvard Business School, Harvard University dan lulus dengan menyandang gelar MBA (Master Business Of Administration)..
                   <br>
-                  <a href="{{ url('isiberita') }}" class="read-more">Selengkapnya</a>
-                  <i class="icon arrow_right"></i>
+                  <!-- <a href="{{ url('isiberita') }}" class="read-more">Selengkapnya</a>
+                  <i class="icon arrow_right"></i> -->
                 </div>
               </div>
             </div> <!-- end entry item -->
 
             <!-- Pagination -->
-            <nav class="pagination clear text-center">
+            <!-- <nav class="pagination clear text-center">
               <i class="icon arrow_left"></i>
                 <a href="#">Prev</a>
               <span class="page-numbers current">1</span>
@@ -332,18 +331,18 @@
                 <a href="#">10</a>
                 <a href="#">Next</a>
                 <i class="icon arrow_right"></i>
-            </nav>
+            </nav> -->
 
           </div> <!-- end col -->
           
           <!-- sidebar -->
           <div class="col-sm-4 sidebar blog-sidebar">
 
-            <form role="form" class="relative">
+            <!-- <form role="form" class="relative">
               <input type="search" class="searchbox" placeholder="Search">
                 <button type="submit" class="search-button"><i class="icon icon_search"></i></button>
               </form>
-
+ -->
               <!-- Categories -->
 
             <div class="widget latest-posts">

@@ -2292,7 +2292,7 @@ p {
 
 .blog-content .entry-title h2 > a {
   font-size: 21px;
-  color: #FFFFFF;
+  color: #000000;
 }
 
 .blog-content .entry-meta li {
@@ -2337,12 +2337,12 @@ p {
 
 .blog-standard .blog-content .entry-date span {
   display: block;
-  color: #FFFFFF;
+  color: #000000;
 }
 
 .blog-standard .blog-content .entry-date span:first-child {
   font-size: 21px;
-  color: #FFFFFF;
+  color: #000000;
   line-height: 1;
 }
 
@@ -2433,7 +2433,7 @@ p {
 }
 
 .pagination a {
-  color: #757575;
+  color: #000000;
 }
 
 .pagination a:hover {
@@ -2493,7 +2493,7 @@ p {
 .widget-title {
   font-size: 15px;
   margin-bottom: 28px;
-  color: #FFFFFF;
+  color: #000000;
 }
 
 .blog-sidebar .searchbox {
@@ -2503,7 +2503,7 @@ p {
 }
 
 input[type="search"] {
-  color: #111;
+  color: #000000;
 }
 
 input.searchbox:focus {
@@ -2551,7 +2551,7 @@ input.searchbox:focus {
   font-size: 11px;
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #000000;
   vertical-align: top;
   line-height: 1;
 }
@@ -2655,7 +2655,7 @@ input.searchbox:focus {
 }
 
 .entry-share .socials i {
-  color: #FFFFFF;
+  color: #000000;
 }
 .entry-share .socials a {
   color: #FFA500;
@@ -2676,7 +2676,7 @@ input.searchbox:focus {
   font-size: 15px;
   text-transform: none;
   letter-spacing: normal;
-  color: #FFFFFF;
+  color: #000000;
 }
 
 .entry-comments .comment-avatar {
@@ -3241,12 +3241,12 @@ input.searchbox:focus {
 
 .page-title.style-2 .breadcrumb a,
 .page-title.style-2 .breadcrumb > li + li:before {
-  color: #7a7a7a;
+  color: #ffffff;
 }
 
 .page-title.style-2 .breadcrumb > .active,
 .page-title.style-2 .breadcrumb a:hover {
-  color: #111;
+  color: #ffffff;
 }
 
 /*-------------------------------------------------------*/
@@ -3279,15 +3279,15 @@ input.searchbox:focus {
 
 .portfolio-description ul > li {
   line-height: 30px;
-  color: #FFFFFF;
+  color: #000000;
 }
 
 .portfolio-description ul > li a {
-  color: #FFFFFF;
+  color: #000000;
 }
 
 .portfolio-description ul > li a:hover {
-  color: #bfa67a;
+ ;
 }
 
 .related-projects .work-container {
@@ -4023,7 +4023,7 @@ input[type="radio"]:focus {
 
 label {
   font-weight: normal;
-  color: #FFFFFF;
+  color: #000000;
   font-size: 12px;
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
@@ -4069,7 +4069,7 @@ label {
   -webkit-border-radius: 50%;
   border-radius: 50%;
   background-color: #FFFFFF;
-  color: #FFFFFF;
+  color: #000000;
   line-height: 37px;
   text-align: center;
   font-size: 14px;
@@ -4184,9 +4184,6 @@ p.footer-address {
   color: #FFFFFF;
 }
 
-.social-icons i :hover {
-  color: #DAA520;
-}
 .social-icons a:hover {
   color: #DAA520;
 }
