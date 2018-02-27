@@ -64,7 +64,7 @@
                   </ul>
                   <div class="entry-content">
                     <p>
-					{!! $blog->body !!}
+					{{ substr($blog->body,0, 200) }}{{ strlen($ber->body) > 200 ? "..." : "" }}
                     </p>
                     <a href="{{ route('isiberita', $blog->slug) }}" class="read-more">Selengkapnya</a>
                      <i class="icon arrow_right"></i>
