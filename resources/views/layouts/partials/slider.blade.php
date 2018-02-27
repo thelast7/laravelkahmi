@@ -126,18 +126,18 @@
                 data-transform_idle="o:1;s:1500;"
                 data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0;sY:0;skX:0;skY:0;opacity:0;s:1000;e:Power3.easeOut;" 
                 data-transform_out="opacity:0;sX:0;sY:0;s:1200;e:Power3.easeInOut;"
-                data-start="1000">KAHMIPRENEUR
+                data-start="1000">
               </div>
   
               <!-- LAYER NR. 3 -->
-              <div class="tp-caption subheading_text"
+              <div class="tp-caption subheading_text2"
                 data-x="30"
                 data-y="center"
                 data-voffset="15"
                 data-transform_idle="o:1;s:1500;"
                 data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0;sY:0;skX:0;skY:0;opacity:0;s:1000;e:Power3.easeOut;" 
                 data-transform_out="opacity:0;sX:0;sY:0;s:1200;e:Power3.easeInOut;"
-                data-start="1000">Berkontribusi Bersama Membangun Masa Depan Bangsa
+                data-start="1000">
               </div>
 
               <!-- LAYER NR. 3 -->
@@ -150,7 +150,7 @@
                 data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0;sY:0;skX:0;skY:0;opacity:0;s:1000;e:Power3.easeOut;" 
                 data-transform_out="opacity:0;sX:0;sY:0;s:1200;e:Power3.easeInOut;"
                 data-start="1000"
-                style="z-index: 12; max-width: auto; max-height: auto; white-space: nowrap;"><a href='about' class='btn btn-lg btn-transparent'>Selengkapnya</a>
+                
               </div>  
 
                 <!-- <div class="col-sm-6">

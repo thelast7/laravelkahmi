@@ -12,9 +12,9 @@
         </div>
         <div class="row">
           <div class="col-md-6">
-            <div class="service-item-box icon-effect-1 icon-effect-1a text-left">
+            <div class="service-item-box icon-effect-1 icon-effect-1a text-center">
               <a href="#">
-                <i class="icon icon-Star hi-icon"></i>
+                <i class="icon icon-Star hi-icon icon-center"></i>
               </a>
               <h3>PENCIPTA LAPANGAN KERJA</h3>
               <p>Kritik terhadap KAHMI yang lebih banyak berpolitik, sehingga gagasan KAHMI 
@@ -29,14 +29,14 @@
           </div> <!-- end service item -->
 
           <div class="col-md-6">
-            <div class="service-item-box icon-effect-1 icon-effect-1a text-left">
+            <div class="service-item-box icon-effect-1 icon-effect-1a text-center">
               <a href="#">
                 <style>
                  p {
                   text-align:justify;
                 }
               </style>
-                <i class="icon icon-Layers hi-icon"></i>
+                <i class="icon icon-Users hi-icon"></i>
               </a>
               <h3>Wirausaha Yang tangguh</h3>
               <p>Sarana membangun SINERGI antara perbankan, pemasaran, teknologi, manajemen sebagai jawaban atas tuntutan publik dalam melahirkan 
@@ -46,9 +46,9 @@
           </div> <!-- end service item -->
 
           <div class="col-md-6">
-            <div class="service-item-box icon-effect-1 icon-effect-1a text-left">
+            <div class="service-item-box icon-effect-1 icon-effect-1a text-center">
               <a href="#">
-                <i class="icon icon-Chart hi-icon"></i>
+                <i class="icon icon-Bulb hi-icon"></i>
               </a>
               <h3>Enterpreneur Oriented</h3>
               <p>Program ini adalah upaya untuk merubah mindset alumni HMI dari political oriented 
@@ -57,9 +57,9 @@
           </div> <!-- end service item -->
 
           <div class="col-md-6">
-            <div class="service-item-box icon-effect-1 icon-effect-1a text-left">
+            <div class="service-item-box icon-effect-1 icon-effect-1a text-center">
               <a href="#">
-                <i class="icon icon-User hi-icon"></i>
+                <i class="icon icon-Edit hi-icon"></i>
               </a>
               <h3>Konsep yang tepat</h3>
               <strong><p>Konsep ini sangat tepat untuk menjawab tingginya bonus demografi (angkatan 
