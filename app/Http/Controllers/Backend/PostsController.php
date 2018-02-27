@@ -106,7 +106,7 @@ class PostsController extends BackendController
     public function update(Request $request, $id)
     {
       $posts = Post::find($id);
-        $data = $request->only(['title', 'body', 'author_id', 'category_id', 'slug', 'image']);
+      $data = $request->only(['title', 'body', 'author_id', 'category_id', 'slug', 'image']);
         
         if ($request->hasFile('image')) 
         {

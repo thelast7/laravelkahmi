@@ -12,19 +12,19 @@
   <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700%7CPT+Serif:400,700,400italic%7COpen+Sans:400,600,700,400italic' rel='stylesheet'>
 
   <!-- Css -->
-  <link rel="stylesheet" href="css/bootstrap.min.css" />
-  <link rel="stylesheet" href="css/magnific-popup.css" />
-  <link rel="stylesheet" href="css/font-icons.css" />
-  <link rel="stylesheet" href="revolution/css/settings.css" />
-  <link rel="stylesheet" href="css/rev-slider.css" />
-  <link rel="stylesheet" href="css/sliders.css">
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="css/responsive.css" />
-  <link rel="stylesheet" href="css/spacings.css" />
-  <link rel="stylesheet" href="css/animate.css" />
-  <link rel="stylesheet" href="css/color.css" />
+  <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css')}}" />
+  <link rel="stylesheet" href="{{ asset('css/magnific-popup.css')}}" />
+  <link rel="stylesheet" href="{{ asset('css/font-icons.css')}}" />
+  <link rel="stylesheet" href="{{ asset('revolution/css/settings.css')}}" />
+  <link rel="stylesheet" href="{{ asset('css/rev-slider.css')}}" />
+  <link rel="stylesheet" href="{{ asset('css/sliders.css')}}">
+  <link rel="stylesheet" href="{{ asset('css/style.css')}}" />
+  <link rel="stylesheet" href="{{ asset('css/responsive.css')}}" />
+  <link rel="stylesheet" href="{{ asset('css/spacings.css')}}" />
+  <link rel="stylesheet" href="{{ asset('css/animate.css')}}" />
+  <link rel="stylesheet" href="{{ asset('css/color.css')}}" />
 <!--   <link rel="stylesheet" href="css/custome-login.css" /> -->
-  <link rel="stylesheet" href="css/custome-masuk.css" />
+  <link rel="stylesheet" href="{{ asset('css/custome-masuk.css')}}" />
 
   <!-- Favicons -->
   <link rel="shortcut icon" href="img/favicon.ico">
@@ -61,7 +61,7 @@
               <div class="logo-container">
                 <div class="logo-wrap">
                   <a href="welcome">
-                    <img class="logo" src="img/logo_dark.png" alt="logo">
+                    <img class="logo" src="{{ asset('img/logo_dark.png')}}" alt="logo">
                   </a>
                 </div>
               </div>
@@ -166,24 +166,22 @@
   </div> <!-- end main-wrapper -->
   
   <!-- jQuery Scripts -->
-    <script type="text/javascript" src="js/jquery.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/plugins.js"></script>
-    <script type="text/javascript" src="revolution/js/jquery.themepunch.tools.min.js"></script>
-    <script type="text/javascript" src="revolution/js/jquery.themepunch.revolution.min.js"></script>
-    <script type="text/javascript" src="js/rev-slider.js"></script>
-    <script type="text/javascript" src="js/scripts.js"></script>
-
-
-    <script type="text/javascript" src="revolution/js/extensions/revolution.extension.video.min.js"></script>
-    <script type="text/javascript" src="revolution/js/extensions/revolution.extension.carousel.min.js"></script>
-    <script type="text/javascript" src="revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
-    <script type="text/javascript" src="revolution/js/extensions/revolution.extension.actions.min.js"></script>
-    <script type="text/javascript" src="revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
-    <script type="text/javascript" src="revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
-    <script type="text/javascript" src="revolution/js/extensions/revolution.extension.navigation.min.js"></script>
-    <script type="text/javascript" src="revolution/js/extensions/revolution.extension.migration.min.js"></script>
-    <script type="text/javascript" src="revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+    <script type="text/javascript" src="{{ asset('js/jquery.min.js')}}"></script>
+    <script type="text/javascript" src="{{ asset('js/bootstrap.min.js')}}"></script>
+    <script type="text/javascript" src="{{ asset('js/plugins.js')}}"></script>
+    <script type="text/javascript" src="{{ asset('revolution/js/jquery.themepunch.tools.min.js')}}"></script>
+    <script type="text/javascript" src="{{ asset('revolution/js/jquery.themepunch.revolution.min.js')}}"></script>
+    <script type="text/javascript" src="{{ asset('js/rev-slider.js')}}"></script>
+    <script type="text/javascript" src="{{ asset('js/scripts.js')}}"></script>
+    <script type="text/javascript" src="{{ asset('revolution/js/extensions/revolution.extension.video.min.js')}}"></script>
+    <script type="text/javascript" src="{{ asset('revolution/js/extensions/revolution.extension.carousel.min.js')}}"></script>
+    <script type="text/javascript" src="{{ asset('revolution/js/extensions/revolution.extension.slideanims.min.js')}}"></script>
+    <script type="text/javascript" src="{{ asset('revolution/js/extensions/revolution.extension.actions.min.js')}}"></script>
+    <script type="text/javascript" src="{{ asset('revolution/js/extensions/revolution.extension.layeranimation.min.js')}}"></script>
+    <script type="text/javascript" src="{{ asset('revolution/js/extensions/revolution.extension.kenburn.min.js')}}"></script>
+    <script type="text/javascript" src="{{ asset('revolution/js/extensions/revolution.extension.navigation.min.js')}}"></script>
+    <script type="text/javascript" src="{{ asset('revolution/js/extensions/revolution.extension.migration.min.js')}}"></script>
+    <script type="text/javascript" src="{{ asset('revolution/js/extensions/revolution.extension.parallax.min.js')}}"></script>
     
 </body>
 </html>
