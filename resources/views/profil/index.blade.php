@@ -35,7 +35,7 @@
 			-->
 			<div class="panel panel-default">
 				<div class="panel-body"  style="font-family: 'Croissant One', cursive;">
-					<p>Alibaba bukan hanya sebuah pekerjaan. Itu adalah mimpi. Itu adalah akibat. Biar Wall Street mengutuk kita jika mereka mau- Jack Ma"</p>
+					<p>{{ $profile->harapan }}</p>
 				</div>
 			</div>
 
@@ -50,12 +50,10 @@
             <ul class="list-group">
                 <li class="list-group-item text-muted" contenteditable="false"  style="font-family: /*'Croissant One'*/, cursive;">My Profile &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
                 ;
-                @foreach($profile as $profil)
-                <a href="{{ route ('profil.edit', $profil->id) }}" class="btn btn-warning btn-xs"><i class="fa fa-pencil"></i> Edit </a></li>
-                @endforeach
+                <a href="{{ route ('profil.edit', $profile->id) }}" class="btn btn-warning btn-xs"><i class="fa fa-pencil"></i> Edit </a></li>
                 <li class="list-group-item text-right"><span class="pull-left"><strong >Name</strong></span>{{ Auth::user()->name }}</li>
                 
-                <li class="list-group-item text-right"><span class="pull-left"><strong >User Name</strong></span> Taufik</li>
+                <li class="list-group-item text-right"><span class="pull-left"><strong >User Name</strong></span>{{ $profile->username }} </li>
                 <li class="list-group-item text-right"><span class="pull-left"><strong >Alamat e-mail</strong></span> {{ Auth::user()->email }}</li>
                 <li class="list-group-item text-right"><span class="pull-left"><strong >No Handphone</strong></span> {{ Auth::user()->no_hp }}</li>
                 <li class="list-group-item text-right"><span class="pull-left"><strong class="">Tanggal Lahir</strong></span> {{ Auth::user()->tanggal_lahir }}</li>

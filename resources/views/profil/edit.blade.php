@@ -96,7 +96,7 @@
     </div>
     <br>
     <div class="clearfix">
-      <button type="submit" class="signupbtn">Daftar</button>
+      <button type="submit" class="signupbtn">Update</button>
     </div>
   </div>
   {!! Form::close() !!}
