@@ -6,13 +6,16 @@ a,
 .dropdown-menu > li > a:hover,
 .overlay-menu ul li.active > a,
 .overlay-menu ul li a:hover,
-.icon-effect-1 .hi-icon,
 .contact-icon i,
 .owl-prev:hover i,
 .owl-next:hover i,
 .works-grid.titles a:hover,
 .work-description a {
 	color: #FFFFFF;
+}
+
+.icon-effect-1 .hi-icon {
+	color: #000000;
 }
 #owl-related-works .work-description a:hover {
 	color: #FFFFFF;

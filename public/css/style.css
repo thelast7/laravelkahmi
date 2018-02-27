@@ -1,6 +1,15 @@
 -------------------------------------------------------*/
 /* General
 /*-------------------------------------------------------*/
+#header-title1 {
+color: #BE1E2D;
+}
+
+#header-title2 {
+color: #d7a872;
+}
+
+
 .textarea {
   color: #FFFFFF;
 }
@@ -1309,6 +1318,7 @@ p {
   position: relative;
   z-index: 1;
   color: #fff;
+  background-color: #000000;
 }
 
 .hi-icon:after {

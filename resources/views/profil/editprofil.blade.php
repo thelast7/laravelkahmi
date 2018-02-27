@@ -4,7 +4,7 @@
       <div class="container relative clearfix">
         <div class="title-holder">
           <div class="title-text">
-            <h1>Pendaftaran</h1>
+            <h1>Edit Profil</h1>
             <ol class="breadcrumb">
               <li>
                 <a href="{{ url('/') }}">Home</a>
@@ -138,12 +138,6 @@
     <label><b>Harapan Bergabung di KAHMIPRENEUR </b></label>
     
     <textarea class="form-control" id="harapan" name="harapan" placeholder="Masukan Harapan anda" rows="3"></textarea>
-    <br>
-      <div>
-      <input type="checkbox" class="input-checkbox" name="checkbox" id="checkbox1" value="1" checked="checked">
-      <label for="checkbox1">Dengan ini saya telah mengerti dan menyetujui <a href="#" style="color:dodgerblue">syarat dan ketentuan</a> yang berlaku.</label>
-      </p>
-    </div>
     <br>
     <div class="clearfix">
       <button type="submit" class="signupbtn">Daftar</button>
