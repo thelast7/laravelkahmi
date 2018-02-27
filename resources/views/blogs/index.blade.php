@@ -54,17 +54,17 @@
                 </div>
                 <div class="entry-box">
                   <div class="entry-title">
-                    <h4><a href="about">{{ $blog->title }}</a></h4>
+                    <h4><a href="{{ route('isiberita', $blog->slug) }}">{{ $blog->title }}</a></h4>
                   </div>
                   <ul class="entry-meta">
-                    <li>by <a href="about">{{ $blog->author->name }}</a></li>
+                    <li>by <a href="{{ route('isiberita', $blog->slug) }}">{{ $blog->author->name }}</a></li>
                     <li>
                       <a href="#">July 10, 2015</a>
                     </li>                   
                   </ul>
                   <div class="entry-content">
                     <p>
-					{{ substr($blog->body,0, 200) }}{{ strlen($ber->body) > 200 ? "..." : "" }}
+					{{ substr($blog->body,0, 200) }}{{ strlen($blog->body) > 200 ? "..." : "" }}
                     </p>
                     <a href="{{ route('isiberita', $blog->slug) }}" class="read-more">Selengkapnya</a>
                      <i class="icon arrow_right"></i>

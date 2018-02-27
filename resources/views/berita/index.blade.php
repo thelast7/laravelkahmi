@@ -246,7 +246,7 @@
               <h3 class="widget-title">Tags</h3>
               <a href="#">Lorem Ipsum</a>
               <a href="#">Lorem Ipsum</a>
-              <a href="#">Lorem Ipsumt</a>
+              <a href="#">Lorem Ipsum</a>
               <a href="#">Lorem Ipsum</a>
               <a href="#">Lorem Ipsum</a>
               <a href="#">Lorem Ipsum</a>
