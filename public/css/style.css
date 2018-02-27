@@ -1309,6 +1309,7 @@ p {
   position: relative;
   z-index: 1;
   color: #fff;
+  background-color: #000000;
 }
 
 .hi-icon:after {

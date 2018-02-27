@@ -36,7 +36,9 @@
                   saja angka tersebut terbilang cukup rendah.
             KAHMIPreneur ada untuk merangkul para pengangguran terbuka untuk menciptakan lapangan 
                   kerja sendiri. Terlebih untuk para generasi muda yang memiliki kualitas diri yang baik, sangat 
-                  disayangkan jika kualitas tersebut tidak dikembangkan. Program KAHMIPreneur diharapkan 
+                  disayangkan jika kualitas tersebut tidak dikembangkan.
+                  <br>
+                  Program KAHMIPreneur diharapkan 
                   dapat melahirkan dan mencetak generasi wirausaha yang kompeten dan mampu bersaing di 
                   era perdagangan bebas saat ini.
             KAHMIPreneuradalah sebuah konsep, gagasan, dan ide untuk menjawab berbagai 
@@ -46,7 +48,7 @@
               <li><p>Kritik terhadap KAHMI yang lebih banyak berpolitik, sehingga gagasan KAHMI 
                   Entrepreneur adalah gerakan merubah mindset dari pencari lapangan kerja 
                   menjadi pencipta lapangan kerja;</p></li>
-              <li><p>KAHMI Entrepreneur adalah jawaban atas tuntutan publik dalam melahirkan 
+              <li><p>KAHMI Entrepreneur adalah sarana membangun <b>SINERGI</b> antara perbankan, pemasaran, teknologi, manajemen sebagai jawaban atas tuntutan publik menciptakan wirausaha yang tangguh dalam melahirkan 
                   wirausaha baru agar Indonesia memiliki wirausaha lebih banyak lagi seperti yang 
                   disyaratkan untuk menjadi negara maju. Maka negara tersebut harus memiliki 
                   entrepreneur minimal 2% dari total populasi penduduknya.</p></li>
@@ -75,7 +77,7 @@
           masyarakat. Program ini juga diharapkan dapat membudayakan semangat sikap, perilaku, dan 
           kemampuan kewirausahaan di kalangan masyarakat yang mampu, andal, dan unggul.</p>
           <br>
-          <br>
+        
           <h4>Tujuan</h4>
           <ul class="bullets">
           <li><p>Menciptakan lapangan pekerjaan baru;<p></li>

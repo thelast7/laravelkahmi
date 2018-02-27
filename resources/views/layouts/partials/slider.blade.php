@@ -22,14 +22,34 @@
                 >
 
               <!-- LAYER NR. 1 -->
-              <div class="tp-caption hero-text giant_nocaps"
+              <!-- <div class="tp-caption subheading_text"
                 data-x="center"
+                data-y="center"
+                data-voffset="84"
+                data-transform_idle="o:1;s:1500;"
+                data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0;sY:0;skX:0;skY:0;opacity:0;s:1000;e:Power3.easeOut;" 
+                data-transform_out="opacity:0;sX:0;sY:0;s:1200;e:Power3.easeInOut;"
+                data-start="1000">The Job Creator
+              </div> -->
+
+              <div class="tp-caption hero-text giant_nocaps"
+                data-x="left"
                 data-y="center"
                 data-transform_idle="o:1;s:1500;"
                 data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.1;sY:0.1;skX:0;skY:0;opacity:0;s:1000;e:Power3.easeOut;" 
                 data-transform_out="opacity:0;sX:0;sY:0;s:1200;e:Power3.easeInOut;"
                 data-start="800"
-                data-splitout="none">KAHMIPRENEUR
+                data-splitout="none">   KAHMI
+              </div>
+
+               <div class="tp-caption hero-text giant_nocaps a"
+                data-x="right"
+                data-y="center"
+                data-transform_idle="o:1;s:1500;"
+                data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.1;sY:0.1;skX:0;skY:0;opacity:0;s:1000;e:Power3.easeOut;" 
+                data-transform_out="opacity:0;sX:0;sY:0;s:1200;e:Power3.easeInOut;"
+                data-start="800"
+                data-splitout="none">PRENEUR
               </div>
               
               <!-- LAYER NR. 2 -->
