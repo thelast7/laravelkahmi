@@ -130,6 +130,8 @@ iframe {border: 0;}
 .tp-caption.hero-text.giant_nocaps {
   font-size: 116px;
   text-transform: none;
+  color: #FF0000;
+  text-shadow: 2px 2px #FF0000;
 }
 
 .tp-caption.hero-text.huge_nocaps {
@@ -184,8 +186,9 @@ iframe {border: 0;}
 
 .subheading_text {
   font-family: "Pt Serif", serif;
-  font-size: 22px;
-  color: #fff;
+  font-size: 45px;
+  color: #FF8C00;
+  text-shadow: 2px 2px #000000;
 }
 
 }
