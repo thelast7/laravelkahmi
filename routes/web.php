@@ -55,7 +55,8 @@ Route::get('/forum', 'ForumsController@index');
 Route::get('/daftar', 'HomeController@index');
 
 //Route yang menangani profil
-Route::resource('/profil', 'ProfileController');
+Route::get('/profil', 'ProfilController@index');
+Route::get('/editprofil', 'EditProfilController@index');
 
 Route::group(['prefix' => 'admin', 'middleware' => 'role:admin'], function() {
 	Route::get('/dashboard', 'Backend\HomeController@index')->name('dashboard.home');

@@ -89,9 +89,9 @@
 			<div class="panel-heading"></div>
 			</div>
 	<div class="panel panel-default pull-center">
-		<button type="button" class="btn btn-success pull-right" href="http;//www.yashverma.tk">See My Website</button>  
-        	<button type="button"  class="btn btn-success"  > <a style="color:white"  href="mailto:yk.verma2000@gmail.com">Send me a message</a></button>
+		<button type="button" class="btn btn-success pull-right">editprofil</button>  
 			<br>
+      <br>
 	</div>
 
 	     

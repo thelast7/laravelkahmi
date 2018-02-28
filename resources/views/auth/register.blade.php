@@ -141,7 +141,7 @@
     <br>
     <div>
     <label><b>Unggah Foto Usaha</b></label>
-      <input type="file" name="photo_ktp">
+      <input type="file" name="photo_usaha">
     </div>
     <br>
 
