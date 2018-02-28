@@ -55,11 +55,10 @@ class PostsController extends BackendController
     public function store(Request $request)
     {
         $data = $request->only(['author_id', 'title', 'slug', 'body',  'category_id']);
-
+		
         if ($request->hasFile('image')) 
         {
             $data['image'] = $this->saveImage($request->file('image'));
-           
         }
 
         $posts = Post::create($data);
@@ -174,16 +173,16 @@ class PostsController extends BackendController
         $extension = $image->guessClientExtension();
         $filename = str_random(40) . '.' . $extension; 
         $img = Image::make($_FILES['image']['tmp_name']);
-        $img->resize(272, 203);
+        $img->resize(1920, 920);
         $path_dir = base_path() . '/public/img/post/'.$filename;
         $success = $img->save($path_dir);
 
         if ($success) 
         {
-           $img = Image::make($_FILES['image']['tmp_name']);
-           $img->resize(1920, 920);
-           $thumbnail = base_path() . '/public/img/post/tumb_'.$filename;
-           $img->save($thumbnail);
+           	$img = Image::make($_FILES['image']['tmp_name']);
+        	$img->resize(272, 203);
+           	$thumbnail = base_path() . '/public/img/post/tumb_'.$filename;
+           	$img->save($thumbnail);
         }
         return $filename;
     }
