@@ -12,7 +12,7 @@
           <div class="col-md-6 col-md-offset-3">
             <h1 class="text-center bottom-line">KAHMIPRENEUR</h1>
             <h1 class="subheading text-center">Sebuah konsep, gagasan, dan ide untuk menjawab berbagai 
-  isu yang berkembang di Indonesia terkait dengan KAHMI, diantaranya:</h1>
+  isu yang berkembang di Indonesia terkait dengan KAHMI diantaranya :</h1>
           </div>
         </div>
        <div class="row">
@@ -25,7 +25,7 @@
                   </div>
               <p class="mt-20">Kritik terhadap KAHMI yang lebih banyak berpolitik, sehingga gagasan KAHMI 
   Entrepreneur adalah gerakan merubah mindset dari pencari lapangan kerja 
-  menjadi pencipta lapangan kerja;
+  menjadi pencipta lapangan kerja.
             <br>
             <br>
             <br>
@@ -56,7 +56,7 @@
               <h3 class="mt-20">Enterpreneur Oriented</h3>
             </div>
               <p class="mt-20">Program ini adalah upaya untuk merubah mindset alumni HMI dari political oriented 
-  menjadi entrepreneur oriented;</p>     
+  menjadi entrepreneur oriented.</p>     
             </div>            
           </div> <!-- end service item -->
 
