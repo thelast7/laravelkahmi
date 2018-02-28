@@ -22,7 +22,7 @@ class ProfileController extends Controller
     {
         $id = Auth::user()->id;
         $profile = User::where('id', $id)->first();
-        return view('profil.index', compact('profile'));
+        return view('profile.index', compact('profile'));
     }
 
     /**
@@ -66,7 +66,7 @@ class ProfileController extends Controller
     public function edit($id)
     {
         $profile = User::find($id);
-        return view('profil.edit', compact('profile'));
+        return view('profile.edit', compact('profile'));
     }
 
     /**
@@ -101,7 +101,7 @@ class ProfileController extends Controller
             'message'=>'<h4><i class="icon fa fa-check"></i> Berhasil !</h4> Post '.$profile->title.' telah di Update.'
         ]);
 
-        return redirect(route('profil.index'));
+        return redirect(route('profile.index'));
     }
 
     /**

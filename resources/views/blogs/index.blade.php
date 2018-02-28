@@ -1,6 +1,8 @@
 @extends('layouts.master')
 @section('content')
 	<!-- ini taruh di file lain aja trus di include kan di sini include('blogs.quote') -->
+<<<<<<< HEAD
+=======
 	  <section class="section-wrap bg-light pb-mdm-50 pb-130" id="services">
       <div class="container">
       <div class="row heading">
@@ -70,6 +72,7 @@
         </div>
       </div>
     </section>
+>>>>>>> 99c5f59307a2b05afcbcb2150f8aba767e9478f9
 
     <section class="section-wrap bg-light from-blog" id="blog">
       <div class="container"> 
@@ -79,7 +82,6 @@
             <p class="subheading text-center">Our Latest News</p>
           </div>
         </div>
-
         <div class="container">
           <div class="row">
             <div id="owl-blog" class="owl-carousel owl-theme">

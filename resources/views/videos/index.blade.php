@@ -232,8 +232,8 @@
 
           <div class="col-md-4">
             <div class="portfolio-description">
-              <h2>FOTO: Ketika Presidium KAHMI Sambangi Pasar Jatinegara </h2>
-               Presidium Korps Alumni HMI (KAHMI) Kamrussamad mengunjungi Pasar Jatinegara untuk melihat situasi terkini keadaan para pedagang di daerah yang terletak di Jakarta Timur. 
+              <h2>FOTO: Ketika Founder KAHMIPRENEUR Sambangi Pasar Jatinegara </h2>
+               Founder KAHMIPRENEUR, Kamrussamad, mengunjungi Pasar Jatinegara untuk melihat situasi terkini keadaan para pedagang di daerah yang terletak di Jakarta Timur. 
                <br>
                <br>
               <ul>
@@ -255,6 +255,87 @@
       </div>
     </section> <!-- end portfolio single -->
 
+
+
+  <section class="section-wrap-mp portfolio-single">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-md-8">
+            <div id="owl-slider-one-img" class="owl-carousel owl-theme oh">
+
+              <div class="item">
+                <a href="#">
+                  <img src="img/ks_pp1.jpg" alt="">
+                </a>
+              </div>
+
+              <div class="item">
+                <a href="#">
+                  <img src="img/ks_pp2.jpg" alt="">
+                </a>
+              </div> 
+
+              <div class="item">
+                <a href="#">
+                  <img src="img/ks_pp3.jpg" alt="">
+                </a>
+              </div>
+
+              <div class="item">
+                <a href="#">
+                  <img src="img/ks_pp4.jpg" alt="">
+                </a>
+              </div>
+
+              <div class="item">
+                <a href="#">
+                  <img src="img/ks_pp5.jpg" alt="">
+                </a>
+              </div>
+
+              <div class="item">
+                <a href="#">
+                  <img src="img/ks_pp6.jpg" alt="">
+                </a>
+              </div>
+
+              <div class="item">
+                <a href="#">
+                  <img src="img/ks_pp7.jpg" alt="">
+                </a>
+              </div>
+
+              <div class="item">
+                <a href="#">
+                  <img src="img/ks_pp8.jpg" alt="">
+                </a>
+              </div>
+        </div> <!-- end owl carousel -->
+          </div> <!-- end slider -->
+
+
+          <div class="col-md-4">
+            <div class="portfolio-description">
+              <h2>FOTO: Ketika Founder KAHMIPRENEUR Sambangi Pulau Pramuka </h2>
+               Founder KAHMIPRENEUR, Kamrussamad, mengunjungi Pulau Pramuka untuk melihat situasi terkini keadaan para pedagang di daerah yang terletak di Kepulauan Seribu. 
+               <br>
+               <br>
+              <ul>
+                <li><span>Date:</span> 18 Februari 2018</li>
+                <li><span>Category:</span><a href="#"> Photo</a></li>
+              </ul>
+            <div class="entry-share clearfix">
+                <h6>Share:</h6>
+                <div class="socials">
+                  <a href="https://facebook.com"><i class="fa fa-facebook"></i></a>
+                  <a href="https://twitter.com"><i class="fa fa-twitter"></i></a>
+                  <a href="https://instagram.com"><i class="fa fa-instagram"></i></a>
+                </div>
+                </div>
+            </div>    
+          </div>
+        </section>
 
     <!-- Related Projects -->
     <section class="related-projects pb-90">

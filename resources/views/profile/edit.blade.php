@@ -21,7 +21,7 @@
       </div>
     </div>
 
- {!! Form::model($profile, ['route' => ['profil.update', $profile->id], 'files' => true, 'method' => 'put', 'class' => 'form-horizontal']) !!}
+ {!! Form::model($profile, ['route' => ['profile.update', $profile->id], 'files' => true, 'method' => 'put', 'class' => 'form-horizontal']) !!}
 
    {{ csrf_field() }}
   <div class="container">

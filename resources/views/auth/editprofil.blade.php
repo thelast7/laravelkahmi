@@ -4,7 +4,7 @@
       <div class="container relative clearfix">
         <div class="title-holder">
           <div class="title-text">
-            <h1>Edit Profil</h1>
+            <h1>Pendaftaran</h1>
             <ol class="breadcrumb">
               <li>
                 <a href="{{ url('/') }}">Home</a>
@@ -139,10 +139,11 @@
     
     <textarea class="form-control" id="harapan" name="harapan" placeholder="Masukan Harapan anda" rows="3"></textarea>
     <br>
+      
+    <br>
     <div class="clearfix">
-      <button type="submit" class="signupbtn">Daftar</button>
+      <button type="submit" class="signupbtn">Submit</button>
     </div>
-  </div>
 </form>
 </section> <!-- end page title -->
 @endsection

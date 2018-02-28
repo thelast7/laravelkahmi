@@ -1,12 +1,44 @@
 -------------------------------------------------------*/
 /* General
 /*-------------------------------------------------------*/
+.mt-20 {
+  margin-top:40px;
+}
+
+.wkwk {
+  display:table;
+  width:100%;
+}
+
+.icon-container h3 {
+  margin-top:20px;
+}
+
+.icon-container {
+  float: left;
+  display: table;
+  margin-right:20px;
+}
+
+.icon-container .icon {
+  display: inline-block;
+  text-align:center;
+}
+
 #header-title1 {
+<<<<<<< HEAD
+color: #FF0000;
+}
+
+#header-title2 {
+color: #FFD700;
+=======
 color: #BE1E2D;
 }
 
 #header-title2 {
 color: #d7a872;
+>>>>>>> 99c5f59307a2b05afcbcb2150f8aba767e9478f9
 }
 
 
