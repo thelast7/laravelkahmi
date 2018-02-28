@@ -10,7 +10,7 @@ class BeritaController extends Controller
 	protected $limit = 5;
 	public function index()
 	{
-		$berita = Post::paginate($this->limit);
+		$berita = Post::latest()->paginate($this->limit);
 		return view('berita.index', compact('berita'));
 	}
 

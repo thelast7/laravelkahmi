@@ -12,6 +12,7 @@
 						@foreach($posts as $post)
 						<tbody>
 							<tr>
+							<!-- //ini tabel -->
 								<td scope="row">{{ $no++ }}</td>
 								<td>{{ substr($post->title,0, 50) }}{{ strlen($post->title) > 50 ? "..." : "" }}</td>
 								<td>{{ $post->author->name }}</td>

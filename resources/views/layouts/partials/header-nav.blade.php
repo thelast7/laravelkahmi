@@ -51,15 +51,30 @@
 
                   <li class="dropdown">
                     <a href="{{ url('forum') }}">FORUM</a>
-                  </li>
-
+                  </li>           
+                  @if (Route::has('login'))
                   <li class="dropdown">
+                   @auth
+                    <a href="#" class="dropdown-toggle">{{ Auth::user()->name }}</a>
+                    <ul class="dropdown-menu menu-right">
+                      <li><a href="{{ url('/profil') }}">Profile</a></li>
+                      <li><a href="{{ route('logout') }}" onclick="event.preventDefault();                   document.getElementById('logout-form').submit();">Logout
+                        </a>
+                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                          @csrf
+                        </form>
+
+                      </li>
+                    </ul>
+                    @else
                     <a href="#" class="dropdown-toggle">PENDAFTARAN</a>
                     <ul class="dropdown-menu menu-right">
                       <li><a href="{{ route('login') }}">Log in</a></li>
                       <li><a href="{{ route('register') }}">Sign Up</a></li>
                     </ul>
+                    @endauth
                   </li>
+                   @endif
 
               <li id="mobile-search">
                     <form method="get" class="mobile-search">

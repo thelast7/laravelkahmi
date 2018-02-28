@@ -61,7 +61,7 @@
 
               <div class="entry">
                 <div class="entry-content">
-					{{ substr($ber->body,0, 200) }}{{ strlen($ber->body) > 200 ? "..." : "" }}
+					{!! substr($ber->body,0, 200) !!}{!! strlen($ber->body) > 200 ? "..." : "" !!}
                   <br>
                   <a href="{{ route('isiberita', $ber->slug) }}" class="read-more">Selengkapnya</a>
                   <i class="icon arrow_right"></i>
@@ -182,19 +182,11 @@
                 </div>
               </div>
             </div>  end entry item -->
-
+		
             <!-- Pagination -->
-            <!-- <nav class="pagination clear text-center">
-              <i class="icon arrow_left"></i>
-                <a href="#">Prev</a>
-              <span class="page-numbers current">1</span>
-                <a href="#">2</a>
-                <a href="#">3</a>
-                <span class="pagination-dots">...</span>
-                <a href="#">10</a>
-                <a href="#">Next</a>
-                <i class="icon arrow_right"></i>
-            </nav> -->
+            <nav class="pagination clear text-center">
+				{!! $berita->links() !!}
+            </nav> 
 
           </div> <!-- end col -->
           
