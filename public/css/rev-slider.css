@@ -149,7 +149,7 @@ iframe {border: 0;}
   font-size: 76px;
 }
 
-.tp-caption.hero-text.large_white {
+.tp-caption.d.large_white {
   font-size: 60px;
 }
 
@@ -186,27 +186,19 @@ iframe {border: 0;}
 }
 
 .subheading_text {
-  font-family: "Pt Serif", serif;
+  font-family: "Pt Serif", Sans;
   font-size: 45px;
-  color: #FF8C00;
-  text-shadow: 2px 2px #000000;
+  color: #006400;
+  text-shadow: 0.1px 0.1px #000000;
 }
 
-}
 
 .subheading_text2 {
   font-family: "Pt Serif", serif;
-  font-size: 22px;
-  color: #fff;
-}
-
-}
-
-.subheading_text3 {
-  font-family: "Pt Serif", serif;
-  font-size: 22px;
+  font-size: 33px;
   color: #000000;
 }
+
 
 .tp-caption.hero-line {
   content: "";

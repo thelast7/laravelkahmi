@@ -81,6 +81,7 @@ class RegisterController extends Controller
             'pekerjaan' => $data['pekerjaan'],
             'photo_diri' => $data['photo_diri'],
             'photo_ktp' => $data['photo_ktp'],
+            'photo_usaha' => $data['photo_usaha'],
             'harapan' => $data['harapan']
         ]);
 		$user->role = 'member';

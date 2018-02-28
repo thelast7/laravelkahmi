@@ -24,6 +24,7 @@ class PostsSeeder extends Seeder
 
           $posts[] = [
               'author_id'    => rand(1, 2),
+              'category_id'  => rand(1, 2),
               'title'        => $faker->sentence(rand(8, 12)),
               'body'         => $faker->paragraphs(rand(10, 15), true),
               'slug'         => $faker->slug(),
