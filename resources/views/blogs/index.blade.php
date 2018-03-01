@@ -16,7 +16,7 @@
             <div id="owl-blog" class="owl-carousel owl-theme">
 				@foreach($blogs as $blog)
               <div class="blog-col">
-                <div class="entry-box">
+                
                   <div class="entry-title">
                     <div class="entry-img">
                       <img src="{{ route('isiberita', $blog->slug) }}" alt="">
@@ -27,7 +27,7 @@
                     <li>by <a href="{{ route('isiberita', $blog->slug) }}">{{ $blog->author->name }}</a></li>
 
                     <li>
-                      <a href="#">July 10, 2015</a>
+                      <a href="#">{{ $blog->created_at }}</a>
                     </li>                   
                   </ul>
                   <div class="entry-content">
@@ -38,7 +38,7 @@
                     <a href="{{ route('isiberita', $blog->slug) }}" class="read-more">Selengkapnya</a>
                      <i class="icon arrow_right"></i>
                   </div>
-                </div>
+                
               </div> <!-- end post -->
 				@endforeach
             </div>

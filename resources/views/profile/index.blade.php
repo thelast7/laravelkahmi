@@ -41,27 +41,26 @@
     <div class="row">
         <div class="col-sm-3">
             <!--left col-->
-            <ul class="list-group">
-                <li class="list-group-item text-muted" contenteditable="false"  style="font-family: 'sans-serif';">My Profile &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <!-- <a href="{{ route ('profile.edit', $profile->id) }}" class="btn btn-warning btn-xs"><i class="fa fa-pencil"></i> Edit </a></li>
+              <ul class="list-group">
+                <li class="list-group-item text-muted" contenteditable="false"  style="font-family: 'sans-serif';">My Profile
+                <a href="{{ route ('profile.edit', $profile->id) }}" class="btn btn-warning btn-xs"><i class="fa fa-pencil"></i> Edit </a></li>
                 <li class="list-group-item text-right"><span class="pull-left"><strong >Name</strong></span>{{ Auth::user()->name }}</li>
-                 -->
                 <li class="list-group-item text-right"><span class="pull-left"><strong >User Name</strong></span>{{ $profile->username }} </li>
                 <li class="list-group-item text-right"><span class="pull-left"><strong >Alamat e-mail</strong></span> {{ Auth::user()->email }}</li>
                 <li class="list-group-item text-right"><span class="pull-left"><strong >No Handphone</strong></span> {{ Auth::user()->no_hp }}</li>
-                <li class="list-group-item text-right"><span class="pull-left"><strong class="">Tanggal Lahir</strong></span> {{ Auth::user()->tanggal_lahir }}</li>
-                 <li class="list-group-item text-right"><span class="pull-left"><strong class="">Alamat Lengkap</strong></span> {{ Auth::user()->alamat }}</li>
-                 <li class="list-group-item text-right"><span class="pull-left"><strong class="">Kota Asal</strong></span> {{ Auth::user()->kota }}</li>
-                 <li class="list-group-item text-right"><span class="pull-left"><strong class="">Bidang Usaha</strong></span> {{ Auth::user()->pekerjaan }}</li>
-                 <li class="panel panel-default pull-center">
-                  <a href="{{ route ('profile.edit', $profile->id) }}" class="btn btn-warning btn-xs"><i class="fa fa-pencil"></i>edit profil</a>
-                 </li>
-             </ul>
+                <li class="list-group-item text-right"><span class="pull-left"><strong class="">Tanggal Lahir</strong></span>{{ Auth::user()->tanggal_lahir }}</li>
+                <li class="list-group-item text-right"><span class="pull-left"><strong class="">Alamat Lengkap</strong></span>{{ Auth::user()->alamat }}</li>
+                <li class="list-group-item text-right"><span class="pull-left"><strong class="">Kota Asal</strong></span> {{ Auth::user()->kota }}</li>
+                <li class="list-group-item text-right"><span class="pull-left"><strong class="">Bidang Usaha</strong></span> {{ Auth::user()->pekerjaan }}</li>
+                <li class="panel panel-default pull-center">
+                <a href="{{ route ('profile.edit', $profile->id) }}" class="btn btn-warning btn-xs"><i class="fa fa-pencil"></i>edit profil</a>
+                </li>
+              </ul>
         </div>
 
           <div>
              <h1 style="font-family: 'sans-serif';">Produk Saya</h1>
-            <a class="pull-center"> <img title="cover" class="img-responsive" src={{ $profile->foto_usaha }}></a>
+            <a class="pull-center"> <img title="cover" class="img-responsive">{{ Auth::user()->foto_usaha }}</a>
              <div class="panel-heading"></div>
           </div>
 
