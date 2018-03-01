@@ -3,7 +3,7 @@
         <div class="footer-widgets">
           <div class="row">
 
-            <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="col-md-4 col-sm-6 col-xs-12">
               <div class="widget footer-about-us">
                 <h5>Tentang Kami</h5>
                 <p class="mb-0">KAHMIPreneur ada untuk merangkul para pengangguran terbuka untuk menciptakan lapangan 
@@ -15,18 +15,17 @@
               </div>
             </div> <!-- end about us -->
 
-            <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="col-md-4 col-sm-6 col-xs-12">
               <div class="widget footer-get-in-touch">
                 <h5>Get in Touch</h5>
                 <p class="footer-address">Mayapada Tower I Lt. 20-01B. Setiabudi, Jakarta Selatan, 12920, Indonesia </p>
                 <p>Phone: 021 526 0727</p>
                 <p>Email: <a href="mailto:kahmipreneur@gmail.com">kahmipreneur@gmail.com</a></p>
                 <p>Fax: 021 526 2134</p>
-
               </div>
             </div> <!-- end stay in touch -->
 
-            <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="col-md-4 col-sm-6 col-xs-12">
               <div class="widget footer-links">
                 <h5>Pelayanan</h5>
                 <ul>
@@ -36,40 +35,10 @@
                   <li><a href="{{ url('berita') }}">Berita</a></li>
                 </ul>
               </div>
-            </div> <!-- end useful links -->
-
-            <div class="col-md-3 col-sm-6 col-xs-12">
-              <div class="widget footer-posts last">
-                <h5>Latest News</h5>
-                <div class="footer-entry-list">
-                  <div class="footer-entry">
-                    <p>
-                      <a href="{{ url('berita') }}">Sandiaga Uno Ajak Mahasiswa Setelah Lulus Menjadi Wirausaha.</a>
-                    </p>
-                    <span>5 Februari, 2018</span>
-                  </div> <!-- end entry -->
-
-                  <div class="footer-entry">
-                    <p>
-                      <a href="{{ url('berita') }}">CEO HijUp : Follow your heart, Follow Your Dream.</a>
-                    </p>
-                    <span>05 Februari, 2018</span>
-                  </div> <!-- end entry -->
-
-                  <div class="footer-entry">
-                    <p>
-                      <a href="{{ url('berita') }}">lorem ipsum lorem ipsum lorem ipsum</a>
-                    </p>
-                    <span>05 Februari, 2018</span>
-                  </div> <!-- end entry -->
-                </div>
-              </div>
-            </div> <!-- end latest posts -->
-
-          </div> <!-- end row -->
-        </div> <!-- end footer widgets -->      
-      </div> <!-- end container -->
-   	</footer>   
+            </div> <!-- end useful links --> 
+          </div> <!-- end footer widgets -->      
+        </div> <!-- end container -->
+     	</footer>   
 
     <footer>
       <div class="bottom-footer">

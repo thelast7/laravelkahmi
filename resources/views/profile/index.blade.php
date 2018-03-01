@@ -1,6 +1,5 @@
 @extends('layouts.master-two')   
 @section('content')
-  <div class="main-wrapper-mp oh">
 
  <section class="page-title style-2">
       <div class="container relative clearfix">
@@ -22,19 +21,14 @@
         </div>
       </div>
     </div>
-<hr >
 
 <div class="container target">
     <div class="row">
         <div class="col-sm-10">
-             <h1 style="font-family: 'Black Ops One', cursive;">{{ Auth::user()->name }}</h1>
+             <h1 style="font-family: 'sans-serif';">{{ Auth::user()->name }}</h1>
         	
-        	<!--<button type="button" class="btn btn-success" href="http;//www.yashverma.tk">My Website</button>  
-        	<button type="button"  class="btn btn-info"  > <a style="color:white"  href="mailto:yk.verma2000@gmail.com">Send me a message</a></button>
-			<br>
-			-->
 			<div class="panel panel-default">
-				<div class="panel-body"  style="font-family: 'Croissant One', cursive;">
+				<div class="panel-body"  style="font-family: 'sans-serif'">
 					<p>{{ $profile->harapan }}</p>
 				</div>
 			</div>
@@ -46,25 +40,25 @@
 			<img title="profile image" class="img-circle img-responsive" src="img/photodiri/{{ $profile->photo_diri }}">
 		</a>
 	</div>
-    </div>
   <br>
     <div class="row">
         <div class="col-sm-3">
             <!--left col-->
-            <ul class="list-group">
-                <li class="list-group-item text-muted" contenteditable="false"  style="font-family: /*'Croissant One'*/, cursive;">My Profile &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
-                ;
+              <ul class="list-group">
+                <li class="list-group-item text-muted" contenteditable="false"  style="font-family: 'sans-serif';">My Profile
                 <a href="{{ route ('profile.edit', $profile->id) }}" class="btn btn-warning btn-xs"><i class="fa fa-pencil"></i> Edit </a></li>
                 <li class="list-group-item text-right"><span class="pull-left"><strong >Name</strong></span>{{ Auth::user()->name }}</li>
-                
                 <li class="list-group-item text-right"><span class="pull-left"><strong >User Name</strong></span>{{ $profile->username }} </li>
                 <li class="list-group-item text-right"><span class="pull-left"><strong >Alamat e-mail</strong></span> {{ Auth::user()->email }}</li>
                 <li class="list-group-item text-right"><span class="pull-left"><strong >No Handphone</strong></span> {{ Auth::user()->no_hp }}</li>
-                <li class="list-group-item text-right"><span class="pull-left"><strong class="">Tanggal Lahir</strong></span> {{ Auth::user()->tanggal_lahir }}</li>
-                 <li class="list-group-item text-right"><span class="pull-left"><strong class="">Alamat Lengkap</strong></span> {{ Auth::user()->alamat }}</li>
-                 <li class="list-group-item text-right"><span class="pull-left"><strong class="">Kota Asal</strong></span> {{ Auth::user()->kota }}</li>
-                 <li class="list-group-item text-right"><span class="pull-left"><strong class="">Bidang Usaha</strong></span> {{ Auth::user()->pekerjaan }}</li>
-             </ul>
+                <li class="list-group-item text-right"><span class="pull-left"><strong class="">Tanggal Lahir</strong></span>{{ Auth::user()->tanggal_lahir }}</li>
+                <li class="list-group-item text-right"><span class="pull-left"><strong class="">Alamat Lengkap</strong></span>{{ Auth::user()->alamat }}</li>
+                <li class="list-group-item text-right"><span class="pull-left"><strong class="">Kota Asal</strong></span> {{ Auth::user()->kota }}</li>
+                <li class="list-group-item text-right"><span class="pull-left"><strong class="">Bidang Usaha</strong></span> {{ Auth::user()->pekerjaan }}</li>
+                <li class="panel panel-default pull-center">
+                <a href="{{ route ('profile.edit', $profile->id) }}" class="btn btn-warning btn-xs"><i class="fa fa-pencil"></i>edit profil</a>
+                </li>
+              </ul>
         </div>
 
         <!--/col-3-->
@@ -94,8 +88,6 @@
 	</div>
 </div>
 
-
-   <div id="push"></div>
 </div>
 </ul>
 </div>
