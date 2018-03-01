@@ -35,7 +35,7 @@
 
       	</div>
 
-      <div class="col-sm-2"><a class="pull-right"> <img title="profile image" class="img-circle img-responsive" src="img/1.JPG"></a></div>
+      <div class="col-sm-2"><a class="pull-right"> <img title="profile image" class="img-circle img-responsive" src="img/profile/{{ $profile->photo_ktp }}" alt=""></a></div>
     </div>
   <br>
     <div class="row">
@@ -61,7 +61,7 @@
 
           <div>
              <h1 style="font-family: 'sans-serif';">Produk Saya</h1>
-            <a class="pull-center"> <img title="cover" class="img-responsive" src="img/2.jpg"></a>
+            <a class="pull-center"> <img title="cover" class="img-responsive" src={{ $profile->foto_usaha }}></a>
              <div class="panel-heading"></div>
           </div>
 

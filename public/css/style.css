@@ -1406,7 +1406,7 @@ p {
 .icon-effect-1 .hi-icon:hover {
   background: #e8cfbd;
   color: #000000;
-  /*border-color: transparent;*/
+  border-color: transparent;
 }
 
 .icon-effect-1 .hi-icon:hover:after {

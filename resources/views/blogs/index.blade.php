@@ -19,7 +19,7 @@
                 <div class="entry-box">
                   <div class="entry-title">
                     <div class="entry-img">
-                      <img src="img/project_1.jpg alt="kamrussamad">
+                      <img src="{{ route('isiberita', $blog->slug) }}" alt="">
                     </div>
                     <h4><a href="{{ route('isiberita', $blog->slug) }}">{{ $blog->title }}</a></h4>
                   </div>
