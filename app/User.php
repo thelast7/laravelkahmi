@@ -32,4 +32,17 @@ class User extends Authenticatable
     {
         return $this->hasMany(Post::class, 'author_id');
     }
+
+    public function getImageUrlAttribute($value)
+    {
+		$imageUrl = "";
+
+		if ( ! is_null($this->image) ) {
+			$imagePath = public_path() . "/img/photodiri/" . $this->image;
+			if ( file_exists($imagePath)) $imageUrl = asset('img/post/'. $this->image);
+		}
+
+		return $imageUrl;
+
+    }
 }

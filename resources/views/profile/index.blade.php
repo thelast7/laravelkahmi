@@ -41,7 +41,11 @@
 
       	</div>
 
-      <div class="col-sm-2"><a class="pull-right"> <img title="profile image" class="img-circle img-responsive" src="img/1.JPG"></a></div>
+	<div class="col-sm-2">
+		<a class="pull-right"> 
+			<img title="profile image" class="img-circle img-responsive" src="img/photodiri/{{ $profile->photo_diri }}">
+		</a>
+	</div>
     </div>
   <br>
     <div class="row">
@@ -66,7 +70,7 @@
         <!--/col-3-->
         <div class="col-sm-9" style="" contenteditable="false">
             <div class="panel panel-default">
-                <div class="panel-heading" style="sans-serif": 'Croissant One', cursive;">Hallo, Saya Muhammad Taufik</div>
+                <div class="panel-heading" style="sans-serif:'Croissant One', cursive;">Hallo, Saya Muhammad Taufik</div>
 
                 <div class="panel-body">
                 <!-- long description -->
@@ -81,21 +85,14 @@
                 <div class="panel-heading"></div>
                 <div class="panel-body">
 
-<!-- my bio starts here -->
- <h1 style="font-family: 'Black Ops One', cursive;">Produk Saya</h1>
-	<a class="pull-center"> <img title="cover" class="img-responsive" src="img/2.jpg"></a>
-<!-- -->
-                </div>
-			<div class="panel-heading"></div>
-			</div>
-	<div class="panel panel-default pull-center">
-		<button type="button" class="btn btn-success pull-right">editprofil</button>  
-			<br>
-      <br>
+		<!-- my INI DI SINI PHOTO USAHA SAMAKAN DI ATAS AJA -->
+		<h1 style="font-family: 'Black Ops One', cursive;">Produk Saya</h1>
+			<a class="pull-center"> 
+				<img title="cover" class="img-responsive" src="img/2.jpg">
+			</a>
+		</div>
 	</div>
-
-	     
-	</div>
+</div>
 
 
    <div id="push"></div>
