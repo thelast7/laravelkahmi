@@ -55,7 +55,7 @@
                   in <a href="#">{{ $ber->category_id }}</a>
                 </li>
                 <li>
-                  <a href="{{ route('isiberita', $ber->slug) }}" class="entry-comments">99 Comments</a>
+                  <a href="{{ route('isiberita', $ber->slug) }}" class="entry-comments">Komentar Anda</a>
                 </li>               
               </ul>
 
@@ -80,42 +80,31 @@
           <!-- sidebar -->
           <div class="col-sm-4 sidebar blog-sidebar">
               <!-- Categories -->
-
             <div class="widget latest-posts">
               <h3 class="widget-title">Recent Posts</h3>
               <ul>
+                @foreach($berita->slice(0,3) as $ber)
                 <li class="clearfix">
-                  <a href="{{ url('berita') }}">
-                    <img src="img/blog/latest_posts_1.jpg" alt="">
-                    Ini adalah Judul dari beritanya.
-                    <div class="entry-meta">
-                      <span class="entry-date">12 March, 2018</span>
-                    </div>
-                  </a>
-                </li>
-                <li class="clearfix">
-                  <a href="{{ url('berita') }}">
-                    <img src="img/blog/latest_posts_2.jpg" alt="">
-                    Ini adalah Judul dari beritanya.
-                    <div class="entry-meta">
-                      <span class="entry-date">12 March, 2018</span>
-                    </div>
-                  </a>
-                </li>
-                <li class="clearfix">
-                  <a href="{{ url('berita') }}">
-                    <img src="img/blog/latest_posts_3.jpg" alt="">
-                    Ini adalah Judul dari beritanya.
-                    <div class="entry-meta">
-                      <span class="entry-date">12 March, 2018</span>
-                    </div>
-                  </a>
+                  <a href="{{ route('isiberita', $ber->slug) }}">
+                    <img src="img/post/{{ $ber->image }}" alt="">
+                      <br>
+                        <br>
+                          <div class="entry-date">{{ $ber->created_at }}</div>
+                            <div class="clearfix">
+                              <div class="entry-content">
+                              {{ $ber->title }}
+                              <br>
+                              <a href="{{ route('isiberita', $ber->slug) }}"></a>
+                              </div>                      
+                            </div>
+                    </a>
+                    @endforeach
                 </li>
               </ul>
             </div>
 
             <!-- Tags -->
-            <div class="widget tags">
+            <!-- <div class="widget tags">
               <h3 class="widget-title">Tags</h3>
               <a href="#">Lorem Ipsum</a>
               <a href="#">Lorem Ipsum</a>
@@ -126,11 +115,21 @@
               <a href="#">Lorem Ipsum</a>
               <a href="#">Lorem Ipsum</a>
               <a href="#">Lorem Ipsum</a>
-            </div>
+            </div> -->
 
           </div> <!-- end col -->
   
         </div> <!-- end row -->
+        
       </div> <!-- end container -->
+      {!! $berita->links() !!}
     </section> <!-- end blog standard -->
 @endsection
+@push('scripts')
+<script>
+  $(document).ready(function() {
+  $(".pagination").addClass("text-center clearfix customNavigation mt-40");
+  $(".m-30").removeClass("pagination");
+})
+</script>
+@endpush

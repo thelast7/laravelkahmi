@@ -67,7 +67,7 @@
                       </li>
                     </ul>
                     @else
-                    <a href="#" class="dropdown-toggle">PENDAFTARAN</a>
+                    <a href="#" class="dropdown-toggle">MEMBERSHIP</a>
                     <ul class="dropdown-menu menu-right">
                       <li><a href="{{ route('login') }}">Log in</a></li>
                       <li><a href="{{ route('register') }}">Sign Up</a></li>

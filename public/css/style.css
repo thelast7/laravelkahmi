@@ -26,19 +26,17 @@
 }
 
 #header-title1 {
-<<<<<<< HEAD
+
 color: #FF0000;
 }
 
 #header-title2 {
 color: #FFD700;
-=======
 color: #BE1E2D;
 }
 
 #header-title2 {
 color: #d7a872;
->>>>>>> 99c5f59307a2b05afcbcb2150f8aba767e9478f9
 }
 
 
@@ -1315,7 +1313,7 @@ p {
 /* Services
 -------------------------------------------------------*/
 .service-item-box {
-  background-color: #fff;
+  background-color: #1d4242;
   padding: 60px 40px;
   margin-bottom: 30px;
 }
@@ -1323,11 +1321,17 @@ p {
 .service-item-box h3 {
   font-size: 15px;
   margin-bottom: 21px;
+   color: #ffffff;
+
 }
 
 .service-item-box > a {
   display: inline-block;
   margin-bottom: 27px;
+}
+
+.service-item-box p {
+  color: #ffffff;
 }
 
 .service-item-box i {
@@ -1349,7 +1353,7 @@ p {
   text-align: center;
   position: relative;
   z-index: 1;
-  color: #fff;
+  color: #bfa67a;
   background-color: #000000;
 }
 
@@ -1400,8 +1404,8 @@ p {
 }
 
 .icon-effect-1 .hi-icon:hover {
-  background: #111111;
-  color: #fff;
+  background: #e8cfbd;
+  color: #000000;
   border-color: transparent;
 }
 
