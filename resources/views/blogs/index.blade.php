@@ -16,11 +16,16 @@
             <div id="owl-blog" class="owl-carousel owl-theme">
 				@foreach($blogs as $blog)
               <div class="blog-col">
-                
+                <div class="entry-img">
+                  <a href="{{ route('isiberita', $blog->slug) }}" alt="">
+                    <img src="img/blog_1.jpg" alt="">
+                  </a>
+                </div>
+                <!-- <div class="entry-box"> -->
                   <div class="entry-title">
-                    <div class="entry-img">
+                    
                       <img src="{{ route('isiberita', $blog->slug) }}" alt="">
-                    </div>
+                    
                     <h4><a href="{{ route('isiberita', $blog->slug) }}">{{ $blog->title }}</a></h4>
                   </div>
                   <ul class="entry-meta">
@@ -35,10 +40,9 @@
 					{!! substr($blog->body,0, 200) !!}{!! strlen($blog->body) > 200 ? "..." : "" !!}
 
                     </p>
-                    <a href="{{ route('isiberita', $blog->slug) }}" class="read-more">Selengkapnya</a>
-                     <i class="icon arrow_right"></i>
+                    <a href="{{ route('isiberita', $blog->slug) }}" class="read-more">Selengkapnya..</a>
                   </div>
-                
+                  <!-- </div> -->
               </div> <!-- end post -->
 				@endforeach
             </div>
