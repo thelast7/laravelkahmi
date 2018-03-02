@@ -19,7 +19,6 @@
       </div>
     </section> <!-- end page title -->
 
-   <!-- Blog Single -->
    <section class="section-wrap-mp">
       <div class="container relative">
         <div class="row">
@@ -45,8 +44,8 @@
 
                   <div class="entry">
                     <div class="entry-content">
-                      <span class="dropcap style-2">{{ substr ($isiberita->title,0,1) }}</span>
-                        {{ $isiberita->title }}
+                      <!-- {{ substr ($isiberita->title,0,2) }}</span> -->
+                        <!-- {{ $isiberita->title }} -->
                         {!! $isiberita->body !!}
                     </div> <!-- end share -->
                     </div>

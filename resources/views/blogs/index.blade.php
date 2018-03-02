@@ -15,23 +15,17 @@
           <div class="row">
             <div id="owl-blog" class="owl-carousel owl-theme">
 				@foreach($blogs as $blog)
-              <div class="blog-col">
-                <div class="entry-img">
-                  <a href="about">
-                  	<img src="img/post/{{ $blog->image }}" alt="">
-                  </a> 
+              <div class="blog-col m8 s12">
+                <div class="entry-img"> 
+                  	<img src="img/post/{{ $blog->image }}" alt="">  
                 </div>
-                <div class="entry-box">
                 
-                  <div class="entry-title">
-                    <div class="entry-img">
-                      <img src="{{ route('isiberita', $blog->slug) }}" alt="">
-                    </div>
+                  <div class="entry-title"> 
+                      <img src="{{ route('isiberita', $blog->slug) }}" alt="">  
                     <h4><a href="{{ route('isiberita', $blog->slug) }}">{{ $blog->title }}</a></h4>
                   </div>
                   <ul class="entry-meta">
                     <li>by <a href="{{ route('isiberita', $blog->slug) }}">{{ $blog->author->name }}</a></li>
-
                     <li>
                       <a href="#">{{ $blog->created_at }}</a>
                     </li>                   
@@ -39,15 +33,13 @@
                   <div class="entry-content">
                     <p>
 					{!! substr($blog->body,0, 200) !!}{!! strlen($blog->body) > 200 ? "..." : "" !!}
-
                     </p>
-                    <a href="{{ route('isiberita', $blog->slug) }}" class="read-more">Selengkapnya</a>
-                     <i class="icon arrow_right"></i>
+                    <a href="{{ route('isiberita', $blog->slug) }}" class="read-more">Selengkapnya..</a>
                   </div>
-                
+                  <!-- </div> -->
               </div> <!-- end post -->
 				@endforeach
-            </div>
+           </div>
           	{!! $blogs->links() !!} 
           </div> <!-- end row -->
         </div>
