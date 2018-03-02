@@ -1,7 +1,6 @@
 @extends('layouts.master-two')   
 @section('content')
 
-  <div class="main-wrapper-mp oh">
     <section class="page-title style-2">
       <div class="container relative clearfix">
         <div class="title-holder">
@@ -19,7 +18,7 @@
         </div>
       </div>
     </section> <!-- end page title -->
-  <body/>
+  
 
 <section class="section-wrap-mp portfolio-single">
       <div class="container">
@@ -227,7 +226,6 @@
                   <div class="portfolio-overlay">
                     <div class="project-icons">
                       <a href="img/IrWahid_MajelisWilayahJawatengah.jpg" class="lightbox-gallery" title="Ir. Wahid"><i class="fa fa-search"></i></a>
-                      <a href="#" class="project-icon"><i class="fa fa-link"></i></a>
                     </div>
                   </div>
                 </div>
@@ -245,7 +243,7 @@
                   <div class="portfolio-overlay">
                     <div class="project-icons">
                       <a href="img/MTaufiq.jpg" class="lightbox-gallery" title="M. Taufiq"><i class="fa fa-search"></i></a>
-                      <a href="#" class="project-icon"><i class="fa fa-link"></i></a>
+                      
                     </div>
                   </div>
                 </div>
@@ -263,7 +261,7 @@
                   <div class="portfolio-overlay">
                     <div class="project-icons">
                       <a href="img/drAhmadHusainiSpogMajelis_WilayahBangkaBelitung1.jpg" class="lightbox-gallery" title="dr. Ahmad Husaini"><i class="fa fa-search"></i></a>
-                      <a href="#" class="project-icon"><i class="fa fa-link"></i></a>
+                      
                     </div>
                   </div>
                 </div>
@@ -280,8 +278,8 @@
                   <img src="img/MuhamadYusus_MajelisWilayahKalimantanBarat.jpg" alt="">
                   <div class="portfolio-overlay">
                     <div class="project-icons">
-                      <a href="img/MuhamadYusus_MajelisWilayahKalimantanBarat.jpg" class="lightbox-gallery" title="Muhammad Yusus"><i class="fa fa-search"></i></a>
-                      <a href="portfolio-single.html" class="project-icon"><i class="fa fa-link"></i></a>
+                      <a href="img/MuhamadYusus_MajelisWilayahKalimantanBarat.jpg" class="lightbox-gallery" title="Muhammad Yusuf"><i class="fa fa-search"></i></a>
+                      
                     </div>
                   </div>
                 </div>
@@ -300,7 +298,7 @@
                   <div class="portfolio-overlay">
                     <div class="project-icons">
                       <a href="img/IrMurlanTamba.jpg" class="lightbox-gallery" title="Ir. Murlan Tamba"><i class="fa fa-search"></i></a>
-                      <a href="#" class="project-icon"><i class="fa fa-link"></i></a>
+                      
                     </div>
                   </div>
                 </div>
@@ -318,7 +316,7 @@
                   <div class="portfolio-overlay">
                     <div class="project-icons">
                       <a href="img/AnwarEsva_KahmiDKI.jpg" class="lightbox-gallery" title="Anwar Esva"><i class="fa fa-search"></i></a>
-                      <a href="#" class="project-icon"><i class="fa fa-link"></i></a>
+                      
                     </div>
                   </div>
                 </div>
@@ -337,7 +335,7 @@
                   <div class="portfolio-overlay">
                     <div class="project-icons">
                       <a href="img/Komarudin.jpg" class="lightbox-gallery" title="Komarudin"><i class="fa fa-search"></i></a>
-                      <a href="#" class="project-icon"><i class="fa fa-link"></i></a>
+                      
                     </div>
                   </div>
                 </div>
