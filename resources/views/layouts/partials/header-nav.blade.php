@@ -15,7 +15,7 @@
               <div class="logo-container">
                 <div class="logo-wrap">
                   <a href="{{ url('/') }}">
-                    <img class="logo" src="img/logo2.png" alt="LOGO">
+                    <img class="logo" src="img/logo_dark.png" alt="LOGO">
                   </a>
                 </div>
               </div>
