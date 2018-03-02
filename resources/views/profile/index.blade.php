@@ -35,8 +35,11 @@
 
       	</div>
 
-      <div class="col-sm-2"><a class="pull-right"> <img title="profile image" class="img-circle img-responsive" src="img/profile/{{ $profile->photo_ktp }}" alt=""></a></div>
-    </div>
+	<div class="col-sm-2">
+		<a class="pull-right"> 
+			<img title="profile image" class="img-circle img-responsive" src="img/photodiri/{{ $profile->photo_diri }}">
+		</a>
+	</div>
   <br>
     <div class="row">
         <div class="col-sm-3">
@@ -58,11 +61,32 @@
               </ul>
         </div>
 
-          <div>
-             <h1 style="font-family: 'sans-serif';">Produk Saya</h1>
-            <a class="pull-center"> <img title="cover" class="img-responsive">{{ Auth::user()->foto_usaha }}</a>
-             <div class="panel-heading"></div>
-          </div>
+        <!--/col-3-->
+        <div class="col-sm-9" style="" contenteditable="false">
+            <div class="panel panel-default">
+                <div class="panel-heading" style="sans-serif:'Croissant One', cursive;">Hallo, Saya Muhammad Taufik</div>
+
+                <div class="panel-body">
+                <!-- long description -->
+                		 <p>Bisnis Furniture akan selalu ada. Kebutuhan akan sandang, pangan, serta papan adalah pokok kehidupan manusia. Sedangkan semakin berkembangnya zaman dan era yang kian global inilah yang membuat kebutuhan tersiernya pun juga meningkat pesat.
+
+                            Kebutuhan tempat tinggal semakin tinggi, seiring dengan semakin meledaknya pertambahan penduduk khususnya seperti yang ada di Indonesia saat ini, maka secara otomatis memiliki dampak pada peningkatan ketertarikan dan permintaan masyarakat pada Furniture ini.<p>
+                    </div>
+
+            </div>
+
+    <div class="panel panel-default">
+                <div class="panel-heading"></div>
+                <div class="panel-body">
+
+		<!-- my INI DI SINI PHOTO USAHA SAMAKAN DI ATAS AJA -->
+		<h1 style="font-family: 'Black Ops One', cursive;">Produk Saya</h1>
+			<a class="pull-center"> 
+				<img title="cover" class="img-responsive" src="img/2.jpg">
+			</a>
+		</div>
+	</div>
+</div>
 
 </div>
 </ul>

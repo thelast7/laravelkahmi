@@ -71,7 +71,7 @@
             @endforeach
 		
             <!-- Pagination -->
-            <nav class="pagination clear text-center">
+            <nav class="flat-pagination">
 				{!! $berita->links() !!}
             </nav> 
 
@@ -120,16 +120,6 @@
           </div> <!-- end col -->
   
         </div> <!-- end row -->
-        
       </div> <!-- end container -->
-      {!! $berita->links() !!}
     </section> <!-- end blog standard -->
 @endsection
-@push('scripts')
-<script>
-  $(document).ready(function() {
-  $(".pagination").addClass("text-center clearfix customNavigation mt-40");
-  $(".m-30").removeClass("pagination");
-})
-</script>
-@endpush

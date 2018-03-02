@@ -7,7 +7,7 @@
     <!-- Revolution Partial Slider -->
 	@include('layouts.partials.slider')
     <!-- Our Services -->
-    
+
     <!-- From Blog Content -->
 	@yield('content')
 	<!-- End Blog -->

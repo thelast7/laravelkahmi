@@ -17,11 +17,13 @@
 				@foreach($blogs as $blog)
               <div class="blog-col">
                 <div class="entry-img">
-                  <a href="{{ route('isiberita', $blog->slug) }}" alt="">
-                    <img src="img/blog_1.jpg" alt="">
-                  </a>
+
+                  <a href="about">
+                  	<img src="img/post/{{ $blog->image }}" alt="">
+                  </a> 
                 </div>
-                <!-- <div class="entry-box"> -->
+                <div class="entry-box">
+                
                   <div class="entry-title">
                     
                       <img src="{{ route('isiberita', $blog->slug) }}" alt="">
