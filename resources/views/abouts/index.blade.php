@@ -41,7 +41,8 @@
                   Program KAHMIPreneur diharapkan 
                   dapat melahirkan dan mencetak generasi wirausaha yang kompeten dan mampu bersaing di 
                   era perdagangan bebas saat ini.
-            KAHMIPreneuradalah sebuah konsep, gagasan, dan ide untuk menjawab berbagai 
+                  <br>
+            KAHMIPreneur adalah sebuah konsep, gagasan, dan ide untuk menjawab berbagai 
                   isu yang berkembang di Indonesia terkait dengan KAHMI, diantaranya: </p>
               <ul class="bullets">
 

@@ -1,6 +1,7 @@
 @extends('layouts.master-two')   
 @section('content')
 
+
  <section class="page-title style-2">
       <div class="container relative clearfix">
         <div class="title-holder">
@@ -14,24 +15,27 @@
                 <a href="{{ route('register') }}">Membership</a>
               </li>
               <li class="active">
-                Pendaftaran
+                Edit Profil
               </li>
             </ol>
           </div>
         </div>
       </div>
     </div>
+</section>
 
-<div class="container target">
+
+<section class="section-wrap">
+ <div class="container">
     <div class="row">
         <div class="col-sm-10">
              <h1 style="font-family: 'sans-serif';">{{ Auth::user()->name }}</h1>
         	
-			<div class="panel panel-default">
-				<div class="panel-body"  style="font-family: 'sans-serif'">
-					<p>{{ $profile->harapan }}</p>
-				</div>
-			</div>
+      			<div class="panel panel-default">
+      				<div class="panel-body"  style="font-family: 'sans-serif'">
+      					<p>{{ $profile->harapan }}</p>
+      				</div>
+      			</div>
 
       	</div>
 
@@ -41,8 +45,15 @@
 		</a>
 	</div>
   <br>
+
+  <div class="col-sm-10">
+    <a class="pull-right"> 
+      <img title="profile image" class="img-circle img-responsive" src="img/photousaha/{{ $profile->photo_usaha }}">
+    </a>
+  </div>
+
     <div class="row">
-        <div class="col-sm-3">
+        <div class="col-sm-6">
             <!--left col-->
               <ul class="list-group">
                 <li class="list-group-item text-muted" contenteditable="false"  style="font-family: 'sans-serif';">My Profile
@@ -54,41 +65,16 @@
                 <li class="list-group-item text-right"><span class="pull-left"><strong class="">Tanggal Lahir</strong></span>{{ Auth::user()->tanggal_lahir }}</li>
                 <li class="list-group-item text-right"><span class="pull-left"><strong class="">Alamat Lengkap</strong></span>{{ Auth::user()->alamat }}</li>
                 <li class="list-group-item text-right"><span class="pull-left"><strong class="">Kota Asal</strong></span> {{ Auth::user()->kota }}</li>
-                <li class="list-group-item text-right"><span class="pull-left"><strong class="">Bidang Usaha</strong></span> {{ Auth::user()->pekerjaan }}</li>
-                <li class="panel panel-default pull-center">
-                <a href="{{ route ('profile.edit', $profile->id) }}" class="btn btn-warning btn-xs"><i class="fa fa-pencil"></i>edit profil</a>
-                </li>
+                <li class="list-group-item text-right"><span class="pull-left"><strong class="">Pekerjaan</strong></span> {{ Auth::user()->pekerjaan }}</li>
               </ul>
         </div>
 
         <!--/col-3-->
         <div class="col-sm-9" style="" contenteditable="false">
-            <div class="panel panel-default">
-                <div class="panel-heading" style="sans-serif:'Croissant One', cursive;">Hallo, Saya Muhammad Taufik</div>
-
-                <div class="panel-body">
-                <!-- long description -->
-                		 <p>Bisnis Furniture akan selalu ada. Kebutuhan akan sandang, pangan, serta papan adalah pokok kehidupan manusia. Sedangkan semakin berkembangnya zaman dan era yang kian global inilah yang membuat kebutuhan tersiernya pun juga meningkat pesat.
-
-                            Kebutuhan tempat tinggal semakin tinggi, seiring dengan semakin meledaknya pertambahan penduduk khususnya seperti yang ada di Indonesia saat ini, maka secara otomatis memiliki dampak pada peningkatan ketertarikan dan permintaan masyarakat pada Furniture ini.<p>
-                    </div>
-
-            </div>
-
-    <div class="panel panel-default">
-                <div class="panel-heading"></div>
-                <div class="panel-body">
-
-		<!-- my INI DI SINI PHOTO USAHA SAMAKAN DI ATAS AJA -->
-		<h1 style="font-family: 'Black Ops One', cursive;">Produk Saya</h1>
-			<a class="pull-center"> 
-				<img title="cover" class="img-responsive" src="img/2.jpg">
-			</a>
-		</div>
-	</div>
-</div>
+        
 
 </div>
 </ul>
 </div>
+</section>
 @endsection

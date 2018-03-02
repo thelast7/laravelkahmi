@@ -19,7 +19,6 @@
       </div>
     </section> <!-- end page title -->
 
-   <!-- Blog Single -->
    <section class="section-wrap-mp">
       <div class="container relative">
         <div class="row">

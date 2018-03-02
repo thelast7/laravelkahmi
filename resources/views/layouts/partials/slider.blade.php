@@ -14,7 +14,7 @@
               data-delay="8000"
               data-title="The Art of Design">
               <!-- MAIN IMAGE -->
-              <img src="img/revolution/mp_slide_1.jpg"
+              <img src="img/revolution/mp_slide_3.jpg"
                 alt=""
                 data-bgrepeat="no-repeat"
                 data-bgfit="cover"
@@ -111,7 +111,7 @@
               data-delay="8000"
               data-title="Amazing Agency">
               <!-- MAIN IMAGE -->
-              <img src="img/revolution/mp_slide_3.jpg"
+              <img src="img/revolution/mp_slide_1.jpg"
                 alt=""
                 data-bgrepeat="no-repeat"
                 data-bgfit="cover"
