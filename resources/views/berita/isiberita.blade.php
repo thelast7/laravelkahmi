@@ -45,8 +45,8 @@
 
                   <div class="entry">
                     <div class="entry-content">
-                      <span class="dropcap style-2">{{ substr ($isiberita->title,0,1) }}</span>
-                        {{ $isiberita->title }}
+                      <!-- {{ substr ($isiberita->title,0,2) }}</span> -->
+                        <!-- {{ $isiberita->title }} -->
                         {!! $isiberita->body !!}
                     </div> <!-- end share -->
                     </div>
