@@ -71,10 +71,10 @@
                     {{ csrf_field() }}
 
                     <label for="name">Name</label>
-                    <input class="form-control" id="name" type="text" name="name" placeholder="Masukan Nama" />
+                    <input class="form-control1" id="name" type="text" name="name" placeholder="Masukan Nama" />
 
                     <label for="email">Email</label>
-                    <input class="form-control" id="email" type="text" name="email" placeholder="Masukan Alamat e-mail" />
+                    <input class="form-control1" id="email" type="text" name="email" placeholder="Masukan Alamat e-mail" />
                     
                     <label for="message">Message</label>
                     <textarea class="form-control" name="message" id="" placeholder="Masukan Pesan" cols="30" rows="10"></textarea>

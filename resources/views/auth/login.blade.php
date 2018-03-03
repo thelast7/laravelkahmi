@@ -11,7 +11,7 @@
                 <a href="{{ url('/') }}">home</a>
               </li>
               <li>
-                <a href="#">register</a>
+                <a href="#">Membership</a>
               </li>
               <li class="active">
                 Log In

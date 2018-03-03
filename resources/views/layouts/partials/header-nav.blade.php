@@ -15,7 +15,7 @@
               <div class="logo-container">
                 <div class="logo-wrap">
                   <a href="{{ url('/') }}">
-                    <img class="logo" src="img/logo_dark.png" alt="LOGO">
+                    <img class="logo" src="{{ asset('img/logo2.png') }}"" alt="LOGO">
                   </a>
                 </div>
               </div>
@@ -76,21 +76,7 @@
                   </li>
                    @endif
 
-              <li id="mobile-search">
-                    <form method="get" class="mobile-search">
-                      <input type="search" class="form-control" placeholder="Search...">
-                      <button type="submit" class="search-button">
-                        <i class="fa fa-search"></i>
-                      </button>
-                    </form>
-                  </li>
-
-                  <li>
-                    <a href="#" class="nav-search">
-                      <i class="fa fa-search search-trigger"></i>
-                      <i class="fa fa-times search-close"></i>
-                    </a>
-                  </li> 
+              
               </div> <!-- end collapse -->
             </div> <!-- end col -->
             

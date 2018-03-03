@@ -1,6 +1,11 @@
 -------------------------------------------------------*/
 /* General
 /*-------------------------------------------------------*/
+.col-md-6 {
+   border-radius: 20px;
+
+}
+
 .mt-20 {
   margin-top:40px;
 }
@@ -99,7 +104,7 @@ color: #d7a872;
 }
 
 .section-wrap, .section-wrap-mp {
-  padding: 150px 0;
+  padding: 50px 0;
   overflow: hidden;
   background-attachment: fixed;
   -webkit-background-size: cover;
@@ -870,6 +875,13 @@ p {
   font-size: 24px;
 }
 
+.form-control1 {
+  height: 100%;
+  border: none;
+  font-size: 13px;
+  background-color: white;
+}
+
 .search-wrap input,
 .search-wrap input:focus {
   background-color: #fff !important;
@@ -1316,6 +1328,7 @@ p {
   background-color: #1d4242;
   padding: 60px 40px;
   margin-bottom: 30px;
+  border-radius: 50px;
 }
 
 .service-item-box h3 {
