@@ -103,113 +103,16 @@
     <label><b>Kota Asal</b></label>
     <div class="select relative">
               <i class="fa fa-angle-down"></i>
-              <select name="kota">
-                <option selected value="default">Select an option</option>
-                <option value="kota 1">Ambon</option>
-                <option value="kota 2">Balikpapan</option>
-                <option value="kota 3">Banda Aceh</option>
-                <option value="kota 4">Bandar Lampung</option>
-                <option value="kota 5">Bandung</option>
-                <option value="kota 6">Banjar</option>
-                <option value="kota 7">Banjarbaru</option>
-                <option value="kota 8">Banjarmasin</option>
-                <option value="kota 9">Batam</option>
-                <option value="kota 10">Batu</option>
-                <option value="kota 11">Bau-Bau</option>
-                <option value="kota 12">Bekasi</option>
-                <option value="kota 13">Bengkulu</option>
-                <option value="kota 14">Bima</option>
-                <option value="kota 15">Binjai</option>
-                <option value="kota 16">Bitung</option>
-                <option value="kota 17">Blitar</option>
-                <option value="kota 18">Bogor</option>
-                <option value="kota 19">Bontang</option>
-                <option value="kota 20">Bukit Tinggi</option>
-                <option value="kota 21">Cilegon</option>
-                <option value="kota 22">Cimahi</option>
-                <option value="kota 23">Cirebon</option>
-                <option value="kota 24">Denpasar</option>
-                <option value="kota 25">Depok</option>
-                <option value="kota 26">Dumai</option>
-                <option value="kota 27">Gorontalo</option>
-                <option value="kota 28">Gunungsitoli</option>
-                <option value="kota 29">Jakarta</option>
-                <option value="kota 30">Jambi</option>
-                <option value="kota 31">Jayapura</option>
-                <option value="kota 32">Kediri</option>
-                <option value="kota 33">Kendari</option>
-                <option value="kota 34">Kotamubagu</option>
-                <option value="kota 35">Kupang</option>
-                <option value="kota 36">Langsa</option>
-                <option value="kota 37">Lhokseumawe</option>
-                <option value="kota 38">Lubuklinggau</option>
-                <option value="kota 39">Madiun</option>
-                <option value="kota 40">Magelang</option>
-                <option value="kota 41">Makassar</option>
-                <option value="kota 42">Malang</option>
-                <option value="kota 43">Manado</option>
-                <option value="kota 44">Mataram</option>
-                <option value="kota 45">Medan</option>
-                <option value="kota 46">Metro</option>
-                <option value="kota 47">Mojokerto</option>
-                <option value="kota 48">Padang</option>
-                <option value="kota 49">Pagaralam</option>
-                <option value="kota 40">Palangkaraya</option>
-                <option value="kota 41">Palembang</option>
-                <option value="kota 42">Palopo</option>
-                <option value="kota 43">Palu</option>
-                <option value="kota 44">Pangkal Pinang</option>
-                <option value="kota 45">Parepare</option>
-                <option value="kota 46">Pariaman</option>
-                <option value="kota 47">Pasuruan</option>
-                <option value="kota 48">Payakumbuh<option>
-                <option value="kota 49">Pekalongan</option>
-                <option value="kota 50">Pekanbaru</option>
-                <option value="kota 51">Pematangsiantar</option>
-                <option value="kota 52">Pontianak</option>
-                <option value="kota 53">Prabumulih</option>
-                <option value="kota 54">Probolinggo</option>
-                <option value="kota 55">Sabang</option>
-                <option value="kota 56">Salatiga</option>
-                <option value="kota 57">Samarinda</option>
-                <option value="kota 58">Sawahlunto</option>
-                <option value="kota 59">Semarang</option>
-                <option value="kota 60">Serang</option>
-                <option value="kota 61">Sibloga</option>
-                <option value="kota 62">Singkawang</option>
-                <option value="kota 63">Solok</option>
-                <option value="kota 64">Sorong</option>
-                <option value="kota 65">Subulussalam</option>
-                <option value="kota 66">Sukabumi</option>
-                <option value="kota 67">Jambi</option>
-                <option value="kota 68">Surabaya</option>
-                <option value="kota 69">Surakarta</option>
-                <option value="kota 70">Tangerang</option>
-                <option value="kota 71">Tanjungpinang</option>
-                <option value="kota 72">Tanjungbalai</option>
-                <option value="kota 73">Tarakan</option>
-                <option value="kota 74">Tasikmalaya</option>
-                <option value="kota 75">Tebing Tinggi</option>
-                <option value="kota 76">Tegal</option>
-                <option value="kota 77">Ternate</option>
-                <option value="kota 78">Tidore</option>
-                <option value="kota 79">Tual</option>
-                <option value="kota 80">Yogyakarta</option>
-              </select>
+              {!! Form::select('kota', ['Ambon' => 'Ambon', 'Balikpapan' => 'Balikpapan', 'Banda Aceh' => 'Banda Aceh', 'Bandar Lampung' => 'Bandar Lampung', 'Banjar' => 'Banjar', 'Banjarbaru' => 'Banjarbaru', 'Banjarmasin' => 'Banjarmasin', 'Batam' => 'Batam', 'Batu' => 'Batu', 'Bau-Bau' => 'Bau-Bau', 'Bekasi' => 'Bekasi', 'Bekasi' => 'Bekasi', 'Bima' => 'Bima', 'Binjai' => 'Binjai', 'Bitung' => 'Bitung', 'Blitar' => 'Blitar', 'Bogor' => 'Bogor', 'Bontang' => 'Bontang', 'Bukit Tinggi' => 'Bukit Tinggi', 'Cilegon' => 'Cilegon', 'Cimahi' => 'Cimahi', 'Cirebon' => 'Cirebon', 'Denpasar' => 'Denpasar', 'Depok' => 'Depok', 'Dumai' => 'Dumai', 'Gorontalo' => 'Gorontalo', 'Gunungsitoli' => 'Gunungsitoli', 'Jakarta' => 'Jakarta', 'Jambi' => 'Jambi', 'Jayapura' => 'Jayapura', 'Kediri' => 'Kediri', 'Kotamubagu' => 'Kotamubagu', 'Kupang<' => 'Kupang', 'Langsa' => 'Langsa', 'Lhokseumawe' => 'Lhokseumawe', 'Lubuklinggau' => 'Lubuklinggau', 'Madiun' => 'Madiun', 'Magelang' => 'Magelang', 'Makassar' => 'Makassar', 'Malang' => 'Malang', 'Manado' => 'Manado', 'Mataram' => 'Mataram', 'Medan' => 'Medan', 'Metro' => 'Metro', 'Mojokerto' => 'Mojokerto', 'Padang' => 'Padang', 'Pagaralam' => 'Pagaralam', 'Palangkaraya' => 'Palangkaraya', 'Palembang' => 'Palembang', 'Palopo' => 'Palopo', 'Palu' => 'Palu', 'Pangkal Pinang' => 'Pangkal Pinang', 'Parepare' => 'Parepare', 'Pariaman' => 'Pariaman', 'Pasuruan' => 'Pasuruan', 'Payakumbuh' => 'Payakumbuh', 'Pekalongan' => 'Pekalongan', 'Pekanbaru' => 'Pekanbaru', 'Pematangsiantar' => 'Pematangsiantar', 'Pontianak' => 'Pontianak', 'Prabumulih' => 'Prabumulih', 'Probolinggo' => 'Probolinggo', 'Sabang' => 'Sabang', 'Salatiga' => 'Salatiga', 'Sawahlunto' => 'Sawahlunto', 'Semarang' => 'Semarang', 'Serang' => 'Serang', 'Sibloga' => 'Sibloga', 'Singkawang' => 'Singkawang','Solok' => 'Solok', 'Subulussalam' => 'Subulussalam', 'Sukabumi' => 'Sukabumi', 'Surabaya' => 'Surabaya', 'Surakarta' => 'Surakarta', 'Tangerang' => 'Tangerang', 'Tanjungpinang' => 'Tanjungpinang', 'Tanjungbalai' => 'Tanjungbalai','Tarakan' => 'Tarakan', 'Tasikmalaya' => 'Tasikmalaya', 'Tebing Tinggi' => 'Tebing Tinggi', 'Tegal' => 'Tegal', 'Ternate' => 'Ternate', 'Tidore' => 'Tidore', 'Tual' => 'Tual', 'Yogyakarta' => 'Yogyakarta']) !!}
             </div>
         </option>
     </option>
 </select>
     <br>
-    <label><b>Pekerjaan/Bidang Usaha</b></label>
+    <label><b>Pekerjaan</b></label>
     <div class="select relative">
               <i class="fa fa-angle-down"></i>
-              <select name="pekerjaan">
-                <option selected value="default">Select an option</option>
-                <option value="kota 1">Pegawai Negeri Sipil</option>
-                <option value="kota 2">Karyawan Swasta</option>
-                <option value="kota 3">Wirausaha</option>
-              </select>
+              {!! Form::select('pekerjaan', ['Pegawai Negri Sipil' => 'Pegawai Negri Sipil', 'Karyawan Swasta' => 'Karyawan Swasta', 'Wirausaha' => 'Wirausaha']) !!}
             </div>
     <br>       
     <div class="Foto">

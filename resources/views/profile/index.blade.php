@@ -48,7 +48,7 @@
 
   <div class="col-sm-10">
     <a class="pull-right"> 
-      <img title="profile image" class="img-circle img-responsive" src="img/photousaha/{{ $profile->photo_usaha }}">
+      <img title="photo_usaha" class="img-circle img-responsive" src="img/photousaha/{{ $profile->photo_usaha }}">
     </a>
   </div>
 

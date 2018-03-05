@@ -78,7 +78,7 @@
     <label><b>Pekerjaan</b></label>
     <div class="select relative">
               <i class="fa fa-angle-down"></i>
-               {!! Form::select('pekerjaan', ['Pegawai Negri Sipil' => 'Pegawai Negri Sipil', 'Karyawan Swasta' => 'Karyawan Swasta', 'Wirausaha' => 'Wirausaha']) !!}Banjar
+               {!! Form::select('pekerjaan', ['Pegawai Negri Sipil' => 'Pegawai Negri Sipil', 'Karyawan Swasta' => 'Karyawan Swasta', 'Wirausaha' => 'Wirausaha']) !!}
             </div>
             
                 
@@ -90,9 +90,9 @@
     </div>
     <br>
     <div>
-    <label><b>Unggah Foto KTP</b></label>
-    	{!! Form::file('photo_ktp') !!}
-      {!! $errors->first('photo_ktp', '<p class="help-block">:message</p>') !!}
+    <label><b>Unggah Foto Usaha</b></label>
+    	{!! Form::file('photo_usaha') !!}
+      {!! $errors->first('photo_usaha', '<p class="help-block">:message</p>') !!}
     </div>
     <br>
   

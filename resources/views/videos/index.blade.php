@@ -126,46 +126,44 @@
       </div>
     </section> <!-- end portfolio single -->
 
-
-
   <section class="section-wrap-mp portfolio-single">
       <div class="container">
         <div class="row">
 
           <div class="col-md-8">
-            <div id="owl-slider-one-img2  " class="owl-carousel owl-theme oh">
+            <div id="owl-slider-two-img" class="owl-carousel owl-theme oh">
 
-              <div id="pulau">
+              <div id="item">
                 <a href="#">
                   <img src="img/ks_pp1.jpg" alt="">
                 </a>
               </div>
 
-              <div id="pulau">
+              <div id="item">
                 <a href="#">
                   <img src="img/ks_pp2.jpg" alt="">
                 </a>
               </div> 
 
-              <div id="pulau">
+              <div id="item">
                 <a href="#">
                   <img src="img/ks_pp3.jpg" alt="">
                 </a>
               </div>
 
-              <div id="pulau">
+              <div id="item">
                 <a href="#">
                   <img src="img/ks_pp4.jpg" alt="">
                 </a>
               </div>
 
-              <div id="pulau">
+              <div id="item">
                 <a href="#">
                   <img src="img/ks_pp5.jpg" alt="">
                 </a>
               </div>
 
-              <div id="pulau">
+              <div id="item">
                 <a href="#">
                   <img src="img/ks_pp6.jpg" alt="">
                 </a>
@@ -186,7 +184,7 @@
           </div> <!-- end slider -->
 
 
-          <!-- <div class="col-md-4">
+          <div class="col-md-4">
             <div class="portfolio-description">
               <h2>FOTO: Ketika Founder KAHMIPRENEUR Sambangi Pulau Pramuka </h2>
                Founder KAHMIPRENEUR, Kamrussamad, mengunjungi Pulau Pramuka untuk melihat situasi terkini keadaan para pedagang di daerah yang terletak di Kepulauan Seribu. 
@@ -205,7 +203,7 @@
                 </div>
                 </div>
             </div>    
-          </div> -->
+          </div>
         </section>
 
     <!-- Related Projects -->
