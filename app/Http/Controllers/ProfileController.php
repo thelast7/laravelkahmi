@@ -88,13 +88,14 @@ class ProfileController extends Controller
            
         }
 
-        if ($request->hasFile('photo_ktp')) 
+        if ($request->hasFile('photo_usaha')) 
         {
-            $data['photo_ktp'] = $this->photoktp($request->file('photo_ktp'));
-            if ($profile->photo_ktp !== '') $this->deletephotoktp($profile->photo_ktp);
+            $data['photo_usaha'] = $this->photousaha($request->file('photo_usaha'));
+            if ($profile->photo_usaha !== '') $this->deletephotousaha($profile->photo_usaha);
            
         }
 
+	//	dd($data);
         $profile->update($data);
         Session::flash('flash_notification', [
             'level'=>'info',
@@ -115,13 +116,13 @@ class ProfileController extends Controller
         //
     }
 
-    public function photoktp(UploadedFile $image)
+    public function photousaha(UploadedFile $image)
     {
         $extension = $image->guessClientExtension();
         $filename = str_random(40) . '.' . $extension; 
-        $img = Image::make($_FILES['photo_ktp']['tmp_name']);
+        $img = Image::make($_FILES['photo_usaha']['tmp_name']);
         $img->resize(272, 203);
-        $path_dir = base_path() . '/public/img/photoktp/'.$filename;
+        $path_dir = base_path() . '/public/img/photousaha/'.$filename;
         $success = $img->save($path_dir);
         return $filename;
     }
@@ -144,9 +145,9 @@ class ProfileController extends Controller
         return File::delete($path);
     }
 
-     public function deletephotoktp($filename)
+     public function deletephotousaha($filename)
     {
-        $path = public_path() . DIRECTORY_SEPARATOR . 'img/photoktp/'
+        $path = public_path() . DIRECTORY_SEPARATOR . 'img/photousaha/'
             . DIRECTORY_SEPARATOR . $filename;
         return File::delete($path);
     }

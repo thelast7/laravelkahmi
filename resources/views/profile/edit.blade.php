@@ -89,8 +89,8 @@
     <br>
     <div>
     <label><b>Unggah Foto KTP</b></label>
-    	{!! Form::file('photo_ktp') !!}
-      {!! $errors->first('photo_ktp', '<p class="help-block">:message</p>') !!}
+    	{!! Form::file('photo_usaha') !!}
+      {!! $errors->first('photo_usaha', '<p class="help-block">:message</p>') !!}
     </div>
     <br>
     </div>
