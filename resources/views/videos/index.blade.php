@@ -126,46 +126,44 @@
       </div>
     </section> <!-- end portfolio single -->
 
-
-
   <section class="section-wrap-mp portfolio-single">
       <div class="container">
         <div class="row">
 
           <div class="col-md-8">
-            <div id="owl-slider-one-img" class="owl-carousel owl-theme oh">
+            <div id="owl-slider-two-img" class="owl-carousel owl-theme oh">
 
-              <div class="item">
+              <div id="item">
                 <a href="#">
                   <img src="img/ks_pp1.jpg" alt="">
                 </a>
               </div>
 
-              <div class="item">
+              <div id="item">
                 <a href="#">
                   <img src="img/ks_pp2.jpg" alt="">
                 </a>
               </div> 
 
-              <div class="item">
+              <div id="item">
                 <a href="#">
                   <img src="img/ks_pp3.jpg" alt="">
                 </a>
               </div>
 
-              <div class="item">
+              <div id="item">
                 <a href="#">
                   <img src="img/ks_pp4.jpg" alt="">
                 </a>
               </div>
 
-              <div class="item">
+              <div id="item">
                 <a href="#">
                   <img src="img/ks_pp5.jpg" alt="">
                 </a>
               </div>
 
-              <div class="item">
+              <div id="item">
                 <a href="#">
                   <img src="img/ks_pp6.jpg" alt="">
                 </a>
@@ -186,7 +184,7 @@
           </div> <!-- end slider -->
 
 
-          <!-- <div class="col-md-4">
+          <div class="col-md-4">
             <div class="portfolio-description">
               <h2>FOTO: Ketika Founder KAHMIPRENEUR Sambangi Pulau Pramuka </h2>
                Founder KAHMIPRENEUR, Kamrussamad, mengunjungi Pulau Pramuka untuk melihat situasi terkini keadaan para pedagang di daerah yang terletak di Kepulauan Seribu. 
@@ -205,7 +203,7 @@
                 </div>
                 </div>
             </div>    
-          </div> -->
+          </div>
         </section>
 
     <!-- Related Projects -->
@@ -230,8 +228,8 @@
                   </div>
                 </div>
                 <div class="work-description">
-                  <h3 style="color: #FFA500;">Ir. Wahid</a></h3>
-                  <span><a href="#">Majelis Wiayah Jawa Tengah</a></span>
+                  <h3 style="color: #FFA500;">Ir.H.Wahid Dasuki</a></h3>
+                  <span><a href="#">Ketua Majelis Wilayah KAHMI Jawa Tengah</a></span>
                 </div>
               </div> 
             </div> <!-- end work-item -->
@@ -248,8 +246,8 @@
                   </div>
                 </div>
                 <div class="work-description">
-                  <h3 style="color: #FFA500;">M. Taufiq</h3>                 
-                  <span><a href="#">Majelis Wilayah DKI Jakarta</a></span>
+                  <h3 style="color: #FFA500;">Muhammad Taufik</h3>                 
+                  <span><a href="#">Ketua Majelis Wilayah KAHMI DKI Jakarta</a></span>
                 </div>
               </div> 
             </div>
@@ -266,8 +264,8 @@
                   </div>
                 </div>
                 <div class="work-description">
-                  <h3 style="color: #FFA500;">dr. Ahmad Husaini</a></h3>
-                  <span><a href="#">Majelis Wilayah Bangka Belitung</a></span>
+                  <h3 style="color: #FFA500;">dr. Achmad Husaini</a></h3>
+                  <span><a href="#">Ketua Majelis KAHMI Wilayah Bangka Belitung</a></span>
                 </div>
               </div> 
             </div> <!-- end work-item -->
@@ -285,7 +283,7 @@
                 </div>
                 <div class="work-description">
                   <h3 style="color: #FFA500;">Muhammad Yusuf</a> </h3>
-                  <span><a href="#">Majelis Wilayah Kalimantan Barat</a></span>
+                  <span><a href="#"> Ketua Majelis Wilayah KAHMI Kalimantan Barat</a></span>
                 </div>
               </div> 
             </div> <!-- end work-item -->
@@ -303,8 +301,8 @@
                   </div>
                 </div>
                 <div class="work-description">
-                  <h3 style="color: #FFA500;">Ir. Murlan Tamba</h3>                 
-                  <span><a href="#">-</a></span>
+                  <h3 style="color: #FFA500;">Ir.H.Murlan Tamba</h3>                 
+                  <span><a href="#">Ketua Majelis Wilayah KAHMI Sumatera Utara</a></span>
                 </div>
               </div> 
             </div>
@@ -322,7 +320,7 @@
                 </div>
                 <div class="work-description">
                   <h3 style="color: #FFA500;">Anwar Esva</h3>                 
-                  <span><a href="#">Pengurus KAHMI DKI</a></span>
+                  <span><a href="#">Pengurus KAHMI DKI Jakarta</a></span>
                 </div>
               </div> 
             </div> <!-- end work-item -->
@@ -341,7 +339,7 @@
                 </div>
                 <div class="work-description">
                   <h3 style="color: #FFA500;">Komarudin</h3>                 
-                  <span><a href="#">-</a></span>
+                  <span><a href="#">Pengurus KAHMI Jawa Timur/Alumni ITS</a></span>
                 </div>
               </div> 
             </div>

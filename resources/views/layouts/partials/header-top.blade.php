@@ -22,7 +22,10 @@
   <link rel="stylesheet" href="{{ asset('css/responsive.css') }}" />
   <link rel="stylesheet" href="{{ asset('css/spacings.css') }}" />
   <link rel="stylesheet" href="{{ asset('css/animate.css') }}" />
-  <link rel="stylesheet" href="{{ asset('css/color.css') }}" />
+  <link rel="stylesheet" href="{{ asset('css/custome-login.css') }}" />
+  <link rel="stylesheet" href="{{ asset('css/custome-masuk.css') }}" />
+
+
 
   <!-- Favicons -->
   <link rel="icon" href="{{ asset('img/favicon.ico') }}">

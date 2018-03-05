@@ -407,8 +407,8 @@
             owlRelated.owlCarousel({
 
               slideSpeed: 300,
-              paginationSpeed: 400,
-              items: 3,
+              paginationSpeed: 200,
+              items: 4,
               itemsDesktop: [1199,3],
               itemsDesktopSmall: [979,3],
               pagination: false

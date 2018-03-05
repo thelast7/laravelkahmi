@@ -63,7 +63,7 @@ input[type="tel"]:focus,
 input[type="time"]:focus,
 input[type="url"]:focus,
 textarea:focus {
-	border-color: #bfa67a;
+	border-color: white;
 }
 
 .dropdown-menu {
