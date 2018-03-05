@@ -200,7 +200,6 @@
         </option>
     </option>
 </select>
-</div>
     <br>
     <label><b>Pekerjaan/Bidang Usaha</b></label>
     <div class="select relative">

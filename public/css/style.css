@@ -2218,6 +2218,18 @@ p {
   right: 0;
 }
 
+#owl-slider-one-img2:hover .owl-prev,
+#owl-slider-small-img2:hover .owl-prev {
+  opacity: 1;
+  left: 0;
+}
+
+#owl-slider-one-img2:hover .owl-next,
+#owl-slider-small-img2:hover .owl-next {
+  opacity: 1;
+  right: 0;
+}
+
 .owl-page {
   display: inline-block;
   padding: 6px 6px;

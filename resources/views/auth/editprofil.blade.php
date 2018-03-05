@@ -223,7 +223,7 @@
     <div class="clearfix">
       <button type="submit" class="signupbtn">Submit</button>
     </div>
-<
+</div>
 </form>
 </section> <!-- end page title -->
 @endsection
