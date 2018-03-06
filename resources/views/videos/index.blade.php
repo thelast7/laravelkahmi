@@ -126,7 +126,7 @@
       </div>
     </section> <!-- end portfolio single -->
 
-  <section class="section-wrap-mp portfolio-single">
+  <!-- <section class="section-wrap-mp portfolio-single">
       <div class="container">
         <div class="row">
 
@@ -180,8 +180,8 @@
                   <img src="img/ks_pp8.jpg" alt="">
                 </a>
               </div>
-        </div> <!-- end owl carousel -->
-          </div> <!-- end slider -->
+        </div>  --><!-- end owl carousel
+          </div> <!-- end slider
 
 
           <div class="col-md-4">
@@ -203,7 +203,7 @@
                 </div>
                 </div>
             </div>    
-          </div>
+          </div> --> -->
         </section>
 
     <!-- Related Projects -->

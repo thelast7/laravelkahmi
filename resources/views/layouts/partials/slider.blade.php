@@ -149,9 +149,47 @@
                 data-transform_idle="o:1;s:1500;"
                 data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0;sY:0;skX:0;skY:0;opacity:0;s:1000;e:Power3.easeOut;" 
                 data-transform_out="opacity:0;sX:0;sY:0;s:1200;e:Power3.easeInOut;"
-                data-start="1000"
-                
-              </div>  
+                data-start="1000">           
+              </div> 
+
+                 <li data-transition="cube"
+              data-slotamount="1"
+              data-masterspeed="1000"
+              data-delay="8000"
+              data-title="Creative &amp; Emotional">
+              <!-- MAIN IMAGE -->
+              <img src="img/revolution/mp_slide_4.jpg"
+                alt=""
+                data-bgrepeat="no-repeat"
+                data-bgfit="cover"
+                class="rev-slidebg"
+                >
+
+              <!-- LAYER NR. 1 -->
+              <div class="tp-caption hero-text large_white"
+                data-x="30"
+                data-y="center"
+                data-voffset="-50"
+                data-transform_idle="o:1;s:1500;"
+                data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0;sY:0;skX:0;skY:0;opacity:0;s:1000;e:Power3.easeOut;" 
+                data-transform_out="opacity:0;sX:0;sY:0;s:1200;e:Power3.easeInOut;"
+                data-start="1000">
+              </div>
+
+              <!-- LAYER NR. 2 -->
+              <div class="tp-caption subheading_text"
+                data-x="30"
+                data-y="center"
+                data-voffset="15"
+                data-transform_idle="o:1;s:1500;"
+                data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0;sY:0;skX:0;skY:0;opacity:0;s:1000;e:Power3.easeOut;" 
+                data-transform_out="opacity:0;sX:0;sY:0;s:1200;e:Power3.easeInOut;"
+                data-start="1000">
+              </div>
+              
+        
+            </li>
+
 
                 <!-- <div class="col-sm-6">
             <blockquote class="blockquote-style-1 mb-30">
