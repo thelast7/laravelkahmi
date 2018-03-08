@@ -28,36 +28,32 @@
 <section class="section-wrap">
  <div class="container">
     <div class="row">
-        <div class="col-sm-10">
-             <h1 style="font-family: 'sans-serif';">{{ Auth::user()->name }}</h1>
-        	
-      			<div class="panel panel-default">
-      				<div class="panel-body"  style="font-family: 'sans-serif'">
-      					<p>{{ $profile->harapan }}</p>
-      				</div>
-      			</div>
-
-      	</div>
+       
 
 	<div class="col-sm-2">
-		<a class="pull-right"> 
-			<img title="profile image" class="img-circle img-responsive" src="img/photodiri/{{ $profile->photo_diri }}">
+		<a class="pull-left"> 
+			<img title="profile image" class="img-box img-responsive"  src="img/photodiri/{{ $profile->photo_diri }}">
 		</a>
 	</div>
+
+   <div class="col-sm-10">
+             <h1>{{ Auth::user()->name }}</h1>
+          
+            <div class="panel panel-default">
+              <div class="panel-body"  style="font-family: 'sans-serif'">
+                <p>{{ $profile->harapan }}</p>
+              </div>
+            </div>
+
+        </div>
+
   <br>
-
-  <div class="col-sm-10">
-    <a class="pull-right"> 
-      <img title="photo_usaha" class="img-circle img-responsive" src="img/photousaha/{{ $profile->photo_usaha }}">
-    </a>
-  </div>
-
+    <div class="container">
     <div class="row">
-        <div class="col-sm-6">
+        <div class="col-sm-4">
             <!--left col-->
               <ul class="list-group">
-                <li class="list-group-item text-muted" contenteditable="false"  style="font-family: 'sans-serif';">My Profile
-                <a href="{{ route ('profile.edit', $profile->id) }}" class="btn btn-warning btn-xs"><i class="fa fa-pencil"></i> Edit </a></li>
+                 <h2> My Profile </h2>
                 <li class="list-group-item text-right"><span class="pull-left"><strong >Name</strong></span>{{ Auth::user()->name }}</li>
                 <li class="list-group-item text-right"><span class="pull-left"><strong >User Name</strong></span>{{ $profile->username }} </li>
                 <li class="list-group-item text-right"><span class="pull-left"><strong >Alamat e-mail</strong></span> {{ Auth::user()->email }}</li>
@@ -66,9 +62,18 @@
                 <li class="list-group-item text-right"><span class="pull-left"><strong class="">Alamat Lengkap</strong></span>{{ Auth::user()->alamat }}</li>
                 <li class="list-group-item text-right"><span class="pull-left"><strong class="">Kota Asal</strong></span> {{ Auth::user()->kota }}</li>
                 <li class="list-group-item text-right"><span class="pull-left"><strong class="">Pekerjaan</strong></span> {{ Auth::user()->pekerjaan }}</li>
+                <br>
+                <a href="{{ route ('profile.edit', $profile->id) }}" class="btn btn-sm btn-dark"><i class="fa fa-pencil"></i> Edit </a>
               </ul>
         </div>
 
+    <div class="col-md-8">
+      <a class="pull-right">
+      <h1> My Produk </h1> 
+      <img style="width: 100%;" title="photo_usaha" class="img-box img-responsive" src="img/photousaha/{{ $profile->photo_usaha }}">
+      </a>
+    </div>
+  </div>
         <!--/col-3-->
         <div class="col-sm-9" style="" contenteditable="false">
         

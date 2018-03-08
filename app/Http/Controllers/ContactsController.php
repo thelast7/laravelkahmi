@@ -27,16 +27,16 @@ class ContactsController extends Controller
             $mail->isSMTP();                                      // Set mailer to use SMTP
             $mail->Host = 'smtp.gmail.com';                  // Specify main and backup SMTP servers
             $mail->SMTPAuth = true;                               // Enable SMTP authentication
-            $mail->Username = 'takim.anwar1993@gmail.com';                 // SMTP username
-            $mail->Password = 'sedgkykskaweewzz';                           // SMTP password
+            $mail->Username = 'kahmipreneur@gmail.com';                 // SMTP username
+            $mail->Password = 'inppfppxuglwnzzo';                           // SMTP password
             $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
             $mail->Port = 587;                                    // TCP port to connect to
 
             // Sender
-            $mail->setFrom("takim.anwar1993@gmail.com", "Mustaqim Anwar");
+            $mail->setFrom("kahmipreneur@gmail.com", "KAHMIPRENEUR");
 
             // who will receive the email submission
-            $mail->addAddress('takimanwar@gmail.com', 'Kahmi');     // Add a recipient
+            $mail->addAddress('kahmipreneur@gmail.com', 'Kahmi');     // Add a recipient
             // $mail->addAddress('ellen@example.com');               // Name is optional
 
 

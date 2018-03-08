@@ -126,7 +126,7 @@
       </div>
     </section> <!-- end portfolio single -->
 
-  <section class="section-wrap-mp portfolio-single">
+  <!-- <section class="section-wrap-mp portfolio-single">
       <div class="container">
         <div class="row">
 
@@ -180,8 +180,8 @@
                   <img src="img/ks_pp8.jpg" alt="">
                 </a>
               </div>
-        </div> <!-- end owl carousel -->
-          </div> <!-- end slider -->
+        </div>  --><!-- end owl carousel
+          </div>
 
 
           <div class="col-md-4">
@@ -203,13 +203,13 @@
                 </div>
                 </div>
             </div>    
-          </div>
-        </section>
+          </div> --> 
+       <!--  </section> -->
 
     <!-- Related Projects -->
     <section class="related-projects pb-90">
       <div class="container">
-        <h4 class="heading-inline">LAINNYA</h4>
+        <h4 class="heading-inline">Lainnya</h4>
         <div class="customNavigation right">
           <a class="btn prev"><i class="fa fa-angle-left"></i></a>
           <a class="btn next"><i class="fa fa-angle-right"></i></a>

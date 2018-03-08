@@ -25,10 +25,17 @@
           
           <!-- content -->
           <div class="col-sm-12 blog-content">
+            <div class="entry-item">
             <!-- standard post -->
                 <div class="col-sm-10 col-sm-offset-1">
+                  
                   <div class="entry-title">
                     <h2>{{ $isiberita->title }}</h2>
+                  </div>
+                  <div class="entry-img">
+              
+                  <img src="{{ url('/img/post/'.$isiberita->image) }}">
+
                   </div>
                     <ul class="entry-meta bottom-line">
                       <li class="entry-date">
@@ -50,7 +57,9 @@
                     </div> <!-- end share -->
                     </div>
                   </div> <!-- end entry -->
+
                 </div>
+              </div>
               </div> <!-- end row -->
           </div> <!-- end col -->
         </div> <!-- end row -->

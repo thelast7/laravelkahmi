@@ -31,6 +31,7 @@ a,
 .related-projects .customNavigation a:hover,
 .highlight,
 .btn.btn-color,
+.btn:hover,
 .socials.footer-socials a:hover i {
 	background-color: ##1d4242;
 }

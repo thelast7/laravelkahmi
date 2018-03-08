@@ -40,7 +40,7 @@
               </div> <!-- end post -->
 				@endforeach
            </div>
-          	{!! $blogs->links() !!} 
+          	<!-- {!! $blogs->links() !!} --> 
           </div> <!-- end row -->
         </div>
       </div>

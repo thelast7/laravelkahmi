@@ -1,6 +1,13 @@
 -------------------------------------------------------*/
 /* General
 /*-------------------------------------------------------*/
+
+.img-box {
+width: 100%;
+height: 100%;
+
+}
+
 .col-md-6 {
    border-radius: 20px;
 
@@ -10,25 +17,6 @@
   margin-top:40px;
 }
 
-.wkwk {
-  display:table;
-  width:100%;
-}
-
-.icon-container h3 {
-  margin-top:20px;
-}
-
-.icon-container {
-  float: left;
-  display: table;
-  margin-right:20px;
-}
-
-.icon-container .icon {
-  display: inline-block;
-  text-align:center;
-}
 
 #header-title1 {
 
@@ -104,7 +92,7 @@ color: #d7a872;
 }
 
 .section-wrap, .section-wrap-mp {
-  padding: 50px 0;
+  padding: 15px 0;
   overflow: hidden;
   background-attachment: fixed;
   -webkit-background-size: cover;
@@ -221,13 +209,14 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Montserrat", sans-serif;
   margin-top: 0;
   text-transform: uppercase;
-  color: #111;
+  color: #BE1E2D;
   letter-spacing: 0.05em;
   font-weight: 700;
 }
 
 h1 {
   font-size: 28px;
+  color: #1d4242;
 }
 
 h2 {
@@ -259,8 +248,8 @@ p {
 }
 
 .subheading {
-  font-family: "Pt Serif", serif;
-  font-size: 16px;
+  font-family: sans-serif;
+  font-size: 20px;
   font-style: ;
   color: #000000;
 }
@@ -275,8 +264,9 @@ p {
   width: 48px;
   border-bottom: 3px solid #e8e8e8;
   margin: 15px auto 15px;
-}
+  color: #BE1E2D;
 
+}
 /*-------------------------------------------------------*/
 /* Preloader
 /*-------------------------------------------------------*/
@@ -350,6 +340,7 @@ p {
   .navbar-toggle {
     display: block;
   }
+  
   .navbar-collapse {
     border-top: 1px solid transparent;
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
@@ -1324,13 +1315,52 @@ p {
 
 /* Services
 -------------------------------------------------------*/
+.wkwk {
+  display:table;
+  width:100%;
+}
+
+.icon-container h3 {
+  margin-top:20px;
+}
+
+.icon-container {
+  float: left;
+  display: table;
+  margin-right:20px;
+}
+
+.icon-container .icon {
+  display: inline-block;
+  text-align:center;
+}
+
+
 .service-item-box {
-  background-color: #1d4242;
+  background-color: #BE1E2D;
   padding: 60px 40px;
   margin-bottom: 30px;
   border-radius: 50px;
 }
 
+@media (max-width: 720px) {
+  .wkwk {
+    display:default;
+    width:100%;
+  }
+
+  .icon-container {
+  float: de;
+  clear: both; 
+  margin-right:20px;
+  }
+  .service-item-box {
+   text-align: center;
+  }
+  .service-item-box h3{
+
+  }
+}
 .service-item-box h3 {
   font-size: 15px;
   margin-bottom: 21px;
@@ -1345,6 +1375,7 @@ p {
 
 .service-item-box p {
   color: #ffffff;
+  margin-bottom: 21px;
 }
 
 .service-item-box i {
@@ -2022,7 +2053,7 @@ p {
 }
 
 .parallax-testimonials .bottom-line:after {
-  border-color: #fff;
+  border-color: #BE1E2D;
 }
 
 .testimonial-text {
@@ -3367,6 +3398,8 @@ input.searchbox:focus {
 
 .related-projects .heading-inline {
   color:  #FFA500 ;
+  margin-bottom: 0;
+  display: inline-block;
 }
 .related-projects .customNavigation {
   display: inline-block;
@@ -3837,8 +3870,10 @@ ol.numbers {
 
 .btn-sm {
   font-size: 10px;
+  width: 100%;
   padding: 8px 22px;
-  color: ##FFA500;
+  color: #Ffffff;
+  background-color:   #008000;
 }
 
 /* Pie Charts

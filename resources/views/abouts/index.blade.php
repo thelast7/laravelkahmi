@@ -46,17 +46,15 @@
                   isu yang berkembang di Indonesia terkait dengan KAHMI, diantaranya: </p>
               <ul class="bullets">
 
-              <li><p>Kritik terhadap KAHMI yang lebih banyak berpolitik, sehingga gagasan KAHMI 
-                  Entrepreneur adalah gerakan merubah mindset dari pencari lapangan kerja 
-                  menjadi pencipta lapangan kerja;</p></li>
-              <li><p>KAHMI Entrepreneur adalah sarana membangun <b>SINERGI</b> antara perbankan, pemasaran, teknologi, manajemen sebagai jawaban atas tuntutan publik menciptakan wirausaha yang tangguh dalam melahirkan 
-                  wirausaha baru agar Indonesia memiliki wirausaha lebih banyak lagi seperti yang 
-                  disyaratkan untuk menjadi negara maju. Maka negara tersebut harus memiliki 
-                  entrepreneur minimal 2% dari total populasi penduduknya.</p></li>
-              <li><p>Program ini adalah upaya untuk merubah mindset alumni HMI dari political oriented 
-                  menjadi entrepreneur oriented;</p></li>
-              <li><p>Konsep ini sangat tepat untuk menjawab tingginya bonus demografi (angkatan 
-                  kerja produktif) Indonesia 2020.</p></li>
+              <li><p>Kritik terhadap <b>KAHMI</b> yang lebih banyak berpolitik, sehingga gagasan KAHMI 
+                  Entrepreneur adalah gerakan merubah mindset dari political oriented menjadi entrepreneur oriented;</p></li>
+
+              <li><p>KAHMI Entrepreneur adalah sarana membangun <b>SINERGI</b> antara perbankan, pemasaran, teknologi, manajemen, dan mentoring, sebagai jawaban atas tuntutan publik dalam menciptakan wirausaha yang tangguh membentuk kemandirian ekonomi umat. Indonesia akan menjadi negara maju karena kekuatan entrepreneur.
+                  </p></li>
+
+              <li><p>Perubahan <b>ENTREPRENEUR</b> oriented membentuk karakter dari pencari lapangan kerja menjadi pencipta lapangan kerja. </p></li>
+
+              <li><p>Karena <b>KAHMIPRENEUR</b> merupakan solusi dalam menyambut puncak bonus demografi (angkatan kerja produktif) Indonesia 2030.</p></li>
               </ul>    
              <p> Dalam perkembangan dinamika bisnis saat ini, insan wirausaha di Indonesia dituntut untuk selalu 
                   membekali diri mereka dengan wawasan serta ilmu pengetahuan tentang kewirausahaan serta 
@@ -75,7 +73,7 @@
           Dengan Menyasar beberapa desa dan kabupaten di Indonesia, Program KAHMIPreneur ini 
           diharapkan mampu untuk meningkatkan jumlah para wirausaha yang berkualitas, mewujudkan 
           kemampuan dan kemantapan para wirausaha untuk menghasilkan kemajuan dan kesejahteraan 
-          masyarakat. Program ini juga diharapkan dapat membudayakan semangat sikap, perilaku, dan 
+          masyarakat. Program ini juga diharapkan dapat membudayakan semangat, sikap, perilaku, dan 
           kemampuan kewirausahaan di kalangan masyarakat yang mampu, andal, dan unggul.</p>
           <br>
         
@@ -90,12 +88,12 @@
           </ul>
           <br>
           <h4>Sasaran dan Target</h4><p>
-          Sasaran dan target dari KAHMIPreneuradalah mengusahakan anggota KAHMI menjadi seorang 
+          Sasaran dan target dari KAHMIPreneur l\adalah mengusahakan anggota KAHMI menjadi seorang 
           wirausahawan. Maupun yang belum menjadi anggota, kami berusaha untuk menarik perhatian 
           mereka untuk mau memulai usahanya sendiri.<p>
           <br>
           <br>
-          <a href="{{ route('register') }}" class="btn btn-sm btn-dark">Tertarik ? Ingin tahu lebih lanjut? Klik Ini</a>
+          <a href="{{ route('register') }}" class="btn btn-sm btn-dark">Tertarik ? Mari Bergabung !</a>
           
           </div>
           </div>
