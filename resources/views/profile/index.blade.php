@@ -32,12 +32,12 @@
 
 	<div class="col-sm-2">
 		<a class="pull-left"> 
-			<img title="profile image" class="img-box img-responsive" style="border-radius: 20px" src="img/photodiri/{{ $profile->photo_diri }}">
+			<img title="profile image" class="img-box img-responsive"  src="img/photodiri/{{ $profile->photo_diri }}">
 		</a>
 	</div>
 
    <div class="col-sm-10">
-             <h1 style="font-family: 'sans-serif';">{{ Auth::user()->name }}</h1>
+             <h1>{{ Auth::user()->name }}</h1>
           
             <div class="panel panel-default">
               <div class="panel-body"  style="font-family: 'sans-serif'">
@@ -53,7 +53,7 @@
         <div class="col-sm-4">
             <!--left col-->
               <ul class="list-group">
-                <li class="list-group-item text-muted" contenteditable="false"  style="font-family: 'sans-serif';">My Profile
+                 <h2> My Profile </h2>
                 <li class="list-group-item text-right"><span class="pull-left"><strong >Name</strong></span>{{ Auth::user()->name }}</li>
                 <li class="list-group-item text-right"><span class="pull-left"><strong >User Name</strong></span>{{ $profile->username }} </li>
                 <li class="list-group-item text-right"><span class="pull-left"><strong >Alamat e-mail</strong></span> {{ Auth::user()->email }}</li>
@@ -67,9 +67,9 @@
               </ul>
         </div>
 
-    <div class="col-md-4">
+    <div class="col-md-8">
       <a class="pull-right">
-      <label style="font-family: sans-serif" style="font-size: 20px"> My Produk </label> 
+      <h1> My Produk </h1> 
       <img style="width: 100%;" title="photo_usaha" class="img-box img-responsive" src="img/photousaha/{{ $profile->photo_usaha }}">
       </a>
     </div>

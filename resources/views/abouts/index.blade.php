@@ -93,7 +93,7 @@
           mereka untuk mau memulai usahanya sendiri.<p>
           <br>
           <br>
-          <a href="{{ route('register') }}" class="btn btn-sm btn-dark">Tertarik ? Ingin tahu lebih lanjut? Klik Ini</a>
+          <a href="{{ route('register') }}" class="btn btn-sm btn-dark">Tertarik ? Mari Bergabung !</a>
           
           </div>
           </div>

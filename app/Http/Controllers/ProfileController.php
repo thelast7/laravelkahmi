@@ -121,7 +121,7 @@ class ProfileController extends Controller
         $extension = $image->guessClientExtension();
         $filename = str_random(40) . '.' . $extension; 
         $img = Image::make($_FILES['photo_usaha']['tmp_name']);
-        $img->resize(272, 203);
+        $img->resize(1920, 1028);
         $path_dir = base_path() . '/public/img/photousaha/'.$filename;
         $success = $img->save($path_dir);
         return $filename;

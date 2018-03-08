@@ -9,7 +9,6 @@ use Illuminate\Foundation\Auth\RegistersUsers;
 
 use DB;
 use Mail;
-use image;
 use Illuminate\Http\Request;
 
 class RegisterController extends Controller
@@ -85,22 +84,9 @@ class RegisterController extends Controller
             'photo_usaha' => $data['photo_usaha'],
             'harapan' => $data['harapan']
         ]);
-        $user->photo_diri = $this->photodiri($data['photo_diri']);
-        $data['photo_diri'] = $this->photodiri($user->file('photo_diri'));
 		$user->role = 'member';
 		$user->save();
 		return $user;
-    }
-
-    public function photodiri($image)
-    {
-        $extension = $image->guessClientExtension();
-        $filename = str_random(40) . '.' . $extension; 
-        $img = Image::make($_FILES['photo_diri']['tmp_name']);
-        $img->resize(272, 203);
-        $path_dir = base_path() . '/public/img/photodiri/'.$filename;
-        $success = $img->save($path_dir);
-        return $filename;
     }
 
     public function register(Request $request) {
