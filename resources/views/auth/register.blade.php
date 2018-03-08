@@ -20,6 +20,15 @@
         </div>
       </div>
     </div>
+{{-- ini untuk menampilkan smua error message ketika data tidak di input --}}
+@if(session('errors'))
+	<div class="alert alert-warning" id="add-new-warning"> <button type="button" data-dismiss="alert" aria-hidden="true" class="close">&times;</button>
+		<i class="fa fa-warning"></i> 
+		@foreach($errors->all() as $error)
+			<div>{{ $error }}</div>
+		@endforeach
+    </div>
+@endif 
 
 <form role="form" method="POST" action="{{ url('/register') }}" style="border:0px solid #ccc" enctype="multipart/form-data">
    {{ csrf_field() }}
@@ -27,19 +36,18 @@
     Silahkan Isi Form Dibawah Ini.
     <hr>
 
-    <label><b>Nama Lengkap</b></label>
-    <br>
-    <input id="name" type="text" name="name" value="{{ old('name') }}" placeholder="Masukan nama lengkap" required autofocus>
-	@if ($errors->has('name'))
-		<span class="help-block">
-			<strong>{{ $errors->first('name') }}</strong>
-		</span>
-	@endif   
-    <br>
-
+	<div class="form-group {{ $errors->has('name') ? 'has-error' : '' }}">
+		{!! Form::label('name','Nama Lengkap') !!}
+		<div class="">
+			{!! Form::text('name', null) !!}
+			{{-- ini menampilkan error message setiap form --}}
+			{!! $errors->first('name', '<p class="help-block">:message</p>') !!}
+		</div>
+	</div>
+   
 	<label><b>Username</b></label>
     <br>
-    <input id="name" type="text" name="username" value="{{ old('username') }}" placeholder="Masukan Username" required>
+    <input id="username" type="text" name="username" value="{{ old('username') }}" placeholder="Masukan Username" >
 	@if ($errors->has('username'))
 		<span class="help-block">
 			<strong>{{ $errors->first('username') }}</strong>
@@ -49,7 +57,7 @@
     <br>
     <label><b>Alamat E-Mail</b></label>
     <br>
-    <input id="email" type="text" name="email" value="{{ old('email') }}" placeholder="Masukan E-mail" required>
+    <input id="email" type="text" name="email" value="{{ old('email') }}" placeholder="Masukan E-mail" >
 	@if ($errors->has('name'))
 		<span class="help-block">
 			<strong>{{ $errors->first('name') }}</strong>
@@ -59,7 +67,7 @@
     <br>
     <label><b>Kata Sandi</b></label>
     <br>
-	<input id="password" type="password" name="password" placeholder="Masukan Kata Sandi" required>
+	<input id="password" type="password" name="password" placeholder="Masukan Kata Sandi" >
 	@if ($errors->has('password'))
 		<span class="help-block">
 			<strong>{{ $errors->first('password') }}</strong>
@@ -69,7 +77,7 @@
     <br>
     <label><b>Konfirmasi Kata Sandi</b></label>
     <br>
-    <input id="password-confirm" type="password" name="password_confirmation" placeholder="Masukan konfirmasi kata sandi" required>
+    <input id="password-confirm" type="password" name="password_confirmation" placeholder="Masukan konfirmasi kata sandi" >
     <br>
     <label><b>Gender</b></label>
 	<ul class="radio-buttons">
@@ -85,7 +93,13 @@
     <br>
     <label><b>NIK</b></label>
     <br>
-    <input id="nik" type="text" name="nik" value="{{ old('nik') }}" placeholder="Masukan NIK">
+	<input id="nik" type="text" name="nik" value="{{ old('nik') }}" placeholder="Masukan NIK">
+	@if ($errors->has('nik'))
+		<span class="help-block">
+			<strong>{{ $errors->first('nik') }}</strong>
+		</span>
+	@endif
+
     <br>
     <label><b>No Handphone</b></label>
     <br>
