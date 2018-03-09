@@ -11,6 +11,11 @@ use DB;
 use Mail;
 use Illuminate\Http\Request;
 
+use Intervention\Image\Facades\Image;
+use File;
+use Symfony\Component\HttpFoundation\File\UploadedFile;
+
+
 class RegisterController extends Controller
 {
     /*
@@ -53,9 +58,13 @@ class RegisterController extends Controller
 	{
 		return Validator::make($data, [
             'name' => 'required|max:255',
-            'username' => 'required|max:255|unique:users',
+            'username' => 'required|min:4',
+            'nik' => 'required|numeric|min:5',
+            'no_hp' => 'required|numeric|min:9',
+            'kota' => 'required',
+            'pekerjaan' => 'required',
             'email' => 'required|email|max:255|unique:users',
-            'password' => 'required|min:6|confirmed',
+            'password' => 'required|min:6|confirmed'
         ]);
 	}
 
@@ -67,6 +76,9 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
+		$photo_diri = $this->photodiri($data['photo_diri']);
+		$photo_ktp = $this->photoktp($data['photo_ktp']);
+		$photo_usaha = $this->photousaha($data['photo_usaha']);
 		$user = User::create([
             'name' => $data['name'],
             'username' => $data['username'],
@@ -79,12 +91,12 @@ class RegisterController extends Controller
             'alamat' => $data['alamat'],
             'kota' => $data['kota'],
             'pekerjaan' => $data['pekerjaan'],
-            'photo_diri' => $data['photo_diri'],
-            'photo_ktp' => $data['photo_ktp'],
-            'photo_usaha' => $data['photo_usaha'],
-            'harapan' => $data['harapan']
+            'photo_diri' => $photo_diri,
+            'photo_ktp' => $photo_ktp,
+            'photo_usaha' => $photo_usaha,
+            'harapan' => $data['harapan'],
+			'role' => 'member'
         ]);
-		$user->role = 'member';
 		$user->save();
 		return $user;
     }
@@ -105,7 +117,7 @@ class RegisterController extends Controller
             return redirect()->to('login')->with('message', "Kode aktivasi telah dikirim, silahkan cek email anda");
 
         }
-        return back()->with('Error', $validator->errors());
+        return back()->with('errors', $validator->errors());
     }
 
     public function userActivation($token) {
@@ -115,13 +127,47 @@ class RegisterController extends Controller
             $user = User::find($check->id_user);
 
             if ($user->is_activated == 1){
-                return redirect()->to('login')->with('Success', "User are already actived");
+                return redirect()->to('login')->with('message', "User are already actived");
             }
             $user->update(['is_activated' => 1]);
             DB::table('users_activations')->where('token', $token)->delete();
 
-            return redirect()->to('login')->with('Success', "user active successfully");
+            return redirect()->to('login')->with('message', "user active successfully");
         }
-        return redirect()->to('login')->with('warning', "token anda salah");
+        return redirect()->to('login')->with('message', "token anda salah");
     }
+	
+	public function photoktp(UploadedFile $image)
+    {
+        $extension = $image->guessClientExtension();
+        $filename = str_random(40) . '.' . $extension; 
+        $img = Image::make($_FILES['photo_ktp']['tmp_name']);
+        $img->resize(1920, 1028);
+        $path_dir = base_path() . '/public/img/photoktp/'.$filename;
+        $success = $img->save($path_dir);
+        return $filename;
+    }
+	
+	public function photodiri(UploadedFile $image)
+    {
+        $extension = $image->guessClientExtension();
+        $filename = str_random(40) . '.' . $extension; 
+        $img = Image::make($_FILES['photo_diri']['tmp_name']);
+        $img->resize(272, 203);
+        $path_dir = base_path() . '/public/img/photodiri/'.$filename;
+        $success = $img->save($path_dir);
+        return $filename;
+    }
+
+	public function photousaha(UploadedFile $image)
+    {
+        $extension = $image->guessClientExtension();
+        $filename = str_random(40) . '.' . $extension; 
+        $img = Image::make($_FILES['photo_usaha']['tmp_name']);
+        $img->resize(272, 203);
+        $path_dir = base_path() . '/public/img/photousaha/'.$filename;
+        $success = $img->save($path_dir);
+        return $filename;
+    }
+
 }
