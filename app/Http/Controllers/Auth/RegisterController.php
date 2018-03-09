@@ -64,7 +64,14 @@ class RegisterController extends Controller
             'kota' => 'required',
             'pekerjaan' => 'required',
             'email' => 'required|email|max:255|unique:users',
-            'password' => 'required|min:6|confirmed'
+            'password' => 'required|min:6|confirmed',
+            'tanggal_lahir' => 'required|date|min:8',
+            'jenis_kelamin' => 'required',
+            'alamat' => 'required|max:255',
+            'harapan' => 'required|file',
+            'photo_diri' => 'required|file',
+            'photo_ktp' => 'required|file',
+            'photo_usaha' => 'required|file'
         ]);
 	}
 

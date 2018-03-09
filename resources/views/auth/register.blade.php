@@ -20,6 +20,7 @@
         </div>
       </div>
     </div>
+
 {{-- ini untuk menampilkan smua error message ketika data tidak di input --}}
 @if(session('errors'))
 	<div class="alert alert-warning" id="add-new-warning"> <button type="button" data-dismiss="alert" aria-hidden="true" class="close">&times;</button>
@@ -36,37 +37,49 @@
     Silahkan Isi Form Dibawah Ini.
     <hr>
 
-	<div class="form-group {{ $errors->has('name') ? 'has-error' : '' }}">
+<!-- 	<div class="form-group {{ $errors->has('name') ? 'has-error' : '' }}">
 		{!! Form::label('name','Nama Lengkap') !!}
 		<div class="">
-			{!! Form::text('name', null) !!}
+			{!! Form::text('name', null) !!} -->
 			{{-- ini menampilkan error message setiap form --}}
-			{!! $errors->first('name', '<p class="help-block">:message</p>') !!}
+<!-- 			{!! $errors->first('name', '<p class="help-block">:message</p>') !!}
 		</div>
-	</div>
+	</div> -->
    
+<!--    <div class="form-group {{ $errors->has('username') ? 'has-error' : '' }}">
+    {!! Form::label('username') !!}
+    <div class="">
+      {!! Form::text('username', null) !!} -->
+      {{-- ini menampilkan error message setiap form --}}
+<!--       {!! $errors->first('username', '<p class="help-block">:message</p>') !!}
+    </div>
+  </div> -->
+  
+  <label><b>Nama Lengkap</b></label>
+    <input id="name" type="text" name="Nama Lengkap" value="{{ old('Nama Lengkap') }}" placeholder="Masukan Nama" >
+  @if ($errors->has('name'))
+    <span class="help-block">
+      <strong>{{ $errors->first('name') }}</strong>
+    </span>
+  @endif
+
 	<label><b>Username</b></label>
-    <br>
     <input id="username" type="text" name="username" value="{{ old('username') }}" placeholder="Masukan Username" >
-	@if ($errors->has('username'))
-		<span class="help-block">
-			<strong>{{ $errors->first('username') }}</strong>
-		</span>
-	@endif
+    	@if ($errors->has('username'))
+    		<span class="help-block">
+    			<strong>{{ $errors->first('username') }}</strong>
+    		</span>
+    	@endif
 
-    <br>
-    <label><b>Alamat E-Mail</b></label>
-    <br>
+  <label><b>Alamat E-Mail</b></label>
     <input id="email" type="text" name="email" value="{{ old('email') }}" placeholder="Masukan E-mail" >
-	@if ($errors->has('name'))
-		<span class="help-block">
-			<strong>{{ $errors->first('name') }}</strong>
-		</span>
-	@endif
+    	@if ($errors->has('email'))
+    		<span class="help-block">
+    			<strong>{{ $errors->first('email') }}</strong>
+    		</span>
+    	@endif
 
-    <br>
-    <label><b>Kata Sandi</b></label>
-    <br>
+  <label><b>Kata Sandi</b></label>
 	<input id="password" type="password" name="password" placeholder="Masukan Kata Sandi" >
 	@if ($errors->has('password'))
 		<span class="help-block">
@@ -74,15 +87,18 @@
 		</span>
 	@endif
 
-    <br>
     <label><b>Konfirmasi Kata Sandi</b></label>
-    <br>
     <input id="password-confirm" type="password" name="password_confirmation" placeholder="Masukan konfirmasi kata sandi" >
-    <br>
+
     <label><b>Gender</b></label>
 	<ul class="radio-buttons">
+    @if ($errors->has('jenis_kelamin'))
+    <span class="help-block">
+      <strong>{{ $errors->first('jenis_kelamin') }}</strong>
+    </span>
+  @endif
 	  <li>
-		<input type="radio" class="input-radio" name="jenis_kelamin" id="radio1" value="laki-laki" checked="checked">
+		<input type="radio" class="input-radio" name="jenis_kelamin" id="radio1" value="laki-laki">
 		<label for="radio1">Male</label>
 	  </li>
 	  <li>
@@ -90,9 +106,8 @@
 		<label for="radio2">Female</label>
 	  </li>
 	</ul>
-    <br>
+
     <label><b>NIK</b></label>
-    <br>
 	<input id="nik" type="text" name="nik" value="{{ old('nik') }}" placeholder="Masukan NIK">
 	@if ($errors->has('nik'))
 		<span class="help-block">
@@ -100,20 +115,32 @@
 		</span>
 	@endif
 
-    <br>
     <label><b>No Handphone</b></label>
-    <br>
     <input id="no_hp" type="text" name="no_hp" value="{{ old('no_hp') }}" placeholder="Masukan No Handphone">
-    <br>
+  @if ($errors->has('no_hp'))
+    <span class="help-block">
+      <strong>{{ $errors->first('no_hp') }}</strong>
+    </span>
+  @endif
+
     <label><b>Tanggal Lahir</b></label>
     <form action="/action_page.php">
     <input type="date" name="tanggal_lahir">
+  @if ($errors->has('tanggal_lahir'))
+    <span class="help-block">
+      <strong>{{ $errors->first('tanggal_lahir') }}</strong>
+    </span>
+  @endif
     </form>
+
     <label><b>Alamat Lengkap</b></label>
-    <br>
-    
     <textarea class="form-control" id="alamat" name="alamat" placeholder="Masukan Alamat Lengkap" rows="8"></textarea>
-    <br>
+  @if ($errors->has('alamat'))
+    <span class="help-block">
+      <strong>{{ $errors->first('alamat') }}</strong>
+    </span>
+  @endif
+
     <label><b>Kota Asal</b></label>
     <div class="select relative">
               <i class="fa fa-angle-down"></i>
@@ -126,29 +153,48 @@
     <label><b>Pekerjaan</b></label>
     <div class="select relative">
               <i class="fa fa-angle-down"></i>
-              {!! Form::select('pekerjaan', ['Pegawai Negri Sipil' => 'Pegawai Negri Sipil', 'Karyawan Swasta' => 'Karyawan Swasta', 'Wirausaha' => 'Wirausaha']) !!}
+              {!! Form::select('pekerjaan', ['Pegawai Negeri Sipil' => 'Pegawai Negeri Sipil', 'Karyawan Swasta' => 'Karyawan Swasta', 'Wirausaha' => 'Wirausaha']) !!}
             </div>
-    <br>       
+    
     <div class="Foto">
-    <label><b>Unggah Foto Diri</b></label>
-   		<input type="file" name="photo_diri">
+      <label><b>Unggah Foto Diri</b></label>
+        <input type="file" name="photo_diri">
+          @if ($errors->has('photo_diri'))
+            <span class="help-block">
+              <strong>{{ $errors->first('photo_diri') }}</strong>
+            </span>
+          @endif
     </div>
-    <br>
+    
     <div>
     <label><b>Unggah Foto KTP</b></label>
     	<input type="file" name="photo_ktp">
+  @if ($errors->has('photo_ktp'))
+    <span class="help-block">
+      <strong>{{ $errors->first('photo_ktp') }}</strong>
+    </span>
+  @endif
     </div>
-    <br>
+    
     <div>
     <label><b>Unggah Foto Usaha</b></label>
       <input type="file" name="photo_usaha">
+  @if ($errors->has('photo_usaha'))
+    <span class="help-block">
+      <strong>{{ $errors->first('photo_usaha') }}</strong>
+    </span>
+  @endif
     </div>
-    <br>
+    
 
     <label><b>Harapan Bergabung di KAHMIPRENEUR </b></label>
     
     <textarea class="form-control" id="harapan" name="harapan" placeholder="Masukan Harapan anda" rows="3"></textarea>
-    <br>
+  @if ($errors->has('harapan'))
+    <span class="help-block">
+      <strong>{{ $errors->first('harapan') }}</strong>
+    </span>
+  @endif
       <div>
       <input type="checkbox" class="input-checkbox" name="checkbox" id="checkbox1" value="1" checked="checked">
       <label for="checkbox1">Dengan ini saya telah mengerti dan menyetujui <a href="#" style="color:dodgerblue">syarat dan ketentuan</a> yang berlaku.</label>
