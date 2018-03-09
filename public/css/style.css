@@ -63,6 +63,7 @@ color: #d7a872;
 }
 
 .help-block {
+  color: #BE1E2D;
   *zoom: 1;
 }
 
@@ -3943,7 +3944,8 @@ ol.numbers {
 }
 
 .alert-warning {
-  background-color: #ccbfa9;
+  background-color: #ffffff;
+  color: #FF0000;
 }
 
 .alert-danger {

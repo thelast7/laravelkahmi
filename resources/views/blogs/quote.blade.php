@@ -19,7 +19,7 @@
                   </div>
 
               <p class="mt-20" style="font-size: 27px" style="font-family: sans-serif">Kritik terhadap <b>KAHMI</b> yang lebih banyak berpolitik, sehingga gagasan KAHMI Entrepreneur adalah gerakan merubah mindset dari political oriented menjadi <br>entrepreneur oriented.
-            <br><br><br></p>
+            <br><br></p>
             </div>            
           </div> <!-- end service item -->
 
