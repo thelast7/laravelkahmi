@@ -68,7 +68,7 @@ class RegisterController extends Controller
             'tanggal_lahir' => 'required|date|min:8',
             'jenis_kelamin' => 'required',
             'alamat' => 'required|max:255',
-            'harapan' => 'required|file',
+            'harapan' => 'required|max:255',
             'photo_diri' => 'required|file',
             'photo_ktp' => 'required|file',
             'photo_usaha' => 'required|file'

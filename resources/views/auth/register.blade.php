@@ -20,43 +20,33 @@
         </div>
       </div>
     </div>
-
 {{-- ini untuk menampilkan smua error message ketika data tidak di input --}}
 @if(session('errors'))
-	<div class="alert alert-warning" id="add-new-warning"> <button type="button" data-dismiss="alert" aria-hidden="true" class="close">&times;</button>
-		<i class="fa fa-warning"></i> 
-		@foreach($errors->all() as $error)
-			<div>{{ $error }}</div>
-		@endforeach
+  <div class="alert alert-warning" id="add-new-warning"> <button type="button" data-dismiss="alert" aria-hidden="true" class="close">&times;</button>
+    <i class="fa fa-warning"></i> 
+    @foreach($errors->all() as $error)
+      <div>{{ $error }}</div>
+    @endforeach
     </div>
 @endif 
 
 <form role="form" method="POST" action="{{ url('/register') }}" style="border:0px solid #ccc" enctype="multipart/form-data">
    {{ csrf_field() }}
   <div class="container">
-    Silahkan Isi Form Dibawah Ini.
+    <b>Silahkan Isi Form Dibawah Ini.</b>
     <hr>
 
-<!-- 	<div class="form-group {{ $errors->has('name') ? 'has-error' : '' }}">
-		{!! Form::label('name','Nama Lengkap') !!}
-		<div class="">
-			{!! Form::text('name', null) !!} -->
-			{{-- ini menampilkan error message setiap form --}}
-<!-- 			{!! $errors->first('name', '<p class="help-block">:message</p>') !!}
-		</div>
-	</div> -->
-   
-<!--    <div class="form-group {{ $errors->has('username') ? 'has-error' : '' }}">
-    {!! Form::label('username') !!}
+<!--   <div class="form-group {{ $errors->has('name') ? 'has-error' : '' }}">
+    {!! Form::label('name','Nama Lengkap') !!}
     <div class="">
-      {!! Form::text('username', null) !!} -->
+      {!! Form::text('name', null) !!}
       {{-- ini menampilkan error message setiap form --}}
-<!--       {!! $errors->first('username', '<p class="help-block">:message</p>') !!}
+      {!! $errors->first('name', '<p class="help-block">:message</p>') !!}
     </div>
-  </div> -->
-  
-  <label><b>Nama Lengkap</b></label>
-    <input id="name" type="text" name="Nama Lengkap" value="{{ old('Nama Lengkap') }}" placeholder="Masukan Nama" >
+</div> -->
+
+<label><b>Nama Lengkap</b></label>
+    <input id="name" type="text" name="name" value="{{ old('name') }}" placeholder="Masukan Nama" >
   @if ($errors->has('name'))
     <span class="help-block">
       <strong>{{ $errors->first('name') }}</strong>
