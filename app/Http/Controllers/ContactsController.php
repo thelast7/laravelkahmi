@@ -8,10 +8,10 @@ use PHPMailer\PHPMailer\Exception;
 
 class ContactsController extends Controller
 {
-	public function index()
-	{
-		return view('contacts.index');
-	}
+    public function index()
+    {
+        return view('contacts.index');
+    }
 
     function sendMail(Request $request){
         
@@ -25,18 +25,18 @@ class ContactsController extends Controller
             //Server settings
            // $mail->SMTPDebug = 2;                                 // Enable verbose debug output
             $mail->isSMTP();                                      // Set mailer to use SMTP
-            $mail->Host = 'smtp.gmail.com';                  // Specify main and backup SMTP servers
+            $mail->Host = 'kahmipreneur.com';                  // Specify main and backup SMTP servers
             $mail->SMTPAuth = true;                               // Enable SMTP authentication
-            $mail->Username = 'kahmipreneur@gmail.com';                 // SMTP username
-            $mail->Password = 'inppfppxuglwnzzo';                           // SMTP password
+            $mail->Username = 'admin@kahmipreneur.com';                 // SMTP username
+            $mail->Password = 'sanmarino20';                           // SMTP password
             $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
             $mail->Port = 587;                                    // TCP port to connect to
 
             // Sender
-            $mail->setFrom("kahmipreneur@gmail.com", "KAHMIPRENEUR");
+            $mail->setFrom("admin@kahmipreneur.com", "KAHMIPRENEUR");
 
             // who will receive the email submission
-            $mail->addAddress('kahmipreneur@gmail.com', 'Kahmi');     // Add a recipient
+            $mail->addAddress('admin@kahmipreneur.com', 'Kahmi');     // Add a recipient
             // $mail->addAddress('ellen@example.com');               // Name is optional
 
 

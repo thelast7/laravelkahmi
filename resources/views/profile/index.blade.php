@@ -30,11 +30,11 @@
     <div class="row">
        
 
-	<div class="col-sm-2">
-		<a class="pull-left"> 
-			<img title="profile image" class="img-box img-responsive"  src="img/photodiri/{{ $profile->photo_diri }}">
-		</a>
-	</div>
+  <div class="col-sm-2">
+    <a class="pull-left"> 
+      <img title="profile image" class="img-box img-responsive"  src="img/photodiri/{{ $profile->photo_diri }}">
+    </a>
+  </div>
 
    <div class="col-sm-10">
              <h1>{{ Auth::user()->name }}</h1>

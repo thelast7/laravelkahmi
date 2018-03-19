@@ -54,9 +54,9 @@ class RegisterController extends Controller
      * @param  array  $data
      * @return \Illuminate\Contracts\Validation\Validator
      */
-	protected function validator(array $data)
-	{
-		return Validator::make($data, [
+    protected function validator(array $data)
+    {
+        return Validator::make($data, [
             'name' => 'required|max:255',
             'username' => 'required|min:4',
             'nik' => 'required|numeric|min:5',
@@ -69,11 +69,11 @@ class RegisterController extends Controller
             'jenis_kelamin' => 'required',
             'alamat' => 'required|max:255',
             'harapan' => 'required|max:255',
-            'photo_diri' => 'required|file',
-            'photo_ktp' => 'required|file',
-            'photo_usaha' => 'required|file'
+            'photo_diri' => 'required|image|mimes:jpg,png,jpeg|max:10240',
+            'photo_ktp' => 'required|image|mimes:jpg,png,jpeg|max:10240',
+            'photo_usaha' => 'required|image|mimes:jpg,png,jpeg|max:10240'
         ]);
-	}
+    }
 
     /**
      * Create a new user instance after a valid registration.
@@ -83,10 +83,10 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
-		$photo_diri = $this->photodiri($data['photo_diri']);
-		$photo_ktp = $this->photoktp($data['photo_ktp']);
-		$photo_usaha = $this->photousaha($data['photo_usaha']);
-		$user = User::create([
+        $photo_diri = $this->photodiri($data['photo_diri']);
+        $photo_ktp = $this->photoktp($data['photo_ktp']);
+        $photo_usaha = $this->photousaha($data['photo_usaha']);
+        $user = User::create([
             'name' => $data['name'],
             'username' => $data['username'],
             'email' => $data['email'],
@@ -102,10 +102,10 @@ class RegisterController extends Controller
             'photo_ktp' => $photo_ktp,
             'photo_usaha' => $photo_usaha,
             'harapan' => $data['harapan'],
-			'role' => 'member'
+            'role' => 'member'
         ]);
-		$user->save();
-		return $user;
+        $user->save();
+        return $user;
     }
 
     public function register(Request $request) {
@@ -143,36 +143,36 @@ class RegisterController extends Controller
         }
         return redirect()->to('login')->with('message', "token anda salah");
     }
-	
-	public function photoktp(UploadedFile $image)
+    
+    public function photoktp(UploadedFile $image)
     {
         $extension = $image->guessClientExtension();
         $filename = str_random(40) . '.' . $extension; 
         $img = Image::make($_FILES['photo_ktp']['tmp_name']);
         $img->resize(1920, 1028);
-        $path_dir = base_path() . '/public/img/photoktp/'.$filename;
+        $path_dir = public_path() . '/img/photoktp/'.$filename;
         $success = $img->save($path_dir);
         return $filename;
     }
-	
-	public function photodiri(UploadedFile $image)
+    
+    public function photodiri(UploadedFile $image)
     {
         $extension = $image->guessClientExtension();
         $filename = str_random(40) . '.' . $extension; 
         $img = Image::make($_FILES['photo_diri']['tmp_name']);
         $img->resize(272, 203);
-        $path_dir = base_path() . '/public/img/photodiri/'.$filename;
+        $path_dir = public_path() . '/img/photodiri/'.$filename;
         $success = $img->save($path_dir);
         return $filename;
     }
 
-	public function photousaha(UploadedFile $image)
+    public function photousaha(UploadedFile $image)
     {
         $extension = $image->guessClientExtension();
         $filename = str_random(40) . '.' . $extension; 
         $img = Image::make($_FILES['photo_usaha']['tmp_name']);
-        $img->resize(272, 203);
-        $path_dir = base_path() . '/public/img/photousaha/'.$filename;
+        $img->resize(1920, 1028);
+        $path_dir = public_path() . '/img/photousaha/'.$filename;
         $success = $img->save($path_dir);
         return $filename;
     }
