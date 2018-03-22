@@ -145,9 +145,9 @@
               <i class="fa fa-angle-down"></i>
               {!! Form::select('pekerjaan', ['Pegawai Negeri Sipil' => 'Pegawai Negeri Sipil', 'Karyawan Swasta' => 'Karyawan Swasta', 'Wirausaha' => 'Wirausaha']) !!}
             </div>
-    
+    <br>
     <div class="Foto">
-      <label><b>Unggah Foto Diri</b></label>
+      <label><b>Unggah Foto Diri</b> (Max: 3mb)</label>
         <input type="file" name="photo_diri">
           @if ($errors->has('photo_diri'))
             <span class="help-block">
@@ -155,9 +155,9 @@
             </span>
           @endif
     </div>
-    
+    <br>
     <div>
-    <label><b>Unggah Foto KTP</b></label>
+    <label><b>Unggah Foto KTP</b> (Max: 3mb)</label>
     	<input type="file" name="photo_ktp">
   @if ($errors->has('photo_ktp'))
     <span class="help-block">
@@ -165,9 +165,9 @@
     </span>
   @endif
     </div>
-    
+    <br>
     <div>
-    <label><b>Unggah Foto Usaha</b></label>
+    <label><b>Unggah Foto Usaha</b> (Max: 3mb)</label>
       <input type="file" name="photo_usaha">
   @if ($errors->has('photo_usaha'))
     <span class="help-block">
@@ -175,7 +175,7 @@
     </span>
   @endif
     </div>
-    
+    <br>
 
     <label><b>Harapan Bergabung di KAHMIPRENEUR </b></label>
     

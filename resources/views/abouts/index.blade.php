@@ -21,6 +21,11 @@
     <!-- About us / Progress Bars -->
     <section class="section-wrap-mp">
       <div class="container">
+        <div class="entry-item">
+          <div class="entry-video video-wrap">
+             <iframe width="7" height="3" src="https://www.youtube.com/embed/_-AWV6uTUnM?showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+           </div>
+           <br>
           <div class="col-sm-6">
             <style>
             h4 {

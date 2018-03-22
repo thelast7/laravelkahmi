@@ -9,23 +9,24 @@
           </form>
 
           <div class="row">
-
             <div class="navbar-header">
               <!-- Logo -->
-              <div class="logo-container">
+              <div class="logo">
                 <div class="logo-wrap">
                   <a href="{{ url('/') }}">
-                    <img class="logo" src="{{ asset('img/logo2.png') }}"" alt="LOGO">
+                    <img class="logo" src="{{ asset('img/logo2.png') }}"" alt="logo">
                   </a>
-                </div>
-              </div>
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
+                 
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse" >
+                
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-            </div> <!-- end navbar-header -->
+            </div> 
+          </div>
+        </div>
+        <!-- end navbar-header -->
 
             <div class="col-md-9 nav-wrap right">
               
@@ -33,23 +34,23 @@
                 
                 <ul class="nav navbar-nav navbar-right">
 
-                  <li class="dropdown">
+                  <li class="">
                     <a href="{{ url('/') }}">HOME</a>
                   </li>
 
-                  <li class="dropdown">
+                  <li class="">
                     <a href="{{ url('about') }}">KAHMIPRENEUR</a>
                   </li>
 
-                  <li class="dropdown">
+                  <li class="">
                     <a href="{{ url('movie') }}">GALERI</a>
                   </li>
 
-                  <li class="dropdown">
+                  <li class="">
                     <a href="{{ url('berita') }}">BERITA</a>
                   </li>
 
-                  <li class="dropdown">
+                  <li class="">
                     <a href="{{ url('forum') }}">FORUM</a>
                   </li>           
                   @if (Route::has('login'))

@@ -22,8 +22,10 @@
 
       <section class="section-wrap-mp">
       <div class="container">
-            <img class="imgcenter" src="cara.jpg"/>
-      </div>
+         <h4>Video Tutorial Cara Mendaftar KAHMIPRENEUR</h4>
+        <div class="entry-item">
+              <div class="entry-video video-wrap">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/rls9eMuFD2Y?showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+              </div>
   </section>
-
 @endsection

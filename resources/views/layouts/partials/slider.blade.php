@@ -41,16 +41,6 @@
                 data-start="800"
                 data-splitout="none"><h7 id="header-title1">KAHMI</h7><h7 id="header-title2">PRENEUR</h7>
               </div>
-
-              <!--  <div class="tp-caption hero-text giant_nocaps"
-                data-x="right"
-                data-y="center"
-                data-transform_idle="o:1;s:1500;"
-                data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.1;sY:0.1;skX:0;skY:0;opacity:0;s:1000;e:Power3.easeOut;" 
-                data-transform_out="opacity:0;sX:0;sY:0;s:1200;e:Power3.easeInOut;"
-                data-start="800"
-                data-splitout="none">
-              </div> -->
               
               <!-- LAYER NR. 2 -->
               <div class="tp-caption subheading_text"
@@ -185,12 +175,164 @@
                 data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0;sY:0;skX:0;skY:0;opacity:0;s:1000;e:Power3.easeOut;" 
                 data-transform_out="opacity:0;sX:0;sY:0;s:1200;e:Power3.easeInOut;"
                 data-start="1000">
+              </div>        
+            </li>
+            <!-- slider 5 -->
+            <li 
+              data-fstransition="fade"
+              data-transition="cube"
+              data-easein="default" 
+                data-easeout="default"
+              data-slotamount="default"
+              data-saveperformance="off"
+              data-masterspeed="1000"
+              data-delay="8000"
+              data-title="The Art of Design">
+              <!-- MAIN IMAGE -->
+              <img src="img/revolution/mp_slide_5.png"
+                alt=""
+                data-bgrepeat="no-repeat"
+                data-bgfit="cover"
+                class="rev-slidebg"
+                >
+
+              <!-- LAYER NR. 1 -->
+              <div class="tp-caption subheading_text2"
+                data-x="center"
+                data-y="center"
+                data-voffset="-84"
+                data-transform_idle="o:1;s:1500;"
+                data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0;sY:0;skX:0;skY:0;opacity:0;s:1000;e:Power3.easeOut;" 
+                data-transform_out="opacity:0;sX:0;sY:0;s:1200;e:Power3.easeInOut;"
+                data-start="1000">
+              </div>
+
+              <div class="tp-caption hero-text giant_nocaps"
+                data-x="center"
+                data-y="center"
+                data-transform_idle="o:1;s:1500;"
+                data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0;sY:0;skX:0;skY:0;opacity:0;s:1000;e:Power3.easeOut;" 
+                data-transform_out="opacity:0;sX:0;sY:0;s:1200;e:Power3.easeInOut;"
+                data-start="800"
+                data-splitout="none">
               </div>
               
+              <!-- LAYER NR. 2 -->
+              <div class="tp-caption subheading_text"
+                data-x="center"
+                data-y="center"
+                data-voffset="84"
+                data-transform_idle="o:1;s:1500;"
+                data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0;sY:0;skX:0;skY:0;opacity:0;s:1000;e:Power3.easeOut;" 
+                data-transform_out="opacity:0;sX:0;sY:0;s:1200;e:Power3.easeInOut;"
+                data-start="1000">
+              </div>
         
             </li>
 
+           <li 
+              data-fstransition="fade"
+              data-transition="cube"
+              data-easein="default" 
+                data-easeout="default"
+              data-slotamount="default"
+              data-saveperformance="off"
+              data-masterspeed="1000"
+              data-delay="8000"
+              data-title="The Art of Design">
+              <!-- MAIN IMAGE -->
+              <img src="img/revolution/mp_slide_6.png"
+                alt=""
+                data-bgrepeat="no-repeat"
+                data-bgfit="cover"
+                class="rev-slidebg"
+                >
 
+              <!-- LAYER NR. 1 -->
+              <div class="tp-caption subheading_text2"
+                data-x="center"
+                data-y="center"
+                data-voffset="-84"
+                data-transform_idle="o:1;s:1500;"
+                data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0;sY:0;skX:0;skY:0;opacity:0;s:1000;e:Power3.easeOut;" 
+                data-transform_out="opacity:0;sX:0;sY:0;s:1200;e:Power3.easeInOut;"
+                data-start="1000">
+              </div>
+
+              <div class="tp-caption hero-text giant_nocaps"
+                data-x="center"
+                data-y="center"
+                data-transform_idle="o:1;s:1500;"
+                data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0;sY:0;skX:0;skY:0;opacity:0;s:1000;e:Power3.easeOut;" 
+                data-transform_out="opacity:0;sX:0;sY:0;s:1200;e:Power3.easeInOut;"
+                data-start="800"
+                data-splitout="none">
+              </div>
+              
+              <!-- LAYER NR. 2 -->
+              <div class="tp-caption subheading_text"
+                data-x="center"
+                data-y="center"
+                data-voffset="84"
+                data-transform_idle="o:1;s:1500;"
+                data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0;sY:0;skX:0;skY:0;opacity:0;s:1000;e:Power3.easeOut;" 
+                data-transform_out="opacity:0;sX:0;sY:0;s:1200;e:Power3.easeInOut;"
+                data-start="1000">
+              </div>
+        
+            </li>
+
+            <li 
+              data-fstransition="fade"
+              data-transition="cube"
+              data-easein="default" 
+                data-easeout="default"
+              data-slotamount="default"
+              data-saveperformance="off"
+              data-masterspeed="1000"
+              data-delay="8000"
+              data-title="The Art of Design">
+              <!-- MAIN IMAGE -->
+              <img src="img/revolution/mp_slide_7.png"
+                alt=""
+                data-bgrepeat="no-repeat"
+                data-bgfit="cover"
+                class="rev-slidebg"
+                >
+
+              <!-- LAYER NR. 1 -->
+              <div class="tp-caption subheading_text2"
+                data-x="center"
+                data-y="center"
+                data-voffset="-84"
+                data-transform_idle="o:1;s:1500;"
+                data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0;sY:0;skX:0;skY:0;opacity:0;s:1000;e:Power3.easeOut;" 
+                data-transform_out="opacity:0;sX:0;sY:0;s:1200;e:Power3.easeInOut;"
+                data-start="1000">
+              </div>
+
+              <div class="tp-caption hero-text giant_nocaps"
+                data-x="center"
+                data-y="center"
+                data-transform_idle="o:1;s:1500;"
+                data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0;sY:0;skX:0;skY:0;opacity:0;s:1000;e:Power3.easeOut;" 
+                data-transform_out="opacity:0;sX:0;sY:0;s:1200;e:Power3.easeInOut;"
+                data-start="800"
+                data-splitout="none">
+              </div>
+              
+              <!-- LAYER NR. 2 -->
+              <div class="tp-caption subheading_text"
+                data-x="center"
+                data-y="center"
+                data-voffset="84"
+                data-transform_idle="o:1;s:1500;"
+                data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0;sY:0;skX:0;skY:0;opacity:0;s:1000;e:Power3.easeOut;" 
+                data-transform_out="opacity:0;sX:0;sY:0;s:1200;e:Power3.easeInOut;"
+                data-start="1000">
+              </div>
+        
+            </li>
                 <!-- <div class="col-sm-6">
             <blockquote class="blockquote-style-1 mb-30">
               <p>
@@ -203,9 +345,8 @@
               - Steve Maraboli
             </blockquote>         
           </div> -->
-              </div>
             
-            </li> <!-- end slide 3 -->
+             <!-- end slide 3 -->
 
           </ul>
 

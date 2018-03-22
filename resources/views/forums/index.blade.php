@@ -1,43 +1,70 @@
-@extends('layouts.master-two')   
-@section('content')
+@include('layouts.partials.header-top')
 
-  <div class="main-wrapper-mp oh">
-    <section class="page-title style-2">
-      <div class="container relative clearfix">
-        <div class="title-holder">
-          <div class="title-text">
-            <h1>Forum</h1>
-            <ol class="breadcrumb">
-              <li>
-                <a href="{{ url('/') }}">Home</a>
-              </li>
-              
-              <li class="active">
-                Forum
-              </li>
-            </ol>
-          </div>
-        </div>
-      </div>
-    </section> <!-- end page title -->
+@include('layouts.partials.header-nav')
 
 
-    <!-- coming soon-->
-    <section class="section-wrap page-404">
-      <div class="container">
+<style>
+div.container {
+    width: 100%;
+    border: 1px solid gray;
+}
 
-        <div class="row text-center">
-          <div class="col-md-6 col-md-offset-3">
-            <h2 class="mb-50">COMING SOON</h2>
-            <class="mb-20">You can go back to <a href="{{ url('/') }}">Homepage</a> or use search>
-            <form class="relative">
-                <input type="search" placeholder="Search">
-                <button type="submit" class="search-button"><i class="icon icon_search"></i></button>
-              </form>
-            </div>
-        </div>
+header, footer {
+    padding: 1em;
+    color: white;
+    background-color: black;
+    clear: left;
+    text-align: center;
+}
 
-      </div>
-    </section> <!-- end coming soon-->
+nav {
+    float: left;
+    max-width: 160px;
+    margin: 0;
+    padding: 1em;
+}
 
-@endsection
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+   
+nav ul a {
+    text-decoration: none;
+}
+
+article {
+    margin-left: 170px;
+    border-left: 1px solid gray;
+    padding: 1em;
+    overflow: hidden;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  
+<nav>
+  <ul>
+    <li><a href="#">New Discussion</a></li>
+    <li><a href="#">All Discussion</a></li>
+    
+  </ul>
+</nav>
+
+<article>
+  <h1>Furniture</h1>
+  <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+  <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+  <br>
+  <h1>Automotive</h1>
+  <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+  <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+  <br>
+   <h1>Fashion</h1>
+  <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+  <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+</div>
+</body>
+</html>

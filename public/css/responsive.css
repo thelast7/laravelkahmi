@@ -60,7 +60,6 @@
   }
   .blog-standard .entry {
     margin-top: 20px;
-    margin-bottom: 50px;
   }
   .entry-content .entry-share {
     float: none;
@@ -205,9 +204,6 @@
   #ytb-wrap .hero-text {
     font-size: 76px;
   }
-  #ytb-wrap .hero-text2 {    
-    font-size: 76px;
-  
 }
 
 @media (max-width: 767px) {
@@ -303,11 +299,6 @@
   #ytb-wrap .hero-text {
     font-size: 50px;
   }
-
-  #ytb-wrap .hero-text2 {
-    font-size: 50px;
-  }
-  
   .sidenav .container-fluid,
   .sidenav .container {
     width: 100%;
