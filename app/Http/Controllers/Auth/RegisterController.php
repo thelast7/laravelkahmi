@@ -57,21 +57,21 @@ class RegisterController extends Controller
     protected function validator(array $data)
     {
         return Validator::make($data, [
-            'name' => 'required|max:255',
-            'username' => 'required|min:4',
-            'nik' => 'required|numeric|min:5',
-            'no_hp' => 'required|numeric|min:9',
-            'kota' => 'required',
-            'pekerjaan' => 'required',
-            'email' => 'required|email|max:255|unique:users',
-            'password' => 'required|min:6|confirmed',
+            'name'          => 'required|max:255',
+            'username'      => 'required|min:4',
+            'nik'           => 'required|numeric|min:5',
+            'no_hp'         => 'required|numeric|min:9',
+            'kota'          => 'required',
+            'pekerjaan'     => 'required',
+            'email'         => 'required|email|max:255|unique:users',
+            'password'      => 'required|min:6|confirmed',
             'tanggal_lahir' => 'required|date|min:8',
             'jenis_kelamin' => 'required',
-            'alamat' => 'required|max:255',
-            'harapan' => 'required|max:255',
-            'photo_diri' => 'required|image|mimes:jpg,png,jpeg|max:10240',
-            'photo_ktp' => 'required|image|mimes:jpg,png,jpeg|max:10240',
-            'photo_usaha' => 'required|image|mimes:jpg,png,jpeg|max:10240'
+            'alamat'        => 'required|max:255',
+            'harapan'       => 'required|max:255',
+            'photo_diri'    => 'required|image|mimes:jpg,png,jpeg|max:10240',
+            'photo_ktp'     => 'required|image|mimes:jpg,png,jpeg|max:10240',
+            'photo_usaha'   => 'mimes:jpg,png,jpeg|max:10240'
         ]);
     }
 
@@ -83,9 +83,21 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
-        $photo_diri = $this->photodiri($data['photo_diri']);
-        $photo_ktp = $this->photoktp($data['photo_ktp']);
-        $photo_usaha = $this->photousaha($data['photo_usaha']);
+       
+        if (! empty($data['photo_usaha']) ) {
+            $data['photo_usaha'] = $this->photousaha($data['photo_usaha']);
+        }
+
+        // untuk merapikan samadengan tekan ctrl+alt+a
+        
+        $data['photo_diri']    = $this->photodiri($data['photo_diri']);
+        $data['photo_ktp']     = $this->photoktp($data['photo_ktp']);
+        $data['password']      = bcrypt($data['password']);
+        $data['tanggal_lahir'] = date("Y-m-d",strtotime($data['tanggal_lahir']));
+       
+        $user = User::create($data);
+
+        /*
         $user = User::create([
             'name' => $data['name'],
             'username' => $data['username'],
@@ -104,6 +116,7 @@ class RegisterController extends Controller
             'harapan' => $data['harapan'],
             'role' => 'member'
         ]);
+        */
         $user->save();
         return $user;
     }
