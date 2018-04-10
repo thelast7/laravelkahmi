@@ -116,6 +116,17 @@ class ProfileController extends Controller
         //
     }
 
+    public function photoktp(UploadedFile $image)
+    {
+        $extension = $image->guessClientExtension();
+        $filename = str_random(40) . '.' . $extension; 
+        $img = Image::make($_FILES['photo_ktp']['tmp_name']);
+        $img->resize(1920, 1028);
+        $path_dir = base_path() . '/public/img/photoktp/'.$filename;
+        $success = $img->save($path_dir);
+        return $filename;
+    }
+
     public function photousaha(UploadedFile $image)
     {
         $extension = $image->guessClientExtension();
@@ -138,6 +149,13 @@ class ProfileController extends Controller
         return $filename;
     }
 
+    public function deletephotoktp($filename)
+    {
+        $path = public_path() . DIRECTORY_SEPARATOR . 'img/photoktp/'
+            . DIRECTORY_SEPARATOR . $filename;
+        return File::delete($path);
+    }
+
     public function deletephotodiri($filename)
     {
         $path = public_path() . DIRECTORY_SEPARATOR . 'img/photodiri/'
@@ -145,7 +163,7 @@ class ProfileController extends Controller
         return File::delete($path);
     }
 
-     public function deletephotousaha($filename)
+    public function deletephotousaha($filename)
     {
         $path = public_path() . DIRECTORY_SEPARATOR . 'img/photousaha/'
             . DIRECTORY_SEPARATOR . $filename;

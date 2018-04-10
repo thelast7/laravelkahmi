@@ -69,8 +69,8 @@ class RegisterController extends Controller
             'jenis_kelamin' => 'required',
             'alamat'        => 'required|max:255',
             'harapan'       => 'required|max:255',
-            'photo_diri'    => 'required|image|mimes:jpg,png,jpeg|max:10240',
-            'photo_ktp'     => 'required|image|mimes:jpg,png,jpeg|max:10240',
+            'photo_diri'    => 'mimes:jpg,png,jpeg|max:10240',
+            'photo_ktp'     => 'mimes:jpg,png,jpeg|max:10240',
             'photo_usaha'   => 'mimes:jpg,png,jpeg|max:10240'
         ]);
     }
@@ -88,10 +88,16 @@ class RegisterController extends Controller
             $data['photo_usaha'] = $this->photousaha($data['photo_usaha']);
         }
 
+        if (! empty($data['photo_ktp']) ) {
+            $data['photo_ktp']     = $this->photoktp($data['photo_ktp']);
+        }
+
+        if (! empty($data['photo_diri']) ) {
+            $data['photo_diri']    = $this->photodiri($data['photo_diri']);
+        }
+
         // untuk merapikan samadengan tekan ctrl+alt+a
         
-        $data['photo_diri']    = $this->photodiri($data['photo_diri']);
-        $data['photo_ktp']     = $this->photoktp($data['photo_ktp']);
         $data['password']      = bcrypt($data['password']);
         $data['tanggal_lahir'] = date("Y-m-d",strtotime($data['tanggal_lahir']));
        

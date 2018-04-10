@@ -80,6 +80,11 @@
     <i class="fa fa-angle-down"></i>
      {!! Form::select('pekerjaan', ['Pegawai Negri Sipil' => 'Pegawai Negri Sipil', 'Karyawan Swasta' => 'Karyawan Swasta', 'Wirausaha' => 'Wirausaha']) !!}
     </div>
+    <div class="Foto">
+    <label><b>Unggah Foto KTP</b></label>
+      {!! Form::file('photo_ktp') !!}
+      {!! $errors->first('photo_ktp', '<p class="help-block">:message</p>') !!}
+    </div>
     <br>       
     <div class="Foto">
     <label><b>Unggah Foto Diri</b></label>

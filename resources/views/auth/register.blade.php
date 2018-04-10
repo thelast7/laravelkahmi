@@ -147,7 +147,7 @@
             </div>
     <br>
     <div class="Foto">
-      <label><b>Unggah Foto Diri</b> (Max: 3mb)</label>
+      <label><b>Unggah Foto Diri (OPTIONAL)</b> (Max: 3mb)</label>
         <input type="file" name="photo_diri">
           @if ($errors->has('photo_diri'))
             <span class="help-block">
@@ -157,7 +157,7 @@
     </div>
     <br>
     <div>
-    <label><b>Unggah Foto KTP</b> (Max: 3mb)</label>
+    <label><b>Unggah Foto KTP (OPTIONAL)</b> (Max: 3mb)</label>
     	<input type="file" name="photo_ktp">
   @if ($errors->has('photo_ktp'))
     <span class="help-block">
@@ -167,7 +167,7 @@
     </div>
     <br>
     <div>
-    <label><b>Unggah Foto Usaha</b> (Max: 3mb)</label>
+    <label><b>Unggah Foto Usaha (OPTIONAL)</b> (Max: 3mb)</label>
       <input type="file" name="photo_usaha">
   @if ($errors->has('photo_usaha'))
     <span class="help-block">
