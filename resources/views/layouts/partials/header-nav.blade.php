@@ -51,7 +51,7 @@
                   </li>
 
                   <li class="">
-                    <a href="{{ url('forum') }}">FORUM</a>
+                    <a href="{{ url('http://forum.kahmipreneur.com/') }}">FORUM</a>
                   </li>           
                   @if (Route::has('login'))
                   <li class="dropdown">

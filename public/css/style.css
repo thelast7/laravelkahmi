@@ -2247,23 +2247,18 @@ p {
   left: 0;
 }
 
-#owl-slider-one-img:hover .owl-next,
+#owl-slider-two-img:hover .owl-next,
 #owl-slider-small-img:hover .owl-next {
   opacity: 1;
   right: 0;
 }
 
-#owl-slider-one-img2:hover .owl-prev,
-#owl-slider-small-img2:hover .owl-prev {
-  opacity: 1;
-  left: 0;
-}
-
-#owl-slider-one-img2:hover .owl-next,
-#owl-slider-small-img2:hover .owl-next {
+#owl-slider-three-img:hover .owl-next,
+#owl-slider-small-img:hover .owl-next {
   opacity: 1;
   right: 0;
 }
+
 
 .owl-page {
   display: inline-block;

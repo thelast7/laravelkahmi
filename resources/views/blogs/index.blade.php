@@ -44,6 +44,10 @@
           </div> <!-- end row -->
         </div>
       </div>
+      <div class="customNavigation mt-40 text-center">
+              <a class="prev"><i class="icon arrow_left"></i></a>
+              <a class="next"><i class="icon arrow_right"></i></a>
+            </div>
     </section> <!-- end from blog -->
 @endsection
 @push('scripts')
