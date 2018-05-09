@@ -51,7 +51,7 @@
                   </li>
 
                   <li class="">
-                    <a href="{{ url('http://forum.kahmipreneur.com/') }}">FORUM</a>
+                    <a href="{{ url('forum') }}">FORUM</a>
                   </li>           
                   @if (Route::has('login'))
                   <li class="dropdown">
@@ -76,10 +76,7 @@
                     @endauth
                   </li>
                    @endif
-
                    
-
-              
               </div> <!-- end collapse -->
             </div> <!-- end col -->
             

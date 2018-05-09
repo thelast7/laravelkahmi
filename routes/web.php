@@ -17,6 +17,11 @@ Route::get('/coba', function() {
 	return view('auth.coba');
 });
 
+Route::get('/forum', function () {
+	$forum = App\Forum::orderBy('id', 'desc')->paginate(5);
+    return view('forum')->withForum($forum);
+});
+
 Auth::routes();
 
 // Route yang menangani Pendaftaran
@@ -49,7 +54,13 @@ Route::get('/contact', 'ContactsController@index');
 Route::post('/contact', 'ContactsController@sendMail');
 
 // Route yang menangani Forum
-Route::get('/forum', 'ForumsController@index');
+Route::resource('/forum','ForumController');
+
+Route::resource('/tags','TagController');
+
+Route::resource('/comment','CommentController');
+
+Route::post('comment/create/{forum}','CommentController@buatKomentar')->name('buatKomentar.store');
 
 //Route yang menangani tatacara mendaftar
 Route::get('/daftar', 'HomeController@index');

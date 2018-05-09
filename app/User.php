@@ -43,6 +43,10 @@ class User extends Authenticatable
 		}
 
 		return $imageUrl;
-
+    }
+    
+    public function forums()
+    {
+        return $this->hasMany('App\Forum');
     }
 }

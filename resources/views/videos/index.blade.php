@@ -30,67 +30,67 @@
 
               <div class="item">
                 <a href="#">
-                  <img src="forum/1.jpeg" width="alt="">
+                  <img src="f0rum/1.jpeg" width="alt="">
                 </a>
               </div> 
 
               <div class="item">
                 <a href="#">
-                  <img src="forum/2.jpeg" alt="">
+                  <img src="f0rum/2.jpeg" alt="">
                 </a>
               </div>
 
               <div class="item">
                 <a href="#">
-                  <img src="forum/3.jpeg" alt="">
+                  <img src="f0rum/3.jpeg" alt="">
                 </a>
               </div> 
 
               <div class="item">
                 <a href="#">
-                  <img src="forum/4.jpg" alt="">
+                  <img src="f0rum/4.jpg" alt="">
                 </a>
               </div>
 
               <div class="item">
                 <a href="#">
-                  <img src="forum/5.jpeg" alt="">
+                  <img src="f0rum/5.jpeg" alt="">
                 </a>
               </div> 
 
               <div class="item">
                 <a href="#">
-                  <img src="forum/6.jpeg" alt="">
+                  <img src="f0rum/6.jpeg" alt="">
                 </a>
               </div>
 
               <div class="item">
                 <a href="#">
-                  <img src="forum/7.jpg" alt="">
+                  <img src="f0rum/7.jpg" alt="">
                 </a>
               </div> 
 
               <div class="item">
                 <a href="#">
-                  <img src="forum/8.jpeg" alt="">
+                  <img src="f0rum/8.jpeg" alt="">
                 </a>
               </div>
 
               <div class="item">
                 <a href="#">
-                  <img src="forum/9.jpg" alt="">
+                  <img src="f0rum/9.jpg" alt="">
                 </a>
               </div> 
 
               <div class="item">
                 <a href="#">
-                  <img src="forum/10.jpg" alt="">
+                  <img src="f0rum/10.jpg" alt="">
                 </a>
               </div>
 
               <div class="item">
                 <a href="#">
-                  <img src="forum/11.jpg" alt="">
+                  <img src="f0rum/11.jpg" alt="">
                 </a>
               </div> 
 
