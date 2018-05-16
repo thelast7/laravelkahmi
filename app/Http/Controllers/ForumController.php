@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Forum;
 use App\Tag;
+// use App\User;
 
 class ForumController extends Controller
 {
@@ -22,6 +23,7 @@ class ForumController extends Controller
     {
         $forum = Forum::orderBy('id', 'desc')->paginate(2);
         $tags = Tag::all();
+        // $users = User::all();
         return view ('forum.index')->withForum($forum)->withTags($tags);
     }
 

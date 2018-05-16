@@ -24,6 +24,11 @@
   <link rel="stylesheet" href="{{ asset('css/animate.css') }}" />
   <link rel="stylesheet" href="{{ asset('css/custome-login.css') }}" />
   <link rel="stylesheet" href="{{ asset('css/custome-masuk.css') }}" />
+  <link rel="stylesheet" href="{{ asset('css/select2.min.css') }}" />
+  <link rel="stylesheet" href="{{ asset('css/style2.css') }}" />
+
+
+
 
   <!-- Favicons -->
   <link rel="icon" href="{{ asset('img/favicon.ico') }}">
@@ -163,7 +168,10 @@
     <script type="text/javascript" src="{{ asset('revolution/js/extensions/revolution.extension.navigation.min.js')}}"></script>
     <script type="text/javascript" src="{{ asset('revolution/js/extensions/revolution.extension.migration.min.js')}}"></script>
     <script type="text/javascript" src="{{ asset('revolution/js/extensions/revolution.extension.parallax.min.js')}}"></script>
-    @stack('scripts')
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+    <script src="/vendor/unisharp/laravel-ckeditor/ckeditor.js"></script>
+    
+@yield('js')
 </body>
 </html>
 

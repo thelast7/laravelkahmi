@@ -5,6 +5,27 @@
 @section('content')
 
 @if(auth()->user()->id == $forum->user_id)
+
+<section class="page-title style-2">
+      <div class="container relative clearfix">
+        <div class="title-holder">
+          <div class="title-text">
+            <h1>FORUM</h1>
+            <ol class="breadcrumb">
+              <li>
+                <a href="{{ url('/') }}">Home</a>
+              </li>
+              <li>
+                <a href="#">Forum</a>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br><br>
+
+<div class="container">
 <div class="row">
 	<div class="col-md-8">
 		<form action="{{ route('forum.update', $forum->slug) }}" method="post" role="form">
@@ -28,7 +49,8 @@
 
 				<div class="form-group">
 					<label for="diskusi">Diskusi</label>
-					<textarea name="post" value="" class="form-control" placeholder="Isi Diskusi">{{ $forum->post }}</textarea>
+					<textarea <textarea rows="10" cols="100" id="testtxt" 
+  style="width: 700px; height: 550px; margin-left: auto; name="post" value="" class="form-control" placeholder="Isi Diskusi">{{ $forum->post }}</textarea>
 				</div>
 
 				<button type="submit" class="btn btn-success">Submit</button>
@@ -36,12 +58,14 @@
 		</form>
 	</div>
 
-	<div class="col-md-4">
+	<div class="col-md-8">
 		<div class="alert alert-dismissible alert-info">
 		  <button type="button" class="close" data-dismiss="alert">&times;</button>
 		  <strong>Sudah punya akun ?</strong> <a href="{{ url('register') }}" class="alert-link">Daftar disini</a>
 		</div>
 	</div>
+	</div>
+	<br><br><br>
 </div>
 
 @endsection

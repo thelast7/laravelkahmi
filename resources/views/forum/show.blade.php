@@ -3,28 +3,49 @@
 @section('title', 'Show')
 
 @section('content')
+<section class="page-title style-2">
+      <div class="container relative clearfix">
+        <div class="title-holder">
+          <div class="title-text">
+            <h1>FORUM</h1>
+            <ol class="breadcrumb">
+              <li>
+                <a href="{{ url('/') }}">Home</a>
+              </li>
+              <li>
+                <a href="#">Forum</a>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
 
-<div class="show-header">
+    <div class="container">
+	<div class="row">
+	<div class="show-header">
 	<h1>{{ $forum->title }}</h1>
-{{-- 	<div>
+		<!-- {{-- 	<div>
 		<a href="{{ route('forum.create') }}" class="btn btn-sm pull-right">Buat Diskusi</a>
-	</div> --}}
+	</div> --}} -->
 </div>
 <br>
 <div class="row">
 	<div class="col-md-8">
 		<div class="well">
-			<p>{{ $forum->post }}</p>
-		</div>
+			<p>{!! $forum->post !!}</p>
+		
 
         <div class="d-flex w-100 justify-content-between">
         	@foreach ($forum->tags as $tag)
 	        <span class="badge badge-primary">{{$tag->name}}</span>
 	        @endforeach
-	        <span class="pull-right">by <a href="#">{{ $forum->user->name }} </a>{{ date('j F Y, h:ia', strtotime($forum->created_at)) }}</span>
+	        <span class="pull-right">Created by <a href="#">{{ $forum->user->name }} </a>{{ date('j F Y, h:ia', strtotime($forum->created_at)) }}</span>
+	        <br>
         </div>
+    </div>
 
-	<label>Komentar:</label>
+	
 	@foreach($forum->comments as $comment)
 
 	<div class="card card-default">
@@ -38,9 +59,11 @@
 
 	@endforeach
 
-	<form action="{{ route('buatKomentar.store', $forum->id) }}" method="post">
+	<form action="{{ route('buatKomentar.store', $forum->slug) }}" method="post">
 		{{csrf_field()}}
 		<label>Tulis Komentar</label>
+		<br>
+		<label>Komentar:</label>
 		<div class="form-group">
 			<input type="text" name="isi_komentar" class="form-control" placeholder="Tulis Komentar..">
 		</div>
@@ -68,5 +91,9 @@
 		  <strong>Sudah punya akun ?</strong> <a href="{{ url('register') }}" class="alert-link">Daftar disini</a>
 		</div>
 	</div>
+    </div>
+	</div>
 </div>
+
+<br><br><br><br><br><br>
 @endsection

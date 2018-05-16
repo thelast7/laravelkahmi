@@ -1,6 +1,6 @@
    <footer class="footer footer-type-2">
       <div class="container">
-        <div class="footer-widgets">
+        
           <div class="row">
 
             <div class="col-md-4 col-sm-6 col-xs-12">
@@ -26,7 +26,7 @@
             </div> <!-- end stay in touch -->
 
             <div class="col-md-4 col-sm-6 col-xs-12">
-              <div class="widget footer-links">
+              <div class="widget footer-links">   
                 <h5>Pelayanan</h5>
                 <ul>
                   <li><a href="{{ url('contact') }}">Kontak Kami</a></li>

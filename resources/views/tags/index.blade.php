@@ -4,12 +4,26 @@
 
 @section('content')
 
-	<ol class="breadcrumb">
-	  <li class="breadcrumb-item"><a href="#">Home</a></li>
-	  <li class="breadcrumb-item active">Tag</li>
-	</ol>
+<section class="page-title style-2">
+      <div class="container relative clearfix">
+        <div class="title-holder">
+          <div class="title-text">
+            <h1>FORUM</h1>
+            <ol class="breadcrumb">
+              <li>
+                <a href="{{ url('/') }}">Home</a>
+              </li>
+              <li>
+                <a href="#">Forum</a>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
 
-<div class="row">
+    <div class="container">
+	<div class="row">
 
 	<div class="col-md-4">
 	<form action="{{ route('tags.store') }}" method="post">
@@ -55,7 +69,9 @@
 	@endforeach
 	</table>
 	</div>
+</div>
 
 </div>
+ <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
 
 @endsection

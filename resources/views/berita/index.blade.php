@@ -70,7 +70,7 @@
             </div> <!-- end entry item -->
             @endforeach
 		
-            <!-- Pagination -->
+            <!-- Pagination --> 
             <nav class="flat-pagination">
 				{!! $berita->links() !!}
             </nav> 

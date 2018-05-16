@@ -4,8 +4,28 @@
 
 @section('content')
 
-<div class="row">
-	<div class="col-md-8">
+
+<section class="page-title style-2">
+      <div class="container relative clearfix">
+        <div class="title-holder">
+          <div class="title-text">
+            <h1>FORUM</h1>
+            <ol class="breadcrumb">
+              <li>
+                <a href="{{ url('/') }}">Home</a>
+              </li>
+              <li>
+                <a href="#">Forum</a>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+	<div class="row">
+	<div class="col-md-12">
 		<form action="{{ route('forum.store') }}" method="post" role="form">
 			{{ csrf_field() }}
 			<div class="well">
@@ -31,8 +51,6 @@
 
 				<button type="submit" class="btn btn-success">Submit</button>
 			</div>
-		</form>
-	</div>
 
 	<div class="col-md-4">
 		<div class="alert alert-dismissible alert-info">
@@ -40,12 +58,22 @@
 		  <strong>Sudah punya akun ?</strong> <a href="{{ url('register') }}" class="alert-link">Daftar disini</a>
 		</div>
 	</div>
+</form>
+</div>
+</div>
 </div>
 
 @endsection
 
-@section('script')
-	<script type="text/javascript">
-    	$('.tags').select2();
-	</script>
+@section('js')
+<script type="text/javascript">
+    $(".tags").select2({
+    placeholder: "Pilih Kategori",
+    maximumSelectionLength: 2
+	});
+    CKEDITOR.replace( 'post',{
+        extraPlugins:'codesnippet',
+        codeSnippet_theme:'dark'
+    });
+</script>
 @endsection
