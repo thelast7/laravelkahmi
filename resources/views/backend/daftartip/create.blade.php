@@ -3,19 +3,22 @@
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-12">
+        <div class="col-md-8">
             <div class="card card-default">
-                <div class="card-header">POSTING</div>
+                <div class="card-header">Create Daftartip</div>
 
                 <div class="card-body">
-                   <!--  @if (session('status'))
+                    @if (session('status'))
                         <div class="alert alert-success">
                             {{ session('status') }}
                         </div>
-                    @endif -->
-                     
-					<p><a class="btn btn-primary" href="{{ route('posts.create') }}">Tambah</a></p>
-					@include('backend.posts.table')
+                    @endif
+
+					{!! Form::open(['route'=>'daftartip.store', 'method' => 'POST', 'class'=> 'form-horizontal form-label-left', 'files' => true]) !!}
+
+						@include('backend.daftartip._form')
+
+				   	{!! Form::close() !!}
                 </div>
             </div>
         </div>

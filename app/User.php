@@ -28,11 +28,6 @@ class User extends Authenticatable
         'password', 'remember_token',
     ];
 
-    public function posts()
-    {
-        return $this->hasMany(Post::class, 'author_id');
-    }
-
     public function getImageUrlAttribute($value)
     {
 		$imageUrl = "";
@@ -48,5 +43,20 @@ class User extends Authenticatable
     public function forums()
     {
         return $this->hasMany('App\Forum');
+    }
+
+    public function posts()
+    {
+        return $this->hasMany(Post::class, 'author_id');
+    }
+
+    // public function tips()
+    // {
+    //     return $this->hasMany(Tips::class, 'author_id');
+    // }
+
+    public function daftartips()
+    {
+        return $this->hasMany(Daftartip::class, 'tip_id');
     }
 }

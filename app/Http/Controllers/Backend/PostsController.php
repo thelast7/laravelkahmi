@@ -16,13 +16,13 @@ use Symfony\Component\HttpFoundation\File\UploadedFile;
 
 class PostsController extends BackendController
 {
-    protected $uploadPath;
+    // protected $uploadPath;
 
-    public function __construct()
-    {
-        parent::__construct();
-        $this->uploadPath = config('cms.image.directory');
-    }
+    // public function __construct()
+    // {
+    //     parent::__construct();
+    //     $this->uploadPath = config('cms.image.directory');
+    // }
 
     /**
      * Display a listing of the resource.
@@ -104,8 +104,8 @@ class PostsController extends BackendController
      */
     public function update(Request $request, $id)
     {
-      $posts = Post::find($id);
-      $data = $request->only(['title', 'body', 'author_id', 'category_id', 'slug', 'image']);
+        $posts = Post::find($id);
+        $data = $request->only(['title', 'body', 'author_id', 'category_id', 'slug', 'image']);
         
         if ($request->hasFile('image')) 
         {

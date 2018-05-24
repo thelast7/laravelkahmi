@@ -1,50 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>KAHMIPRENEUR @yield('title')</title>
+<html lang="{{ app()->getLocale() }}">
+<head class="nav-type-2">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta charset="utf-8">
-  <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-  <meta name="description" content="">
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 
-  <!-- Google Fonts -->
-  <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700%7CPT+Serif:400,700,400italic%7COpen+Sans:400,600,700,400italic' rel='stylesheet'>
-
-  <!-- Css -->
-  <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}" />
-  <link rel="stylesheet" href="{{ asset('css/magnific-popup.css') }}" />
-  <link rel="stylesheet" href="{{ asset('css/font-icons.css') }}" />
-  <link rel="stylesheet" href="{{ asset('revolution/css/settings.css') }}" />
-  <link rel="stylesheet" href="{{ asset('css/rev-slider.css') }}" />
-  <link rel="stylesheet" href="{{ asset('css/sliders.css') }}">
-  <link rel="stylesheet" href="{{ asset('css/style.css') }}" />
-  <link rel="stylesheet" href="{{ asset('css/responsive.css') }}" />
-  <link rel="stylesheet" href="{{ asset('css/spacings.css') }}" />
-  <link rel="stylesheet" href="{{ asset('css/animate.css') }}" />
-  <link rel="stylesheet" href="{{ asset('css/custome-login.css') }}" />
-  <link rel="stylesheet" href="{{ asset('css/custome-masuk.css') }}" />
-  <link rel="stylesheet" href="{{ asset('css/select2.min.css') }}" />
-  <link rel="stylesheet" href="{{ asset('css/style2.css') }}" />
-
-
-
-
-  <!-- Favicons -->
-  <link rel="icon" href="{{ asset('img/favicon.ico') }}">
-
-</head>
-
-<body style="font-family: 'Open Sans', sans-serif;">
-
-  <!-- Preloader -->
-  <div class="loader-mask">
-    <div class="loader">
-      "Loading..."
-    </div>
-  </div>
-
-  <header class="nav-type-2">
+    <title>KAHMIPRENEUR | @yield('title')</title>
+ 
+    <!-- Fonts -->
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600" rel="stylesheet" type="text/css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link href="{{ asset('css/appz.css') }}" rel="stylesheet">  
+    <link href="{{ asset('css/stylez.css') }}" rel="stylesheet"> 
+    <link href="{{ asset('css/select2.min.css') }}" rel="stylesheet">
     
     <nav class="navbar navbar-static-top">
       <div class="navigation">
@@ -130,18 +104,21 @@
         </div> <!-- end container -->
       </div> <!-- end navigation -->
     </nav> <!-- end navbar -->
-  </header>
 
-    <div class="main-wrapper-mp oh">
+</head>
+<body>
+    <div id="app">
 
-    <!-- Revolution Partial Slider -->
-    <!-- layouts.partials.breadcumb sudah diapus -->
-    <!-- Our Services -->
 
-    <!-- From Blog Content -->
-    @yield('content')
-    <!-- End Blog -->
+        <main class="py-4">
+            <div class="container">
+                @include('layouts.info')
+            </div>
 
+            @yield('content')
+ 
+        </main>
+    </div>
     <!-- Footer Type-2 -->
     @include('layouts.partials.footer-two')
 
@@ -150,29 +127,12 @@
     </div>
 
   </div> <!-- end main-wrapper -->
-  
-  <!-- jQuery Scripts -->
-    <script type="text/javascript" src="{{ asset('js/jquery.min.js')}}"></script>
-    <script type="text/javascript" src="{{ asset('js/bootstrap.min.js')}}"></script>
-    <script type="text/javascript" src="{{ asset('js/plugins.js')}}"></script>
-    <script type="text/javascript" src="{{ asset('revolution/js/jquery.themepunch.tools.min.js')}}"></script>
-    <script type="text/javascript" src="{{ asset('revolution/js/jquery.themepunch.revolution.min.js')}}"></script>
-    <script type="text/javascript" src="{{ asset('js/rev-slider.js')}}"></script>
-    <script type="text/javascript" src="{{ asset('js/scripts.js')}}"></script>
-    <script type="text/javascript" src="{{ asset('revolution/js/extensions/revolution.extension.video.min.js')}}"></script>
-    <script type="text/javascript" src="{{ asset('revolution/js/extensions/revolution.extension.carousel.min.js')}}"></script>
-    <script type="text/javascript" src="{{ asset('revolution/js/extensions/revolution.extension.slideanims.min.js')}}"></script>
-    <script type="text/javascript" src="{{ asset('revolution/js/extensions/revolution.extension.actions.min.js')}}"></script>
-    <script type="text/javascript" src="{{ asset('revolution/js/extensions/revolution.extension.layeranimation.min.js')}}"></script>
-    <script type="text/javascript" src="{{ asset('revolution/js/extensions/revolution.extension.kenburn.min.js')}}"></script>
-    <script type="text/javascript" src="{{ asset('revolution/js/extensions/revolution.extension.navigation.min.js')}}"></script>
-    <script type="text/javascript" src="{{ asset('revolution/js/extensions/revolution.extension.migration.min.js')}}"></script>
-    <script type="text/javascript" src="{{ asset('revolution/js/extensions/revolution.extension.parallax.min.js')}}"></script>
+    <!-- Script -->
+    <script src="{{ asset('js/appz.js') }}"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
     <script src="/vendor/unisharp/laravel-ckeditor/ckeditor.js"></script>
     
-@yield('js')
+    @yield('js')
+
 </body>
 </html>
-
-

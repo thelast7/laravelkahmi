@@ -51,6 +51,10 @@
                   </li>
 
                   <li class="">
+                    <a href="{{ url('tips') }}">TIPS</a>
+                  </li>
+
+                  <li class="">
                     <a href="{{ url('forum') }}">FORUM</a>
                   </li>           
                   @if (Route::has('login'))

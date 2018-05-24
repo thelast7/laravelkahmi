@@ -26,63 +26,79 @@
     <br><br>
 
 <div class="container">
-<div class="row">
-	<div class="col-md-8">
-		<form action="{{ route('forum.update', $forum->slug) }}" method="post" role="form">
-			{{ csrf_field() }}
-			{{ method_field('put') }}
-			<div class="well">
-				<h4 calass="text-center">Buat Diskusi</h4>
-				<div class="form-group">
-					<label for="judul">Judul</label>
-					<input type="text" name="title" value="{{ $forum->title }}" class="form-control" placeholder="Isi Judul">
-				</div>
+    <div class="jumbotron" id="tc_jumbotron">
+      <div class="col-md-8 offset-md-2">
+        <div class="text-center"><h3 style="color: #fff;">Edit Pertanyaan</h3></div><hr style="background: #fff"> 
+      </div>
+    <div class="row justify-content-center">
+        <div class="col-md-9">
+            <div class="card">
+                <div class="card-body">
+                  <form action="{{route('forum.update', $forum->id)}}" method="post" enctype="multipart/form-data">
+                    {{csrf_field()}}
+                    {{method_field('PUT')}}
+                  <div class="form-group">
+                      <input type="text" name="title" class="form-control" value="{{$forum->title}}">
+                  </div>
+                  <div class="form-group">
+                      <textarea type="text" name="description" class="form-control" placeholder="Description..">{{$forum->description}}</textarea>
+                  </div> 
+                  <div class="form-group">
+                    <select name="tags[]" multiple="multiple" class="form-control tags">
+                        @foreach($tags as $tag)
+                          <option value="{{$tag->id}}">{{$tag->name}}</option>
+                        @endforeach
+                    </select>
+                  </div>      
+                  <a data-toggle="collapse" data-target="#edit_image"><i class="fa fa-image" id="upload_image"></i></a>
+                    <div id="edit_image" class="collapse">  
+                        <div class="bg">
+                          <div class="form-group">
+                             <input type="file" class="form-control" name="image" placeholder="image" style="background-color: #f5f8fa;"> 
+                                </div>
+                            </div>
 
-				<div class="form-group">
-					<label for="Tag">Tag</label>
-					<select name="tags[]" multiple="multiple" class="form-control tags" placeholder="Tags">
-						@foreach ($tags as $tag)
-						<option value="{{ $tag->id }}">{{ $tag->name }}</option>
-						@endforeach
-					</select>
-				</div>
-
-				<div class="form-group">
-					<label for="diskusi">Diskusi</label>
-					<textarea <textarea rows="10" cols="100" id="testtxt" 
-  style="width: 700px; height: 550px; margin-left: auto; name="post" value="" class="form-control" placeholder="Isi Diskusi">{{ $forum->post }}</textarea>
-				</div>
-
-				<button type="submit" class="btn btn-success">Submit</button>
-			</div>
-		</form>
-	</div>
-
-	<div class="col-md-8">
-		<div class="alert alert-dismissible alert-info">
-		  <button type="button" class="close" data-dismiss="alert">&times;</button>
-		  <strong>Sudah punya akun ?</strong> <a href="{{ url('register') }}" class="alert-link">Daftar disini</a>
-		</div>
-	</div>
-	</div>
-	<br><br><br>
+                            @if(empty($forums->image))
+                                <small><i class="fa fa-info-circle"></i> Tidak ada gambar yang diupload</small>
+                            @else
+                            <div class="form-group">
+                               <div class="col-md-4"> 
+                               <img src="{{asset('images/'.$forum->image)}}" alt="" width="100%">
+                               </div>
+                           </div>
+                           @endif
+                          </div>
+                           <br> 
+                      <button type="submit" class="btn btn-success btn-block">Submit</button>
+                   </form>
+                </div>
+            </div>
+          <br> 
+        <div class="create_info" style="color: #fff;">
+         <h5><i class="fa fa-info-circle"></i> Info</h5>
+           <span>- Klik icon <strong>Gambar</strong> untuk upload dan edit gambar screenshot.</span> 
+          </div><br>
+          <div class="alert alert-info alert-dismissible fade show" role="alert"> 
+          <b>Pertanyaan terakhir edit:</b><br> 
+           <a href="#" style="color: #444"><h5 style="margin-top: 4px;"><i class="fa fa-newspaper-o"></i> {{$forum->title}}</h5></a>  
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+       </div>
+    </div>
+  </div>
 </div>
-
 @endsection
-
-@section('script')
+  
+ @section('js')
 <script type="text/javascript">
-	
-	$(".tags").select2();
+$(".tags").select2().val({!! json_encode($forum->tags()->allRelatedIds() ) !!}).trigger('change');
 
-	$(".tags").select2().val({!! json_encode($forum->tags()->allRelatedIds() ) !!}).trigger('change');
-
-</script>
-@endsection
-
-@else
-<script type="text/javascript">
-	window.location = "/";
+CKEDITOR.replace( 'description',{
+    extraPlugins:'codesnippet',
+    codeSnippet_theme:'dark'
+ });
 </script>
 
 @endif

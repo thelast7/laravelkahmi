@@ -54,14 +54,13 @@ Route::get('/contact', 'ContactsController@index');
 Route::post('/contact', 'ContactsController@sendMail');
 
 // Route yang menangani Forum
-Route::resource('/forum','ForumController');
+Route::resource('/forum', 'ForumController');
 
-Route::resource('/tags','TagController');
+Route::get('/forum/read/{slug}', 'ForumController@show')->name('forumslug');
 
-Route::resource('/comment','CommentController');
+Route::post('/comment/addComment/{forum}', 'CommentController@addComment')->name('addComment');
 
-Route::post('comment/create/{forum}','CommentController@buatKomentar')->name('buatKomentar.store');
-
+Route::post('/comment/replyComment/{comment}', 'CommentController@replyComment')->name('replyComment');
 //Route yang menangani tatacara mendaftar
 Route::get('/daftar', 'HomeController@index');
 
@@ -72,4 +71,7 @@ Route::group(['prefix' => 'admin', 'middleware' => 'role:admin'], function() {
 	Route::get('/dashboard', 'Backend\HomeController@index')->name('dashboard.home');
 	Route::resource('/categories', 'Backend\CategoriesController');
 	Route::resource('/posts', 'Backend\PostsController');
+	Route::resource('/daftartip', 'Backend\DaftartipController');
 });
+
+Route::resource('/tips','TipsController');

@@ -29,6 +29,8 @@
                     <ul class="navbar-nav mr-auto">
                         <li><a class="nav-link" href="{{ route('categories.index') }}">Category</a></li>
                         <li><a class="nav-link" href="{{ route('posts.index') }}">Post</a></li>
+                        <li><a class="nav-link" href="{{ route('daftartip.index') }}">Tips</a></li>
+
                     </ul>
 
                     <!-- Right Side Of Navbar -->
