@@ -4,13 +4,14 @@
       <div class="navigation">
         <div class="container relative">
 
-          <form method="get" class="search-wrap">
+{{--           <form method="get" class="search-wrap">
             <input type="search" class="form-control" placeholder="Type &amp; Hit Enter">
           </form>
-
+ --}}
           <div class="row">
             <div class="navbar-header">
               <!-- Logo -->
+              {{-- <div class="container"> --}}
               <div class="logo">
                 <div class="logo-wrap">
                   <a href="{{ url('/') }}">
@@ -23,6 +24,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
+              {{-- </div> --}}
             </div> 
           </div>
         </div>
@@ -51,7 +53,7 @@
                   </li>
 
                   <li class="">
-                    <a href="{{ url('tips') }}">TIPS</a>
+                    <a href="{{ url('inspirasi') }}">INSPIRASI</a>
                   </li>
 
                   <li class="">

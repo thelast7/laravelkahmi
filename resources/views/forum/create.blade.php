@@ -6,6 +6,19 @@
 
 
 <div class="container">
+    <div class="container">
+       <div class="container" style="background-color: #1d4242;">
+          <div class="menu_a text-center">
+          <a href="{{ url('/') }}">HOME</a>
+          <a href="{{ url('about') }}">KAHMIPRENEUR</a>
+          <a href="{{ url('movie') }}">GALERI</a> 
+          <a href="{{ url('berita') }}">BERITA</a> 
+          <a href="{{ url('inspirasi') }}">INSPIRASI</a>
+          <a href="{{ url('forum') }}">FORUM</a>
+          <a href="{{ route('profile.index') }}">{{ Auth::user()->name }}</a>
+          </div>
+    </div>
+    </div>
      <div class="jumbotron" id="tc_jumbotron">
         <div class="col-md-8 offset-md-2">
           <div class="text-center"><h3 style="color: #fff;">Buat Pertanyaan</h3></div><hr style="background: #fff"> 
@@ -20,13 +33,13 @@
                       <input type="text" id="tc_input" class="form-control" name="title" placeholder="Title"> 
                     </div>
                     
-                   <div class="des"> 
+            <div class="des"> 
                  <a class="btn btn_tc btn-block" data-toggle="collapse" data-target="#description-textarea" style="color: #777">Description</a> 
               <div id="description-textarea" class="collapse">     
                 <div class="bg">
-                   <div class="form-group">
+                    <div class="form-group">
                         <textarea type="text" class="form-control" id="tc_input" name="description" placeholder="description"> </textarea>
-                      </div>
+                    </div>
                 </div> 
               </div>             
             </div>

@@ -14,13 +14,34 @@
     <link rel="dns-prefetch" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600" rel="stylesheet" type="text/css">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    {{-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script> --}}
     
     <!-- Styles -->
     <link href="{{ asset('css/appz.css') }}" rel="stylesheet">  
     <link href="{{ asset('css/stylez.css') }}" rel="stylesheet"> 
     <link href="{{ asset('css/select2.min.css') }}" rel="stylesheet">
-    
-    <nav class="navbar navbar-static-top">
+
+
+{{-- <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+<ul class="nav">
+  <li class="nav-item">
+    <a class="nav-link" href="#">Link</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Link</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Link</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link disabled" href="#">Disabled</a>
+  </li>
+</ul>
+</nav> --}}
+
+{{--     <nav class="navbar navbar-static-top">
       <div class="navigation">
         <div class="container relative">
 
@@ -71,6 +92,10 @@
                   </li>
 
                   <li class="">
+                    <a href="{{ url('inspirasi') }}">INSPIRASI</a>
+                  </li>
+
+                  <li class="">
                     <a href="{{ url('forum') }}">FORUM</a>
                   </li>           
                   @if (Route::has('login'))
@@ -96,14 +121,14 @@
                     @endauth
                   </li>
                    @endif
-                   
+                 </ul>  
               </div> <!-- end collapse -->
             </div> <!-- end col -->
             
           </div> <!-- end row -->
         </div> <!-- end container -->
       </div> <!-- end navigation -->
-    </nav> <!-- end navbar -->
+    </nav> <!-- end navbar --> --}}
 
 </head>
 <body>
@@ -120,7 +145,6 @@
         </main>
     </div>
     <!-- Footer Type-2 -->
-    @include('layouts.partials.footer-two')
 
     <div id="back-to-top">
       <a href="#top"><i class="fa fa-angle-up"></i></a>

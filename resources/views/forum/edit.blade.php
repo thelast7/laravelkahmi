@@ -4,28 +4,22 @@
 
 @section('content')
 
-@if(auth()->user()->id == $forum->user_id)
-
-<section class="page-title style-2">
-      <div class="container relative clearfix">
-        <div class="title-holder">
-          <div class="title-text">
-            <h1>FORUM</h1>
-            <ol class="breadcrumb">
-              <li>
-                <a href="{{ url('/') }}">Home</a>
-              </li>
-              <li>
-                <a href="#">Forum</a>
-              </li>
-            </ol>
-          </div>
-        </div>
-      </div>
-    </div>
-    <br><br>
+{{-- @if(auth()->user()->id == $forum->user_id) --}}
 
 <div class="container">
+      <div class="container">
+         <div class="container" style="background-color: #1d4242;">
+            <div class="menu_a text-center">
+            <a href="{{ url('/') }}">HOME</a>
+            <a href="{{ url('about') }}">KAHMIPRENEUR</a>
+            <a href="{{ url('movie') }}">GALERI</a> 
+            <a href="{{ url('berita') }}">BERITA</a> 
+            <a href="{{ url('inspirasi') }}">INSPIRASI</a>
+            <a href="{{ url('forum') }}">FORUM</a>
+            <a href="{{ route('profile.index') }}">{{ Auth::user()->name }}</a>
+            </div>
+      </div>
+    </div>
     <div class="jumbotron" id="tc_jumbotron">
       <div class="col-md-8 offset-md-2">
         <div class="text-center"><h3 style="color: #fff;">Edit Pertanyaan</h3></div><hr style="background: #fff"> 
@@ -34,7 +28,7 @@
         <div class="col-md-9">
             <div class="card">
                 <div class="card-body">
-                  <form action="{{route('forum.update', $forum->id)}}" method="post" enctype="multipart/form-data">
+                  <form action="{{route('forum.update', $forum->slug)}}" method="post" enctype="multipart/form-data">
                     {{csrf_field()}}
                     {{method_field('PUT')}}
                   <div class="form-group">
@@ -43,10 +37,17 @@
                   <div class="form-group">
                       <textarea type="text" name="description" class="form-control" placeholder="Description..">{{$forum->description}}</textarea>
                   </div> 
+
                   <div class="form-group">
                     <select name="tags[]" multiple="multiple" class="form-control tags">
                         @foreach($tags as $tag)
                           <option value="{{$tag->id}}">{{$tag->name}}</option>
+{{--                           <option value="{{ $tag->id }}"
+                            @if ($tag->id === $forum->id)
+                              selected 
+                            @endif>
+                            {{ $tag->name }}
+                          </option> --}}
                         @endforeach
                     </select>
                   </div>      
@@ -63,7 +64,7 @@
                             @else
                             <div class="form-group">
                                <div class="col-md-4"> 
-                               <img src="{{asset('images/'.$forum->image)}}" alt="" width="100%">
+                               <img src="{{asset('images/'.$forums->image)}}" alt="" width="100%">
                                </div>
                            </div>
                            @endif
@@ -71,6 +72,7 @@
                            <br> 
                       <button type="submit" class="btn btn-success btn-block">Submit</button>
                    </form>
+
                 </div>
             </div>
           <br> 
@@ -91,14 +93,20 @@
 </div>
 @endsection
   
- @section('js')
-<script type="text/javascript">
-$(".tags").select2().val({!! json_encode($forum->tags()->allRelatedIds() ) !!}).trigger('change');
+@section('js')
 
-CKEDITOR.replace( 'description',{
-    extraPlugins:'codesnippet',
-    codeSnippet_theme:'dark'
- });
+<script type="text/javascript">
+$(".tags").select2({
+    placeholder: "Select tags",
+    maximumSelectionLength: 2
+});
+
+ CKEDITOR.replace( 'description', {
+  extraPlugins: 'codesnippet',
+  codeSnippet_theme: 'monokai_sublime'
+} );
 </script>
 
-@endif
+@endsection
+
+{{-- @endif --}}

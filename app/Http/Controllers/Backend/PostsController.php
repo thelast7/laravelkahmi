@@ -174,14 +174,16 @@ class PostsController extends BackendController
         $filename = str_random(40) . '.' . $extension; 
         $img = Image::make($_FILES['image']['tmp_name']);
         $img->resize(1920, 920);
-        $path_dir = base_path() . '/public/img/post/'.$filename;
+        $path_dir = public_path() . '/img/post/'.$filename;
+#        $path_dir = base_path() . '/public/img/post/'.$filename;
         $success = $img->save($path_dir);
 
         if ($success) 
         {
            	$img = Image::make($_FILES['image']['tmp_name']);
-        	$img->resize(272, 203);
-           	$thumbnail = base_path() . '/public/img/post/tumb_'.$filename;
+        	$img->resize(800, 400);
+            $thumbnail = public_path() . '/img/post/tumb_'.$filename;
+#           	$thumbnail = base_path() . '/public/img/post/tumb_'.$filename;
            	$img->save($thumbnail);
         }
         return $filename;
@@ -191,7 +193,8 @@ class PostsController extends BackendController
     {
         $path = public_path() . DIRECTORY_SEPARATOR . 'img/post/'
             . DIRECTORY_SEPARATOR . $filename;
-        $thumbnail = base_path() . '/public/img/post/tumb_'.$filename;
+        $thumbnail = public_path() . 'img/post.tumb_'.$filename;
+        #$thumbnail = base_path() . '/public/img/post/tumb_'.$filename;
 
         return File::delete($path, $thumbnail);
     }

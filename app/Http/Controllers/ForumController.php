@@ -1,13 +1,12 @@
 <?php
-
 namespace App\Http\Controllers;
-
 use App\Forum;
 use App\Tag;
 use App\Comment;
 use Illuminate\Http\Request;
 use Auth;
 use DB;
+use Storage;
 
 class ForumController extends Controller
 {
@@ -20,14 +19,48 @@ class ForumController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+
+    public function populars()
     {
-        $forums = Forum::withCount('comments')->paginate(5);
+        $populars = DB::table('forums')
+        ->join('views', 'forums.id', '=', 'views.viewable_id')
+        ->select(DB::raw('count(viewable_id) as count'),'forums.id','forums.title','forums.slug')
+        ->groupBy('id','title','slug')
+        ->orderBy('count','desc')
+        ->take(5)
+        ->get();
         // $commentCount = Comment::count();
         // $post_view = DB::table('forums')->increment('post_view');
-        return view('forum.index', compact('forums'));
+        return view('forum.populars', compact('populars'));
     }
 
+    // public function _permasalahan()
+    // {
+    //     $permasalahan = Forum::where('')
+    //     ->groupBy('id','title','slug')
+    //     ->orderBy('count','desc')
+    //     ->take(5)
+    //     ->get();
+    //     $forums = Forum::withCount('comments')->paginate(2);
+    //     // $commentCount = Comment::count();
+    //     // $post_view = DB::table('forums')->increment('post_view');
+    //     return view('forum._permasalahan', compact('forums', 'permasalahan'));
+    // }
+
+    public function index()
+    {
+        $populars = DB::table('forums')
+        ->join('views', 'forums.id', '=', 'views.viewable_id')
+        ->select(DB::raw('count(viewable_id) as count'),'forums.id','forums.title','forums.slug')
+        ->groupBy('id','title','slug')
+        ->orderBy('count','desc')
+        ->take(5)
+        ->get();
+        $forums = Forum::withCount('comments')->paginate(2);
+        // $commentCount = Comment::count();
+        // $post_view = DB::table('forums')->increment('post_view');
+        return view('forum.index', compact('forums', 'populars'));
+    }
     /**
      * Show the form for creating a new resource.
      *
@@ -39,7 +72,6 @@ class ForumController extends Controller
         $tags = Tag::all();
         return view('forum.create', compact('tags','forums'));
     }
-
     /**
      * Store a newly created resource in storage.
      *
@@ -59,7 +91,6 @@ class ForumController extends Controller
         $forums->title          = $request->title;
         $forums->slug           = str_slug($request->title);
         $forums->description    = $request->description;
-
             if ($request->file('image')) {
                 $file           = $request->file('image');
                 $filename       = time().'.'.$file->getClientOriginalExtension();
@@ -67,12 +98,10 @@ class ForumController extends Controller
                 $file->move($location, $filename);
                 $forums->image  = $filename;
             }
-
             $forums->save();
             $forums->tags()->sync($request->tags);
-            return back()->withInfo('Diskusi Berhasil dibuat');
+            return redirect()->to('forum')->withInfo('Diskusi Berhasil dibuat');
     }
-
     /**
      * Display the specified resource.
      *
@@ -81,28 +110,33 @@ class ForumController extends Controller
      */
     public function show($slug)
     {
+        $populars = DB::table('forums')
+        ->join('views', 'forums.id', '=', 'views.viewable_id')
+        ->select(DB::raw('count(viewable_id) as count'),'forums.id','forums.title','forums.slug')
+        ->groupBy('id','title','slug')
+        ->orderBy('count','desc')
+        ->take(5)
+        ->get();
         $forums = Forum::where('id', $slug)
                         ->orWhere('slug', $slug)
                         ->firstOrFail();
+        $forums->addView();
         // $commentCount = Comment::count();
-        DB::table('forums')->increment('post_view');
-
-        return view('forum.show', compact('forums', 'post_view'));
+        // DB::table('forums')->increment('post_view');
+        return view('forum.show', compact('forums', 'populars'));
     }
-
     /**
      * Show the form for editing the specified resource.
      *
      * @param  \App\Forum  $forum
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit($slug)
     {
-        $forum = Forum::find($id);
+        $forum = Forum::where('slug', $slug);
         $tags  = Tag::all();
         return view('forum.edit', compact('forum','tags'));
     }
-
     /**
      * Update the specified resource in storage.
      *
@@ -123,31 +157,32 @@ class ForumController extends Controller
         $forums->title          = $request->title;
         $forums->slug           = str_slug($request->title);
         $forums->description    = $request->description;
-
             if ($request->file('image')) {
                 $file           = $request->file('image');
                 $filename       = time().'.'.$file->getClientOriginalExtension();
                 $location       = public_path('/images');
                 $file->move($location, $filename);
-
                 $oldImage       = $forums->image;
                 \Storage::delete($oldImage);
                 $forums->image  = $filename;
             }
-
             $forums->save();
             $forums->tags()->sync($request->tags);
-            return back()->withInfo('Diskusi Berhasil diubah');
+        return redirect()->route('forum.show', $forums->slug)->withInfo('Diskusi Berhasil Diedit');
     }
-
     /**
      * Remove the specified resource from storage.
      *
      * @param  \App\Forum  $forum
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Forum $forum)
+    public function destroy($id)
     {
-        //
+        $forums = Forum::find($id);
+        Storage::delete($forums->image);
+        $forums->tags()->detach();
+        $forums->delete();
+
+        return redirect()->to('forum')->withInfo('Diskusi Berhasil dihapus');
     }
 }

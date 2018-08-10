@@ -1,9 +1,6 @@
 @extends('layouts.main2')
-
 @section('title',"$forums->title")
-
 @section('content')
-
 <div class="container">
   <div class="jumbotron" id="tc_jumbotron">
     <div class="card-body" id="xx">
@@ -18,6 +15,19 @@
         <div class="col-md-12" id="tc_container_wrap">
             <div class="card" id="tc_paneldefault" style="background: #f9f9f9;"> 
                 <div class="card-body" id="tc_panelbody">
+                    <div class="container">
+                         <div class="container" style="background-color: #1d4242;">
+                            <div class="menu_a text-center">
+                            <a href="{{ url('/') }}">HOME</a>
+                            <a href="{{ url('about') }}">KAHMIPRENEUR</a>
+                            <a href="{{ url('movie') }}">GALERI</a> 
+                            <a href="{{ url('berita') }}">BERITA</a> 
+                            <a href="{{ url('inspirasi') }}">INSPIRASI</a>
+                            <a href="{{ url('forum') }}">FORUM</a>
+                            <a href="{{ route('profile.index') }}">{{ Auth::user()->name }}</a>
+                            </div>
+                      </div>
+                    </div><br>
                     <div class="row">
                         <div class="col-md-8">
                           <div class="card">
@@ -28,10 +38,10 @@
                       <a href="#">  <i class="fa fa-twitter"></i></a>
                       <a href="#">  <i class="fa fa-google-plus"></i></a>
                       </div> --}}
-                    <a href="#" class="badge badge-success">{{ Auth::user()->name }}</a> |
+                    <a href="#" class="badge badge-success">{{ $forums->user['name'] }}</a> |
                     {{-- <small>{{$forums->created_at->diffForHumans()}}</small> | --}}
                     <small>{{ date('j F Y, h:ia', strtotime($forums->created_at)) }}</small> |
-{{--                     <small>0 Views</small> | --}}
+                    <small>{{$forums->Views->count()}} Views</small> |
                     <small>{{$forums->comments->count()}} Komentar</small> |
                     @foreach($forums->tags as $tag)
                     <div class="badge badge-success">#{{$tag->name}}</div>
@@ -68,7 +78,7 @@
               <div class="modal-dialog modal-lg" role="document">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Screenshot:</h5>
+                    <h5 class="modal-title" id="exampleModalLabel"></h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                       <span aria-hidden="true">&times;</span>
                     </button>
@@ -84,13 +94,13 @@
               <div class="card-header" style=" background-color: #2ab27b; color: #fff; border-top-right-radius: 0px; border-top-left-radius: 0px;"><i class="fa fa-clock-o" style="color: #eee"></i> <small style="color: #eee">{{ date('j F Y, h:ia', strtotime($forums->created_at)) }}</small></div>
               <div class="card-body" style="background: #f9f9f9; "> 
                 <div class="row">
-                  <div class="col-md-3" id="img_comment">
-
+{{--                   <div class="col-md-3" id="img_comment">
+                    <img src="{{asset('images/pr0file.png')}}" width="100%"> --}}
                     <br>
                     <div class="comment_user">
                     <b>{{$comment->user->name}}</b>
                     </div>
-                  </div>
+                  {{-- </div> --}}
                   <div class="col-md-8">
                   {{$comment->content}}
                   </div>
@@ -118,13 +128,13 @@
                   <div class="col-md-8">
                   {{$reply->content}}
                   </div>
-                   <div class="col-md-3" id="img_comment_reply">
-
+{{--                    <div class="col-md-3" id="img_comment_reply">
+                    <img src="{{asset('images/pr0file.png')}}" width="100%"> --}}
                     <br>
                     <div class="comment_user">
                     <b>{{$reply->user->name}}</b>
                     </div>
-                  </div>
+                  {{-- </div> --}}
                 </div>
                 </div>
                 </div>
@@ -185,16 +195,19 @@
             </div>
                <div class="col-md-4">
                   <a href="{{route('forum.create')}}" class="btn btn-success btn-block">Buat Diskusi</a><br>
-               <div class="card">
-                <div class="card-header" style="background: #2ab27b; color: #fff; padding: 8px 1.25rem;">Peraturan</div>
-                <div class="list-group">
-                <a href="#" class="list-group-item" id="index_hover">
-                  <h5>Peraturan</h5>
-                </a> 
-                </div>
-                </div>
+                  @if(auth()->user()->id == $forums->user_id)
+                  <a href="{{ route('forum.edit', $forums->id) }}" class="btn btn-success btn-block"><i class="fa fa-pencil"></i> Edit Diskusi</a><br>
+
+                    <form action="{{ route('forum.destroy', $forums->id) }}" method="post">
+                      {{csrf_field()}}
+                      {{method_field('delete')}}
+                      <button class="btn btn-danger btn-block" onclick="return confirm('Apakah kamu yakin ingin Menghapus diskusi ini')" ><i class="fa fa-trash-o"></i> Hapus</button>
+                    </form>
+                  @endif
+
+                @include('layouts.popular')
             </div>
-             </div>
+            </div>
             <hr style="margin-top: 0;">
               </div>
             </div>
@@ -206,7 +219,6 @@
 <!-- css -->
 
 <style type="text/css">
-
 input {
   font-family: inherit;
   -webkit-appearance: none;
@@ -217,31 +229,26 @@ input {
   color: #000;
   border-radius: 0;
 }
-
 input[type="text"],
 input[type="password"] {
   width: 100%;
   height: 40px;
       background: transparent;
 }
-
 button,
 input:focus {
   outline: 0;
 }
-
 ::-webkit-input-placeholder { 
   font-size: 16px;
   font-weight: 300;
   letter-spacing: -0.00933333em;
 }
-
 .form-group {
   position: relative;
   padding-top: 15px;
   margin-top: 10px;
 }
-
 label {
   position: absolute;
   top: 0;
@@ -254,13 +261,11 @@ label {
   letter-spacing: -0.00933333em;
   transition: all 0.2s ease-out;
 }
-
 input:placeholder-shown  + label {
   opacity: 0;
   -webkit-transform: translateY(15px);
           transform: translateY(15px);
 }
-
 .h1 {
   color: #999;
   opacity: 0.8;
@@ -271,12 +276,10 @@ input:placeholder-shown  + label {
   text-align: center;
   cursor: pointer; 
 }
-
 .open .h1 {
   -webkit-transform: translateX(200px) translateZ(0);
           transform: translateX(165px) translateZ(0);
 }
-
 .h2 {
   color: #000;
   font-size: 20px;
@@ -284,14 +287,12 @@ input:placeholder-shown  + label {
   font-weight: 600;
   padding-bottom: 15px;
 }
-
 /*.add_comment {
   height:160px;
   border-radius: 4px;
   overflow: hidden;
   position: relative;
 }*/
-
 /*.open_comment {
   width: 100%;
   height: 100%;
@@ -301,7 +302,6 @@ input:placeholder-shown  + label {
   transition: all 770ms cubic-bezier(0.51, 0.04, 0.12, 0.99);
   overflow: hidden;
 }
-
 .open_comment img {
   object-fit: cover;
   width: 100%;
@@ -310,17 +310,14 @@ input:placeholder-shown  + label {
   transition: all 770ms cubic-bezier(0.51, 0.04, 0.12, 0.99);
   object-position: left;
 }
-
 .open .open_comment img {
   -webkit-transform: translateX(280px) translateZ(0);  
           transform: translateX(280px) translateZ(0);  
 }
-
 .open .open_comment {
   -webkit-transform: translateX(-400px) translateZ(0);
           transform: translateX(-400px) translateZ(0);
 } */
-
 .comment-show {
   position: absolute;
   top: 0;
@@ -330,12 +327,10 @@ input:placeholder-shown  + label {
           transform: translateX(468px) translateZ(0);
   transition: all 770ms cubic-bezier(0.51, 0.04, 0.12, 0.99);
 }
-
 .open .comment-show {
   -webkit-transform: translateX(0px) translateZ(0);
           transform: translateX(0px) translateZ(0);
 }
-
 input[type="checkbox"] {
   cursor: pointer;
   margin: 0;
@@ -345,7 +340,6 @@ input[type="checkbox"] {
   -webkit-appearance: none;
   transition: all 180ms linear;
 }
-
 input[type="checkbox"]:before {
     border: 1px solid #aaa;
     background-color: #fff;
@@ -356,12 +350,10 @@ input[type="checkbox"]:before {
     border-radius: 2px;
     transition: all 180ms linear;
 }
-
 input[type="checkbox"]:checked:before {
   background: linear-gradient(198.08deg, #B4458C 45.34%, #E281E7 224.21%);
   border: 1px solid #C359AA;
 }
-
 input[type="checkbox"]:after {
   content: '';
   border: 2px solid #fff;
@@ -378,21 +370,17 @@ input[type="checkbox"]:after {
   width: 12px;
   transition: all 180ms linear;
 }
-
 input[type="checkbox"]:checked:after {
     opacity: 1;
 } 
-
 .button-gg {
   margin-top: 20px;
 }
-
 .btn-primary {
   color: #fff;
   background: linear-gradient(198.08deg, #B4458C 45.34%, #E281E7 224.21%);
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
 }
-
 .btn-secondary {
   color: #C359AA;  
 }
@@ -408,7 +396,6 @@ img,
   transition: .3s all;
   border-radius: 3px;
 }
-
 .bg {
   /*float: left;*/
   max-width: 31%;
@@ -443,7 +430,6 @@ img,
   -webkit-filter: blur(2px);
   filter: blur(2px);
 }
-
 @media screen and (max-width: 1148px) {
   .bg {
     max-width: 48%;

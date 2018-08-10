@@ -52,7 +52,7 @@
                   by <a href="#">{{ $ber->author->name }}</a>
                 </li>
                 <li class="entry-category">
-                  in <a href="#">{{ $ber->category_id }}</a>
+                  in <a href="#">{{ $ber->category->name }}</a>
                 </li>
                 <li>
                   <a href="{{ route('isiberita', $ber->slug) }}" class="entry-comments">Komentar Anda</a>

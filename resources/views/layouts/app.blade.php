@@ -12,6 +12,7 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/select2.min.css') }}" rel="stylesheet">
 </head>
 <body>
     <div id="app">
@@ -69,15 +70,17 @@
     </div>
 
     <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}"></script>
+{{--     <script src="{{ asset('js/app.js') }}"></script>
     <script src="{{ asset('js/jquery.min.js') }}"></script>
     <script src="{{ asset('js/tinymce/jquery.tinymce.min.js') }}"></script>
-    <script src="{{ asset('js/tinymce/tinymce.min.js') }}"></script>
-     <script type="text/javascript">
+    <script src="{{ asset('js/tinymce/tinymce.min.js') }}"></script> --}}
+{{--      <script type="text/javascript">
     tinymce.init({
         selector: "textarea#body"
     });
-  </script>
-	@stack('scripts')
+  </script> --}}
+    <script src="/vendor/unisharp/laravel-ckeditor/ckeditor.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+    @yield('js')
 </body>
 </html>

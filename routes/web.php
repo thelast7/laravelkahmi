@@ -49,6 +49,14 @@ Route::get('/isiberita/{slug}', [
 	'uses' => 'BeritaController@isiberita',
 	'as'   => 'isiberita'
 ]);
+
+Route::get('/inspirasi', 'InspirasiController@index');
+
+Route::get('/inspirasikita/{slug}', [
+	'uses' => 'InspirasiController@inspirasikita',
+	'as'   => 'inspirasikita'
+]);
+
 // Route yang menangani contact
 Route::get('/contact', 'ContactsController@index');
 Route::post('/contact', 'ContactsController@sendMail');
@@ -74,4 +82,5 @@ Route::group(['prefix' => 'admin', 'middleware' => 'role:admin'], function() {
 	Route::resource('/daftartip', 'Backend\DaftartipController');
 });
 
-Route::resource('/tips','TipsController');
+//Route yang menangani popular
+Route::get('/populars', 'ForumController@populars')->name('populars');
